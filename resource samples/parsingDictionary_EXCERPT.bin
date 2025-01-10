@@ -1,0 +1,2400 @@
+// This file is a sample of the Psalms Translator's parsing dictionary. This sample
+// contains 2400 lines. The full parsing dictionary contains 52,516 lines.
+-
+// This content may not be copied, shared, distributed, modified, or used for any purpose,
+// commercial or non-commercial, without prior written permission from the author.
+-
+אָב	{H0001G}	HNcmsa	30
+אָבוֹת	{H0001G}	HNcfpa	29
+אָבֹת	{H0001G}	HNcfpa	2
+אֲבִי	{H0001G}	HNcmsc	68	{H0001G}	HNgmsc	3	{H0001I}	HNcmsc	2	{H0001G}	HNpmsc	1	{H0021}	HNpf	1
+אֲבוֹת	{H0001G}	HNcfpc	6
+אַב	{H0001G}	HNcmsc	1
+אֲבִיעַד	{H0001G}/{H5703}	HNcmsc/Ncmsa	1
+אֲבֹתָי	{H0001G}/H9020	HNcfpc/Sp1bs	1
+אָבִי	{H0001G}/H9020	HNcmsc/Sp1bs	125	{H0001H}/H9020	HNcmsc/Sp1bs	1	{H0015}/H9020	HNcmsc/Sp1bs	1	{H0935P}	HVhi1cs	1
+אֲבוֹתַי	{H0001G}/H9020	HNcfpc/Sp1bs	3
+אֲבוֹתָי	{H0001G}/H9020	HNcfpc/Sp1bs	3
+אֲבֹתַי	{H0001G}/H9020	HNcfpc/Sp1bs	7
+אָבִיךָ	{H0001G}/H9021	HNcmsc/Sp2ms	96
+אֲבֹתֶיךָ	{H0001G}/H9021	HNcfpc/Sp2ms	23
+אֲבוֹתֶיךָ	{H0001G}/H9021	HNcfpc/Sp2ms	3
+אָּבִיךְ	{H0001G}/H9022	HNcmsc/Sp2fs	1
+אָבִיךְ	{H0001G}/H9022	HNcmsc/Sp2fs	8
+אָבִיו	{H0001G}/H9023	HNcmsc/Sp3ms	192	{H0001H}/H9033	HNcmsc/Sp3ms	1
+אֲבֹתָיו	{H0001G}/H9023	HNcfpc/Sp3ms	73
+אֲבוֹתָיו	{H0001G}/H9023	HNcfpc/Sp3ms	3
+אָבִיהוּ	{H0001G}/H9023	HNcmsc/Sp3ms	7
+אָבִיהָ	{H0001G}/H9024	HNcmsc/Sp3fs	30
+אָבִיה	{H0001G}/H9024	HNcmsc/Sp3fs	1
+אָבִינוּ	{H0001G}/H9025	HNcmsc/Sp1bp	19
+אֲבוֹתֵינוּ	{H0001G}/H9025	HNcfpc/Sp1bp	15
+אֲבֹתֵינוּ	{H0001G}/H9025	HNcfpc/Sp1bp	23
+אֲבוֹתֵכֶם	{H0001G}/H9026	HNcfpc/Sp2mp	1
+אֲבִיכֶם	{H0001G}/H9026	HNcmsc/Sp2mp	12
+אֲבוֹתֵיכֶם	{H0001G}/H9026	HNcfpc/Sp2mp	32
+אֲבֹתֵיכֶם	{H0001G}/H9026	HNcfpc/Sp2mp	20
+אֲבִיכֶן	{H0001G}/H9027	HNcmsc/Sp2fp	2
+אֲבוֹתָם	{H0001G}/H9028	HNcfpc/Sp3mp	42
+אֲבֹתָם	{H0001G}/H9028	HNcfpc/Sp3mp	44
+אֲבוֹתֵיהֶם	{H0001G}/H9028	HNcfpc/Sp3mp	18
+אֲבִיהֶם	{H0001G}/H9028	HNcmsc/Sp3mp	35
+אֲבֹתֵיהֶם	{H0001G}/H9028	HNcfpc/Sp3mp	8
+אֲבִיהֶן	{H0001G}/H9029	HNcmsc/Sp3fp	7
+וַאֲבוֹת	H9002/{H0001G}	HC/Ncfpc	2
+וְאָב	H9002/{H0001G}	HC/Ncmsa	1
+וַאֲבִי	H9002/{H0001G}	HC/Ncmsc	4
+וְאָבִי	H9002/{H0001G}/H9020	HC/Ncbsc/Sp1bs	1	H9002/{H0001G}/H9020	HC/Ncmsc/Sp1bs	1
+וַאֲבוֹתַי	H9002/{H0001G}/H9020	HC/Ncfpc/Sp1bs	1
+וַאֲבֹתֶיךָ	H9002/{H0001G}/H9021	HC/Ncfpc/Sp2ms	3
+וְאָבִיךָ	H9002/{H0001G}/H9021	HC/Ncmsc/Sp2ms	1
+וְאָבִיו	H9002/{H0001G}/H9023	HC/Ncmsc/Sp3ms	9
+וְאָבִיהָ	H9002/{H0001G}/H9024	HC/Ncmsc/Sp3fs	1
+וַאֲבֹתֵינוּ	H9002/{H0001G}/H9025	HC/Ncfpc/Sp1bp	4
+וַאֲבוֹתֵינוּ	H9002/{H0001G}/H9025	HC/Ncfpc/Sp1bp	2
+וַאֲבֹתֵיכֶם	H9002/{H0001G}/H9026	HC/Ncfpc/Sp2mp	1
+וַאֲבוֹתֵיכֶם	H9002/{H0001G}/H9026	HC/Ncfpc/Sp2mp	2
+וַאֲבִיכֶן	H9002/{H0001G}/H9027	HC/Ncmsc/Sp2fp	2
+וַאֲבִיהֶם	H9002/{H0001G}/H9028	HC/Ncmsc/Sp3mp	1
+וַאֲבוֹתֵיהֶם	H9002/{H0001G}/H9028	HC/Ncfpc/Sp3mp	1
+וַאֲבֹתֵיהֶם	H9002/{H0001G}/H9028	HC/Ncfpc/Sp3mp	1
+וַאֲבוֹתָם	H9002/{H0001G}/H9028	HC/Ncfpc/Sp3mp	2
+וּבַאֲבֹתֵיכֶם	H9002/H9003/{H0001G}/H9026	HC/R/Ncfpc/Sp2mp	1
+וּכְאָב	H9002/H9004/{H0001G}	HC/R/Ncmsa	1
+וְלַאֲבֹתֶיךָ	H9002/H9005/{H0001G}/H9021	HC/R/Ncfpc/Sp2ms	1
+וּלְאָבִיו	H9002/H9005/{H0001G}/H9023	HC/R/Ncmsc/Sp3ms	3
+וְלַאֲבֹתֵינוּ	H9002/H9005/{H0001G}/H9025	HC/R/Ncfpc/Sp1bp	3
+וְלַאֲבוֹתֵיכֶם	H9002/H9005/{H0001G}/H9026	HC/R/Ncfpc/Sp2mp	3
+וְלַאֲבֹתֵיכֶם	H9002/H9005/{H0001G}/H9026	HC/R/Ncfpc/Sp2mp	1
+וְלַאֲבֹתֵיהֶם	H9002/H9005/{H0001G}/H9028	HC/R/Ncfpc/Sp3mp	1
+וְלַאֲבוֹתֵיהֶם	H9002/H9005/{H0001G}/H9028	HC/R/Ncfpc/Sp3mp	1
+וְהָאָבוֹת	H9002/H9009/{H0001G}	HC/Td/Ncfpa	2
+בַּאֲבֹתֶיךָ	H9003/{H0001G}/H9021	HR/Ncfpc/Sp2ms	1
+בַּאֲבוֹתֵיכֶם	H9003/{H0001G}/H9026	HR/Ncfpc/Sp2mp	1
+כְאָב	H9004/{H0001G}	HR/Ncmsa	1
+כְאָבִיו	H9004/{H0001G}/H9023	HR/Ncmsc/Sp3ms	1
+כַאֲבֹתֵיכֶם	H9004/{H0001G}/H9026	HR/Ncfpc/Sp2mp	1
+כַּאֲבוֹתֵיכֶם	H9004/{H0001G}/H9026	HR/Ncfpc/Sp2mp	2
+כַּאֲבוֹתָם	H9004/{H0001G}/H9028	HR/Ncfpc/Sp3mp	2
+לְאָבוֹת	H9005/{H0001G}	HR/Ncfpa	2
+לְאָב	H9005/{H0001G}	HR/Ncmsa	12
+לְאַב	H9005/{H0001G}	HR/Ncmsc	1
+לַאֲבִי	H9005/{H0001G}	HR/Ncmsc	2
+לְאָבִי	H9005/{H0001G}/H9020	HR/Ncmsc/Sp1bs	5
+לְאָבִיךָ	H9005/{H0001G}/H9021	HR/Ncmsc/Sp2ms	5
+לַאֲבֹתֶיךָ	H9005/{H0001G}/H9021	HR/Ncfpc/Sp2ms	13
+לְאָבִיו	H9005/{H0001G}/H9023	HR/Ncmsc/Sp3ms	15
+לַאֲבֹתָיו	H9005/{H0001G}/H9023	HR/Ncfpc/Sp3ms	2
+לְאָבִיהָ	H9005/{H0001G}/H9024	HR/Ncmsc/Sp3fs	3
+לְאָבִינוּ	H9005/{H0001G}/H9025	HR/Ncmsc/Sp1bp	3
+לַאֲבֹתֵינוּ	H9005/{H0001G}/H9025	HR/Ncfpc/Sp1bp	7
+לַאֲבוֹתֵיכֶם	H9005/{H0001G}/H9026	HR/Ncfpc/Sp2mp	3
+לַאֲבֹתֵיכֶם	H9005/{H0001G}/H9026	HR/Ncfpc/Sp2mp	10
+לַאֲבוֹתָם	H9005/{H0001G}/H9028	HR/Ncfpc/Sp3mp	11
+לַאֲבֹתָם	H9005/{H0001G}/H9028	HR/Ncfpc/Sp3mp	3
+לַאֲבִיהֶם	H9005/{H0001G}/H9028	HR/Ncmsc/Sp3mp	1
+לַאֲבֹתֵיהֶם	H9005/{H0001G}/H9028	HR/Ncfpc/Sp3mp	1
+לַאֲבוֹתֵיהֶם	H9005/{H0001G}/H9028	HR/Ncfpc/Sp3mp	2
+מֵאֲבֹתָי	H9006/{H0001G}/H9020	HR/Ncfpc/Sp1bs	1
+מֵאָבִיךָ	H9006/{H0001G}/H9021	HR/Ncmsc/Sp2ms	1
+מֵאֲבֹתֶיךָ	H9006/{H0001G}/H9021	HR/Ncfpc/Sp2ms	1
+מֵאָבִיךְ	H9006/{H0001G}/H9022	HR/Ncmsc/Sp2fs	1
+מֵאָבִינוּ	H9006/{H0001G}/H9025	HR/Ncmsc/Sp1bp	3
+מֵאֲבוֹתֵיכֶם	H9006/{H0001G}/H9026	HR/Ncfpc/Sp2mp	1
+מֵאֲבוֹתָם	H9006/{H0001G}/H9028	HR/Ncfpc/Sp3mp	3
+מֵאֲבִיהֶן	H9006/{H0001G}/H9029	HR/Ncmsc/Sp3fp	1
+הָאָב	H9009/{H0001G}	HTd/Ncmsa	3
+הָאָבוֹת	H9009/{H0001G}	HTd/Ncfpa	36
+אֲבָהָתִי	{H0002}/H9020	ANcfsc/Sp1bs	1
+אַבִי	{H0002}/H9020	ANcbsc/Sp1bs	1
+אֲבוּהִי	{H0002}/H9020	ANcbsc/Sp3ms	1
+אֲבָהָתָךְ	{H0002}/H9021	ANcfsc/Sp2ms	1
+אֲבוּךְ	{H0002}/H9021	ANcbsc/Sp2ms	4
+אֲבָהֳתַנָא	{H0002}/H9025	ANcfsc/Sp1bp	1
+בְּאִבֵּי	H9003/{H0003}	HR/Ncmpc	1
+בְאִבּוֹ	H9003/{H0003}/H9023	HR/Ncmsc/Sp3ms	1
+אִנְבֵּהּ	{H0004}/H9023	ANcbsc/Sp3ms	1
+וְאִנְבֵּהּ	H9002/{H0004}/H9023	AC/Ncbsc/Sp3ms	2
+וַאֲבַגְתָא	H9002/{H0005}	HC/Npm	1
+תְּאַבֵּד	{H0006}	HVpi2ms	2
+אָבָד	{H0006}	HVqp3ms	4
+אָבָדָה	{H0006}	HVqp3fs	2
+אִבַּדְתִּי	{H0006}	HVpp1cs	1
+הֶאֱבַדְתָּ	{H0006}	HVhp2ms	1
+אָבֹד	{H0006}	HVqaa	3
+אָבְדָה	{H0006}	HVqp3fs	5
+מְאַבְּדִים	{H0006}	HVprmpa	1
+יְאַבֵּד	{H0006}	HVpi3ms	1
+אֹבֵד	{H0006}	HVqrmsa	6	{H0008}	HVqrmsa	2
+אוֹבֵד	{H0006}	HVqrmsa	1
+יֹאבֵדוּ	{H0006}	HVqi3mp	11
+תֹּאבַד	{H0006}	HVqi3fs	4
+יֹאבֵד	{H0006}	HVqi3ms	3
+תֹּאבֵד	{H0006}	HVqi3fs	4
+יְאַבֶּד	{H0006}	HVpi3ms	1
+מַאֲבִיד	{H0006}	HVhrmsa	1
+נֹאבֵד	{H0006}	HVqi1cp	2
+נֹאבְדָה	{H0006}	HVqc1cp	1
+אָבַד	{H0006}	HVqp3ms	10
+אָבַדְתְּ	{H0006}	HVqp2fs	1
+אֹבְדוֹת	{H0006}	HVqrfpa	1
+אָבַדְתָּ	{H0006}	HVqp2ms	1
+תֹּאבֵדוּ	{H0006}	HVqi2mp	1
+אָבָדוּ	{H0006}	HVqp3cp	1
+אֹבַד	{H0006}	HVqrmsa	1
+אֲבֹד	{H0006}	HVqcc	1
+תֹאבַד	{H0006}	HVqi3fs	1
+אָבַדְתִּי	{H0006}	HVqp1cs	2
+אֹבִידָה	{H0006}	HVhc1cs	1
+יֹאבְדוּ	{H0006}	HVqi3mp	2
+תְּאַבֵּדוּ	{H0006}	HVpi2mp	1
+אִבַּדְתָּ	{H0006}	HVpp2ms	1
+יֹאבַד	{H0006}	HVqi3ms	2
+אָבָדְנוּ	{H0006}	HVqp1cp	1
+אָבַדְנוּ	{H0006}	HVqp1cp	1
+אָבְדוּ	{H0006}	HVqp3cp	2
+הַאֲבִיד	{H0006}	HVhcc	1
+אַבֵּד	{H0006}	HVpcc	1
+אָבָדְתִּי	{H0006}	HVqp1cs	1
+אִבַּד	{H0006}	HVpp3ms	2
+תְּאַבְּדוּן	{H0006}/H9013	HVpi2mp/Sn	1
+תֹאבֵדוּן	{H0006}/H9013	HVqi2mp/Sn	1
+תֹּאבֵדוּן	{H0006}/H9013	HVqi2mp/Sn	3
+תְּאַבְּדֵם	{H0006}/H9038	HVpi3fs/Sp3mp	1
+אִבְּדָם	{H0006}/H9038	HVpp3ms/Sp3mp	1
+אֲבָדְךָ	{H0006}/H9041	HVqcc/Sp2ms	1
+אָבְדֶךָ	{H0006}/H9041	HVqcc/Sp2ms	1
+הַאֲבִידוֹ	{H0006}/H9043	HVhcc/Sp3ms	1
+אֲבָדְכֶם	{H0006}/H9046	HVqcc/Sp2mp	1
+אָבְדָם	{H0006}/H9048	HVqcc/Sp3mp	1
+וְאִבַּדְתֶּם	H9001/{H0006}	Hc/Vpq2mp	2
+וְאָבְדוּ	H9001/{H0006}	Hc/Vqq3cp	2
+וְאָבַד	H9001/{H0006}	Hc/Vqq3ms	8
+וְאִבַּדְתִּי	H9001/{H0006}	Hc/Vpq1cs	1
+וַיֹּאבְדוּ	H9001/{H0006}	Hc/Vqw3mp	2
+וְהַאֲבַדְתָּ	H9001/{H0006}	Hc/Vhq2ms	2
+וְאָבְדָה	H9001/{H0006}	Hc/Vqq3fs	3
+וַתֹּאבַדְנָה	H9001/{H0006}	Hc/Vqw3fp	1
+וְאִבַּד	H9001/{H0006}	Hc/Vpq3ms	1
+וְהַאֲבַדְתִּי	H9001/{H0006}	Hc/Vhq1cs	8
+וַתְּאַבֵּד	H9001/{H0006}	Hc/Vpw3fs	1	H9001/{H0006}	Hc/Vpw2ms	1
+וְהֶאֱבִיד	H9001/{H0006}	Hc/Vhq3ms	1
+וַאֲבַדְתֶּם	H9001/{H0006}	Hc/Vqq2mp	5
+וְהַאֲבַדְתִּיךָ	H9001/{H0006}/H9031	Hc/Vhq1cs/Sp2ms	1
+וָאַבֶּדְךָ	H9001/{H0006}/H9031	Hc/Vpw1cs/Sp2ms	1
+וְהַאֲבַדְתִּיךְ	H9001/{H0006}/H9032	Hc/Vhq1cs/Sp2fs	1
+וַיְאַבְּדוּם	H9001/{H0006}/H9038	Hc/Vpw3mp/Sp3mp	2
+וַיְאַבְּדֵם	H9001/{H0006}/H9038	Hc/Vpw3ms/Sp3mp	2
+וְהַאַבַדְתָּם	H9001/{H0006}/H9038	Hc/Vhq2ms/Sp3mp	1
+וְאַבֵּד	H9002/{H0006}	HC/Vpcc	3
+וְתֹאבְדוּ	H9002/{H0006}	HC/Vqu2mp	1
+וְיֹאבְדוּ	H9002/{H0006}	HC/Vqu3mp	2
+וִיאַבֵּד	H9002/{H0006}	HC/Vpu3ms	2
+וְיֹאבֵדוּ	H9002/{H0006}	HC/Vqu3mp	2
+וּבַאֲבֹד	H9002/H9003/{H0006}	HC/R/Vqcc	1
+וּבְאָבְדָם	H9002/H9003/{H0006}/H9048	HC/R/Vqcc/Sp3mp	1
+וּלְהַאֲבִיד	H9002/H9005/{H0006}	HC/R/Vhcc	3
+וּלְאַבֵּד	H9002/H9005/{H0006}	HC/R/Vpcc	3
+וּלְאַבְּדָם	H9002/H9005/{H0006}/H9038	HC/R/Vpcc/Sp3mp	1
+לְאַבֵּד	H9005/{H0006}	HR/Vpcc	3
+לְהַאֲבִיד	H9005/{H0006}	HR/Vhcc	1
+לְאוֹבֵד	H9005/{H0006}	HR/Vqrmsa	1
+לְאַבְּדֵנִי	H9005/{H0006}/H9030	HR/Vpcc/Sp1bs	1
+לְהַאֲבִידוֹ	H9005/{H0006}/H9033	HR/Vhcc/Sp3ms	2
+לְהַאֲבִידֵנוּ	H9005/{H0006}/H9035	HR/Vhcc/Sp1bp	1
+לְאַבְּדָם	H9005/{H0006}/H9038	HR/Vpcc/Sp3mp	3
+הָאֹבְדִים	H9009/{H0006}	HTd/Vqrmpa	1
+הָאֹבְדוֹת	H9009/{H0006}	HTd/Vqrfpa	1
+הָאֹבֶדֶת	H9009/{H0006}	HTd/Vqrfsa	2
+יֵאבַדוּ	{H0007}	AVqi3mp	1
+יְהֹבְדוּן	{H0007}	AVhi3mp	1
+תְּהוֹבֵד	{H0007}	AVhi3fs	1
+וְהוּבַד	H9002/{H0007}	AC/VHp3ms	1
+וּלְהוֹבָדָה	H9002/H9005/{H0007}	AC/R/Vhcc	1
+לְהוֹבָדָה	H9005/{H0007}	AR/Vhcc	2
+אֲבֵדַת	{H0009}	HNcfsc	1
+אֲבֵדָה	{H0009}	HNcfsa	2
+הָאֲבֵדָה	H9009/{H0009}	HTd/Ncfsa	1
+אֲבַדּוֹן	{H0011}	HNtfsa	2
+וַאֲבַדּוֹן	H9002/{H0011}	HC/Ntfsa	1
+בָּאֲבַדּוֹן	H9003/{H0011}	HRd/Ntfsa	1
+לָאֲבַדּוֹן	H9005/{H0011}	HRd/Ntfsa	1
+וְאַבְדָן	H9002/{H0012}	HC/Ncmsa	1
+בְּאָבְדַן	H9003/{H0013}	HR/Ncmsc	1
+תֹּאבוּ	{H0014}	HVqi2mp	1
+אָבוּ	{H0014}	HVqp3cp	7
+יֹאבוּ	{H0014}	HVqi3mp	1
+תֹאבוּ	{H0014}	HVqi2mp	1
+תֹאבֶה	{H0014}	HVqi3fs	2	{H0014}	HVqi2ms	2
+אָבוּא	{H0014}	HVqp3cp	1
+יֹאבֶה	{H0014}	HVqi3ms	2
+אֹבִים	{H0014}	HVqrmpa	1
+אָבִיתִי	{H0014}	HVqp1cs	2
+אָבָה	{H0014}	HVqp3ms	28
+אֲבִיתֶם	{H0014}	HVqp2mp	3
+תֹּבֵא	{H0014}	HVqj2ms	1
+הֲיֹאבֶה	H9008/{H0014}	HTi/Vqi3ms	1
+אֵבֶה	{H0016}	HNcmsa	1
+אֲבוֹי	{H0017}	HTj	1
+אֵבוּס	{H0018}	HNcmsa	1	{H0018}	HNcmsc	1
+אֲבוּסֶךָ	{H0018}/H9021	HNcmsc/Sp2ms	1
+אִבְחַת	{H0019}	HNcfsc	1
+הָאֲבַטִּחִים	H9009/{H0020}	HTd/Ncmpa	1
+אֲבִיאֵל	{H0022G}	HNpm	2	{H0022H}	HNpm	1
+וַאֲבִיאָסָף	H9002/{H0023}	HC/Npm	1
+אָבִיב	{H0024}	HNcbsa	2	{H8512}	HNpbsa	1
+הָאָבִיב	H9009/{H0024}	HTd/Ntbsa	6
+אֲבִיגַיִל	{H0026G}	HNpf	4
+אֲבִגָיִל	{H0026G}	HNpf	1
+וַאֲבִיגַיִל	H9002/{H0026G}	HC/Npf	3	H9002/{H0026H}	HC/Npf	1
+וְלַאֲבִיגַיִל	H9002/H9005/{H0026G}	HC/R/Npf	1
+בַּאֲבִיגַיִל	H9003/{H0026G}	HR/Npf	1
+לַאֲבִיגַיִל	H9005/{H0026G}	HR/Npf	1
+לַאֲבִיגַל	H9005/{H0026G}	HR/Npf	1
+אֲבִיגַל	{H0026H}	HNpf	1
+וַאֲבִיגָיִל	H9002/{H0026H}	HC/Npf	1
+אֲבִידָן	{H0027}	HNpm	5
+וַאֲבִידָע	H9002/{H0028}	HC/Npm	2
+וַאֲבִיָּה	H9002/{H0029G}	HC/Npm	1	H9002/{H0029K}	HC/Npm	1
+אֲבִיָּהוּ	{H0029I}	HNpm	2
+אֲבִיָּה	{H0029I}	HNpm	13	{H0029M}	HNpm	2	{H0029G}	HNpm	1	{H0029H}	HNpm	1	{H0029J}	HNpm	1	{H0029N}	HNpm	1
+לַאֲבִיָּה	H9005/{H0029L}	HR/Npm	1	H9005/{H0029M}	HR/Npm	1
+אֲבִיהוּא	{H0030}	HNpm	2
+וַאֲבִיהוּא	H9002/{H0030}	HC/Npm	10
+וַאֲבִיהוּד	H9002/{H0031}	HC/Npm	1
+אֲבִיחָיִל	{H0032G}	HNpm	1
+אֲבִיהָיִל	{H0032H}	HNpf	1
+אֲבִיהַיִל	{H0032J}	HNpf	1
+אֲבִיחַיִל	{H0032K}	HNpm	2	{H0032I}	HNpm	1
+הָעֶזְרִי	H9009/{H0033}	HTd/Ngmsa	3
+אֶבְיוֹנִים	{H0034}	HAampa	7
+אֶבְיֹנִים	{H0034}	HAampa	1
+אֶבְיוֹן	{H0034}	HAamsa	15
+אֶבְיֹנֵי	{H0034}	HAampc	1
+אֶבְיֹנְךָ	{H0034}/H9021	HAamsc/Sp2ms	1
+אֶבְיוֹנֶיהָ	{H0034}/H9024	HAampc/Sp3fs	1
+וְאֶבְיוֹן	H9002/{H0034}	HC/Aamsa	19	H9002/{H0034}	HC/Aamsc	1
+וְאֶבְיוֹנֵי	H9002/{H0034}	HC/Aampc	1
+וְאֶבְיוֹנִים	H9002/{H0034}	HC/Aampa	3
+וּלְאֶבְיֹנְךָ	H9002/H9005/{H0034}/H9021	HC/R/Aamsc/Sp2ms	1
+וְהָאֶבְיוֹנִים	H9002/H9009/{H0034}	HC/Td/Aampa	1
+לָאֶבְיוֹנִים	H9005/{H0034}	HRd/Aampa	3
+לָאֶבְיוֹן	H9005/{H0034}	HRd/Aamsa	4
+הָאֶבְיוֹן	H9009/{H0034}	HTd/Aamsa	2
+הָאֲבִיּוֹנָה	H9009/{H0035}	HTd/Ncfsa	1
+אֲבִיטוּב	{H0036}	HNpm	1
+אֲבִיטָל	{H0037}	HNpf	1
+לַאֲבִיטָל	H9005/{H0037}	HR/Npf	1
+אֲבִיָּם	{H0038}	HNpm	5
+אֲבִימָאֵל	{H0039}	HNpm	2
+אֲבִימֶּלֶךְ	{H0040G}	HNpm	1
+וַאֲבִימֶלֶךְ	H9002/{H0040G}	HC/Npm	2	H9002/{H0040H}	HC/Npm	2	H9002/{H0040J}	HC/Npm	1
+אֲבִימֶלֶךְ	{H0040H}	HNpm	31	{H0040G}	HNpm	20	{H0040I}	HNpm	1
+בַּאֲבִימֶלֶךְ	H9003/{H0040H}	HR/Npm	3
+לַאֲבִימֶלֶךְ	H9005/{H0040H}	HR/Npm	4	H9005/{H0040G}	HR/Npm	1
+מֵאֲבִימֶלֶךְ	H9006/{H0040H}	HR/Npm	1
+אֲבִינָדָב	{H0041G}	HNpm	5	{H0041H}	HNpm	4	{H0041I}	HNpm	2	{H1125}	HNpm	1
+וַאֲבִינָדָב	H9002/{H0041I}	HC/Npm	1
+אֲבִינֹעַם	{H0042}	HNpm	4
+אֶבְיָסָף	{H0043}	HNpm	2
+וְאֶבְיָסָף	H9002/{H0043}	HC/Npm	1
+אֲבִיעֶזֶר	{H0044I}	HNpm	3	{H0044G}	HNpm	3	{H0044H}	HNpm	1
+עַלְבוֹן	{H0045}	HNpm	1
+אֲבִיר	{H0046}	HAamsc	4
+לַאֲבִיר	H9005/{H0046}	HR/Aamsc	2
+אַבִּירִים	{H0047G}	HAampa	3	{H0047I}	HAampa	1	{H0047J}	HAampa	1
+כַּאבִּיר	H9004/{H0047G}	HR/Aamsa	1
+אַבִּירָיו	{H0047H}/H9023	HAampc/Sp3ms	3
+כָּאֲבִּרִים	H9004/{H0047H}	HRd/Aampa	1
+אַבִּיר	{H0047I}	HAamsc	1	{H0047I}	HAamsa	1
+אַבִּירֵי	{H0047I}	HAampc	2	{H0047G}	HAampc	1
+אַבִּירַי	{H0047I}/H9020	HAampc/Sp1bs	1
+אַבִּירֶיךָ	{H0047I}/H9021	HAampc/Sp2ms	1
+אֲבִירָם	{H0048G}	HNpm	1
+וַאֲבִירָם	H9002/{H0048G}	HC/Npm	7
+וְלַאֲבִירָם	H9002/H9005/{H0048G}	HC/R/Npm	2
+בַּאֲבִירָם	H9003/{H0048H}	HR/Npm	1
+אֲבִישַׁג	{H0049}	HNpf	4
+וַאֲבִישַׁג	H9002/{H0049}	HC/Npf	1
+אֲבִישׁוּעַ	{H0050G}	HNpm	3
+וַאֲבִישׁוּעַ	H9002/{H0050G}	HC/Npm	1	H9002/{H0050H}	HC/Npm	1
+אֲבִישׁוּר	{H0051}	HNpm	1
+וַאֲבִישׁוּר	H9002/{H0051}	HC/Npm	1
+אַבְשַׁי	{H0052}	HNpm	4
+אֲבִישַׁי	{H0052}	HNpm	13
+וְאַבְשַׁי	H9002/{H0052}	HC/Npm	2
+וַאֲבִישַׁי	H9002/{H0052}	HC/Npm	6
+אֲבִישָׁלוֹם	{H0053}	HNpm	2
+אַבְשָׁלֹם	{H0053}	HNpm	12
+אַבְשָׁלוֹם	{H0053}	HNpm	74
+וְאַבְשָׁלֹם	H9002/{H0053}	HC/Npm	4
+וְאַבְשָׁלוֹם	H9002/{H0053}	HC/Npm	5
+וּכְאַבְשָׁלוֹם	H9002/H9004/{H0053}	HC/R/Npm	1
+וּלְאַבְשָׁלוֹם	H9002/H9005/{H0053}	HC/R/Npm	1
+בְּאַבְשָׁלוֹם	H9003/{H0053}	HR/Npm	1
+לְאַבְשָׁלוֹם	H9005/{H0053}	HR/Npm	9
+לְאַבְשָׁלֹם	H9005/{H0053}	HR/Npm	2
+אֶבְיָתָר	{H0054}	HNpm	17
+וְאֶבְיָתָר	H9002/{H0054}	HC/Npm	5
+וּלְאֶבְיָתָר	H9002/H9005/{H0054}	HC/R/Npm	6
+לְאֶבְיָתָר	H9005/{H0054}	HR/Npm	2
+וַיִּתְאַבְּכוּ	H9001/{H0055}	Hc/Vtw3mp	1
+הִתְאַבְּלִי	{H0056}	HVtv2fs	1
+מִתְאַבֶּלֶת	{H0056}	HVtrfsa	1
+מִתְאַבְּלִים	{H0056}	HVtrmpa	1
+תֶּאֱבָל	{H0056}	HVqi3fs	1
+תִּתְאַבְּלוּ	{H0056}	HVtj2mp	1
+תֶּאֱבַל	{H0056}	HVqi3fs	3
+הֶאֱבַלְתִּי	{H0056}	HVhp1cs	1
+מִתְאַבֵּל	{H0056}	HVtrmsa	3
+אָבַל	{H0056}	HVqp3ms	3
+אָבְלוּ	{H0056}	HVqp3cp	1
+יִתְאַבָּל	{H0056}	HVtj3ms	1	{H0056}	HVti3ms	1
+אָבְלָה	{H0056}	HVqp3fs	5
+הִתְאַבֵּל	{H0056}	HVtp3ms	1
+וְאָבְלוּ	H9001/{H0056}	Hc/Vqq3cp	4
+וְאָבַל	H9001/{H0056}	Hc/Vqq3ms	1
+וַיַּאֲבֶל	H9001/{H0056}	Hc/Vhw3ms	1
+וַיִּתְאַבְּלוּ	H9001/{H0056}	Hc/Vtw3mp	2
+וַיִּתְאַבֵּל	H9001/{H0056}	Hc/Vtw3ms	4
+וַיִּתְאַבָּלוּ	H9001/{H0056}	Hc/Vtw3mp	1
+וָאֶתְאַבְּלָה	H9001/{H0056}/H9012	Hc/Vtw1cs/Sh	1
+הַמִּתְאַבְּלִים	H9009/{H0056}	HTd/Vtrmpa	1
+אֲבֵלִים	{H0057}	HAampa	2
+אָבֵל	{H0057}	HAamsa	2	{H0065+}	HNpbsa	2	{H0058}	HNpbsa	2	{H0063+}	HNpbsa	1	{H0064+}	HNpbsa	1	{H0059G}	HNcbsa	1	{H0066+}	HNpbsa	1	{H0067+}	HNpbsa	1
+אֲבֵלוֹת	{H0057}	HAafpa	1
+וְלַאֲבֵלָיו	H9002/H9005/{H0057}/H9023	HC/R/Aampc/Sp3ms	1
+כַּאֲבֶל	H9004/{H0057}	HR/Aamsc	1
+לַאֲבֵלֵי	H9005/{H0057}	HR/Aampc	1
+אָבֵלָה	{H0058}/H9011	HNpl/Sd	1
+בְּאָבֵלָה	H9003/{H0058}/H9011	HR/Npl/Sd	1
+בְּאָבֵל	H9003/{H0059H}	HR/Npl	1
+אֵבֶל	{H0060}	HNcmsa	10	{H0060}	HNcmsc	3
+אֶבְלֵךְ	{H0060}/H9022	HNcmsc/Sp2fs	1
+אֶבְלָם	{H0060}/H9028	HNcmsc/Sp3mp	1
+וְאֵבֶל	H9002/{H0060}	HC/Ncmsa	1
+וּמֵאֵבֶל	H9002/H9006/{H0060}	HC/R/Ncmsa	1
+כְּאֵבֶל	H9004/{H0060}	HR/Ncmsc	1
+לְאֵבֶל	H9005/{H0060}	HR/Ncmsa	4
+הָאֵבֶל	H9009/{H0060}	HTd/Ncmsa	2
+אֲבָל	{H0061}	HTj	11
+הַמַּעֲכָה	H9009/{H0062}	HTd/Npl	1
+מְחוֹלָה	{H0065}	HNpl	3
+מֵאָבֵל	H9006/{H0065+}	HR/Npl	1
+אָבֶן	{H0068G}	HNcfsa	8
+אֲבָנִים	{H0068G}	HNcfpa	29	{H0068G}	HNcmpa	12
+אֶבֶן	{H0068G}	HNcfsa	39	{H0068G}	HNcfsc	12	{H0068H}	HNcfsa	4	{H0069}	ANcbsa	3	{H0069}	ANcbsc	2	{H0072+}	HNpl	1	{H0068I}	HNcfsc	1	{H0068H}	HNcfsc	1
+אַבְנֵי	{H0068G}	HNcfpc	17	{H0068G}	HNcmpc	9	{H0068H}	HNcfpc	3
+אֲבָנַיִךְ	{H0068G}/H9022	HNcfpc/Sp2fs	1
+אֲבָנָיו	{H0068G}/H9023	HNcfpc/Sp3ms	3
+אַבְנוֹ	{H0068G}/H9023	HNcfsc/Sp3ms	1
+אֲבָנֶיהָ	{H0068G}/H9024	HNcfpc/Sp3fs	4	{H0068G}/H9024	HNcmpc/Sp3fs	1
+אַבְנֵיהֶם	{H0068G}/H9028	HNcfpc/Sp3mp	1
+וָאָבֶן	H9002/{H0068G}	HC/Ncfsa	3	H9002/{H0068H}	HC/Ncfsa	2
+וַאֲבָנִים	H9002/{H0068G}	HC/Ncfpa	1
+וְאֶבֶן	H9002/{H0068G}	HC/Ncfsa	9	H9002/{H0068G}	HC/Ncfsc	3	H9002/{H0068H}	HC/Ncfsa	1
+וָאֶבֶן	H9002/{H0068G}	HC/Ncfsa	4	H9002/{H0068H}	HC/Ncfsa	1
+וְאַבְנֵי	H9002/{H0068G}	HC/Ncmpc	6	H9002/{H0068G}	HC/Ncfpc	4
+וַאֲבָנַיִךְ	H9002/{H0068G}/H9022	HC/Ncfpc/Sp2fs	1
+וּבָאֲבָנִים	H9002/H9003/{H0068G}	HC/Rd/Ncfpa	2
+וּבָאֶבֶן	H9002/H9003/{H0068G}	HC/Rd/Ncfsa	1
+וּבְאֶבֶן	H9002/H9003/{H0068G}	HC/R/Ncfsa	1
+וּלְאַבְנֵי	H9002/H9005/{H0068G}	HC/R/Ncfpc	1
+וְלָאֶבֶן	H9002/H9005/{H0068G}	HC/Rd/Ncfsa	1
+וּלְאֶבֶן	H9002/H9005/{H0068G}	HC/R/Ncfsa	1	H9002/H9005/{H0068G}	HC/R/Ncfsc	1
+וְהָאֶבֶן	H9002/H9009/{H0068G}	HC/Td/Ncfsa	2
+וְהָאֲבָנִים	H9002/H9009/{H0068G}	HC/Td/Ncfpa	3
+בָאָבֶן	H9003/{H0068G}	HRd/Ncfsa	1
+בָּאָבֶן	H9003/{H0068G}	HRd/Ncfsa	1
+בָּאֶבֶן	H9003/{H0068G}	HRd/Ncfsa	3
+בָּאֲבָנִים	H9003/{H0068G}	HRd/Ncfpa	10	H9003/{H0068G}	HRd/Ncmpa	1
+בְּאַבְנֵי	H9003/{H0068G}	HR/Ncmpc	1
+בְּאֶבֶן	H9003/{H0068G}	HR/Ncfsa	1	H9003/{H0068G}	HR/Ncfsc	1	H9003/{H0068H}	HR/Ncfsc	1
+בָאֲבָנִים	H9003/{H0068G}	HRd/Ncfpa	4
+כְּאַבְנֵי	H9004/{H0068G}	HR/Ncmpc	1
+כָּאָבֶן	H9004/{H0068G}	HRd/Ncfsa	1
+כָּאֲבָנִים	H9004/{H0068G}	HRd/Ncfpa	3
+כָּאֶבֶן	H9004/{H0068G}	HRd/Ncfsa	1
+כְּאֶבֶן	H9004/{H0068G}	HR/Ncfsc	1
+לְאַבְנֵי	H9005/{H0068G}	HR/Ncmpc	2
+לְאֶבֶן	H9005/{H0068G}	HR/Ncfsc	1
+לְאָבֶן	H9005/{H0068G}	HR/Ncfsa	2
+לָאֲבָנִים	H9005/{H0068G}	HRd/Ncfpa	1
+מֵאֶבֶן	H9006/{H0068G}	HR/Ncfsa	1	H9006/{H0072+}	HR/Npfsa	1
+מֵאַבְנֵי	H9006/{H0068G}	HR/Ncfpc	1
+הָאֲבָנִים	H9009/{H0068G}	HTd/Ncfpa	17	H9009/{H0068G}	HTd/Ncmpa	3
+הָאֶבֶן	H9009/{H0068G}	HTd/Ncfsa	20	H9009/{H0072+}	HTd/Npfsa	1
+וְאַבְנָא	H9002/{H0069}/H9010	AC/Ncbsd/Ta	3
+הָאָבְנָיִם	H9009/{H0070}	HTd/Ncmda	2
+הָעֵזֶר	H9009/{H0072}	HTd/Npl	2
+הָעָזֶר	H9009/{H0072}	HTd/Npl	1
+אַבְנֵטִים	{H0073}	HNcmpa	1
+אַבְנֵט	{H0073}	HNcmsa	2
+וְאַבְנֵט	H9002/{H0073}	HC/Ncmsa	2
+וְאַבְנֵטְךָ	H9002/{H0073}/H9021	HC/Ncmsc/Sp2ms	1
+וּבְאַבְנֵט	H9002/H9003/{H0073}	HC/R/Ncmsc	1
+בָּאַבְנֵט	H9003/{H0073}	HRd/Ncmsa	1
+הָאַבְנֵט	H9009/{H0073}	HTd/Ncmsa	1
+אַבְנֵר	{H0074}	HNpm	50
+אֲבִינֵר	{H0074}	HNpm	1
+וְאַבְנֵר	H9002/{H0074}	HC/Npm	7
+לְאַבְנֵר	H9005/{H0074}	HR/Npm	5
+אֲבוּסִים	{H0075}	HVqsmpa	1
+אָבוּס	{H0075}	HVqsmsa	1
+אֲבַעְבֻּעֹת	{H0076}	HNcfpa	2
+וָאָבֶץ	H9002/{H0077}	HC/Npl	1
+אִבְצָן	{H0078}	HNpm	2
+וַיֵּאָבֵק	H9001/{H0079}	Hc/VNw3ms	1
+בְּהֵאָבְקוֹ	H9003/{H0079}/H9043	HR/VNcc/Sp3ms	1
+אֲבַק	{H0080}	HNcmsc	1
+אָבָק	{H0080}	HNcmsa	1
+אֲבָקָם	{H0080}/H9028	HNcmsc/Sp3mp	1
+כָּאָבָק	H9004/{H0080}	HRd/Ncmsa	1
+כְּאָבָק	H9004/{H0080}	HR/Ncmsa	1
+לְאָבָק	H9005/{H0080}	HR/Ncmsa	1
+אַבְקַת	{H0081}	HNcfsc	1
+יַאֲבֶר	{H0082}	HVhj3ms	1
+אֵבֶר	{H0083}	HNcmsa	2
+הָאֵבֶר	H9009/{H0083}	HTd/Ncmsa	1
+אֶבְרָה	{H0084}	HNcfsa	1
+אֶבְרָתוֹ	{H0084}/H9023	HNcfsc/Sp3ms	1
+וְאֶבְרוֹתֶיהָ	H9002/{H0084}/H9024	HC/Ncfpc/Sp3fs	1
+בְּאֶבְרָתוֹ	H9003/{H0084}/H9023	HR/Ncfsc/Sp3ms	1
+אַבְרָהָם	{H0085}	HNpm	139
+וְאַבְרָהָם	H9002/{H0085}	HC/Npm	8
+לְאַבְרָהָם	H9005/{H0085}	HR/Npm	27
+מֵאַבְרָהָם	H9006/{H0085}	HR/Npm	1
+אַבְרֵךְ	{H0086}	HTj	1
+אַבְרָם	{H0087}	HNpm	50
+וְאַבְרָם	H9002/{H0087}	HC/Npm	3
+וּלְאַבְרָם	H9002/H9005/{H0087}	HC/R/Npm	1
+בְּאַבְרָם	H9003/{H0087}	HR/Npm	1
+לְאַבְרָם	H9005/{H0087}	HR/Npm	6
+בְּאֹבֹת	H9003/{H0088}	HR/Npl	2
+מֵאֹבֹת	H9006/{H0088}	HR/Npl	2
+אָגֵא	{H0089}	HNpm	1
+מֵאֲגַג	H9006/{H0090G}	HR/Npm	1
+אֲגָג	{H0090H}	HNpm	3
+אֲגַג	{H0090H}	HNpm	4
+הָאֲגָגִי	H9009/{H0091}	HTd/Ngmsa	5
+אֲגֻדּוֹת	{H0092}	HNcfpc	1
+אֲגֻדַּת	{H0092}	HNcfsc	1
+וַאֲגֻדָּתוֹ	H9002/{H0092}/H9023	HC/Ncfsc/Sp3ms	1
+לַאֲגֻדָּה	H9005/{H0092}	HR/Ncfsa	1
+אֱגוֹז	{H0093}	HNcmsa	1
+לַאֲגוֹרַת	H9005/{H0095}	HR/Ncfsc	1
+אֶגְלֵי	{H0096}	HNcmpc	1
+אֶגְלַיִם	{H0097}	HNpl	1
+אֲגַם	{H0098}	HNcmsc	1
+אַגְמֵיהֶם	{H0098}/H9028	HNcmpc/Sp3mp	1
+וַאֲגַמִּים	H9002/{H0098}	HC/Ncmpa	1
+וְאַגְמֵי	H9002/{H0098}	HC/Ncmpc	1
+לַאֲגַם	H9005/{H0098}	HR/Ncmsc	2	H9005/{H0098}	HR/Ncmsa	1
+הָאֲגַמִּים	H9009/{H0098}	HTd/Ncmpa	2
+אַגְמֵי	{H0099}	HAampc	1
+אַגְמוֹן	{H0100}	HNcmsa	1
+וְאַגְמֹן	H9002/{H0100}	HC/Ncmsa	1
+וְאַגְמוֹן	H9002/{H0100}	HC/Ncmsa	2
+כְּאַגְמֹן	H9004/{H0100}	HR/Ncmsa	1
+אַגַּן	{H0101}	HNcmsc	1
+בָּאַגָּנֹת	H9003/{H0101}	HRd/Ncfpa	1
+הָאַגָּנוֹת	H9009/{H0101}	HTd/Ncfpa	1
+אֲגַפֶּיךָ	{H0102}/H9021	HNcmpc/Sp2ms	2
+אֲגַפָּיו	{H0102}/H9023	HNcmpc/Sp3ms	4
+אֲגַפֶּיהָ	{H0102}/H9024	HNcmpc/Sp3fs	1
+אָגְרָה	{H0103}	HVqp3fs	1
+אֹגֵר	{H0103}	HVqrmsa	1
+תֶאֱגֹר	{H0103}	HVqi2ms	1
+אִגְּרָה	{H0104}	ANcfsa	1
+אִגַּרְתָּא	{H0104}/H9010	ANcfsd/Ta	2
+אֲגַרְטְלֵי	{H0105}	HNcmpc	2
+בְּאֶגְרֹף	H9003/{H0106}	HR/Ncmsc	1
+בְאֶגְרֹף	H9003/{H0106}	HR/Ncmsa	1
+אִגֶּרֶת	{H0107}	HNcfsc	1
+אִגְּרוֹת	{H0107}	HNcfpa	3	{H0107}	HNcfpc	1
+אִגְּרֹתֵיהֶם	{H0107}/H9028	HNcfpc/Sp3mp	1
+וְאִגֶּרֶת	H9002/{H0107}	HC/Ncfsa	1	H9002/{H0107}	HC/Ncfsc	1
+בָּאִגְּרוֹת	H9003/{H0107}	HRd/Ncfpa	1
+הָאִגֶּרֶת	H9009/{H0107}	HTd/Ncfsa	1
+וְאֵד	H9002/{H0108}	HC/Ncmsa	1
+לְאֵדוֹ	H9005/{H0108}/H9023	HR/Ncmsc/Sp3ms	1
+וְלַאֲדִיב	H9002/H9005/{H0109}	HC/R/Vhcc	1
+וְאַדְבְּאֵל	H9002/{H0110}	HC/Npm	2
+אֲדַד	{H0111}	HNpm	1
+אִדּוֹ	{H0112}	HNpm	2
+אֲדֹנֵי	{H0113}	HNcmpc	4
+אָדוֹן	{H0113}	HNcmsa	5
+אֲדוֹן	{H0113}	HNcmsc	3	{H0136}	HNcmsc	2
+אֲדֹנִים	{H0113}	HNcmpa	4
+אֲדוֹנִים	{H0113}	HNcmpa	1
+אֲדֹנַי	{H0113}/H9020	HNcmpc/Sp1bs	1
+אֲדֹנִי	{H0113}/H9020	HNcmsc/Sp1bs	162	{H0137+}	HNpm	3	{H0139+}	HNpm	2
+אֲדֹנֶיךָ	{H0113}/H9021	HNcmpc/Sp2ms	19
+אֲדֹנַיִךְ	{H0113}/H9022	HNcmpc/Sp2fs	2
+אֲדֹנָיו	{H0113}/H9023	HNcmpc/Sp3ms	37
+אֲדוֹנֶיהָ	{H0113}/H9024	HNcmpc/Sp3fs	1
+אֲדֹנֶיהָ	{H0113}/H9024	HNcmpc/Sp3fs	2
+אֲדֹנֵנוּ	{H0113}/H9025	HNcmsc/Sp1bp	1
+אֲדֹנֵינוּ	{H0113}/H9025	HNcmpc/Sp1bp	7
+אֲדוֹנֵינוּ	{H0113}/H9025	HNcmpc/Sp1bp	1
+אֲדֹנֵיכֶם	{H0113}/H9026	HNcmpc/Sp2mp	11
+אֲדֹנֵיהֶם	{H0113}/H9028	HNcmpc/Sp3mp	8
+אֲדוֹנֵיהֶם	{H0113}/H9028	HNcmpc/Sp3mp	1
+וַאֲדֹנֵי	H9002/{H0113}	HC/Ncmpc	1
+וַאדֹנִי	H9002/{H0113}/H9020	HC/Ncmsc/Sp1bs	6
+וַאֲדֹנֵינוּ	H9002/{H0113}/H9025	HC/Ncmpc/Sp1bp	2
+וּלְאָדוֹן	H9002/H9005/{H0113}	HC/R/Ncmsa	1
+בַּאדֹנִי	H9003/{H0113}/H9020	HR/Ncmsc/Sp1bs	2
+כַּאדֹנָיו	H9004/{H0113}/H9023	HR/Ncmpc/Sp3ms	1
+לַאֲדוֹן	H9005/{H0113}	HR/Ncmsc	1
+לַאֲדֹנֵי	H9005/{H0113}	HR/Ncmpc	1
+לְאָדוֹן	H9005/{H0113}	HR/Ncmsa	1
+לַאדֹנִי	H9005/{H0113}/H9020	HR/Ncmsc/Sp1bs	24
+לַאדֹנֶיךָ	H9005/{H0113}/H9021	HR/Ncmpc/Sp2ms	3
+לַאדֹנָיו	H9005/{H0113}/H9023	HR/Ncmpc/Sp3ms	2
+לַאדֹנֶיהָ	H9005/{H0113}/H9024	HR/Ncmpc/Sp3fs	1
+לַאֲדֹנֵינוּ	H9005/{H0113}/H9025	HR/Ncmpc/Sp1bp	1
+לַאֲדֹנֵיהֶם	H9005/{H0113}/H9028	HR/Ncmpc/Sp3mp	2
+מֵאֲדֹנִי	H9006/{H0113}/H9020	HR/Ncmsc/Sp1bs	1
+מֵאֲדֹנָיו	H9006/{H0113}/H9023	HR/Ncmpc/Sp3ms	1
+הָאָדוֹן	H9009/{H0113}	HTd/Ncmsa	6
+הָאֲדֹנִים	H9009/{H0113}	HTd/Ncmpa	2
+הָאָדֹן	H9009/{H0113}	HTd/Ncmsa	2
+אַדּוֹן	{H0114}	HNpl	1
+אֲדוֹרַיִם	{H0115}	HNpl	1
+אֱדַיִן	{H0116}	AD	27
+וֶאֱדַיִן	H9002/{H0116}	AC/D	1
+בֵּאדַיִן	H9003/{H0116}	AR/D	29
+אַדִּיר	{H0117}	HAamsa	7
+אַדִּירִים	{H0117}	HAampa	4
+אַדִּירֵי	{H0117}	HAampc	2
+אַדִּרִים	{H0117}	HAampa	1
+אַדִּרִם	{H0117}	HAampa	1
+אַדִּירֶיךָ	{H0117}/H9021	HAampc/Sp2ms	1
+אַדִּירָיו	{H0117}/H9023	HAampc/Sp3ms	1
+אַדִּירוֹ	{H0117}/H9023	HAamsc/Sp3ms	1
+אַדִּירֵיהֶם	{H0117}/H9028	HAampc/Sp3mp	1
+וְאַדִּירֵי	H9002/{H0117}	HC/Aampc	1
+וְאַדִּרֵיהֶם	H9002/{H0117}/H9028	HC/Aampc/Sp3mp	1
+וְאַדִּירֵיהֶם	H9002/{H0117}/H9028	HC/Aampc/Sp3mp	1
+בְּאַדִּיר	H9003/{H0117}	HR/Aamsa	1
+לְאַדִּירִים	H9005/{H0117}	HR/Aampa	1
+מֵאַדִּירֵי	H9006/{H0117}	HR/Aampc	1
+הָאַדִּירִים	H9009/{H0117}	HTd/Aampa	2
+אֲדַלְיָא	{H0118}	HNpm	1
+מְאָדָּמִים	{H0119}	HVPsmpa	5
+יַאְדִּימוּ	{H0119}	HVhi3mp	1
+יִתְאַדָּם	{H0119}	HVti3ms	1
+מְאָדָּם	{H0119}	HVPsmsa	1
+אָדְמוּ	{H0119}	HVqp3cp	1
+הַמְאָדָּמִים	H9009/{H0119}	HTd/VPsmpa	1
+אָדָם	{H0120G}	HNcmsa	337	{H0121G}	HNpm	6	{H0120G}	HNcmsc	1
+וְאָדָם	H9002/{H0120G}	HC/Ncmsa	9
+וּבְאָדָם	H9002/H9003/{H0120G}	HC/R/Ncmsa	1
+וּבָאָדָם	H9002/H9003/{H0120G}	HC/Rd/Ncmsa	1
+בְּאָדָם	H9003/{H0120G}	HR/Ncmsa	3
+בָּאָדָם	H9003/{H0120G}	HRd/Ncmsa	18
+בְאָדָם	H9003/{H0120G}	HR/Ncmsa	1
+בָאָדָם	H9003/{H0120G}	HRd/Ncmsa	1
+כְּאָדָם	H9004/{H0120G}	HR/Ncmsa	1	H9004/{H0121G}	HR/Npmsa	1
+לָאָדָם	H9005/{H0120G}	HRd/Ncmsa	12
+לְאָדָם	H9005/{H0120G}	HR/Ncmsa	11	H9005/{H0121G}	HR/Npmsa	1
+לְמֵאָדָם	H9005/H9006/{H0120G}	HR/R/Ncmsa	1
+מֵאָדָם	H9006/{H0120G}	HR/Ncmsa	13
+הָאָדָם	H9009/{H0120G}	HTd/Ncmsa	117	H9009/{H0120H}	HTd/Ncmsa	20	H9008/{H0120G}	HTd/Ncmsa	1	H9009/{H0120G}	HTd/Ncbsa	1
+וְהָאָדָם	H9002/H9009/{H0120H}	HC/Td/Ncmsa	1
+וּלְאָדָם	H9002/H9005/{H0121G}	HC/R/Npmsa	2	H9002/H9005/{H0120G}	HC/R/Ncmsa	1
+כְאָדָם	H9004/{H0121G}	HR/Npm	1
+אֲדֻמָּה	{H0122A}	HAafsa	1
+אָדֹם	{H0122A}	HAamsa	2
+אֲדֻמִּים	{H0122A}	HAampa	3	{H0131}	HNpl	2
+וְאָדוֹם	H9002/{H0122A}	HC/Aamsa	1
+הָאָדֹם	H9009/{H0122B}	HTd/Aamsa	2
+אֱדוֹם	{H0123G}	HNpm	74	{H0123H}	HNpm	7	{H5654}	HNpm	2
+וֶאֱדוֹם	H9002/{H0123G}	HC/Npm	1
+וּבֶאֱדוֹם	H9002/H9003/{H0123G}	HC/R/Npm	2
+בֶאֱדוֹם	H9003/{H0123G}	HR/Npm	1
+בֶּאֱדוֹם	H9003/{H0123G}	HR/Npm	8
+לֶאֱדוֹם	H9005/{H0123G}	HR/Npm	4
+מֵאֱדוֹם	H9006/{H0123G}	HR/Npm	3
+אֹדֶם	{H0124}	HNcfsa	3
+אֲדַמְדֶּמֶת	{H0125}	HAafsc	1	{H0125}	HAafsa	1
+אֲדַמְדַּמֹּת	{H0125}	HAafpa	1
+אֲדַמְדָּם	{H0125}	HAamsa	2
+אֲדַמְדָּמֶת	{H0125}	HAafsa	1
+אַדְמָה	{H0126}	HNpl	3
+וְאַדְמָה	H9002/{H0126}	HC/Npl	1
+כְאַדְמָה	H9004/{H0126}	HR/Npl	1
+אֲדָמוֹת	{H0127G}	HNcfpa	1
+אַדְמַת	{H0127G}	HNcfsc	26
+אֲדָמָה	{H0127G}	HNcfsa	11
+אַדְמָתִי	{H0127G}/H9020	HNcfsc/Sp1bs	2	{H0127H}/H9020	HNcfsc/Sp1bs	1
+אַדְמָתְךָ	{H0127G}/H9021	HNcfsc/Sp2ms	7
+אַדְמָתֶךָ	{H0127G}/H9021	HNcfsc/Sp2ms	5
+אַדְמָתוֹ	{H0127G}/H9023	HNcfsc/Sp3ms	12
+אַדְמָתָהּ	{H0127G}/H9024	HNcfsc/Sp3fs	1
+אַדְמָתֵנוּ	{H0127G}/H9025	HNcfsc/Sp1bp	4
+אַדְמַתְכֶם	{H0127G}/H9026	HNcfsc/Sp2mp	6
+אַדְמָתָם	{H0127G}/H9028	HNcfsc/Sp3mp	17
+וַאֲדָמָה	H9002/{H0127G}	HC/Ncfsa	6	H9002/{H0128}	HC/Npfsa	1
+וְאַדְמָתְךָ	H9002/{H0127G}/H9021	HC/Ncfsc/Sp2ms	1
+וְאַדְמָתֵנוּ	H9002/{H0127G}/H9025	HC/Ncfsc/Sp1bp	2
+וּמֵאֲדָמָה	H9002/H9006/{H0127G}	HC/R/Ncfsa	1
+וְהָאֲדָמָה	H9002/H9009/{H0127G}	HC/Td/Ncfsa	3
+בָּאֲדָמָה	H9003/{H0127G}	HRd/Ncfsa	2
+לָאֲדָמָה	H9005/{H0127G}	HRd/Ncfsa	1
+לְאַדְמַת	H9005/{H0127G}	HR/Ncfsc	2
+לְאַדְמָתוֹ	H9005/{H0127G}/H9023	HR/Ncfsc/Sp3ms	1
+הַאֲדָמָה	H9009/{H0127G}	HTd/Ncfsa	1
+הָאֲדָמָה	H9009/{H0127G}	HTd/Ncfsa	87	H9009/{H0127I}	HTd/Ncfsa	23	H9009/{H0127H}	HTd/Ncfsa	2
+וַאֲדָמִי	H9002/{H0129}	HC/Npl	1
+אֲדֹמִיִּים	{H0130}	HNgmpa	1
+אֲדֹמִיֹּת	{H0130}	HNgfpa	1
+אֲדֹמִי	{H0130}	HNgmsa	1
+אֲדוֹמִים	{H0130}	HNgmpa	2
+הָאֲדֹמִי	H9009/{H0130}	HTd/Ngmsa	6
+אַדְמוֹנִי	{H0132}	HAamsa	2
+וְאַדְמֹנִי	H9002/{H0132}	HC/Aamsa	1
+אַדְמָתָא	{H0133}	HNpm	1
+אֲדָנִים	{H0134}	HNcmpa	15
+אַדְנֵי	{H0134}	HNcmpc	11
+אֲדָנָיו	{H0134}/H9023	HNcmpc/Sp3ms	2
+אֲדָנֶיהָ	{H0134}/H9024	HNcmpc/Sp3fs	3
+אַדְנֵיהֶם	{H0134}/H9028	HNcmpc/Sp3mp	2
+וַאֲדָנָיו	H9002/{H0134}/H9023	HC/Ncmpc/Sp3ms	3
+וְאַדְנֵיהֶם	H9002/{H0134}/H9028	HC/Ncmpc/Sp3mp	19
+וְהָאֲדָנִים	H9002/H9009/{H0134}	HC/Td/Ncmpa	1
+לָאָדֶן	H9005/{H0134}	HRd/Ncmsa	1
+אַדָּן	{H0135}	HNpl	1
+אֲדֹנָי	{H0136}	HNpt	419	{H0113}/H9020	HNcbsc/Sp1bs	1
+אֲדוֹנָי	{H0136}	HNpt	1
+וַאדֹנָי	H9002/{H0136}	HC/Npt	6
+בַּאדֹנָי	H9003/{H0136}	HR/Npt	1
+לַאדֹנָי	H9005/{H0136}	HR/Npt	11
+בֶזֶק	{H0137}	HNpm	3
+אֲדֹנִיָּה	{H0138G}	HNpm	5	{H0138I}	HNpm	1
+אֲדֹנִיָהוּ	{H0138G}	HNpm	1
+אֲדֹנִיָּהוּ	{H0138G}	HNpm	12
+וַאֲדֹנִיָּהוּ	H9002/{H0138G}	HC/Npm	1	H9002/{H0138H}	HC/Npm	1
+וַאֲדֹנִיָּה	H9002/{H0138G}	HC/Npm	1
+לַאֲדֹנִיָּהוּ	H9005/{H0138G}	HR/Npm	4
+אֲדֹנִיקָם	{H0140}	HNpm	3
+וַאֲדֹנִירָם	H9002/{H0141}	HC/Npm	2
+נֶאְדָּרִי	{H0142}	HVNrmsc	1
+נֶאְדָּר	{H0142}	HVNrmsa	1
+וְיַאְדִּיר	H9002/{H0142}	HC/Vhu3ms	1
+אֲדָר	{H0143}	HNpt	8	{H0144}	ANpt	1
+אֶדֶר	{H0145}	HNcmsa	1	{H0145}	HNcmsc	1
+אַדָּרָה	{H0146G}/H9011	HNpl/Sd	1
+אִדְּרֵי	{H0147}	ANcmpc	1
+אֲדַרְגָּזְרַיָּא	{H0148}/H9010	ANcmpd/Ta	2
+אַדְרַזְדָּא	{H0149}	AD	1
+וַאֲדַרְכֹנִים	H9002/{H0150}	HC/Ncmpa	1
+לַאֲדַרְכֹנִים	H9005/{H0150}	HR/Ncmpa	1
+אֲדֹרָם	{H0151}	HNpm	1
+וַאֲדֹרָם	H9002/{H0151}	HC/Npm	1
+לְאַדְרַמֶּלֶךְ	H9005/{H0152G}	HR/Npt	1
+וְאַדְרַמֶּלֶךְ	H9002/{H0152H}	HC/Npt	2
+בְּאֶדְרָע	H9003/{H0153}	AR/Ncbsa	1
+אֶדְרֶעִי	{H0154}	HNpl	2
+וְאֶדְרֶעִי	H9002/{H0154}	HC/Npl	3
+וּבְאֶדְרֶעִי	H9002/H9003/{H0154}	HC/R/Npl	2
+בְּאֶדְרֶעִי	H9003/{H0154}	HR/Npl	1
+אַדָּרֶת	{H0155}	HNcfsa	1
+אַדֶּרֶת	{H0155}	HNcfsc	4
+אַדַּרְתּוֹ	{H0155}/H9023	HNcfsc/Sp3ms	3
+אַדַּרְתָּם	{H0155}/H9028	HNcfsc/Sp3mp	1
+בְּאַדַּרְתּוֹ	H9003/{H0155}/H9023	HR/Ncfsc/Sp3ms	1
+כְּאַדֶּרֶת	H9004/{H0155}	HR/Ncfsc	1
+הָאַדֶּרֶת	H9009/{H0155}	HTd/Ncfsa	1
+יֶאֱהַב	{H0157G}	HVqi3ms	2
+אֹהַבְתִּי	{H0157G}	HVqrfsc	1
+אָהַבְתָּ	{H0157G}	HVqp2ms	6
+אֶהֱבוּ	{H0157G}	HVqv2mp	1
+אֹהֵב	{H0157G}	HVqrmsa	24	{H0157H}	HVqrmsa	1
+אָהַבְתְּ	{H0157G}	HVqp2fs	2
+אָהַבְתִּי	{H0157G}	HVqp1cs	10
+יֶאֱהָב	{H0157G}	HVqi3ms	2
+אֹהֶבֶת	{H0157G}	HVqrfsa	1
+אָהֲבוּ	{H0157G}	HVqp3cp	4
+אָהַב	{H0157G}	HVqp3ms	4
+תֶּאֱהָבוּ	{H0157G}	HVqj2mp	1
+אָהֵב	{H0157G}	HVqp3ms	9
+אֲהוּבָה	{H0157G}	HVqsfsa	1
+אֱהָבוּ	{H0157G}	HVqv2mp	1
+אֹהֲבִים	{H0157G}	HVqrmpa	1
+אֲהַבְתֶּם	{H0157G}	HVqp2mp	1
+אֲהֻבַת	{H0157G}	HVqsfsc	1
+תֶּאֱהַב	{H0157G}	HVqj2ms	1
+אָהָבְתִּי	{H0157G}	HVqp1cs	5
+תְּאֵהֲבוּ	{H0157G}	HVqi2mp	1
+אֵהָב	{H0157G}	HVqi1cs	1
+אֱהַב	{H0157G}	HVqv2ms	1
+תֶּאֱהָב	{H0157G}	HVqi2ms	1
+אֹהֲבֵי	{H0157G}	HVqrmpc	5
+הֵבוּ	{H0157G}	HVqv2mp	1
+תֶּאֱהָבוּן	{H0157G}/H9013	HVqi2mp/Sn	1
+מְאַהֲבָי	{H0157G}/H9030	HVprmpc/Sp1bs	1	{H0157H}/H9030	HVprmpc/Sp1bs	1
+מְאַהֲבַי	{H0157G}/H9030	HVprmpc/Sp1bs	1
+אֲהַבְתָּנִי	{H0157G}/H9030	HVqp2ms/Sp1bs	1
+יֶאֱהָבַנִי	{H0157G}/H9030	HVqi3ms/Sp1bs	1
+אֲהַבְתִּיךָ	{H0157G}/H9031	HVqp1cs/Sp2ms	1
+אֲהֵבְךָ	{H0157G}/H9031	HVqp3ms/Sp2ms	2
+אֲהֵבוּךָ	{H0157G}/H9031	HVqp3cp/Sp2ms	3
+אֹהֲבָיִךְ	{H0157G}/H9032	HVqrmpc/Sp2fs	1
+אֲהַבְתִּיךְ	{H0157G}/H9032	HVqp1cs/Sp2fs	2
+אֲהֵבַתֶךְ	{H0157G}/H9032	HVqp3fs/Sp2fs	1
+מְאַהֲבָיִךְ	{H0157G}/H9032	HVprmpc/Sp2fs	2
+מְאַהֲבַיִךְ	{H0157G}/H9032	HVprmpc/Sp2fs	4
+אֲהֵבַתְהוּ	{H0157G}/H9033	HVqp3fs/Sp3ms	1
+אֲהֵבוֹ	{H0157G}/H9033	HVqp3ms/Sp3ms	4
+אֱהָבֶהָ	{H0157G}/H9034	HVqv2ms/Sp3fs	1
+מְאַהֲבֶיהָ	{H0157G}/H9034	HVprmpc/Sp3fs	5
+אֲהֵבָהּ	{H0157G}/H9034	HVqp3ms/Sp3fs	2
+אֹהֲבֶיהָ	{H0157G}/H9034	HVqrmpc/Sp3fs	2
+אֲהַבְתָּנוּ	{H0157G}/H9035	HVqp2ms/Sp1bp	1
+אֹהֲבֵם	{H0157G}/H9038	HVqi1cs/Sp3mp	1
+אֲהֵבוּם	{H0157G}/H9038	HVqp3cp/Sp3mp	1
+וְאָהַבְתָּ	H9001/{H0157G}	Hc/Vqq2ms	4
+וַאֲהַבְתֶּם	H9001/{H0157G}	Hc/Vqq2mp	1
+וַתֶּאֱהַב	H9001/{H0157G}	Hc/Vqw3fs	1
+וַיֶּאֱהַב	H9001/{H0157G}	Hc/Vqw3ms	9
+וָאֹהַב	H9001/{H0157G}	Hc/Vqw1cs	1
+וַאֲהֵבְךָ	H9001/{H0157G}/H9031	Hc/Vqq3ms/Sp2ms	1
+וָאֹהֲבֵהוּ	H9001/{H0157G}/H9033	Hc/Vqw1cs/Sp3ms	1
+וַיֶּאֱהָבֵהוּ	H9001/{H0157G}/H9033	Hc/Vqw3ms/Sp3ms	1
+וַיֶּאֱהָבֶהָ	H9001/{H0157G}/H9034	Hc/Vqw3ms/Sp3fs	2
+וָאֹהֲבֵם	H9001/{H0157G}/H9038	Hc/Vqw1cs/Sp3mp	1
+וְאֹהֵב	H9002/{H0157G}	HC/Vqrmsa	1	H9002/{H0157G}	HC/Vqrmsc	1
+וְאָהוּב	H9002/{H0157G}	HC/Vqsmsa	1
+וְאֶהֱבוּ	H9002/{H0157G}	HC/Vqv2mp	1
+וְאֹהֲבֵי	H9002/{H0157G}	HC/Vqrmpc	3	H9002/{H0157H}	HC/Vqrmpc	1
+וְיֶאֱהָבֶךָּ	H9002/{H0157G}/H9031	HC/Vqu3ms/Sp2ms	1
+וּמְאַהֲבַיִךְ	H9002/{H0157G}/H9032	HC/Vprmpc/Sp2fs	1
+וְאֹהֲבוֹ	H9002/{H0157G}/H9033	HC/Vqrmsc/Sp3ms	1
+וְאֹהֲבֶיהָ	H9002/{H0157G}/H9034	HC/Vqrmpc/Sp3fs	1
+וּלְאַהֲבָה	H9002/H9005/{H0157G}	HC/R/Vqcc	2
+בְּאַהֲבַת	H9003/{H0157G}	HR/Vqcc	2	H9003/{H0160}	HR/Ncfsc	1
+כְּאָהֳבָם	H9004/{H0157G}/H9048	HR/Vqcc/Sp3mp	1
+לֶאֱהֹב	H9005/{H0157G}	HR/Vqcc	1
+לְאַהֲבָה	H9005/{H0157G}	HR/Vqcc	10	H9005/{H0160}	HR/Ncfsa	1
+לְאֹהֲבֵי	H9005/{H0157G}	HR/Vqrmpc	2
+לְאֹהֲבַי	H9005/{H0157G}/H9030	HR/Vqrmpc/Sp1bs	2
+לַמְאַהֲבַי	H9005/{H0157G}/H9030	HRd/Vprmpc/Sp1bs	1
+לְאֹהֲבָיו	H9005/{H0157G}/H9033	HR/Vqrmpc/Sp3ms	3
+שֶׁאָהֲבָה	H9007/{H0157G}	HTr/Vqp3fs	5
+הָאֲהוּבָה	H9009/{H0157G}	HTd/Vqsfsa	2
+הַנֶּאֱהָבִים	H9009/{H0157G}	HTd/VNrmpa	1
+אוֹהֵב	{H0157H}	HVqrmsa	1
+אֹהֲבִי	{H0157H}/H9030	HVqrmsc/Sp1bs	1
+אֹהֲבַי	{H0157H}/H9030	HVqrmpc/Sp1bs	1	{H0157G}/H9030	HVqrmpc/Sp1bs	1
+אֹהַבְךָ	{H0157H}/H9031	HVqrmsc/Sp2ms	1
+אֹהֲבֶיךָ	{H0157H}/H9031	HVqrmpc/Sp2ms	2	{H0157G}/H9031	HVqrmpc/Sp2ms	1
+אֹהֲבָיו	{H0157H}/H9033	HVqrmpc/Sp3ms	3	{H0157G}/H9033	HVqrmpc/Sp3ms	1
+וְאֹהֲבָיו	H9002/{H0157H}/H9033	HC/Vqrmpc/Sp3ms	1
+אֲהָבִים	{H0158}	HNcmpa	2
+בָּאֳהָבִים	H9003/{H0159}	HR/Ncmpa	1
+אַהֲבַת	{H0160}	HNcfsc	2
+אַהֲבָה	{H0160}	HNcfsa	11
+אַהֲבָתִי	{H0160}/H9020	HNcfsc/Sp1bs	2
+אַהֲבָתְךָ	{H0160}/H9021	HNcfsc/Sp2ms	1
+אַהֲבָתָם	{H0160}/H9028	HNcfsc/Sp3mp	1	{H0160}/H9028	HVqcc/Sp3mp	1
+וְאַהֲבָה	H9002/{H0160}	HC/Ncfsa	1
+וְאַהֲבַת	H9002/{H0160}	HC/Ncfsc	1	H9002/{H0157G}	HC/Vqcc	1
+בָּאַהֲבָה	H9003/{H0160}	HRd/Ncfsa	1
+בְּאַהֲבָתוֹ	H9003/{H0160}/H9023	HR/Ncfsc/Sp3ms	5
+בְּאַהֲבָתָהּ	H9003/{H0160}/H9024	HR/Ncfsc/Sp3fs	1
+כְּאַהֲבַת	H9004/{H0160}	HR/Ncfsc	1
+מֵאַהֲבָה	H9006/{H0160}	HR/Ncfsa	2
+מֵאַהֲבַת	H9006/{H0160}	HR/Vqcc	1	H9006/{H0160}	HR/Ncfsc	1
+הָאַהֲבָה	H9009/{H0160}	HTd/Ncfsa	4
+וְאֹהַד	H9002/{H0161}	HC/Npm	2
+אֲהָהּ	{H0162}	HTj	15
+אַהֲוָא	{H0163}	HNpl	3
+אֵהוּד	{H0164G}	HNpm	5
+וְאֵהוּד	H9002/{H0164G}	HC/Npm	3	H9002/{H0164H}	HC/Npm	1
+אֱהִי	{H0165}	HTi	3
+יַאֲהִיל	{H0166}	HVhi3ms	1
+יַהֵל	{H0167}	HVpi3ms	1
+וַיֶּאֱהַל	H9001/{H0167}	Hc/Vqw3ms	2
+אֹהָלִים	{H0168G}	HNcmpa	3
+אֹהֶל	{H0168G}	HNcmsc	115	{H0168G}	HNcmsa	9
+אָהֳלֵי	{H0168G}	HNcmpc	8
+אָהֳלֶי	{H0168G}	HNcmpc	1
+אָהֳלִי	{H0168G}/H9020	HNcmsc/Sp1bs	4
+אֹהָלַי	{H0168G}/H9020	HNcmpc/Sp1bs	1
+אָהֳלֶךָ	{H0168G}/H9021	HNcmsc/Sp2ms	1
+אֹהָלֶיךָ	{H0168G}/H9021	HNcmpc/Sp2ms	1
+אָהֳלֵךְ	{H0168G}/H9022	HNcmsc/Sp2fs	1
+אָהֳלוֹ	{H0168G}/H9023	HNcmsc/Sp3ms	10
+אָהֳלֵיכֶם	{H0168G}/H9026	HNcmpc/Sp2mp	1
+אָהֳלֵיהֶם	{H0168G}/H9028	HNcmpc/Sp3mp	6	{H0168H}/H9028	HNcmpc/Sp3mp	1
+וְאֹהָלִים	H9002/{H0168G}	HC/Ncmpa	2
+וְאֹהֶל	H9002/{H0168G}	HC/Ncmsc	2
+וְאָהֳלֵיהֶם	H9002/{H0168G}/H9028	HC/Ncmpc/Sp3mp	1
+וּבְאֹהֶל	H9002/H9003/{H0168G}	HC/R/Ncmsc	2
+וְהָאֹהֶל	H9002/H9009/{H0168G}	HC/Td/Ncmsa	1
+בָּאֳהָלִים	H9003/{H0168G}	HR/Ncmpa	1	H9003/{H0168G}	HRd/Ncmpa	1
+בָאֹהֶל	H9003/{H0168G}	HRd/Ncmsa	1
+בָּאֹהֶל	H9003/{H0168G}	HRd/Ncmsa	5
+בָאֳהָלִים	H9003/{H0168G}	HRd/Ncmpa	1	H9003/{H0168G}	HR/Ncmpa	1
+בְּאֹהֶל	H9003/{H0168G}	HR/Ncmsc	38	H9003/{H0168G}	HR/Ncmsa	2	H9003/{H0168H}	HR/Ncmsc	1
+בְּאָהֳלֵי	H9003/{H0168G}	HR/Ncmpc	4
+בְּאָהֳלֶךָ	H9003/{H0168G}/H9021	HR/Ncmsc/Sp2ms	2
+בְאָהָלְךָ	H9003/{H0168G}/H9021	HR/Ncmsc/Sp2ms	1
+בְּאֹהָלֶיךָ	H9003/{H0168G}/H9021	HR/Ncmpc/Sp2ms	2
+בְּאָהֳלוֹ	H9003/{H0168G}/H9023	HR/Ncmsc/Sp3ms	7
+בְאָהֳלוֹ	H9003/{H0168G}/H9023	HR/Ncmsc/Sp3ms	1
+בְאָהֳלֵיכֶם	H9003/{H0168G}/H9026	HR/Ncmpc/Sp2mp	1
+בְּאָהֳלֵיהֶם	H9003/{H0168G}/H9028	HR/Ncmpc/Sp3mp	4	H9003/{H0168H}/H9028	HR/Ncmpc/Sp3mp	1
+בְאָהֳלֵיהֶם	H9003/{H0168G}/H9028	HR/Ncmpc/Sp3mp	1
+כָּאֹהֶל	H9004/{H0168G}	HRd/Ncmsa	1
+כְּאָהֳלֵי	H9004/{H0168G}	HR/Ncmpc	1
+כְּאֹהֶל	H9004/{H0168G}	HR/Ncmsc	1
+לָאֹהֶל	H9005/{H0168G}	HRd/Ncmsa	3
+לְאֹהֶל	H9005/{H0168G}	HR/Ncmsc	7	H9005/{H0168G}	HR/Ncmsa	2
+לְאָהֳלִי	H9005/{H0168G}/H9020	HR/Ncmsc/Sp1bs	1
+לְאֹהָלֶיךָ	H9005/{H0168G}/H9021	HR/Ncmpc/Sp2ms	3
+לְאָהֳלוֹ	H9005/{H0168G}/H9023	HR/Ncmsc/Sp3ms	2
+לְאֹהָלָיו	H9005/{H0168G}/H9023	HR/Ncmpc/Sp3ms	5	H9005/{H0168H}/H9023	HR/Ncmpc/Sp3ms	5
+לְאָהֳלֵיכֶם	H9005/{H0168G}/H9026	HR/Ncmpc/Sp2mp	2
+מֵאֹהֶל	H9006/{H0168G}	HR/Ncmsc	2	H9006/{H0168G}	HR/Ncmsa	2
+מֵאָהֳלֵי	H9006/{H0168G}	HR/Ncmpc	1
+מֵאָהֳלֶךָ	H9006/{H0168G}/H9021	HR/Ncmsc/Sp2ms	1
+מֵאָהֳלוֹ	H9006/{H0168G}/H9023	HR/Ncmsc/Sp3ms	1
+מֵאָהֳלֵיהֶם	H9006/{H0168G}/H9028	HR/Ncmpc/Sp3mp	1
+הָאֹהֶל	H9009/{H0168G}	HTd/Ncmsa	40	H9009/{H0168H}	HTd/Ncmsa	1
+הָאֹהֱלָה	H9009/{H0168G}/H9011	HTd/Ncmsa/Sd	8
+הָאָהֳלִי	H9009/{H0168G}/H9020	HTd/Ncmsc/Sp1bs	1
+לְאֹהָלֶךָ	H9005/{H0168H}/H9021	HR/Ncmsc/Sp2ms	1
+לְאָהֳלֵיהֶם	H9005/{H0168H}/H9028	HR/Ncmpc/Sp3mp	2
+וָאֹהֶל	H9002/{H0169}	HC/Npm	1
+אָהֳלָה	{H0170}	HNpf	5
+אָהֳלִיאָב	{H0171}	HNpm	3
+וְאָהֳלִיאָב	H9002/{H0171}	HC/Npm	2
+אָהֳלִיבָה	{H0172}	HNpf	5
+וְאָהֳלִיבָה	H9002/{H0172}	HC/Npf	1
+אָהֳלִיבָמָה	{H0173}	HNpf	6
+וְאָהֳלִיבָמָה	H9002/{H0173}	HC/Npf	2
+אֲהָלִים	{H0174}	HNcmpa	1
+וַאֲהָלוֹת	H9002/{H0174}	HC/Ncfpa	2
+כַּאֲהָלִים	H9004/{H0174}	HR/Ncmpa	1
+אַהֲרֹן	{H0175}	HNpm	263
+וְאַהֲרֹן	H9002/{H0175}	HC/Npm	50
+וּבְאַהֲרֹן	H9002/H9003/{H0175}	HC/R/Npm	1
+וּלְאַהֲרֹן	H9002/H9005/{H0175}	HC/R/Npm	5
+לְאַהֲרֹן	H9005/{H0175}	HR/Npm	28
+אוֹ	{H0176A}	HC	321
+וְאוּאֵל	H9002/{H0177}	HC/Npm	1
+אוֹב	{H0178}	HNcmsa	6
+בָּאוֹב	H9003/{H0178}	HRd/Ncmsa	2
+כְּאֹבוֹת	H9004/{H0178}	HR/Ncfpa	1
+כְּאוֹב	H9004/{H0178}	HR/Ncmsa	1
+הָאֹבֹת	H9009/{H0178}	HTd/Ncfpa	2
+הָאֹבוֹת	H9009/{H0178}	HTd/Ncfpa	5
+אוֹבִיל	{H0179}	HNpm	1
+אוּבַל	{H0180}	HNcmsc	1
+הָאֻבָל	H9009/{H0180}	HTd/Ncmsa	2
+אוּד	{H0181}	HNcmsa	1
+כְּאוּד	H9004/{H0181}	HR/Ncmsa	1
+הָאוּדִים	H9009/{H0181}	HTd/Ncmpa	1
+אוֹדֹת	{H0182}	HNcfpc	3
+אֹדוֹת	{H0182}	HNcfpc	5	{H0182}	HNcfpa	1
+אֹדוֹתַי	{H0182}/H9020	HNcfpc/Sp1bs	1
+אֹדוֹתֶיךָ	{H0182}/H9021	HNcfpc/Sp2ms	1
+הִתְאַוּוּ	{H0183}	HVtp3cp	1
+הִתְאַוָּה	{H0183}	HVtp3fs	1
+תְאַוֶּה	{H0183}	HVpi3fs	1
+מִתְאַוָּה	{H0183}	HVtrfsa	1
+תִתְאַוֶּה	{H0183}	HVti2ms	1
+תְּאַוֶּה	{H0183}	HVpi3fs	4
+הִתְאַוֵּיתִי	{H0183}	HVtp1cs	1
+אִוְּתָה	{H0183}	HVpp3fs	3
+יִתְאַוֶּה	{H0183}	HVti3ms	1
+אִוִּיתִיךָ	{H0183}/H9031	HVpp1cs/Sp2ms	1
+אִוָּהּ	{H0183}/H9034	HVpp3ms/Sp3fs	1
+אִוִּתִיהָ	{H0183}/H9034	HVpp1cs/Sp3fs	1
+וַיִּתְאַוּוּ	H9001/{H0183}	Hc/Vtw3mp	1
+וַיִּתְאַוֶּה	H9001/{H0183}	Hc/Vtw3ms	1
+וְיִתְאָו	H9002/{H0183}	HC/Vtj3ms	1
+הַמִּתְאַוִּים	H9009/{H0183}	HTd/Vtrmpa	2
+וְהִתְאַוִּיתֶם	H9001/{H0184}	Hc/Vtq2mp	1
+אַוַּת	{H0185}	HNcfsc	5
+בְּאַוַּת	H9003/{H0185}	HR/Ncfsc	1
+בְּאַוָּתִי	H9003/{H0185}/H9020	HR/Ncfsc/Sp1bs	1
+אוּזַי	{H0186}	HNpm	1
+אוּזָל	{H0187G}	HNpm	2
+מְאוּזָּל	H9006/{H0187H}	HR/Npl	1
+אוֹי	{H0188}	HTj	24
+אֱוִי	{H0189}	HNpm	2
+אוֹיָה	{H0190}	HTj	1
+אֱוִיל	{H0191}	HAamsa	14	{H0192+}	HNpm	2
+אֱוִילִים	{H0191}	HAampa	1
+אֱוִלִים	{H0191}	HAampa	4
+וֶאֱוִיל	H9002/{H0191}	HC/Aamsc	2
+וֶאֱוִילִים	H9002/{H0191}	HC/Aampa	2
+לֶאֱוִיל	H9005/{H0191}	HR/Aamsa	2
+הָאֱוִיל	H9009/{H0191}	HTd/Aamsa	1
+מְרֹדַךְ	{H0192}	HNpm	2	{H4757+}	HNpm	1
+אוּלַי	{H0194}	HD	44
+אֻלַי	{H0194}	HD	1
+אוּלָי	{H0195}	HNpl	2
+אֱוִלִי	{H0196}	HAamsa	1
+וּלְאֻלָם	H9002/H9005/{H0197G}	HC/R/Ncmsc	1
+כָּאוּלָם	H9004/{H0197G}	HRd/Ncmsa	1
+לָאוּלָם	H9005/{H0197G}	HRd/Ncmsa	1
+אוּלָם	{H0197J}	HNcmsc	4	{H0199}	HD	3	{H0198H}	HNpmsc	2	{H0198G}	HNpmsc	2	{H0197G}	HNcmsc	1	{H0193A}/H9028	HNcmsc/Sp3mp	1
+אֻלָם	{H0197J}	HNcmsc	5	{H0197H}	HNcmsc	1	{H0197J}	HNcmsa	1
+וְאֻלַמֵּי	H9002/{H0197J}	HC/Ncmpc	1
+וְאֻלָם	H9002/{H0197J}	HC/Ncmsc	1
+וּבְאֻלָם	H9002/H9003/{H0197J}	HC/R/Ncmsc	1
+וְהָאוּלָם	H9002/H9009/{H0197J}	HC/Td/Ncmsa	2
+בָּאוּלָם	H9003/{H0197J}	HRd/Ncmsa	1
+לְאוּלָם	H9005/{H0197J}	HR/Ncmsc	1
+לְאֻלָם	H9005/{H0197J}	HR/Ncmsc	2
+הָאֻלָם	H9009/{H0197J}	HTd/Ncmsa	1
+הָאוּלָם	H9009/{H0197J}	HTd/Ncmsa	7
+וְאוּלָם	H9002/{H0199}	HC/D	16	H9002/{H0197G}	HC/Ncmsa	1	H9002/{H0197I}	HC/Ncmsc	1
+אִוֶּלֶת	{H0200}	HNcfsa	13	{H0200}	HNcfsc	2
+אִוַּלְתִּי	{H0200}/H9020	HNcfsc/Sp1bs	1
+אִוַּלְתּוֹ	{H0200}/H9023	HNcfsc/Sp3ms	2
+וְאִוֶּלֶת	H9002/{H0200}	HC/Ncfsa	1	H9002/{H0200}	HC/Ncfsc	1
+בְּאִוַּלְתּוֹ	H9003/{H0200}/H9023	HR/Ncfsc/Sp3ms	1
+בְאִוַּלְתּוֹ	H9003/{H0200}/H9023	HR/Ncfsc/Sp3ms	1
+כְּאִוַּלְתּוֹ	H9004/{H0200}/H9023	HR/Ncfsc/Sp3ms	2
+לְאִוַּלְתִּי	H9005/{H0200}/H9020	HR/Ncfsc/Sp1bs	1
+אוֹמָר	{H0201}	HNpm	2
+וְאוֹמָר	H9002/{H0201}	HC/Npm	1
+אוֹנִים	{H0202}	HNcmpa	4	{H0205H}	HNcmpa	1
+אוֹן	{H0202}	HNcmsa	1	{H0204}	HNpmsa	1
+אֹנוֹ	{H0202}/H9023	HNcmsc/Sp3ms	2
+וְאֹנוֹ	H9002/{H0202}/H9023	HC/Ncmsc/Sp3ms	1
+וּבְאוֹנוֹ	H9002/H9003/{H0202}/H9023	HC/R/Ncmsc/Sp3ms	1
+וְאוֹן	H9002/{H0203}	HC/Npm	1
+אֹן	{H0204}	HNpl	2
+אָוֶן	{H0205G}	HNcmsa	58	{H0205H}	HNcmsa	7	{H1007}	HNpmsa	7	{H0204}	HNpmsa	1	{H0206G}	HNpmsa	1	{H0206H}	HNcmsa	1
+אוֹנֵךְ	{H0205G}/H9022	HNcmsc/Sp2fs	1
+וָאָוֶן	H9002/{H0205G}	HC/Ncmsa	1	H9002/{H0205H}	HC/Ncmsa	1
+וְאָוֶן	H9002/{H0205G}	HC/Ncmsa	2
+מֵאָוֶן	H9006/{H0205G}	HR/Ncmsa	1
+הָאָוֶן	H9009/{H0205G}	HTd/Ncmsa	1
+בְאֹנִי	H9003/{H0205H}/H9020	HR/Ncmsc/Sp1bs	1
+לְאָוֶן	H9005/{H0205H}	HR/Ncmsa	1
+אוֹנוֹ	{H0207}	HNpl	2	{H0202}/H9023	HNcmsc/Sp3ms	2	{H0205G}/H9023	HNcmsc/Sp3ms	1
+וְאוֹנוֹ	H9002/{H0207}	HC/Npl	3
+וְאוֹנָם	H9002/{H0208G}	HC/Npm	1
+וְאוֹנָםס	H9002/{H0208G}\ \H9018	HC/Npm	1
+אוֹנָם	{H0208H}	HNpm	2	{H0205G}/H9028	HNcmsc/Sp3mp	1	{H0202}/H9028	HNcmsc/Sp3mp	1
+אוֹנָן	{H0209}	HNpm	2
+וְאוֹנָן	H9002/{H0209}	HC/Npm	5
+לְאוֹנָן	H9005/{H0209}	HR/Npm	1
+אוּפָז	{H0210}	HNpl	1
+מֵאוּפָז	H9006/{H0210}	HR/Npl	1
+אוֹפִר	{H0211G}	HNpm	1
+אוֹפִיר	{H0211H}	HNpl	5	{H0211G}	HNpm	1
+אוֹפִירָה	{H0211H}/H9011	HNpl/Sd	3
+מֵאֹפִיר	H9006/{H0211H}	HR/Npl	1
+מֵאוֹפִיר	H9006/{H0211H}	HR/Npl	2
+אוֹפַנִּים	{H0212}	HNcmpa	1
+אוֹפַן	{H0212}	HNcmsa	2	{H0212}	HNcmsc	1
+אוֹפַנֵּי	{H0212}	HNcmpc	1
+אוֹפָן	{H0212}	HNcmsa	2
+אֹפַן	{H0212}	HNcmsc	1
+אוֹפַנֵּיהֶם	{H0212}/H9028	HNcmpc/Sp3mp	1
+וְאוֹפַן	H9002/{H0212}	HC/Ncmsc	1	H9002/{H0212}	HC/Ncmsa	1
+וְהָאוֹפַנִּים	H9002/H9009/{H0212}	HC/Td/Ncmpa	4
+בָּאוֹפַנִּים	H9003/{H0212}	HRd/Ncmpa	2
+לָאוֹפַנִּים	H9005/{H0212}	HRd/Ncmpa	1
+הָאוֹפַנִּים	H9009/{H0212}	HTd/Ncmpa	11
+הָאוֹפָן	H9009/{H0212}	HTd/Ncmsa	3
+הָאוֹפַן	H9009/{H0212}	HTd/Ncmsa	3
+תָּאִיצוּ	{H0213}	HVhi2mp	1
+אַצְתִּי	{H0213}	HVqp1cs	1
+אָצִים	{H0213}	HVqrmpa	1
+אָץ	{H0213}	HVqp3ms	2	{H0213}	HVqrmsa	2
+וַיָּאִיצוּ	H9001/{H0213}	Hc/Vhw3mp	1
+וְאָץ	H9002/{H0213}	HC/Vqrmsa	2
+אוֹצָרֹת	{H0214}	HNcfpa	1
+אוֹצָר	{H0214}	HNcmsa	1
+אוֹצַר	{H0214}	HNcmsc	4
+אֹצָרוֹת	{H0214}	HNcfpa	1
+אוֹצָרוֹת	{H0214}	HNcfpa	2
+אֹצְרוֹת	{H0214}	HNcfpc	10
+אוֹצְרוֹת	{H0214}	HNcfpc	7
+אוֹצְרוֹתֶיךָ	{H0214}/H9021	HNcfpc/Sp2ms	1
+אוֹצָרוֹ	{H0214}/H9023	HNcmsc/Sp3ms	3
+אוֹצְרֹתֶיהָ	{H0214}/H9024	HNcfpc/Sp3fs	1
+אוֹצְרֹתָם	{H0214}/H9028	HNcfpc/Sp3mp	1
+וְאוֹצְרוֹת	H9002/{H0214}	HC/Ncfpc	1
+וְאֹצְרוֹת	H9002/{H0214}	HC/Ncfpc	4
+וְאֹצָרוֹת	H9002/{H0214}	HC/Ncfpa	1
+וְאוֹצְרוֹתֶיךָ	H9002/{H0214}/H9021	HC/Ncfpc/Sp2ms	1
+וְאֹצְרֹתֵיהֶם	H9002/{H0214}/H9028	HC/Ncfpc/Sp3mp	1
+וּבְאֹצְרוֹת	H9002/H9003/{H0214}	HC/R/Ncfpc	3
+וּבְאוֹצְרוֹתַיִךְ	H9002/H9003/{H0214}/H9022	HC/R/Ncfpc/Sp2fs	1
+וְלָאֹצָרוֹת	H9002/H9005/{H0214}	HC/Rd/Ncfpa	1
+וּלְאֹצְרוֹת	H9002/H9005/{H0214}	HC/R/Ncfpc	2
+בְּאֹצְרוֹת	H9003/{H0214}	HR/Ncfpc	3
+בְּאוֹצְרוֹת	H9003/{H0214}	HR/Ncfpc	1
+בְּאֹצָרוֹת	H9003/{H0214}	HR/Ncfpa	1
+בְּאוֹצְרֹתָי	H9003/{H0214}/H9020	HR/Ncfpc/Sp1bs	2
+בְּאֹצְרֹתָי	H9003/{H0214}/H9020	HR/Ncfpc/Sp1bs	1
+בְּאוֹצְרוֹתֶיךָ	H9003/{H0214}/H9021	HR/Ncfpc/Sp2ms	1
+בְּאוֹצְרֹתָיו	H9003/{H0214}/H9023	HR/Ncfpc/Sp3ms	1
+בְּאֹצְרֹתָיו	H9003/{H0214}/H9023	HR/Ncfpc/Sp3ms	1
+בְּאֹצְרֹתֶיהָ	H9003/{H0214}/H9024	HR/Ncfpc/Sp3fs	1
+לְאוֹצַר	H9005/{H0214}	HR/Ncmsc	3
+לָאוֹצָר	H9005/{H0214}	HRd/Ncmsa	1
+לְאֹצְרוֹת	H9005/{H0214}	HR/Ncfpc	2
+לָאוֹצָרוֹת	H9005/{H0214}	HRd/Ncfpa	2
+לְאֹצְרֹתָיו	H9005/{H0214}/H9023	HR/Ncfpc/Sp3ms	1
+מֵאוֹצָר	H9006/{H0214}	HR/Ncmsa	1
+מֵאֹצְרוֹת	H9006/{H0214}	HR/Ncfpc	1
+מֵאֹצְרֹתָיו	H9006/{H0214}/H9023	HR/Ncfpc/Sp3ms	2
+מֵאוֹצְרוֹתָיו	H9006/{H0214}/H9023	HR/Ncfpc/Sp3ms	1
+הָאוֹצָר	H9009/{H0214}	HTd/Ncmsa	3
+הָאֹצְרוֹת	H9009/{H0214}	HTd/Ncfpc	1
+הָאֹצָרוֹת	H9009/{H0214}	HTd/Ncfpa	2
+מְאִירַת	{H0215}	HVhrfsc	1
+הָאֵר	{H0215}	HVhv2ms	2
+תָּאִיר	{H0215}	HVhi2ms	1	{H0215}	HVhi3fs	1
+הֵאִירוּ	{H0215}	HVhp3cp	2
+הֵאִירָה	{H0215}	HVhp3fs	1
+נָאוֹר	{H0215}	HVNrmsa	1
+מְאִירוֹת	{H0215}	HVhrfpa	1
+יָאֵר	{H0215}	HVhj3ms	2
+תָאִירוּ	{H0215}	HVhi2mp	1
+מֵאִיר	{H0215}	HVhrmsa	1
+יָאִירוּ	{H0215}	HVhi3mp	1
+יָאִיר	{H0215}	HVhi3ms	5	{H2334}	HNpl	4	{H2971G}	HNpm	3	{H2971I}	HNpm	2	{H2971H}	HNpl	1	{H2971J}	HNpm	1
+הָאִירָה	{H0215}/H9012	HVhv2ms/Sh	2
+וַיָּאֶר	H9001/{H0215}	Hc/Vhw3ms	2
+וַיֵּאֹר	H9001/{H0215}	Hc/Vqw3ms	1
+וְהֵאִיר	H9001/{H0215}	Hc/Vhq3ms	1
+וְהָאֵר	H9002/{H0215}	HC/Vhv2ms	3
+וָאוֹר	H9002/{H0215}	HC/Vqrmsa	1	H9002/{H0216}	HC/Ncfsa	1
+לֵאוֹר	H9005/{H0215}	HR/VNcc	1
+לְהָאִיר	H9005/{H0215}	HR/Vhcc	7
+אוֹר	{H0216}	HNcfsa	40	{H0216}	HVqcc	6	{H0216}	HNcfsc	6	{H0215}	HVqp3ms	1
+אוֹרִים	{H0216}	HNcmpa	1
+אוֹרִי	{H0216}/H9020	HNcbsc/Sp1fs	1	{H0215}	HVqv2fs	1
+אוֹרֶךָ	{H0216}/H9021	HNcfsc/Sp2ms	2
+אוֹרְךָ	{H0216}/H9021	HNcfsc/Sp2ms	1
+אוֹרֵךְ	{H0216}/H9022	HNcfsc/Sp2fs	1
+אוֹרֵהוּ	{H0216}/H9023	HNcfsc/Sp3ms	1
+אוֹרוֹ	{H0216}/H9023	HNcfsc/Sp3ms	4
+אוֹרָם	{H0216}/H9028	HNcfsc/Sp3mp	3
+וְאוֹר	H9002/{H0216}	HC/Ncfsc	5	H9002/{H0216}	HC/Ncfsa	2	H9001/{H0215}	Hc/Vqq3ms	1
+וְאוֹרוֹ	H9002/{H0216}/H9023	HC/Ncfsc/Sp3ms	1
+וּכְאוֹר	H9002/H9004/{H0216}	HC/R/Ncfsc	1
+וְהָאוֹר	H9002/H9009/{H0216}	HC/Td/Ncfsa	1
+בְּאוֹר	H9003/{H0216}	HR/Ncfsc	7
+בָּאוֹר	H9003/{H0216}	HRd/Ncfsa	1
+בְּאוֹרְךָ	H9003/{H0216}/H9021	HR/Ncfsc/Sp2ms	1
+כָּאוֹר	H9004/{H0216}	HRd/Ncfsa	1
+כְּאוֹר	H9004/{H0216}	HR/Ncfsc	3
+כָאוֹר	H9004/{H0216}	HRd/Ncfsa	1
+לְאוֹר	H9005/{H0216}	HR/Ncfsa	7	H9005/{H0216}	HR/Ncfsc	6
+לָאוֹר	H9005/{H0216}	HRd/Ncfsa	7
+לְאוֹרֵךְ	H9005/{H0216}/H9022	HR/Ncfsc/Sp2fs	1
+לְאוֹרוֹ	H9005/{H0216}/H9023	HR/Ncfsc/Sp3ms	1
+מֵאוֹר	H9006/{H0216}	HR/Ncfsa	1
+הָאוֹר	H9009/{H0216}	HTd/Ncfsa	7
+אוּר	{H0217A}	HNcmsa	3	{H0218A}	HNpmsa	1
+בְּאוּר	H9003/{H0217A}	HR/Ncmsc	1	H9003/{H0218B}	HR/Npmsc	1
+בָּאוּר	H9003/{H0217A}	HRd/Ncmsa	1
+בָּאֻרִים	H9003/{H0217B}	HRd/Ncmpa	1
+מֵאוּר	H9006/{H0218B}	HR/Npl	3
+אוֹרָה	{H0219A}	HNcfsa	1
+אוֹרֹת	{H0219A}	HNcfpa	1
+כָּאוֹרָה	H9004/{H0219A}	HRd/Ncfsa	1
+אֹרֹת	{H0219B}	HNcfpa	1
+לָאֲוֵרוֹת	H9005/{H0220}	HRd/Ncfpa	1
+אוּרִי	{H0221G}	HNpm	5
+וְאוּרִי	H9002/{H0221G}	HC/Npm	1	H9002/{H0221I}	HC/Npm	1
+אֻרִי	{H0221H}	HNpm	1
+אוּרִיאֵל	{H0222G}	HNpm	1	{H0222H}	HNpm	1	{H0222I}	HNpm	1
+לְאוּרִיאֵל	H9005/{H0222H}	HR/Npm	1
+אוּרִיָּה	{H0223A}	HNpm	25	{H0223G}	HNpm	6	{H0223H}	HNpm	3
+לְאוּרִיָּה	H9005/{H0223A}	HR/Npm	1
+אוּרִיָּהוּ	{H0223B}	HNpm	3
+וְאוּרִיָּה	H9002/{H0223I}	HC/Npm	1
+אוּרִים	{H0224}	HNtmpa	1
+וְאוּרֶיךָ	H9002/{H0224}/H9021	HC/Ntmpc/Sp2ms	1
+בָּאוּרִים	H9003/{H0224}	HRd/Ntmpa	1
+לְאוּרִים	H9005/{H0224}	HR/Ntmpa	2
+הָאוּרִים	H9009/{H0224}	HTd/Ntmpa	3
+יֵאֹתוּ	{H0225}	HVNi3mp	1
+נֵאוֹת	{H0225}	HVNi1cp	1
+נֵאוֹתָה	{H0225}	HVNc1cp	1
+וַיֵּאֹתוּ	H9001/{H0225}	Hc/VNw3mp	1
+אוֹת	{H0226G}	HNcfsa	7	{H0226H}	HNcfsa	5	{H0226H}	HNcfsc	5
+אֹתוֹת	{H0226G}	HNcfpa	2	{H0226H}	HNcfpa	1	{H0226H}	HNcfpc	1
+אוֹתֹת	{H0226G}	HNcfpa	1
+אֹתֹת	{H0226G}	HNcfpa	1
+אֹתֹתַי	{H0226G}/H9020	HNcfpc/Sp1bs	4
+אֹתֹתָיו	{H0226G}/H9023	HNcfpc/Sp3ms	1
+אֹתוֹתָיו	{H0226G}/H9023	HNcfpc/Sp3ms	2
+אוֹתֹתֵינוּ	{H0226G}/H9025	HNcfpc/Sp1bp	1
+וּבְאֹתוֹת	H9002/H9003/{H0226G}	HC/R/Ncfpa	1
+וּמֵאֹתוֹת	H9002/H9006/{H0226G}	HC/R/Ncfpc	1
+וְהָאֹתֹת	H9002/H9009/{H0226G}	HC/Td/Ncfpa	1
+בְּאֹתֹת	H9003/{H0226G}	HR/Ncfpa	1
+בְּאֹתוֹת	H9003/{H0226G}	HR/Ncfpa	1
+לְאֹתוֹת	H9005/{H0226G}	HR/Ncfpa	1
+מֵאוֹתֹתֶיךָ	H9006/{H0226G}/H9021	HR/Ncfpc/Sp2ms	1
+הָאוֹת	H9009/{H0226G}	HTd/Ncfsa	6	H9009/{H0226H}	HTd/Ncfsa	3	H9009/{H0226H}	HTd/Ncbsa	1
+הָאֹתוֹת	H9009/{H0226G}	HTd/Ncfpa	6
+הָאֹתֹת	H9009/{H0226G}	HTd/Ncfpa	4
+הָאֹת	H9009/{H0226G}	HTd/Ncfsa	3
+אוֹתֹתָם	{H0226H}/H9028	HNcfpc/Sp3mp	1
+וְאֹתֹתָם	H9002/{H0226H}/H9028	HC/Ncfpc/Sp3mp	1
+בְאֹתֹת	H9003/{H0226H}	HR/Ncfpa	1
+לְאוֹת	H9005/{H0226H}	HR/Ncfsa	9	H9005/{H0226H}	HR/Ncfsc	3	H9005/{H0226G}	HR/Ncfsa	2
+לְאֹת	H9005/{H0226H}	HR/Ncfsa	1
+לְאֹתֹת	H9005/{H0226H}	HR/Ncfpa	1
+אָז	{H0227A}	HD	118	{H0227B}	HD	1
+וְאָז	H9002/{H0227A}	HC/D	4
+וּמֵאָז	H9002/H9006/{H0227B}	HC/R/D	1
+מֵאָז	H9006/{H0227B}	HR/D	17
+אֵזֵה	{H0228}	AVQrmsa	1
+לְמֵזֵא	H9005/{H0228}	AR/Vqcc	1
+לְמֵזְיֵהּ	H9005/{H0228}/H9033	AR/Vqcc/Sp3ms	1
+אֶזְבָּי	{H0229}	HNpm	1
+אַזְדָּא	{H0230}	AD	2
+אֵזוֹב	{H0231}	HNcmsa	2
+וְאֵזֹב	H9002/{H0231}	HC/Ncmsa	2
+וְאֵזוֹב	H9002/{H0231}	HC/Ncmsa	1
+וּבָאֵזֹב	H9002/H9003/{H0231}	HC/Rd/Ncmsa	1
+בְאֵזוֹב	H9003/{H0231}	HR/Ncmsa	1
+הָאֵזֹב	H9009/{H0231}	HTd/Ncmsa	2
+הָאֵזוֹב	H9009/{H0231}	HTd/Ncmsa	1
+אֵזוֹר	{H0232}	HNcmsc	4	{H0232}	HNcmsa	2
+וְאֵזוֹר	H9002/{H0232}	HC/Ncmsc	1
+כָּאֵזוֹר	H9004/{H0232}	HRd/Ncmsa	1
+הָאֵזוֹר	H9009/{H0232}	HTd/Ncmsa	6
+אֲזַי	{H0233}	HD	3
+אַזְכָּרָתָה	{H0234}/H9024	HNcfsa/Sp3fs	1
+אַזְכָּרָתָהּ	{H0234}/H9024	HNcfsc/Sp3fs	5
+לְאַזְכָּרָה	H9005/{H0234}	HR/Ncfsa	1
+תֵּזְלִי	{H0235}	HVhi2fs	1
+אָזַל	{H0235}	HVqp3ms	1
+אָזְלַת	{H0235}	HVqp3fs	1
+אָזְלוּ	{H0235}	HVqp3cp	1
+וְאֹזֵל	H9002/{H0235}	HC/Vqrmsa	1
+אֲזַלוּ	{H0236}	AVqp3mp	1
+אֲזַל	{H0236}	AVqp3ms	4
+אֲזַלְנָא	{H0236}	AVqp1cp	1
+אֵזֶל	{H0236}	AVqv2ms	1
+הָאָזֶל	H9009/{H0237}	HTd/Npl	1
+הַאְזֵנָּה	{H0238}	HVhv2fp	2
+יַאֲזִין	{H0238}	HVhi3ms	2
+יַאֲזִינוּ	{H0238}	HVhi3mp	1
+הַאֲזִינוּ	{H0238}	HVhv2mp	8
+אָזִין	{H0238}	HVhi1cs	1
+הֶאֱזִינוּ	{H0238}	HVhp3cp	3
+הֶאֱזִין	{H0238}	HVhp3ms	1
+מֵזִין	{H0238}	HVhrmsa	1
+הַאֲזִינָה	{H0238}/H9012	HVhv2ms/Sh	16
+וְהַאֲזִין	H9001/{H0238}	Hc/Vhq3ms	1
+וְהַאֲזַנְתָּ	H9001/{H0238}	Hc/Vhq2ms	1
+וְהַאֲזִינוּ	H9002/{H0238}	HC/Vhv2mp	3
+וְהַאֲזִינִי	H9002/{H0238}	HC/Vhv2fs	1
+וְאִזֵּן	H9001/{H0239}	Hc/Vpq3ms	1
+אֲזֵנֶךָ	{H0240}/H9021	HNcmsc/Sp2ms	1
+אֹזֶן	{H0241G}	HNcfsa	12	{H0241G}	HNcfsc	8	{H0241I}	HNcfsc	3	{H0241H}	HNcfsa	2
+אָזְנַיִם	{H0241G}	HNcfda	6
+אָזְנָי	{H0241G}/H9020	HNcfdc/Sp1bs	1
+אָזְנִי	{H0241G}/H9020	HNcfsc/Sp1bs	4	{H0241I}/H9020	HNcfsc/Sp1bs	3
+אָזְנֶיךָ	{H0241G}/H9021	HNcfdc/Sp2ms	1
+אָזְנְךָ	{H0241G}/H9021	HNcfsc/Sp2ms	12	{H0241I}/H9021	HNcfsc/Sp2ms	1
+אָזְנֶךָ	{H0241G}/H9021	HNcfsc/Sp2ms	6	{H0241I}/H9021	HNcfsc/Sp2ms	2
+אָזְנָיִךְ	{H0241G}/H9022	HNcfdc/Sp2fs	1
+אָזְנֵךְ	{H0241G}/H9022	HNcfsc/Sp2fs	1
+אָזְנוֹ	{H0241G}/H9023	HNcfsc/Sp3ms	7
+אָזְנָיו	{H0241G}/H9023	HNcfdc/Sp3ms	4
+אָזְנְכֶם	{H0241G}/H9026	HNcfsc/Sp2mp	5
+אָזְנֵיהֶם	{H0241G}/H9028	HNcfdc/Sp3mp	1
+אָזְנָם	{H0241G}/H9028	HNcfsc/Sp3mp	10
+וְאָזְנַיִם	H9002/{H0241G}	HC/Ncfda	2
+וְאָזְנֵי	H9002/{H0241G}	HC/Ncfdc	3
+וְאֹזֶן	H9002/{H0241G}	HC/Ncfsc	1
+וְאָזְנַי	H9002/{H0241G}/H9020	HC/Ncfdc/Sp1bs	1
+וְאָזְנֶךָ	H9002/{H0241G}/H9021	HC/Ncfsc/Sp2ms	1
+וְאָזְנֶיךָ	H9002/{H0241G}/H9021	HC/Ncfdc/Sp2ms	2
+וְאָזְנַיִךְ	H9002/{H0241G}/H9022	HC/Ncfdc/Sp2fs	1
+וְאָזְנָיו	H9002/{H0241G}/H9023	HC/Ncfdc/Sp3ms	2
+וְאָזְנֵיהֶם	H9002/{H0241G}/H9028	HC/Ncfdc/Sp3mp	1
+וּבְאָזְנֶיךָ	H9002/H9003/{H0241G}/H9021	HC/R/Ncfdc/Sp2ms	3
+וּבְאָזְנָיו	H9002/H9003/{H0241G}/H9023	HC/R/Ncfdc/Sp3ms	1
+בְאָזְנָי	H9003/{H0241G}/H9020	HR/Ncfdc/Sp1bs	4
+בְאָזְנַיִךְ	H9003/{H0241G}/H9022	HR/Ncfdc/Sp2fs	1
+בְּאָזְנָיו	H9003/{H0241G}/H9023	HR/Ncfdc/Sp3ms	2
+בְאָזְנוֹ	H9003/{H0241G}/H9023	HR/Ncfsc/Sp3ms	1
+בְאָזְנָיו	H9003/{H0241G}/H9023	HR/Ncfdc/Sp3ms	1
+בְּאָזְנֵינוּ	H9003/{H0241G}/H9025	HR/Ncfdc/Sp1bp	4	H9003/{H0241I}/H9025	HR/Ncfdc/Sp1bp	1
+בְּאָזְנֵיכֶם	H9003/{H0241G}/H9026	HR/Ncfdc/Sp2mp	3	H9003/{H0241H}/H9026	HR/Ncfdc/Sp2mp	1
+וּבְאָזְנֵי	H9002/H9003/{H0241H}	HC/R/Ncfdc	2	H9002/H9003/{H0241I}	HC/R/Ncfdc	1
+בְאָזְנֵי	H9003/{H0241H}	HR/Ncfdc	1
+בְּאָזְנֵי	H9003/{H0241H}	HR/Ncfdc	19	H9003/{H0241I}	HR/Ncfdc	14	H9003/{H0241G}	HR/Ncfdc	3
+בְּאָזְנָי	H9003/{H0241H}/H9020	HR/Ncfdc/Sp1bs	3	H9003/{H0241G}/H9020	HR/Ncfdc/Sp1bs	1
+בְאָזְנֵינוּ	H9003/{H0241H}/H9025	HR/Ncfdc/Sp1bp	1
+בְאָזְנֵיהֶם	H9003/{H0241H}/H9028	HR/Ncfdc/Sp3mp	2	H9003/{H0241I}/H9028	HR/Ncfdc/Sp3mp	1
+אָזְנָיִם	{H0241I}	HNcfda	1
+בְּאָזְנַי	H9003/{H0241I}/H9020	HR/Ncfdc/Sp1bs	1	H9003/{H0241H}/H9020	HR/Ncfdc/Sp1bs	1
+בְאָזְנַי	H9003/{H0241I}/H9020	HR/Ncfdc/Sp1bs	2
+בְּאָזְנֶיךָ	H9003/{H0241I}/H9021	HR/Ncfdc/Sp2ms	1	H9003/{H0241H}/H9021	HR/Ncfdc/Sp2ms	1
+בְּאָזְנֵיהֶם	H9003/{H0241I}/H9028	HR/Ncfdc/Sp3mp	2	H9003/{H0241G}/H9028	HR/Ncfdc/Sp3mp	2	H9003/{H0241H}/H9028	HR/Ncfdc/Sp3mp	1
+אֻזֵּן	{H0242+}	HNpl	1
+אַזְנוֹת	{H0243+}	HNpl	1
+לְאָזְנִי	H9005/{H0244A}	HR/Npm	1
+הָאָזְנִי	H9009/{H0244B}	HTd/Ngmsa	1
+אֲזַנְיָה	{H0245}	HNpm	1
+בָּאזִקִּים	H9003/{H0246}	HRd/Ncmpa	1
+הָאזִקִּים	H9009/{H0246}	HTd/Ncmpa	1
+אָזְרוּ	{H0247}	HVqp3cp	1
+אָזוּר	{H0247}	HVqsmsa	1
+תֶּאְזֹר	{H0247}	HVqi2ms	1
+אֱזָר	{H0247}	HVqv2ms	2
+נֶאְזָר	{H0247}	HVNrmsa	1
+מְאַזְּרֵי	{H0247}	HVprmpc	1
+הִתְאַזְּרוּ	{H0247}	HVtv2mp	2
+הִתְאַזָּר	{H0247}	HVtp3ms	1
+יַאַזְרֵנִי	{H0247}/H9030	HVqi3ms/Sp1bs	1
+אֲאַזֶּרְךָ	{H0247}/H9031	HVpi1cs/Sp2ms	1
+וַתְּאַזְּרֵנִי	H9001/{H0247}/H9030	Hc/Vpw2ms/Sp1bs	2
+וַתַּזְרֵנִי	H9001/{H0247}/H9030	Hc/Vpw2ms/Sp1bs	1
+הַמְאַזְּרֵנִי	H9009/{H0247}/H9030	HTd/Vprmsc/Sp1bs	1
+וְאֶזְרֹעִי	H9002/{H0248}/H9020	HC/Ncfsc/Sp1bs	1
+וּבְאֶזְרוֹעַ	H9002/H9003/{H0248}	HC/R/Ncfsa	1
+וּבְאֶזְרַח	H9002/H9003/{H0249}	HC/R/Ncmsc	1
+וּלְאֶזְרַח	H9002/H9005/{H0249}	HC/R/Ncmsc	1
+בָּאֶזְרָח	H9003/{H0249}	HRd/Ncmsa	1
+כְּאֶזְרַח	H9004/{H0249}	HR/Ncmsc	1
+כָּאֶזְרָח	H9004/{H0249}	HRd/Ncmsa	3
+כְּאֶזְרָח	H9004/{H0249}	HR/Ncmsa	3
+לָאֶזְרָח	H9005/{H0249}	HRd/Ncmsa	1
+הָאֶזְרָח	H9009/{H0249}	HTd/Ncmsa	6
+הָאֶזְרָחִי	H9009/{H0250}	HTd/Ngmsa	3
+אֲחֵי	{H0251G}	HNcmpc	10	{H0251H}	HNcmpc	6
+אַחִים	{H0251G}	HNcmpa	11	{H0251H}	HNcmpa	1	{H0251I}	HNcmpa	1
+אָח	{H0251G}	HNcmsa	11	{H0253}	HTj	3	{H0251I}	HNcmsa	1
+אֲחִי	{H0251G}	HNcmsc	33	{H0251H}	HNcmsc	2	{H0277H}	HNpmsc	1	{H0277G}	HNpmsc	1
+אַחַי	{H0251G}/H9020	HNcmpc/Sp1bs	12	{H0251I}/H9020	HNcmpc/Sp1bs	2	{H0251H}/H9020	HNcmpc/Sp1bs	1
+אֶחָי	{H0251G}/H9020	HNcmpc/Sp1bs	2
+אָחִי	{H0251G}/H9020	HNcmsc/Sp1bs	17	{H0251I}/H9020	HNcmsc/Sp1bs	7	{H0251H}/H9020	HNcmsc/Sp1bs	1
+אָחִיךָ	{H0251G}/H9021	HNcmsc/Sp2ms	33	{H0251I}/H9021	HNcmsc/Sp2ms	18
+אַחֶיךָ	{H0251G}/H9021	HNcmpc/Sp2ms	12	{H0251I}/H9021	HNcmpc/Sp2ms	4	{H0251H}/H9021	HNcmpc/Sp2ms	3
+אַחַיִךְ	{H0251G}/H9022	HNcmpc/Sp2fs	1
+אָחִיךְ	{H0251G}/H9022	HNcmsc/Sp2fs	3
+אָחִיו	{H0251G}/H9023	HNcmsc/Sp3ms	60	{H0251I}/H9023	HNcmsc/Sp3ms	25	{H0251H}/H9023	HNcmsc/Sp3ms	3
+אֶחָיו	{H0251G}/H9023	HNcmpc/Sp3ms	53	{H0251H}/H9023	HNcmpc/Sp3ms	10	{H0251I}/H9023	HNcmpc/Sp3ms	10
+אָחִיהָ	{H0251G}/H9024	HNcmsc/Sp3fs	5
+אַחֶיהָ	{H0251G}/H9024	HNcmpc/Sp3fs	2
+אָחִינוּ	{H0251G}/H9025	HNcmsc/Sp1bp	7
+אֲחִיכֶם	{H0251G}/H9026	HNcmsc/Sp2mp	15	{H0251H}/H9026	HNcmsc/Sp2mp	1
+אֲחִיהֶם	{H0251G}/H9028	HNcmsc/Sp3mp	4
+וַאֲחִי	H9002/{H0251G}	HC/Ncmsc	1
+וָאָח	H9002/{H0251G}	HC/Ncmsa	1
+וְאָח	H9002/{H0251G}	HC/Ncmsa	1
+וְאַחַי	H9002/{H0251G}/H9020	HC/Ncmpc/Sp1bs	2	H9002/{H0251I}/H9020	HC/Ncmpc/Sp1bs	2
+וְאַחֶיךָ	H9002/{H0251G}/H9021	HC/Ncmpc/Sp2ms	2	H9002/{H0251H}/H9021	HC/Ncmpc/Sp2ms	1
+וְאָחִיו	H9002/{H0251G}/H9023	HC/Ncmsc/Sp3ms	2	H9002/{H0251I}/H9023	HC/Ncmsc/Sp3ms	2
+וְאָחִינוּ	H9002/{H0251G}/H9025	HC/Ncmsc/Sp1bp	1
+וַאֲחֵיכֶם	H9002/{H0251G}/H9026	HC/Ncmpc/Sp2mp	1	H9002/{H0251H}/H9026	HC/Ncmpc/Sp2mp	1
+וּבְאַחֵיכֶם	H9002/H9003/{H0251G}/H9026	HC/R/Ncmpc/Sp2mp	1
+וְכַאֲחֵיכֶם	H9002/H9004/{H0251G}/H9026	HC/R/Ncmpc/Sp2mp	1
+וּלְאָחִיו	H9002/H9005/{H0251G}/H9023	HC/R/Ncmsc/Sp3ms	2
+וּלְאֶחָיו	H9002/H9005/{H0251G}/H9023	HC/R/Ncmpc/Sp3ms	1	H9002/H9005/{H0251H}/H9023	HC/R/Ncmpc/Sp3ms	1
+בְּאֶחָיו	H9003/{H0251G}/H9023	HR/Ncmpc/Sp3ms	2
+כְּאָח	H9004/{H0251G}	HR/Ncmsa	2
+כְּאֶחָיו	H9004/{H0251G}/H9023	HR/Ncmpc/Sp3ms	1
+לַאֲחֵי	H9005/{H0251G}	HR/Ncmpc	1
+לְאָח	H9005/{H0251G}	HR/Ncmsa	1
+לְאָחִי	H9005/{H0251G}/H9020	HR/Ncmsc/Sp1bs	1
+לְאֶחָי	H9005/{H0251G}/H9020	HR/Ncmpc/Sp1bs	2
+לְאַחֶיךָ	H9005/{H0251G}/H9021	HR/Ncmpc/Sp2ms	3
+לְאָחִיךְ	H9005/{H0251G}/H9022	HR/Ncmsc/Sp2fs	1
+לְאָחִיו	H9005/{H0251G}/H9023	HR/Ncmsc/Sp3ms	5	H9005/{H0251I}/H9023	HR/Ncmsc/Sp3ms	1
+לְאֶחָיו	H9005/{H0251G}/H9023	HR/Ncmpc/Sp3ms	5	H9005/{H0251H}/H9023	HR/Ncmpc/Sp3ms	2
+לְאָחִיהָ	H9005/{H0251G}/H9024	HR/Ncmsc/Sp3fs	1
+מֵאָח	H9006/{H0251G}	HR/Ncmsa	2
+אֲחֵיהֶם	{H0251H}/H9028	HNcmpc/Sp3mp	20	{H0251G}/H9028	HNcmpc/Sp3mp	9	{H0251I}/H9028	HNcmpc/Sp3mp	8
+וְאַחִים	H9002/{H0251H}	HC/Ncmpa	2
+וְאֶחָיו	H9002/{H0251H}/H9023	HC/Ncmpc/Sp3ms	47	H9002/{H0251G}/H9023	HC/Ncmpc/Sp3ms	6	H9002/{H0251I}/H9023	HC/Ncmpc/Sp3ms	1
+וַאֲחִיהֶם	H9002/{H0251H}/H9028	HC/Ncmsc/Sp3mp	1
+וַאֲחֵיהֶם	H9002/{H0251H}/H9028	HC/Ncmpc/Sp3mp	14	H9002/{H0251G}/H9028	HC/Ncmpc/Sp3mp	2
+וְלַאֲחֵיהֶם	H9002/H9005/{H0251H}/H9028	HC/R/Ncmpc/Sp3mp	1	H9002/H9005/{H0251I}/H9028	HC/R/Ncmpc/Sp3mp	1
+לְאָחִינוּ	H9005/{H0251H}/H9025	HR/Ncmsc/Sp1bp	1
+לַאֲחֵיהֶם	H9005/{H0251H}/H9028	HR/Ncmpc/Sp3mp	2
+מֵאֲחֵי	H9006/{H0251H}	HR/Ncmpc	1	H9006/{H0251G}	HR/Ncmpc	1
+מֵאֲחֵיהֶם	H9006/{H0251H}/H9028	HR/Ncmpc/Sp3mp	2
+אָחִיהוּ	{H0251I}/H9023	HNcmsc/Sp3ms	2	{H0251G}/H9023	HNcmsc/Sp3ms	1
+אַחֵינוּ	{H0251I}/H9025	HNcmpc/Sp1bp	6	{H0251G}/H9025	HNcmpc/Sp1bp	2	{H0251H}/H9025	HNcmpc/Sp1bp	1
+אֲחֵיכֶם	{H0251I}/H9026	HNcmpc/Sp2mp	10	{H0251H}/H9026	HNcmpc/Sp2mp	5	{H0251G}/H9026	HNcmpc/Sp2mp	3
+וּבְאָחִיו	H9002/H9003/{H0251I}/H9023	HC/R/Ncmsc/Sp3ms	1
+וּלְאָחִיךָ	H9002/H9005/{H0251I}/H9021	HC/R/Ncmsc/Sp2ms	1
+בְּאָחִיךָ	H9003/{H0251I}/H9021	HR/Ncmsc/Sp2ms	1	H9003/{H0251G}/H9021	HR/Ncmsc/Sp2ms	1
+בְּאָחִיהוּ	H9003/{H0251I}/H9023	HR/Ncmsc/Sp3ms	1
+בְּאָחִיו	H9003/{H0251I}/H9023	HR/Ncmsc/Sp3ms	6	H9003/{H0251G}/H9023	HR/Ncmsc/Sp3ms	1
+בְאָחִיו	H9003/{H0251I}/H9023	HR/Ncmsc/Sp3ms	2
+כְּאָחִיו	H9004/{H0251I}/H9023	HR/Ncmsc/Sp3ms	1	H9004/{H0251G}/H9023	HR/Ncmsc/Sp3ms	1
+לְאָחִיךָ	H9005/{H0251I}/H9021	HR/Ncmsc/Sp2ms	3	H9005/{H0251G}/H9021	HR/Ncmsc/Sp2ms	1
+לַאֲחֵיכֶם	H9005/{H0251I}/H9026	HR/Ncmpc/Sp2mp	6
+מֵאַחַי	H9006/{H0251I}/H9020	HR/Ncmpc/Sp1bs	1
+מֵאָחִיךָ	H9006/{H0251I}/H9021	HR/Ncmsc/Sp2ms	1
+מֵאַחֶיךָ	H9006/{H0251I}/H9021	HR/Ncmpc/Sp2ms	2
+מֵאָחִיו	H9006/{H0251I}/H9023	HR/Ncmsc/Sp3ms	1
+מֵאֶחָיו	H9006/{H0251I}/H9023	HR/Ncmpc/Sp3ms	3	H9006/{H0251H}/H9023	HR/Ncmpc/Sp3ms	3	H9006/{H0251G}/H9023	HR/Ncmpc/Sp3ms	1
+מֵאֲחֵיכֶם	H9006/{H0251I}/H9026	HR/Ncmpc/Sp2mp	1	H9006/{H0251H}/H9026	HR/Ncmpc/Sp2mp	1
+הַאַחֵיכֶם	H9008/{H0251I}/H9026	HTi/Ncmpc/Sp2mp	1
+הָאָח	H9009/{H0254}	HTd/Ncfsa	3
+אֹחִים	{H0255}	HNcmpa	1
+אַחְאָב	{H0256G}	HNpm	80	{H0256H}	HNpm	1
+וְאַחְאָב	H9002/{H0256G}	HC/Npm	1
+וּלְאַחְאָב	H9002/H9005/{H0256G}	HC/R/Npm	1
+כְאַחְאָב	H9004/{H0256G}	HR/Npm	1
+לְאַחְאָב	H9005/{H0256G}	HR/Npm	8
+וּכְאֶחָב	H9002/H9004/{H0256H}	HC/R/Npm	1
+אַחְבָּן	{H0257}	HNpm	1
+הִתְאַחֲדִי	{H0258}	HVtv2fs	1
+אַחַד	{H0259}	HAcfsc	7	{H0259}	HNcfsa	7	{H0259}	HNcfsc	6	{H0259}	HAcfsa	4
+אֲחָדִים	{H0259}	HAcmpa	4
+אֶחָד	{H0259}	HAcfsa	344	{H0259}	HNcfsa	114	{H0259}	HAcfsc	14
+אַחַת	{H0259}	HAcfsa	82	{H0259}	HNcfsa	31	{H0259}	HAcfsc	14	{H0259}	HNcfsc	12
+אֶחָת	{H0259}	HAcfsa	15	{H0259}	HNcfsa	15	{H0259}	HAcfsc	2
+וְאֶחָד	H9002/{H0259}	HC/Acfsa	13	H9002/{H0259}	HC/Ncfsa	6
+וְאַחַד	H9002/{H0259}	HC/Acfsc	1
+וְאַחַת	H9002/{H0259}	HC/Ncfsc	14	H9002/{H0259}	HC/Ncfsa	3	H9002/{H0259}	HC/Acfsc	2	H9002/{H0259}	HC/Acfsa	1
+וּבְאֶחָד	H9002/H9003/{H0259}	HC/R/Acfsa	1
+וּבְאַחַת	H9002/H9003/{H0259}	HC/R/Acfsa	1
+וּכְאַחַד	H9002/H9004/{H0259}	HC/R/Ncfsc	1
+וּלְאַחַד	H9002/H9005/{H0259}	HC/R/Ncfsa	1
+וּלְאֶחָד	H9002/H9005/{H0259}	HC/R/Acfsa	1
+וְהָאֶחָד	H9002/H9009/{H0259}	HC/Td/Acfsa	3	H9002/H9009/{H0259}	HC/Td/Ncfsa	1
+וְהָאַחַת	H9002/H9009/{H0259}	HC/Td/Ncfsa	1	H9002/H9009/{H0259}	HC/Td/Acfsa	1
+בְּאַחַת	H9003/{H0259}	HR/Ncfsc	5	H9003/{H0259}	HR/Acfsc	4	H9003/{H0259}	HR/Acfsa	1
+בְּאֶחָד	H9003/{H0259}	HR/Acfsa	16	H9003/{H0259}	HR/Ncfsa	2
+בְאַחַת	H9003/{H0259}	HR/Acfsa	1
+בְּאַחַד	H9003/{H0259}	HR/Ncfsc	8	H9003/{H0259}	HR/Acfsc	2
+בְּאֶחָת	H9003/{H0259}	HR/Acfsa	1
+בְאֶחָד	H9003/{H0259}	HR/Acfsa	1
+כְּאַחַת	H9004/{H0259}	HR/Acfsc	1	H9004/{H0259}	HR/Ncfsc	1
+כְאֶחָד	H9004/{H0259}	HR/Ncfsa	1	H9004/{H0259}	HR/Acfsa	1
+כְּאַחַד	H9004/{H0259}	HR/Ncfsa	5	H9004/{H0259}	HR/Ncfsc	4	H9004/{H0259}	HR/Acfsc	2	H9004/{H0259}	HR/Acfsa	1	H9004/{H0259}	HR/Ncbsa	1
+כְּאֶחָד	H9004/{H0259}	HR/Acfsa	5
+לְאֶחָד	H9005/{H0259}	HR/Acfsa	7	H9005/{H0259}	HR/Ncfsa	1
+לָאֶחָד	H9005/{H0259}	HRd/Acfsa	2
+לַאֲחָדִים	H9005/{H0259}	HR/Acmpa	1
+לְאַחַד	H9005/{H0259}	HR/Ncfsa	4	H9005/{H0259}	HR/Acfsc	1	H9005/{H0259}	HR/Acfsa	1
+לְאַחַת	H9005/{H0259}	HR/Acfsa	4	H9005/{H0259}	HR/Ncfsa	1
+לְאֶחָת	H9005/{H0259}	HR/Acfsa	2	H9005/{H0259}	HR/Ncfsa	1
+מֵאַחַת	H9006/{H0259}	HR/Acfsa	2
+מֵאַחַד	H9006/{H0259}	HR/Ncfsc	3	H9006/{H0259}	HR/Acfsa	1
+הָאַחַת	H9009/{H0259}	HTd/Acfsa	10	H9009/{H0259}	HTd/Ncfsa	8	H9009/{H0259}	HTd/Acfsc	1
+הָאֶחָת	H9009/{H0259}	HTd/Acfsa	19	H9009/{H0259}	HTd/Ncfsa	12
+הָאֶחָד	H9009/{H0259}	HTd/Acfsa	71	H9009/{H0259}	HTd/Ncfsa	28
+אָחוּ	{H0260}	HNcmsa	1
+בָּאָחוּ	H9003/{H0260}	HRd/Ncmsa	2
+אֵחוּד	{H0261}	HNpm	1
+וְאַחֲוָתִי	H9002/{H0262}/H9020	HC/Ncfsc/Sp1bs	1
+וַאַחֲוָיַת	H9002/{H0263}	AC/Vacc	1
+הָאַחֲוָה	H9009/{H0264}	HTd/Ncfsa	1
+וַאֲחוֹחַ	H9002/{H0265}	HC/Npm	1
+אֲחֹחִי	{H0266}	HNgmsa	1
+הָאֲחֹחִי	H9009/{H0266}	HTd/Ngmsa	1
+הָאֲחוֹחִי	H9009/{H0266}	HTd/Ngmsa	3
+אֲחוּמַי	{H0267}	HNpm	1
+אֲחֹרֵי	{H0268}	HNcmpc	1
+אָחוֹר	{H0268}	HNcmsa	24
+אֲחֹרָי	{H0268}/H9020	HNcmpc/Sp1bs	1
+אֲחֹרֵיהֶם	{H0268}/H9028	HNcmpc/Sp3mp	3
+וְאָחוֹר	H9002/{H0268}	HC/Ncmsa	4
+וּמֵאָחוֹר	H9002/H9006/{H0268}	HC/R/Ncmsa	1
+בְּאָחוֹר	H9003/{H0268}	HR/Ncmsa	1
+לְאָחוֹר	H9005/{H0268}	HR/Ncmsa	5
+מֵאָחוֹר	H9006/{H0268}	HR/Ncmsa	1
+אָחוֹת	{H0269}	HNcfsa	3
+אֲחוֹת	{H0269}	HNcfsc	16
+אֲחוֹתִי	{H0269}/H9020	HNcfsc/Sp1bs	3
+אֲחֹתִי	{H0269}/H9020	HNcfsc/Sp1bs	15
+אֲחוֹתְךָ	{H0269}/H9021	HNcfsc/Sp2ms	2
+אֲחוֹתֵךְ	{H0269}/H9022	HNcfsc/Sp2fs	7
+אַחְיוֹתֵךְ	{H0269}/H9022	HNcfpc/Sp2fs	1
+אֲחוֹתַיִךְ	{H0269}/H9022	HNcfpc/Sp2fs	1
+אֲחֹתוֹ	{H0269}/H9023	HNcfsc/Sp3ms	13
+אֲחוֹתָהּ	{H0269}/H9024	HNcfsc/Sp3fs	10
+אֲחֹתָהּ	{H0269}/H9024	HNcfsc/Sp3fs	7
+אֲחֹתֵנוּ	{H0269}/H9025	HNcfsc/Sp1bp	2
+אֲחוֹתֵנוּ	{H0269}/H9025	HNcfsc/Sp1bp	1
+אֲחוֹתָם	{H0269}/H9028	HNcfsc/Sp3mp	6
+אֲחֹתָם	{H0269}/H9028	HNcfsc/Sp3mp	5
+וַאֲחוֹת	H9002/{H0269}	HC/Ncfsc	5
+וַאֲחֹתִי	H9002/{H0269}/H9020	HC/Ncfsc/Sp1bs	1
+וַאֲחוֹתַיִךְ	H9002/{H0269}/H9022	HC/Ncfpc/Sp2fs	1
+וַאֲחוֹתֵךְ	H9002/{H0269}/H9022	HC/Ncfsc/Sp2fs	2
+וַאֲחֹתוֹ	H9002/{H0269}/H9023	HC/Ncfsc/Sp3ms	1
+וּלְאָחוֹת	H9002/H9005/{H0269}	HC/R/Ncfsa	1
+וְלַאֲחֹתוֹ	H9002/H9005/{H0269}/H9023	HC/R/Ncfsc/Sp3ms	1
+וּלְאַחֹתוֹ	H9002/H9005/{H0269}/H9023	HC/R/Ncfsc/Sp3ms	1
+וְלַאֲחוֹתֵיכֶם	H9002/H9005/{H0269}/H9026	HC/R/Ncfpc/Sp2mp	1
+בַּאֲחֹתָהּ	H9003/{H0269}/H9024	HR/Ncfsc/Sp3fs	1
+לַאֲחוֹתֵךְ	H9005/{H0269}/H9022	HR/Ncfsc/Sp2fs	1
+לַאֲחֹתֵנוּ	H9005/{H0269}/H9025	HR/Ncfsc/Sp1bp	1
+אָחֲזָה	{H0270}	HVqp3fs	2
+אֶחֱזוּ	{H0270}	HVqv2mp	1
+אֲחֻזֵי	{H0270}	HVqsmpc	1
+אָחוּז	{H0270}	HVqsmsa	1
+אֹחֲזָה	{H0270}	HVqc1cs	1
+אָחֻז	{H0270}	HVqsmsa	3
+אֹחֵז	{H0270}	HVqrmsa	1
+תֶּאֱחֹז	{H0270}	HVqi2ms	1
+מְאַחֵז	{H0270}	HVprmsa	1
+אֲחֹז	{H0270}	HVqcc	1
+אָחֲזוּ	{H0270}	HVqp3cp	1
+מָאֳחָזִים	{H0270}	HVHsmpa	1
+אֲחוּזִים	{H0270}	HVqsmpa	2
+אָחַזְתָּ	{H0270}	HVqp2ms	2
+אֹחֶזֶת	{H0270}	HVqrfsa	1
+אָחַז	{H0270}	HVqp3ms	2	{H2372}	HVqi1cs	1
+יֹאחֵז	{H0270}	HVqi3ms	1
+נֶאֱחַז	{H0270}	HVNp3ms	1
+נֹאחֲזוּ	{H0270}	HVNp3cp	1
+יֹאחֵזוּן	{H0270}/H9013	HVqi3mp/Sn	1
+אֲחָזַנִי	{H0270}/H9030	HVqp3ms/Sp1bs	1
+אֲחָזַתְנִי	{H0270}/H9030	HVqp3fs/Sp1bs	1
+יֹאחֲזוּנִי	{H0270}/H9030	HVqi3mp/Sp1bs	1
+אֲחָזוּנִי	{H0270}/H9030	HVqp3cp/Sp1bs	1
+יֹאחֱזוּךְ	{H0270}/H9032	HVqi3mp/Sp2fs	1
+אֲחַזְתִּיו	{H0270}/H9033	HVqp1cs/Sp3ms	1
+אֲחָזַתָּה	{H0270}/H9034	HVqp3fs/Sp3fs	1
+אֲחָזָתַם	{H0270}/H9038	HVqp3fs/Sp3mp	1
+יֹאחֲזֵמוֹ	{H0270}/H9038	HVqi3ms/Sp3mp	1
+וָאֹחֵז	H9001/{H0270}	Hc/Vqw1cs	1
+וַתֹּחֶז	H9001/{H0270}	Hc/Vqw3fs	1
+וְנֹאחֲזוּ	H9001/{H0270}	Hc/VNq3cp	1
+וְאָחַז	H9001/{H0270}	Hc/Vqq3ms	2
+וַיֵּאָחֲזוּ	H9001/{H0270}	Hc/VNw3mp	1
+וַיֹּאחֲזוּ	H9001/{H0270}	Hc/Vqw3mp	2
+וַתֹּאחֶז	H9001/{H0270}	Hc/Vqw3fs	1
+וַיֶּאֱחֹז	H9001/{H0270}	Hc/Vqw3ms	2
+וַיֹּאחֶז	H9001/{H0270}	Hc/Vqw3ms	1
+וָאֹחֲזָה	H9001/{H0270}/H9012	Hc/Vqw1cs/Sh	1
+וַיֹּאחֲזוּהוּ	H9001/{H0270}/H9033	Hc/Vqw3mp/Sp3ms	1
+וֶאֱחֹז	H9002/{H0270}	HC/Vqv2ms	2
+וְאֶחֳזִי	H9002/{H0270}	HC/Vqv2fs	1
+וְיֹאחֵז	H9002/{H0270}	HC/Vqu3ms	2
+וְהֵאָחֲזוּ	H9002/{H0270}	HC/VNv2mp	2
+וֶאֱחֹזוּ	H9002/{H0270}	HC/Vqv2mp	1
+וְאָחֻז	H9002/{H0270}	HC/Vqsmsa	1
+וְתֹאחֵז	H9002/{H0270}	HC/Vqu3fs	1
+וְתֹאחֲזֵנִי	H9002/{H0270}/H9030	HC/Vqu3fs/Sp1bs	1
+וְלֶאֱחֹז	H9002/H9005/{H0270}	HC/R/Vqcc	1
+בֶּאֱחֹז	H9003/{H0270}	HR/Vqcc	1
+לֶאֱחֹז	H9005/{H0270}	HR/Vqcc	2
+שֶׁנֶּאֱחָזִים	H9007/{H0270}	HTr/VNrmpa	1
+שֶׁיֹּאחֵז	H9007/{H0270}	HTr/Vqi3ms	1
+הָאָחֻז	H9009/{H0270}	HTd/Vqsmsa	1
+הָאֲחֻזוֹת	H9009/{H0270}	HTd/Vqsfpa	1
+אָחָז	{H0271G}	HNpm	37
+לְאָחָז	H9005/{H0271G}	HR/Npm	1
+וְאָחָז	H9002/{H0271H}	HC/Npm	4
+אֲחֻזַּת	{H0272}	HNcfsc	11
+אֲחֻזָּה	{H0272}	HNcfsa	3
+אֲחֻזָּתוֹ	{H0272}/H9023	HNcfsc/Sp3ms	8
+אֲחֻזַּתְכֶם	{H0272}/H9026	HNcfsc/Sp2mp	4
+אֲחֻזָּתָם	{H0272}/H9028	HNcfsc/Sp3mp	7
+וַאֲחֻזַּת	H9002/{H0272}	HC/Ncfsc	1	H9002/{H0276}	HC/Npfsc	1
+וַאֲחֻזָּה	H9002/{H0272}	HC/Ncfsa	1
+וַאֲחֻזָּתְךָ	H9002/{H0272}/H9021	HC/Ncfsc/Sp2ms	1
+וַאֲחֻזָּתָם	H9002/{H0272}/H9028	HC/Ncfsc/Sp3mp	2
+וְלַאֲחֻזַּת	H9002/H9005/{H0272}	HC/R/Ncfsc	2
+וּמֵאֲחֻזַּת	H9002/H9006/{H0272}	HC/R/Ncfsc	2
+בַּאֲחֻזָּתוֹ	H9003/{H0272}/H9023	HR/Ncfsc/Sp3ms	2
+בַּאֲחֻזָּתָם	H9003/{H0272}/H9028	HR/Ncfsc/Sp3mp	1
+לַאֲחֻזַּת	H9005/{H0272}	HR/Ncfsc	5
+לַאֲחֻזָּה	H9005/{H0272}	HR/Ncfsa	8
+לַאֲחֻזָּתוֹ	H9005/{H0272}/H9023	HR/Ncfsc/Sp3ms	3
+מֵאֲחֻזַּת	H9006/{H0272}	HR/Ncfsc	1
+מֵאֲחֻזָּתוֹ	H9006/{H0272}/H9023	HR/Ncfsc/Sp3ms	3
+מֵאֲחֻזָּתָם	H9006/{H0272}/H9028	HR/Ncfsc/Sp3mp	1
+אַחְזַי	{H0273}	HNpm	1
+אֲחַזְיָה	{H0274H}	HNpm	3	{H0274G}	HNpm	2
+אֲחַזְיָהוּ	{H0274H}	HNpm	21	{H0274G}	HNpm	5
+וַאֲחַזְיָהוּ	H9002/{H0274H}	HC/Npm	3
+וַאֲחַזְיָה	H9002/{H0274H}	HC/Npm	2
+לַאֲחַזְיָהוּ	H9005/{H0274H}	HR/Npm	1
+אֲחֻזָּם	{H0275}	HNpm	1
+אֵחִי	{H0278}	HNpm	1
+אֲחִיאָם	{H0279}	HNpm	2
+אֲחִידָן	{H0280}	ANcfpa	1
+אֲחִיָּהוּ	{H0281H}	HNpm	4
+אֲחִיָּה	{H0281H}	HNpm	7	{H0281I}	HNpm	4	{H0281J}	HNpm	1	{H0281L}	HNpm	1	{H0281M}	HNpm	1
+וַאֲחִיָּהוּ	H9002/{H0281H}	HC/Npm	1
+וַאֲחִיָּה	H9002/{H0281O}	HC/Npm	1	H9002/{H0281G}	HC/Npm	1	H9002/{H0281K}	HC/Npm	1	H9002/{H0281N}	HC/Npm	1
+לַאֲחִיָּה	H9005/{H0281O}	HR/Npm	1
+אֲחִיהוּד	{H0282}	HNpm	1
+וְאַחְיוֹ	H9002/{H0283G}	HC/Npm	3	H9002/{H0283I}	HC/Npm	2	H9002/{H0283H}	HC/Npm	1
+אֲחִיחֻד	{H0284}	HNpm	1
+אֲחִטוּב	{H0285G}	HNpm	3
+אֲחִיטוּב	{H0285H}	HNpm	4	{H0285G}	HNpm	2	{H0285I}	HNpm	2	{H0285J}	HNpm	2
+וַאֲחִיטוּב	H9002/{H0285H}	HC/Npm	1	H9002/{H0285I}	HC/Npm	1
+אֲחִילוּד	{H0286}	HNpm	5
+וַאֲחִימוֹת	H9002/{H0287}	HC/Npm	1
+אֲחִימֶלֶךְ	{H0288G}	HNpm	9	{H0288H}	HNpm	1
+לַאֲחִימֶלֶךְ	H9005/{H0288G}	HR/Npm	3
+וַאֲחִימֶלֶךְ	H9002/{H0288I}	HC/Npm	4
+אֲחִימַן	{H0289G}	HNpm	3
+וַאֲחִימָן	H9002/{H0289H}	HC/Npm	1
+אֲחִימָעַץ	{H0290G}	HNpm	1	{H0290H}	HNpm	1
+אֲחִימַעַץ	{H0290H}	HNpm	8	{H0290I}	HNpm	1
+וַאֲחִימַעַץ	H9002/{H0290H}	HC/Npm	4
+אַחְיָן	{H0291}	HNpm	1
+אֲחִינָדָב	{H0292}	HNpm	1
+אֲחִינֹעַם	{H0293H}	HNpf	4	{H0293G}	HNpf	1
+לַאֲחִינֹעַם	H9005/{H0293H}	HR/Npf	2
+אֲחִיסָמָךְ	{H0294}	HNpm	3
+אֲחִיעֶזֶר	{H0295G}	HNpm	5	{H0295H}	HNpm	1
+אֲחִיקָם	{H0296}	HNpm	19
+וַאֲחִיקָם	H9002/{H0296}	HC/Npm	1
+לַאֲחִירָם	H9005/{H0297}	HR/Npm	1
+הָאֲחִירָמִי	H9009/{H0298}	HTd/Ngmsa	1
+אֲחִירַע	{H0299}	HNpm	5
+וַאֲחִישָׁחַר	H9002/{H0300}	HC/Npm	1
+וַאֲחִישָׁר	H9002/{H0301}	HC/Npm	1
+אֲחִיתֹפֶל	{H0302}	HNpm	17
+וַאֲחִיתֹפֶל	H9002/{H0302}	HC/Npm	3
+אַחְלָב	{H0303}	HNpl	1
+אַחְלָי	{H0304G}	HNpm	1	{H0304H}	HNpm	1
+אַחֲלֵי	{H0305}	HTj	1
+אַחֲלַי	{H0305}	HTj	1
+וְאַחְלָמָה	H9002/{H0306}	HC/Ncfsa	2
+בְּאַחְמְתָא	H9003/{H0307}	AR/Npl	1
+אֲחַסְבַּי	{H0308}	HNpm	1
+תְּאַחֲרוּ	{H0309}	HVpj2mp	1
+מְאַחֲרֵי	{H0309}	HVprmpc	2
+אֶחֱרוּ	{H0309}	HVpp3cp	1
+יְאַחֵר	{H0309}	HVpi3ms	2
+תְאַחֵר	{H0309}	HVpi2ms	2	{H0309}	HVpi3fs	1
+תְּאַחַר	{H0309}	HVpj2ms	3
+תְּאַחֵר	{H0309}	HVpj2ms	1
+אֵחַר	{H0309}	HVpp3ms	1
+וָאֵחַר	H9001/{H0309}	Hc/Vqw1cs	1
+לַמְאַחֲרִים	H9005/{H0309}	HRd/Vprmpa	1
+אַחֲרֵי	{H0310A}	HAcmpc	274	{H0311}	ANcmpc	2
+אַחַר	{H0310A}	HAcmsc	42	{H0310A}	HAcmsa	9
+אַחֲרֵיכֵן	{H0310A}/{H3651C}	HAcmpc/D	3
+אַחֲרַי	{H0310A}/H9030	HAcmpc/Sp1bs	10	{H0310B}/H9030	HNcmpc/Sp1bs	1
+אַחֲרָי	{H0310A}/H9030	HAcmpc/Sp1bs	10
+אַחַרֶיךָ	{H0310A}/H9031	HAcmpc/Sp2ms	1
+אַחֲרֶיךָ	{H0310A}/H9031	HAcmpc/Sp2ms	29
+אַחֲרַיִךְ	{H0310A}/H9032	HAcmpc/Sp2fs	3
+אַחֲרָיו	{H0310A}/H9033	HAcmpc/Sp3ms	79
+אַחֲרֶיהָ	{H0310A}/H9034	HAcmpc/Sp3fs	12
+אַחֲרֵינוּ	{H0310A}/H9035	HAcmpc/Sp1bp	4
+אַחֲרֵיכֶם	{H0310A}/H9036	HAcmpc/Sp2mp	7
+אַחֲרֵיהֶם	{H0310A}/H9038	HAcmpc/Sp3mp	47
+אַחֲרֵיהֶן	{H0310A}/H9039	HAcmpc/Sp3fp	6
+וְאַחַר	H9002/{H0310A}	HC/Acmsa	28	H9002/{H0310A}	HC/Acmsc	14
+וְאַחֲרֵי	H9002/{H0310A}	HC/Acmpc	44
+וְאַחֲרֵיכֵן	H9002/{H0310A}/{H3651C}	HC/Acmpc/D	2
+וְאַחֲרַי	H9002/{H0310A}/H9030	HC/Acmpc/Sp1bs	1
+וְאַחֲרֶיךָ	H9002/{H0310A}/H9031	HC/Acmpc/Sp2ms	2
+וְאַחֲרַיִךְ	H9002/{H0310A}/H9032	HC/Acmpc/Sp2fs	1
+וְאַחֲרָיו	H9002/{H0310A}/H9033	HC/Acmpc/Sp3ms	18
+וְאַחֲרֶיהָ	H9002/{H0310A}/H9034	HC/Acmpc/Sp3fs	1
+וְאַחֲרֵיהֶם	H9002/{H0310A}/H9038	HC/Acmpc/Sp3mp	4
+וּמֵאַחֲרַי	H9002/H9006/{H0310A}/H9030	HC/R/Acmpc/Sp1bs	1
+בְּאַחֲרֵי	H9003/{H0310A}	HR/Acmpc	1
+מֵאַחַר	H9006/{H0310A}	HR/Acmsc	2	H9006/{H0310A}	HR/Acmsa	1
+מֵאַחֲרֵי	H9006/{H0310A}	HR/Acmpc	26
+מֵאַחֲרַי	H9006/{H0310A}/H9030	HR/Acmpc/Sp1bs	5
+מֵאַחֲרָי	H9006/{H0310A}/H9030	HR/Acmpc/Sp1bs	1
+מֵאַחֲרֶיךָ	H9006/{H0310A}/H9031	HR/Acmpc/Sp2ms	2
+מֵאַחֲרָיִךְ	H9006/{H0310A}/H9032	HR/Acmpc/Sp2fs	1
+מֵאַחֲרָיו	H9006/{H0310A}/H9033	HR/Acmpc/Sp3ms	12
+מֵאַחֲרֶיהָ	H9006/{H0310A}/H9034	HR/Acmpc/Sp3fs	1
+מֵאַחֲרֵיכֶם	H9006/{H0310A}/H9036	HR/Acmpc/Sp2mp	1
+מֵאַחֲרֵיהֶם	H9006/{H0310A}/H9038	HR/Acmpc/Sp3mp	7
+אַחֲרֵיהוֹן	{H0311}/H9038	ANcmpc/Sp3mp	1
+אֲחֵרוֹת	{H0312}	HAafpa	5
+אַחֶרֶת	{H0312}	HAafsa	12	{H0312}	HAafsc	1
+אֲחֵרִים	{H0312}	HAampa	76
+אַחֵר	{H0312}	HAamsa	48	{H0313}	HNpm	1
+אֲחֵרִין	{H0312}	HAampa	1
+וְאַחֵר	H9002/{H0312}	HC/Aamsa	3
+וְלַאֲחֵרִים	H9002/H9005/{H0312}	HC/R/Aampa	1
+לַאֲחֵרִים	H9005/{H0312}	HR/Aampa	5
+לְאַחֵר	H9005/{H0312}	HR/Aamsa	3
+לָאַחֶרֶת	H9005/{H0312}	HRd/Aafsa	1
+מֵאַחֶרֶת	H9006/{H0312}	HR/Aafsa	1
+הָאַחֶרֶת	H9009/{H0312}	HTd/Aafsa	6
+הָאַחֵר	H9009/{H0312}	HTd/Aamsa	3
+אַחֲרוֹן	{H0314}	HAamsa	8
+אַחֲרֹנִים	{H0314}	HAampa	7
+וְאַחֲרוֹן	H9002/{H0314}	HC/Aamsa	1
+וְכָאַחֲרֹנָה	H9002/H9004/{H0314}	HC/Rd/Aafsa	1
+וְהָאַחֲרוֹנִים	H9002/H9009/{H0314}	HC/Td/Aampa	3
+וְהָאַחֲרוֹן	H9002/H9009/{H0314}	HC/Td/Aamsa	1
+וְהָאַחֲרֹנִים	H9002/H9009/{H0314}	HC/Td/Aampa	2
+וְהָאֲחרֹנִים	H9002/H9009/{H0314}	HC/Td/Aampa	1
+וְהָאֲחֲרוֹנִים	H9002/H9009/{H0314}	HC/Td/Aampa	1
+וְהָאֲחֲרֹנִים	H9002/H9009/{H0314}	HC/Td/Aampa	1
+וְהָאֲחַרוֹנִים	H9002/H9009/{H0314}	HC/Td/Aampa	1
+בָּאַחֲרוֹנָה	H9003/{H0314}	HRd/Aafsa	1
+בָּאַחֲרֹנָה	H9003/{H0314}	HRd/Aafsa	5
+לָאַחֲרֹנָה	H9005/{H0314}	HRd/Aafsa	2
+לָאַחֲרֹנִים	H9005/{H0314}	HRd/Aampa	1
+הָאַחֲרוֹן	H9009/{H0314}	HTd/Aamsa	12
+הָאַחֲרוֹנִים	H9009/{H0314}	HTd/Aampa	1
+הָאַחֲרֹנִים	H9009/{H0314}	HTd/Aampa	2
+וְאַחְרַח	H9002/{H0315}	HC/Npm	1
+אֲחַרְחֵל	{H0316}	HNpm	1
+אָחֳרִי	{H0317}	AAabsa	5
+וְאָחֳרִי	H9002/{H0317}	AC/Aabsa	1
+אָחֳרֵין	{H0318}	AD	1
+אַחֲרִית	{H0319}	HNcfsc	6	{H0319}	HNcfsa	6
+אַחֲרִיתִי	{H0319}/H9020	HNcfsc/Sp1bs	1
+אַחֲרִיתוֹ	{H0319}/H9023	HNcfsc/Sp3ms	2
+אַחֲרִיתָהּ	{H0319}/H9024	HNcfsc/Sp3fs	2
+אַחֲרִיתֵנוּ	{H0319}/H9025	HNcfsc/Sp1bp	1
+אַחֲרִיתָם	{H0319}/H9028	HNcfsc/Sp3mp	1
+אַחֲרִיתָן	{H0319}/H9029	HNcfsc/Sp3fp	1
+וְאַחֲרִית	H9002/{H0319}	HC/Ncfsc	1
+וְאַחֲרִיתְךָ	H9002/{H0319}/H9021	HC/Ncfsc/Sp2ms	1
+וְאַחֲרִיתֵךְ	H9002/{H0319}/H9022	HC/Ncfsc/Sp2fs	2
+וְאַחֲרִיתוֹ	H9002/{H0319}/H9023	HC/Ncfsc/Sp3ms	2
+וְאַחֲרִיתָהּ	H9002/{H0319}/H9024	HC/Ncfsc/Sp3fs	6
+וְאַחֲרִיתְכֶן	H9002/{H0319}/H9027	HC/Ncfsc/Sp2fp	1
+וְאַחֲרִיתָם	H9002/{H0319}/H9028	HC/Ncfsc/Sp3mp	1
+וּבְאַחֲרִית	H9002/H9003/{H0319}	HC/R/Ncfsc	1
+וּבְאַחֲרִיתוֹ	H9002/H9003/{H0319}/H9023	HC/R/Ncfsc/Sp3ms	1
+בְּאַחֲרִית	H9003/{H0319}	HR/Ncfsc	16	H9003/{H0320}	AR/Ncfsc	1
+בְאַחֲרִיתֶךָ	H9003/{H0319}/H9021	HR/Ncfsc/Sp2ms	1
+בְּאַחֲרִיתֶךָ	H9003/{H0319}/H9021	HR/Ncfsc/Sp2ms	2
+בְּאַחֲרִיתָהּ	H9003/{H0319}/H9024	HR/Ncfsc/Sp3fs	1
+לְאַחֲרִיתֵךְ	H9005/{H0319}/H9022	HR/Ncfsc/Sp2fs	1
+לְאַחֲרִיתוֹ	H9005/{H0319}/H9023	HR/Ncfsc/Sp3ms	1
+לְאַחֲרִיתָהּ	H9005/{H0319}/H9024	HR/Ncfsc/Sp3fs	1
+לְאַחֲרִיתָם	H9005/{H0319}/H9028	HR/Ncfsc/Sp3mp	2
+אָחֳרָן	{H0321}	AAabsa	2
+וְאָחֳרָן	H9002/{H0321}	AC/Aabsa	2
+לְאָחֳרָן	H9005/{H0321}	AR/Aabsa	1
+אֲחֹרַנִּית	{H0322}	HD	7
+אֲחַשְׁדַּרְפְּנֵי	{H0323}	HNcmpc	1
+וְהָאֲחַשְׁדַּרְפְּנִים	H9002/H9009/{H0323}	HC/Td/Ncmpa	1
+לַאֲחַשְׁדַּרְפְּנֵי	H9005/{H0323}	HR/Ncmpc	1
+הָאֲחַשְׁדַּרְפְּנִים	H9009/{H0323}	HTd/Ncmpa	1
+אֲחַשְׁדַּרְפְּנַיָּא	{H0324}/H9010	ANcmpd/Ta	3
+וַאֲחַשְׁדַּרְפְּנַיָּא	H9002/{H0324}/H9010	AC/Ncmpd/Ta	4
+לַאֲחַשְׁדַּרְפְּנַיָּא	H9005/{H0324}/H9010	AR/Ncmpd/Ta	2
+אֲחַשְׁוֵרֹשׁ	{H0325}	HNpm	4
+אֳחַשְׁוֵרוֹשׁ	{H0325}	HNpm	1
+אֲחַשְׁוֵרוֹשׁ	{H0325}	HNpm	25
+הָאֲחַשְׁתָּרִי	H9009/{H0326}	HTd/Ngmsa	1
+הָאֲחַשְׁתְּרָנִים	H9009/{H0327}	HTd/Aampa	2
+הָאִטִּים	H9009/{H0328A}	HTd/Ncmpa	1
+אַט	{H0328B}	HNcmsa	1
+לְאַט	H9005/{H0328B}	HR/Ncmsa	2
+לְאִטִּי	H9005/{H0328B}/H9020	HR/Ncmsc/Sp1bs	1
+אָטָד	{H0329H}	HNcmsa	1
+הָאָטָד	H9009/{H0329H}	HTd/Ncmsa	3	H9009/{H0329G}	HTd/Npmsa	2
+אֵטוּן	{H0330}	HNcmsc	1
+אֲטֻמוֹת	{H0331}	HVqsfpa	2
+אֹטֵם	{H0331}	HVqrmsa	3
+יַאְטֵם	{H0331}	HVqi3ms	1
+אֲטֻמִים	{H0331}	HVqsmpa	1
+הָאֲטֻמוֹת	H9009/{H0331}	HTd/Vqsfpa	1
+תֶּאְטַר	{H0332}	HVqj3fs	1
+אָטֵר	{H0333G}	HNpm	2	{H0333H}	HNpm	2	{H0333I}	HNpm	1
+אִטֵּר	{H0334}	HAamsa	2
+אֵי	{H0335}	HTi	24
+אַיֶּכָּה	{H0335}/H9041	HTi/Sp2ms	1
+אַיּוֹ	{H0335}/H9043	HTi/Sp3ms	3
+אַיָּם	{H0335}/H9048	HTi/Sp3mp	2
+וְאֵי	H9002/{H0335}	HC/Ti	6
+וְאַיּוֹ	H9002/{H0335}/H9043	HC/Ti/Sp3ms	2
+וְאִילוֹ	H9002/{H0337}/H9005/H9033	HC/Ti/Rd/Sp3ms	1
+אִיִּים	{H0339}	HNcmpa	11	{H0338}	HNcmpa	3
+אִיֵּי	{H0339}	HNcmpc	3
+אִי	{H0339}	HNcmsa	2	{H0350+}	HNpm	1	{H0336}	HTi	1	{H0337}	HTi	1	{H0339}	HNcmsc	1
+וְאִיֵּי	H9002/{H0339}	HC/Ncmpc	1
+וְאִיִּים	H9002/{H0339}	HC/Ncmpa	1
+וּמֵאִיֵּי	H9002/H9006/{H0339}	HC/R/Ncmpc	1
+בְּאִיֵּי	H9003/{H0339}	HR/Ncmpc	1
+בָּאִיִּים	H9003/{H0339}	HRd/Ncmpa	1
+בָאִיִּים	H9003/{H0339}	HRd/Ncmpa	1
+לְאִיִּים	H9005/{H0339}	HR/Ncmpa	1
+לָאִיִּים	H9005/{H0339}	HRd/Ncmpa	2
+מֵאִיֵּי	H9006/{H0339}	HR/Ncmpc	2
+הָאִיִּן	H9009/{H0339}	HTd/Ncmpa	1
+הָאִיִּים	H9009/{H0339}	HTd/Ncmpa	5
+הָאִי	H9009/{H0339}	HTd/Ncmsa	2
+וְאָיַבְתִּי	H9001/{H0340}	Hc/Vqq1cs	1
+אֹיְבֵי	{H0341}	HVqrmpc	7
+אוֹיְבִים	{H0341}	HVqrmpa	1
+אֹיֵב	{H0341}	HVqrmsa	1
+אוֹיְבֵי	{H0341}	HVqrmpc	2
+אוֹיֵב	{H0341}	HVqrmsa	38
+אֹיְבָי	{H0341}/H9020	HVqrmpc/Sp1bs	2
+אֹיְבַי	{H0341}/H9020	HVqrmpc/Sp1bs	16
+אוֹיְבָי	{H0341}/H9020	HVqrmpc/Sp1bs	1
+אֹיַבְתִּי	{H0341}/H9020	HVqrfsc/Sp1bs	2
+אוֹיְבַי	{H0341}/H9020	HVqrmpc/Sp1bs	9
+אֹיְבִי	{H0341}/H9020	HVqrmsc/Sp1bs	7
+אֹיִבְךָ	{H0341}/H9021	HVqrmsc/Sp2ms	4
+אוֹיְבֶיךָ	{H0341}/H9021	HVqrmpc/Sp2ms	6
+אוֹיְבֶךָ	{H0341}/H9021	HVqrmpc/Sp2ms	1
+אֹיְבֶךָ	{H0341}/H9021	HVqrmsc/Sp2ms	1
+אֹיְבֶיךָ	{H0341}/H9021	HVqrmpc/Sp2ms	31
+אוֹיִבְךָ	{H0341}/H9021	HVqrmsc/Sp2ms	1
+אוֹיְבַיִךְ	{H0341}/H9022	HVqrmpc/Sp2fs	1
+אֹיְבָיִךְ	{H0341}/H9022	HVqrmpc/Sp2fs	1
+אֹיְבֵךְ	{H0341}/H9022	HVqrmsc/Sp2fs	1
+אֹיְבָיו	{H0341}/H9023	HVqrmpc/Sp3ms	18
+אוֹיְבָיו	{H0341}/H9023	HVqrmpc/Sp3ms	7
+אֹיְבוֹ	{H0341}/H9023	HVqrmsc/Sp3ms	4
+אֹיְבֶיהָ	{H0341}/H9024	HVqrmpc/Sp3fs	2
+אוֹיְבֵינוּ	{H0341}/H9025	HVqrmpc/Sp1bp	4
+אוֹיְבֵנוּ	{H0341}/H9025	HVqrmsc/Sp1bp	1
+אֹיְבֵינוּ	{H0341}/H9025	HVqrmpc/Sp1bp	5
+אֹיְבֵיכֶם	{H0341}/H9026	HVqrmpc/Sp2mp	20
+אוֹיְבֵיהֶם	{H0341}/H9028	HVqrmpc/Sp3mp	5
+אֹיְבֵיהֶם	{H0341}/H9028	HVqrmpc/Sp3mp	26
+אֹיבֵיהֶם	{H0341}/H9028	HVqrmpc/Sp3mp	1
+וְאוֹיֵב	H9002/{H0341}	HC/Vqrmsa	2
+וְאֹיְבֵי	H9002/{H0341}	HC/Vqrmpc	1
+וְאֹיְבַי	H9002/{H0341}/H9020	HC/Vqrmpc/Sp1bs	4
+וְאֹיְבָיו	H9002/{H0341}/H9023	HC/Vqrmpc/Sp3ms	2
+וְאֹיְבֵינוּ	H9002/{H0341}/H9025	HC/Vqrmpc/Sp1bp	2
+וּבְאֹיְבַי	H9002/H9003/{H0341}/H9020	HC/R/Vqrmpc/Sp1bs	1
+וּמֵאֹיְבַי	H9002/H9006/{H0341}/H9020	HC/R/Vqrmpc/Sp1bs	1
+בְּאֹיְבֵי	H9003/{H0341}	HR/Vqrmpc	2
+כְּאוֹיֵב	H9004/{H0341}	HR/Vqrmsa	2
+לְאוֹיְבִים	H9005/{H0341}	HR/Vqrmpa	1
+לְאֹיְבִים	H9005/{H0341}	HR/Vqrmpa	1
+לְאֹיְבֵי	H9005/{H0341}	HR/Vqrmpc	1
+לְאֹיֵב	H9005/{H0341}	HR/Vqrmsa	1
+לְאוֹיֵב	H9005/{H0341}	HR/Vqrmsa	4
+לְאֹיְבֶיךָ	H9005/{H0341}/H9021	HR/Vqrmpc/Sp2ms	2
+לְאֹיְבַיִךְ	H9005/{H0341}/H9022	HR/Vqrmpc/Sp2fs	2
+לְאֹיְבָיו	H9005/{H0341}/H9023	HR/Vqrmpc/Sp3ms	3
+מֵאוֹיֵב	H9006/{H0341}	HR/Vqrmsa	2
+מֵאֹיְבִים	H9006/{H0341}	HR/Vqrmpa	1
+מֵאֹיְבִי	H9006/{H0341}/H9020	HR/Vqrmsc/Sp1bs	2
+מֵאוֹיְבָי	H9006/{H0341}/H9020	HR/Vqrmpc/Sp1bs	1
+מֵאֹיְבָי	H9006/{H0341}/H9020	HR/Vqrmpc/Sp1bs	2
+מֵאֹיְבַי	H9006/{H0341}/H9020	HR/Vqrmpc/Sp1bs	4
+מֵאֹיְבֶיךָ	H9006/{H0341}/H9021	HR/Vqrmpc/Sp2ms	1
+מֵאֹיְבֵיכֶם	H9006/{H0341}/H9026	HR/Vqrmpc/Sp2mp	1
+מֵאוֹיְבֵיהֶם	H9006/{H0341}/H9028	HR/Vqrmpc/Sp3mp	2
+מֵאֹיְבֵיהֶם	H9006/{H0341}/H9028	HR/Vqrmpc/Sp3mp	2
+הָאוֹיֵב	H9009/{H0341}	HTd/Vqrmsa	4
+הָאֹיֵב	H9009/{H0341}	HTd/Vqrmsa	1
+אֵיבָה	{H0342}	HNcfsa	1
+אֵיבַת	{H0342}	HNcfsc	2
+וְאֵיבָה	H9002/{H0342}	HC/Ncfsa	1
+בְאֵיבָה	H9003/{H0342}	HR/Ncfsa	1
+אֵיד	{H0343}	HNcmsc	3	{H0343}	HNcmsa	2
+אֵידִי	{H0343}/H9020	HNcmsc/Sp1bs	2
+אֵידֶךָ	{H0343}/H9021	HNcmsc/Sp2ms	1
+אֵידוֹ	{H0343}/H9023	HNcmsc/Sp3ms	3
+אֵידָם	{H0343}/H9028	HNcmsc/Sp3mp	9
+וְאֵיד	H9002/{H0343}	HC/Ncmsa	1
+וְאֵידְכֶם	H9002/{H0343}/H9026	HC/Ncmsc/Sp2mp	1
+בְּאֵידְכֶם	H9003/{H0343}/H9026	HR/Ncmsc/Sp2mp	1
+לְאֵיד	H9005/{H0343}	HR/Ncmsa	1
+הָאַיָּה	H9009/{H0344}	HTd/Ncfsa	2
+וְאַיָּה	H9002/{H0345G}	HC/Npm	1
+אַיָּה	{H0345H}	HNpfsa	4	{H0345G}	HNpfsa	1	{H0344}	HNcfsa	1
+אַיֵּה	{H0346}	HTi	37
+וְאַיֵּה	H9002/{H0346}	HC/Ti	7
+אִיּוֹב	{H0347}	HNpm	50
+וְאִיּוֹב	H9002/{H0347}	HC/Npm	4
+בְּאִיּוֹב	H9003/{H0347}	HR/Npm	1
+כְּאִיּוֹב	H9004/{H0347}	HR/Npm	1
+לְאִיּוֹב	H9005/{H0347}	HR/Npm	2
+אִיזָבֶל	{H0348}	HNpf	5
+אִיזֶבֶל	{H0348}	HNpf	14
+וְאִיזֶבֶל	H9002/{H0348}	HC/Npf	1
+לְאִיזֶבֶל	H9005/{H0348}	HR/Npf	2
+אֵיךְ	{H0349A}	HTi	43
+וְאֵיךְ	H9002/{H0349A}	HC/Ti	18
+אֵיכָה	{H0349B}	HTi	17
+אֵיכָכָה	{H0349C}	HTi	3
+וְאֵיכָכָה	H9002/{H0349C}	HC/Ti	1
+אִיכָבוֹד	{H0350}	HNpm	1
+אֵיכֹה	{H0351}	HTi	1
+אַיִל	{H0352A}	HNcmsa	21	{H0352B}	HNcmsa	1
+אֵיל	{H0352A}	HNcmsc	7	{H0352B}	HNcmsc	2	{H0352C}	HNcmsc	1	{H0364+}	HNpmsc	1
+אֵילִם	{H0352A}	HNcmpa	25	{H0362}	HNpmpa	1
+אֵילִים	{H0352A}	HNcmpa	16	{H0352B}	HNcmpa	1	{H0879}	HNpmpa	1
+וָאַיִל	H9002/{H0352A}	HC/Ncmsa	6
+וְאַיִל	H9002/{H0352A}	HC/Ncmsa	10
+וְאֵילִים	H9002/{H0352A}	HC/Ncmpa	4
+וְאֵילֵי	H9002/{H0352A}	HC/Ncmpc	1
+וְאֵילִם	H9002/{H0352A}	HC/Ncmpa	3
+בָּאַיִל	H9003/{H0352A}	HRd/Ncmsa	1
+בְּאֵיל	H9003/{H0352A}	HR/Ncmsc	2
+כְאֵילִים	H9004/{H0352A}	HR/Ncmpa	2
+כְּאֵילִים	H9004/{H0352A}	HR/Ncmpa	1
+לָאָיִל	H9005/{H0352A}	HRd/Ncmsa	1
+לָאֵילִם	H9005/{H0352A}	HRd/Ncmpa	6	H9005/{H0352B}	HRd/Ncmpa	1
+לָאַיִל	H9005/{H0352A}	HRd/Ncmsa	14
+לָאֵילִים	H9005/{H0352A}	HRd/Ncmpa	1
+מֵאֵיל	H9006/{H0352A}	HR/Ncmsc	3
+הָאֵילִם	H9009/{H0352A}	HTd/Ncmpa	3
+הָאָיִל	H9009/{H0352A}	HTd/Ncmsa	5
+הָאֵלִים	H9009/{H0352A}	HTd/Ncmpa	1
+הָאַיִל	H9009/{H0352A}	HTd/Ncmsa	20	H9009/{H0352B}	HTd/Ncmsa	1
+אֵלֵיהֵמָה	{H0352B}/H9028	HNcmpc/Sp3mp	1
+בְּאֵילִים	H9003/{H0352B}	HR/Ncmpa	1
+הָאֵילִים	H9009/{H0352B}	HTd/Ncmpa	2	H9009/{H0352A}	HTd/Ncmpa	1
+אֵלֵי	{H0352C}	HNcmpc	1
+אֵילֵי	{H0352C}	HNcmpc	2	{H0352A}	HNcmpc	1	{H0352D}	HNcmpc	1
+אֵלֵיהֶם	{H0352D}/H9028	HNcmpc/Sp3mp	1
+בָּאֵלִים	H9003/{H0352D}	HRd/Ncmpa	1
+מֵאֵילִים	H9006/{H0352D}	HR/Ncmpa	1
+אֱיָל	{H0353}	HNcmsa	1
+אַיָּל	{H0354}	HNcmsa	1
+וְכָאַיָּל	H9002/H9004/{H0354}	HC/Rd/Ncmsa	2
+כְּאַיָּלִים	H9004/{H0354}	HR/Ncmpa	1
+כְּאַיָּל	H9004/{H0354}	HR/Ncmsa	1
+כָּאַיָּל	H9004/{H0354}	HRd/Ncmsa	1
+מֵאַיָּל	H9006/{H0354}	HR/Ncmsa	1
+הָאַיָּל	H9009/{H0354}	HTd/Ncmsa	1
+הָאַיָּלִים	H9009/{H0354}	HTd/Ncmpa	3
+אַיָּלוֹת	{H0355}	HNcfpa	2
+אַיָּלָה	{H0355}	HNcfsa	1
+אַיֶּלֶת	{H0355}	HNcfsc	2	{H0355}	HNcfsa	1
+בְּאַיְלוֹת	H9003/{H0355}	HR/Ncfpc	2
+כָּאַיָּלוֹת	H9004/{H0355}	HRd/Ncfpa	3
+אֵילוֹן	{H0356G}	HNpm	1	{H0356J}	HNpm	1
+אֵילֹן	{H0356G}	HNpm	1
+וְאֵלוֹן	H9002/{H0356H}	HC/Npm	1
+לְאֵלוֹן	H9005/{H0356H}	HR/Npm	1
+וְאֵילוֹן	H9002/{H0356I}	HC/Npl	1	H9002/{H0358+}	HC/Npl	1
+אַיָּלוֹן	{H0357}	HNpl	6
+אַיָּלֹנָה	{H0357}/H9011	HNpl/Sd	1
+וְאַיָּלוֹן	H9002/{H0357}	HC/Npl	1
+בְּאַיָּלוֹן	H9003/{H0357}	HR/Npl	2
+אֵילַת	{H0359A}	HNpl	3
+מֵאֵילַת	H9006/{H0359A}	HR/Npl	1
+אֵלוֹת	{H0359B}	HNpl	1
+אֵילוֹת	{H0359B}	HNpl	2
+מֵאֵילוֹת	H9006/{H0359B}	HR/Npl	1
+אֱיָלוּתִי	{H0360}/H9020	HNcfsc/Sp1bs	1
+וְאֵלַמּוֹת	H9002/{H0361}	HC/Ncfpa	1
+לָאֵלַמּוֹת	H9005/{H0361}	HRd/Ncfpa	1
+אֵילִמָה	{H0362}/H9011	HNpl/Sd	2
+וּבְאֵילִם	H9002/H9003/{H0362}	HC/R/Npl	1
+מֵאֵילִם	H9006/{H0362}	HR/Npl	2
+אִילָן	{H0363}	ANcbsa	1
+אִילָנָא	{H0363}/H9010	ANcbsd/Ta	5
+אָיֹם	{H0366}	HAamsa	1
+אֲיֻמָּה	{H0366}	HAafsa	2
+אֵימָה	{H0367}	HNcfsa	5
+אֵימַת	{H0367}	HNcfsc	1
+אֵמִים	{H0367}	HNcmpa	1	{H0368}	HNpmpa	1
+אֵימָתָה	{H0367}	HNcfsa	1
+אֵמָתִי	{H0367}/H9020	HNcfsc/Sp1bs	1
+אֵימָתִי	{H0367}/H9020	HNcfsc/Sp1bs	1
+אֵמֶיךָ	{H0367}/H9021	HNcmpc/Sp2ms	1
+אֵימַתְכֶם	{H0367}/H9026	HNcfsc/Sp2mp	1
+וְאֵימוֹת	H9002/{H0367}	HC/Ncfpc	1
+וְאֵמָתְךָ	H9002/{H0367}/H9021	HC/Ncfsc/Sp2ms	1
+וְאֵמָתוֹ	H9002/{H0367}/H9023	HC/Ncfsc/Sp3ms	1
+וּבָאֵימִים	H9002/H9003/{H0367}	HC/Rd/Ncmpa	1
+בְּאֵימָה	H9003/{H0367}	HR/Ncfsa	1
+הָאֵימִים	H9009/{H0368}	HTd/Npl	1
+הָאֵמִים	H9009/{H0368}	HTd/Npl	1
+אַיִן	{H0369}	HNcmsa	16
+אָיִן	{H0369}	HNcmsa	8
+אֵין	{H0369}	HNcmsc	358	{H0369}	HNcbsc	1
+אֵינֶנִּי	{H0369}/H9040	HNcmsc/Sp1bs	9
+אֵינְךָ	{H0369}/H9041	HNcmsc/Sp2ms	9
+אֵינֶנּוּ	{H0369}/H9043	HNcmsc/Sp3ms	35	{H0369}/H9045	HNcmsc/Sp1bp	1
+אֵינֶנָּה	{H0369}/H9044	HNcmsc/Sp3fs	6
+אֵינְכֶם	{H0369}/H9046	HNcmsc/Sp2mp	6
+אֵינָם	{H0369}/H9048	HNcmsc/Sp3mp	9
+אֵינֵמוֹ	{H0369}/H9048	HNcmsc/Sp3mp	1
+וְאֵין	H9002/{H0369}	HC/Ncmsc	229
+וָאָיִן	H9002/{H0369}	HC/Ncmsa	3
+וָאַיִן	H9002/{H0369}	HC/Ncmsa	6
+וְאֵינֶנִּי	H9002/{H0369}/H9040	HC/Ncmsc/Sp1bs	3
+וְאֵינְךָ	H9002/{H0369}/H9041	HC/Ncmsc/Sp2ms	2
+וְאֵינֵךְ	H9002/{H0369}/H9042	HC/Ncmsc/Sp2fs	2
+וְאֵינֶנּוּ	H9002/{H0369}/H9043	HC/Ncmsc/Sp3ms	12
+וְאֵינָם	H9002/{H0369}/H9048	HC/Ncmsc/Sp3mp	5
+וְאֵינֵמוֹ	H9002/{H0369}/H9048	HC/Ncmsc/Sp3mp	1
+וּבְאֵין	H9002/H9003/{H0369}	HC/R/Ncmsc	1
+וּכְאֵין	H9002/H9004/{H0369}	HC/R/Ncmsc	1
+וּלְאֵין	H9002/H9005/{H0369}	HC/R/Ncmsc	1
+וּמֵאֵין	H9002/H9006/{H0369}	HC/R/Ncmsc	3
+בְּאֵין	H9003/{H0369}	HR/Ncmsc	9
+כְאַיִן	H9004/{H0369}	HR/Ncmsa	3
+כְּאַיִן	H9004/{H0369}	HR/Ncmsa	3
+לְאֵין	H9005/{H0369}	HR/Ncmsc	8
+לְאָיִן	H9005/{H0369}	HR/Ncmsa	1
+מֵאֵין	H9006/{H0369}	HR/Ncmsc	26	{H3985}	HVpp3ms	1
+שֶׁאֵין	H9007/{H0369}	HTr/Ncmsc	1
+הַאֵין	H9008/{H0369}	HTi/Ncmsc	5
+הַאֵינְךָ	H9008/{H0369}/H9041	HTi/Ncmsc/Sp2ms	1
+וּמֵאַיִן	H9002/H9006/{H0370}	HC/R/Ti	5
+מֵאַיִן	H9006/{H0370}	HR/Ti	11	H9006/{H0369}	HR/Ncmsa	2
+וְאִין	H9002/{H0371}	HC/Ti	1
+אִיעֶזֶר	{H0372}	HNpl	1
+הָאִיעֶזְרִי	H9009/{H0373}	HTd/Ngmsa	1
+אֵיפָה	{H0374}	HNcfsa	8
+אֵיפַת	{H0374}	HNcfsc	2
+וְאֵיפַת	H9002/{H0374}	HC/Ncfsc	3
+וְאֵיפָה	H9002/{H0374}	HC/Ncfsa	7
+כְּאֵיפָה	H9004/{H0374}	HR/Ncfsa	1
+לָאֵיפָה	H9005/{H0374}	HRd/Ncfsa	4
+הָאֵפָה	H9009/{H0374}	HTd/Ncfsa	2
+הָאֵיפָה	H9009/{H0374}	HTd/Ncfsa	13
+אֵיפֹה	{H0375}	HTi	9
+וְאֵיפֹה	H9002/{H0375}	HC/Ti	1
+אִישׁ	{H0376G}	HNcmsa	452	{H0376I}	HNcmsa	448	{H0376G}	HNcmsc	206	{H0378+}	HNpm	10	{H0376I}	HNcmsc	7	{H0376H}	HNcmsa	3	{H0376H}	HNcmsc	2
+אִישִׁים	{H0376G}	HNcmpa	3
+אִישׁוֹ	{H0376G}/H9023	HNcmsc/Sp3ms	1
+אִישׁס	{H0376G}\ \H9018	HNcmsa	1
+וָאִישׁ	H9002/{H0376G}	HC/Ncmsa	1
+וּלְאִישׁ	H9002/H9005/{H0376G}	HC/R/Ncmsa	1	H9002/H9005/{H0376I}	HC/R/Ncmsa	1	H9002/H9005/{H0378+}	HC/R/Npmsa	1
+וְלָאִישׁ	H9002/H9005/{H0376G}	HC/Rd/Ncmsa	1
+וְהָאִישׁ	H9002/H9009/{H0376G}	HC/Td/Ncmsa	17
+בָּאִישׁ	H9003/{H0376G}	HRd/Ncmsa	7
+בָאִישׁ	H9003/{H0376G}	HRd/Ncmsa	1
+בְּאִישׁ	H9003/{H0376G}	HR/Ncmsa	4	H9003/{H0376I}	HR/Ncmsa	3	H9003/{H0376G}	HR/Ncmsc	2	H9003/{H0376H}	HR/Ncmsc	1	H9003/{H0376I}	HR/Ncmsc	1
+כְּאִישׁ	H9004/{H0376G}	HR/Ncmsa	16	H9004/{H0376G}	HR/Ncmsc	4
+כָאִישׁ	H9004/{H0376G}	HRd/Ncmsa	1
+לָאִישׁ	H9005/{H0376G}	HRd/Ncmsa	30	H9005/{H0376I}	HRd/Ncmsa	2
+לְאִישׁ	H9005/{H0376G}	HR/Ncmsa	26	H9005/{H0376G}	HR/Ncmsc	15	H9005/{H0376I}	HR/Ncmsa	12	H9005/{H0376H}	HR/Ncmsa	6	H9005/{H0376I}	HR/Ncmsc	1
+לְמֵאִישׁ	H9005/H9006/{H0376G}	HR/R/Ncmsa	3
+מֵאִישׁ	H9006/{H0376G}	HR/Ncmsa	8	H9006/{H0376G}	HR/Ncmsc	6	H9006/{H0376I}	HR/Ncmsa	4
+הַאִישׁ	H9008/{H0376G}	HTi/Ncmsa	1
+הָאִישׁ	H9009/{H0376G}	HTd/Ncmsa	164	H9009/{H0376H}	HTd/Ncmsa	2	H9008/{H0376G}	HTi/Ncmsa	1
+אִישִׁי	{H0376H}/H9020	HNcmsc/Sp1bs	8
+אִישֵׁךְ	{H0376H}/H9022	HNcmsc/Sp2fs	6
+אִישָׁהּ	{H0376H}/H9024	HNcmsc/Sp3fs	25
+וְאִישָׁהּ	H9002/{H0376H}/H9024	HC/Ncmsc/Sp3fs	4
+וּלְאִישָׁהּ	H9002/H9005/{H0376H}/H9024	HC/R/Ncmsc/Sp3fs	1
+וּמֵאִישָׁהּ	H9002/H9006/{H0376H}/H9024	HC/R/Ncmsc/Sp3fs	1
+בְּאִישָׁהּ	H9003/{H0376H}/H9024	HR/Ncmsc/Sp3fs	1
+לְאִישִׁי	H9005/{H0376H}/H9020	HR/Ncmsc/Sp1bs	2
+לְאִישֵׁךְ	H9005/{H0376H}/H9022	HR/Ncmsc/Sp2fs	1
+לְאִישָׁהּ	H9005/{H0376H}/H9024	HR/Ncmsc/Sp3fs	5
+מֵאִישָׁהּ	H9006/{H0376H}/H9024	HR/Ncmsc/Sp3fs	1
+אִיש	{H0376I}	HNcmsa	1
+וְאִישׁ	H9002/{H0376I}	HC/Ncmsa	60	H9002/{H0376G}	HC/Ncmsa	43	H9002/{H0376G}	HC/Ncmsc	31	H9002/{H0376I}	HC/Ncmsc	5
+בְאִישׁ	H9003/{H0376I}	HR/Ncmsa	1	H9003/{H0376G}	HR/Ncmsa	1
+וְהִתְאֹשָׁשׁוּ	H9002/{H0377}	HC/Vtv2mp	1
+בֹּשֶׁת	{H0378}	HNpm	11	{H1322}	HNcfsa	3	{H1322}	HNcfsc	3
+אִישְׁהוֹד	{H0379}	HNpm	1
+בְּאִישׁוֹן	H9003/{H0380}	HR/Ncmsc	1
+כְּאִישׁוֹן	H9004/{H0380}	HR/Ncmsc	3
+אִיתַי	{H0383}	ANcbsa	10	{H0383}	ANcbsc	2	{H0863H}	HNpm	1
+אִיתוֹהִי	{H0383}/H9043	ANcbsc/Sp3ms	1
+אִיתֵיכוֹן	{H0383}/H9046	ANcbsc/Sp2mp	2
+אִיתִיאֵל	{H0384G}	HNpm	1
+לְאִיתִיאֵל	H9005/{H0384H}	HR/Npm	2
+אִיתָמָר	{H0385}	HNpm	13
+וְאִיתָמָר	H9002/{H0385}	HC/Npm	6
+וּלְאִיתָמָר	H9002/H9005/{H0385}	HC/R/Npm	1
+לְאִיתָמָר	H9005/{H0385}	HR/Npm	1
+אֵתָן	{H0386}	HAamsa	1
+אֵיתָן	{H0386}	HAamsa	8	{H0387J}	HNpm	2	{H0387H}	HNpm	1	{H0387I}	HNpm	1
+וְאֵתָנִים	H9002/{H0386}	HC/Aampa	1
+וְהָאֵתָנִים	H9002/H9009/{H0386}	HC/Td/Aampa	1
+בְּאֵיתָן	H9003/{H0386}	HR/Aamsa	1
+לְאֵיתָנוֹ	H9005/{H0386}/H9023	HR/Aamsc/Sp3ms	1
+לְאֵיתָן	H9005/{H0387G}	HR/Npm	1
+מֵאֵיתָן	H9006/{H0387G}	HR/Npm	1
+וְאֵיתָן	H9002/{H0387H}	HC/Npm	1	H9002/{H0387J}	HC/Npm	1
+הָאֵתָנִים	H9009/{H0388}	HTd/Aampa	1
+אַךְ	{H0389}	HD	158
+וְאַךְ	H9002/{H0389}	HC/D	3
+וְאַכַּד	H9002/{H0390}	HC/Npl	1
+אַכְזָב	{H0391}	HAamsa	1
+לְאַכְזָב	H9005/{H0391}	HR/Aamsa	1
+וְאַכְזִיב	H9002/{H0392G}	HC/Npl	1
+אַכְזִיב	{H0392H}	HNpl	1	{H0392G}	HNpl	1
+אַכְזִיבָה	{H0392H}/H9011	HNpl/Sd	1
+אַכְזָר	{H0393}	HAamsa	2
+לְאַכְזָר	H9005/{H0393}	HR/Aamsa	2
+אַכְזָרִי	{H0394}	HAamsa	7
+לְאַכְזָרִי	H9005/{H0394}	HR/Aamsa	1
+אַכְזְרִיּוּת	{H0395}	HNcfsc	1
+הָאֲכִילָה	H9009/{H0396}	HTd/Ncfsa	1
+אָכִישׁ	{H0397}	HNpm	21
+אָכַלְתָּ	{H0398}	HVqp2ms	1
+אִכְלוּ	{H0398}	HVqv2mp	2
+תֵּאָכֵל	{H0398}	HVNi3fs	6
+הֵאָכֹל	{H0398}	HVNaa	2
+אָכָלוּ	{H0398}	HVqp3cp	1
+אָכָל	{H0398}	HVqp3ms	4
+יֵאָכֵל	{H0398}	HVNi3ms	23
+יֹאכֵלוּ	{H0398}	HVqi3mp	13
+נֹאכַל	{H0398}	HVqi1cp	2
+תֵאָכֵל	{H0398}	HVNi3fs	3
+אוֹכֵל	{H0398}	HVqrmsa	4
+אֹכֵל	{H0398}	HVqrmsa	9
+הֶאֱכַלְתִּי	{H0398}	HVhp1cs	1
+נֹּאכַל	{H0398}	HVqi1cp	1
+אָכַלְתִּי	{H0398}	HVqp1cs	8
+אוֹכִיל	{H0398}	HVhi1cs	1
+אֻכְּלוּ	{H0398}	HVPp3cp	3
+תֹאכְלִי	{H0398}	HVqi2fs	2
+אָכָלָה	{H0398}	HVqp3fs	1
+אֹכְלִים	{H0398}	HVqrmpa	8
+יֹאכַל	{H0398}	HVqi3ms	41
+תֹאכֵל	{H0398}	HVqi2ms	6	{H0398}	HVqi3fs	2
+מַאֲכִיל	{H0398}	HVhrmsa	1
+יוֹכְלוּ	{H0398}	HVqi3mp	1
+אָכָלְתָּ	{H0398}	HVqp2ms	1
+אֲכָל	{H0398}	HVqcc	1
+אֹכְלֵי	{H0398}	HVqrmpc	5
+תֵאָכַלְנָה	{H0398}	HVNi3fp	4
+אֱכוֹל	{H0398}	HVqv2ms	3
+אוֹכֵלָה	{H0398}	HVqrfsa	3
+יֵאָכֵלוּ	{H0398}	HVNi3mp	2
+אֹכְלָה	{H0398}	HVqrfsa	4	{H0398}	HVqc1cs	1
+אָכוֹל	{H0398}	HVqaa	9
+אֻכָּל	{H0398}	HVPsmsa	1
+אָכְלוּ	{H0398}	HVqp3cp	13
+יֹאכֵל	{H0398}	HVqi3ms	13
+אֹכַל	{H0398}	HVqi1cs	6
+תֹּאכְלוּ	{H0398}	HVqi2mp	14	{H0398}	HVqj2mp	2
+יֹאכְלוּ	{H0398}	HVqi3mp	27
+אָכְלָה	{H0398}	HVqp3fs	16	{H0399}	AVqrfsa	2	{H0398}	HVqcc	1
+אָכֹל	{H0398}	HVqaa	5
+תֹּאכֵל	{H0398}	HVqi3fs	6	{H0398}	HVqi2ms	3
+תֹאכַל	{H0398}	HVqi2ms	9	{H0398}	HVqi3fs	4
+נֹאכֵל	{H0398}	HVqi1cp	2
+אֲכֹל	{H0398}	HVqcc	1
+תַאֲכֵל	{H0398}	HVhj2ms	1
+תֹּאכֵלוּ	{H0398}	HVqi2mp	16
+אֲכַלְתֶּם	{H0398}	HVqp2mp	3
+תֹאכְלוּ	{H0398}	HVqi2mp	10
+אָכָלְתִּי	{H0398}	HVqp1cs	2
+יֵאָכְלוּ	{H0398}	HVNi3mp	1
+אֱכָל	{H0398}	HVqv2ms	2
+אֱכֹל	{H0398}	HVqv2ms	6
+תֹאכֵלוּ	{H0398}	HVqi2mp	12
+אֹכָלֶת	{H0398}	HVqrfsa	1
+אָכַלְנוּ	{H0398}	HVqp1cp	1
+אֹכֶלֶת	{H0398}	HVqrfsa	2	{H0398}	HVqrfsc	1
+אָכַל	{H0398}	HVqp3ms	18
+תְּאֻכְּלוּ	{H0398}	HVPi2mp	1
+תֹּאכְלִי	{H0398}	HVqj2fs	2
+תֹּאכַל	{H0398}	HVqi2ms	11	{H0398}	HVqi3fs	9	{H0398}	HVqj3fs	1	{H0398}	HVqj2ms	1
+תֹּאכַלְנָה	{H0398}	HVqi3fp	2
+יֹאכֵלוּן	{H0398}/H9013	HVqi3mp/Sn	1
+יֹאכְלוּן	{H0398}/H9013	HVqi3mp/Sn	1
+תֹּאכְלוּן	{H0398}/H9013	HVqi2mp/Sn	1
+אֲכָלַנִי	{H0398}/H9030	HVqp3ms/Sp1bs	1
+אֲכָלָתְנִי	{H0398}/H9030	HVqp3fs/Sp1bs	1
+אֲכָלַתְךָ	{H0398}/H9031	HVqp3fs/Sp2ms	1
+אֹכְלַיִךְ	{H0398}/H9032	HVqrmpc/Sp2fs	1
+הֶאֱכַלְתִּיךְ	{H0398}/H9032	HVhp1cs/Sp2fs	1
+תֹּאכְלֵךְ	{H0398}/H9032	HVqi3fs/Sp2fs	2
+תְּאָכְלֵהוּ	{H0398}/H9033	HVqi3fs/Sp3ms	1
+אֲכָלָתְהוּ	{H0398}/H9033	HVqp3fs/Sp3ms	3
+תֹאכְלֶנּוּ	{H0398}/H9033	HVqi3fs/Sp3ms	1
+יֹאכְלֻהוּ	{H0398}/H9033	HVqi3mp/Sp3ms	4
+תֹאכְלֻהוּ	{H0398}/H9033	HVqi2mp/Sp3ms	1
+אֲכָלַתְהוּ	{H0398}/H9033	HVqp3fs/Sp3ms	1
+אֲכָלוֹ	{H0398}/H9033	HVqp3ms/Sp3ms	2
+תֹּאכֲלֶנּוּ	{H0398}/H9033	HVqi2ms/Sp3ms	5	{H0398}/H9033	HVqi3fs/Sp3ms	1
+אֹכְלָיו	{H0398}/H9033	HVqrmpc/Sp3ms	3
+תֹאכֲלֶנּוּ	{H0398}/H9033	HVqi2ms/Sp3ms	1
+יֹאכֲלֶנּוּ	{H0398}/H9033	HVqi3ms/Sp3ms	3
+אִכְלֻהוּ	{H0398}/H9033	HVqv2mp/Sp3ms	1
+יֹאכְלֶנּוּ	{H0398}/H9033	HVqi3ms/Sp3ms	3
+תֹּאכְלֶנּוּ	{H0398}/H9033	HVqi2ms/Sp3ms	4
+הַאֲכִלֵהוּ	{H0398}/H9033	HVhv2ms/Sp3ms	1
+אוֹכְלֶיהָ	{H0398}/H9034	HVqrmpc/Sp3fs	1
+יֹאכֲלֶנָּה	{H0398}/H9034	HVqi3ms/Sp3fs	2
+תֹּאכֲלֶנָּה	{H0398}/H9034	HVqi2ms/Sp3fs	2
+יֹאכְלוּהָ	{H0398}/H9034	HVqi3mp/Sp3fs	1
+תֹאכְלֵנוּ	{H0398}/H9035	HVqi3fs/Sp1bp	1
+יַאֲכִלֵנוּ	{H0398}/H9035	HVhi3ms/Sp1bp	2
+תֹּאכַלְכֶם	{H0398}/H9036	HVqi3fs/Sp2mp	1
+יֹאכְלֵם	{H0398}/H9038	HVqi3ms/Sp3mp	4
+מַאֲכִילָם	{H0398}/H9038	HVhrmsc/Sp3mp	1
+יֹאכְלוּם	{H0398}/H9038	HVqi3mp/Sp3mp	1
+תֹּאכְלֵם	{H0398}/H9038	HVqi3fs/Sp3mp	1
+יֹאכְלֵמוֹ	{H0398}/H9038	HVqi3ms/Sp3mp	1
+תֹאכְלֵם	{H0398}/H9038	HVqi3fs/Sp3mp	3
+תֹאכְלוּם	{H0398}/H9038	HVqi2mp/Sp3mp	1
+אֲכָלוּם	{H0398}/H9038	HVqp3cp/Sp3mp	1
+הֶאֱכַלְתָּם	{H0398}/H9038	HVhp2ms/Sp3mp	1
+אֲכָלְךָ	{H0398}/H9041	HVqcc/Sp2ms	1
+אֲכָלְכֶם	{H0398}/H9046	HVqcc/Sp2mp	1
+וָאֹכַל	H9001/{H0398}	Hc/Vqw1cs	1
+וְאָכַלְתָּ	H9001/{H0398}	Hc/Vqq2ms	15
+וְאָכַלְתִּי	H9001/{H0398}	Hc/Vqq1cs	3
+וַיֹּאכְלוּ	H9001/{H0398}	Hc/Vqw3mp	25
+וַיֵּאָכֵל	H9001/{H0398}	Hc/VNw3ms	1
+וְאָכַלְתְּ	H9001/{H0398}	Hc/Vqq2fs	1
+וַתֹּאכַלְנָה	H9001/{H0398}	Hc/Vqw3fp	2
+וָאֹכֵל	H9001/{H0398}	Hc/Vqw1cs	2
+וַיֹּאכֵלוּ	H9001/{H0398}	Hc/Vqw3mp	6
+וְנֶאֱכַל	H9001/{H0398}	Hc/VNq3ms	1
+וְאָכָלָה	H9001/{H0398}	Hc/Vqq3fs	1
+וְאָכַל	H9001/{H0398}	Hc/Vqq3ms	11
+וַיֹּאכַל	H9001/{H0398}	Hc/Vqw3ms	21
+וְהַאֲכַלְתִּי	H9001/{H0398}	Hc/Vhq1cs	1
+וְאָכְלָה	H9001/{H0398}	Hc/Vqq3fs	18	H9002/{H0398}/H9012	HC/Vqv2ms/Sh	1
+וַתֹּאכַל	H9001/{H0398}	Hc/Vqw3fs	18	H9001/{H0398}	Hc/Vqw2ms	3
+וְאָכְלוּ	H9001/{H0398}	Hc/Vqq3cp	14
+וַאֲכַלְתֶּם	H9001/{H0398}	Hc/Vqq2mp	19
+וְאָכָל	H9001/{H0398}	Hc/Vqq3ms	1
+וָאֹכְלָה	H9001/{H0398}/H9012	Hc/Vqw1cs/Sh	1
+וַיַּאֲכִלֵנִי	H9001/{H0398}/H9030	Hc/Vhw3ms/Sp1bs	1
+וַיַּאֲכִלְךָ	H9001/{H0398}/H9031	Hc/Vhw3ms/Sp2ms	1
+וְהַאֲכַלְתִּיךָ	H9001/{H0398}/H9031	Hc/Vhq1cs/Sp2ms	1
+וַנֹּאכְלֵהוּ	H9001/{H0398}/H9033	Hc/Vqw1cp/Sp3ms	1
+וַאֲכַלְנֻהוּ	H9001/{H0398}/H9033	Hc/Vqq1cp/Sp3ms	1
+וַאֲכָלוֹ	H9001/{H0398}/H9033	Hc/Vqq3ms/Sp3ms	1
+וַאֲכָלֻהוּ	H9001/{H0398}/H9033	Hc/Vqq3cp/Sp3ms	3
+וַיַּאֲכִילֵהוּ	H9001/{H0398}/H9033	Hc/Vhw3ms/Sp3ms	1
+וַאֲכָלָהּ	H9001/{H0398}/H9034	Hc/Vqq3ms/Sp3fs	1
+וַאֲכָלוּם	H9001/{H0398}/H9038	Hc/Vqq3cp/Sp3mp	1
+וַתֹּאכְלֵם	H9001/{H0398}/H9038	Hc/Vqw3fs/Sp3mp	1
+וְהַאֲכַלְתִּים	H9001/{H0398}/H9038	Hc/Vhq1cs/Sp3mp	1
+וַיַּאֲכִלוּם	H9001/{H0398}/H9038	Hc/Vhw3mp/Sp3mp	1
+וַאֲכָלָתַם	H9001/{H0398}/H9038	Hc/Vqq3fs/Sp3mp	2
+וַיֹּאכְלֵם	H9001/{H0398}/H9038	Hc/Vqw3ms/Sp3mp	1
+וָאֹכְלֵם	H9001/{H0398}/H9038	Hc/Vqw1cs/Sp3mp	1
+וְנֹאכֵלָה	H9002/{H0398}	HC/Vqc1cp	1
+וְאֹכְלֵי	H9002/{H0398}	HC/Vqrmpc	1
+וְאִכְלוּ	H9002/{H0398}	HC/Vqv2mp	8
+וֶאֱכֹלוּ	H9002/{H0398}	HC/Vqv2mp	1
+וְיֹאכֵלוּ	H9002/{H0398}	HC/Vqu3mp	3
+וְתֹאכַל	H9002/{H0398}	HC/Vqu3fs	6
+וְאֹכְלִים	H9002/{H0398}	HC/Vqrmpa	1
+וְאֹכֵלָה	H9002/{H0398}	HC/Vqc1cs	2
+וֶאֱכֹל	H9002/{H0398}	HC/Vqv2ms	2
+וְיֹאכְלוּ	H9002/{H0398}	HC/Vqu3mp	2
+וֶאֱכָל	H9002/{H0398}	HC/Vqv2ms	1
+וְאֹכַל	H9002/{H0398}	HC/Vqu1cs	1
+וֶאֱכוֹל	H9002/{H0398}	HC/Vqv2ms	1
+וְאָכֹל	H9002/{H0398}	HC/Vqaa	2
+וְיֹאכַל	H9002/{H0398}	HC/Vqu3ms	5
+וְנֹאכְלָה	H9002/{H0398}	HC/Vqc1cp	2
+וְאֹכֵל	H9002/{H0398}	HC/Vqrmsa	1	H9002/{H0398}	HC/Vqu1cs	1
+וְאֹכְלָה	H9002/{H0398}	HC/Vqc1cs	1
+וְהַאֲכִלֻהוּ	H9002/{H0398}/H9033	HC/Vhv2mp/Sp3ms	1
+וְנֹאכְלֶנּוּ	H9002/{H0398}/H9033	HC/Vqu1cp/Sp3ms	2
+וְהַאֲכִילֻהוּ	H9002/{H0398}/H9033	HC/Vhv2mp/Sp3ms	1
+וְאֹכְלָיו	H9002/{H0398}/H9033	HC/Vqrmpc/Sp3ms	1
+וְאִכְלוּהָ	H9002/{H0398}/H9034	HC/Vqv2mp/Sp3fs	1
+וְיֹאכְלוּהָ	H9002/{H0398}/H9034	HC/Vqu3mp/Sp3fs	1
+וְתֹאכְלֵם	H9002/{H0398}/H9038	HC/Vqu3fs/Sp3mp	1
+וְאֹכְלֵם	H9002/{H0398}/H9038	HC/Vqu1cs/Sp3mp	1
+וְלֶאֱכֹל	H9002/H9005/{H0398}	HC/R/Vqcc	1
+וְהָאֹכֵל	H9002/H9009/{H0398}	HC/Td/Vqrmsa	2
+בַּאֲכֹל	H9003/{H0398}	HR/Vqcc	1
+בְּאֹכְלֵי	H9003/{H0398}	HR/Vqrmpc	2
+בָּאֹכֵל	H9003/{H0398}	HRd/Vqrmsa	1
+בְּאָכְלֵנוּ	H9003/{H0398}/H9045	HR/Vqcc/Sp1bp	1
+בַּאֲכָלְכֶם	H9003/{H0398}/H9046	HR/Vqcc/Sp2mp	1
+בְּאָכְלָם	H9003/{H0398}/H9048	HR/Vqcc/Sp3mp	2
+כֶּאֱכֹל	H9004/{H0398}	HR/Vqcc	1
+כְּאָכְלָם	H9004/{H0398}/H9048	HR/Vqcc/Sp3mp	1
+לֶאֱכוֹל	H9005/{H0398}	HR/Vqcc	12
+לֶאֶכוֹל	H9005/{H0398}	HR/Vqcc	1
+לֶאֱכֹל	H9005/{H0398}	HR/Vqcc	39
+לֶאֱכָל	H9005/{H0398}	HR/Vqcc	5
+לָאֹכֵל	H9005/{H0398}	HRd/Vqrmsa	1
+לְאָכְלוֹ	H9005/{H0398}/H9043	HR/Vqcc/Sp3ms	1	H9005/{H0398}/H9033	HR/Vqcc/Sp3ms	1
+מֵאֲכֹל	H9006/{H0398}	HR/Vqcc	1
+מֵהָאֹכֵל	H9006/H9009/{H0398}	HR/Td/Vqrmsa	1
+שֶׁיֹּאכַל	H9007/{H0398}	HTr/Vqi3ms	2
+הֶאָכוֹל	H9008/{H0398}	HTi/Vqaa	1
+הַאוֹכַל	H9008/{H0398}	HTi/Vqi1cs	1
+הֲיֵאָכֵל	H9008/{H0398}	HTi/VNi3ms	1
+הַנֶּאֱכֶלֶת	H9009/{H0398}	HTd/VNrfsa	1
+הָאֹכְלִים	H9009/{H0398}	HTd/Vqrmpa	6
+הָאֹכֵל	H9009/{H0398}	HTd/Vqrmsa	2
+הָאֹכֶלֶת	H9009/{H0398}	HTd/Vqrfsa	3
+הַמַּאֲכִלְךָ	H9009/{H0398}/H9031	HTd/Vhrmsc/Sp2ms	1
+יֵאכֻל	{H0399}	AVqi3ms	1
+אֲכַלוּ	{H0399}	AVqp3mp	1
+אֲכֻלִי	{H0399}	AVqv2fs	1
+וַאֲכַלוּ	H9002/{H0399}	AC/Vqp3mp	1
+וְתֵאכֻל	H9002/{H0399}	AC/Vqu3fs	1
+אֹכֶל	{H0400}	HNcmsa	24	{H0400}	HNcmsc	3
+אָכְלֶךָ	{H0400}/H9021	HNcmsc/Sp2ms	1
+אָכְלוֹ	{H0400}/H9023	HNcmsc/Sp3ms	5	{H0398}/H9043	HVqcc/Sp3ms	1
+אָכְלָם	{H0400}/H9028	HNcmsc/Sp3mp	5
+וּלְאָכְלְכֶם	H9002/H9005/{H0400}/H9026	HC/R/Ncmsc/Sp2mp	1
+בְּאֹכֶל	H9003/{H0400}	HR/Ncmsa	1
+הָאֹכֶל	H9009/{H0400}	HTd/Ncmsa	3
+וְאֻכָל	H9002/{H0401}	HC/Ncmsa	1
+לְאָכְלָה	H9005/{H0402}	HR/Ncfsa	18
+אָכֵן	{H0403}	HTj	18
+אָכַף	{H0404}	HVqp3ms	1
+וְאַכְפִּי	H9002/{H0405}/H9020	HC/Ncmsc/Sp1bs	1
+אִכָּר	{H0406}	HNcmsa	2
+אִכָּרִים	{H0406}	HNcmpa	4
+אִכָּרֵיכֶם	{H0406}/H9026	HNcmpc/Sp2mp	1
+אַכְשָׁף	{H0407}	HNpl	2
+וְאַכְשָׁף	H9002/{H0407}	HC/Npl	1
+אַל	{H0408}	HTn	571	{H0516+}	HTn	4	{H0409}	ATn	4	{H0413}	HR	2	{H0413}	HTi	1
+אֲל	{H0408}	HTn	1
+וְאַל	H9002/{H0408}	HC/Tn	148
+לְאַל	H9005/{H0408}	HR/Tn	1
+אֵל	{H0410G}	HNcmsa	124	{H1008G}	HNpl	70	{H0410G}	HNcmsc	19	{H0410K}	HNcmsa	12	{H0410G}	HNpm	6	{H0410J}	HNcmsa	2	{H0410K}	HNcmsc	2	{H3317}	HNpl	2	{H6005}	HNpm	2	{H0410I}	HNcmsc	1	{H0410G}	HNpl	1	{H0416}	HNpl	1	{H4027}	HNpl	1	{H0410H}	HNpl	1	{H1008H}	HNpl	1	{H0411}	HTm	1	{H0352B}	HNcmsc	1
+אֵלִי	{H0410G}/H9020	HNcmsc/Sp1bs	11	{H0410K}/H9020	HNcmsc/Sp1bs	1
+וְאֵל	H9002/{H0410G}	HC/Ncmsa	3	H9002/{H0410G}	HC/Ncmsc	2	H9002/{H0410J}	HC/Ncmsa	1
+וְהָאֵל	H9002/H9009/{H0410G}	HC/Td/Ncmsa	1
+בְּאֵל	H9003/{H0410G}	HR/Ncmsc	1
+כָּאֵל	H9004/{H0410G}	HRd/Ncmsa	2
+לָאֵל	H9005/{H0410G}	HRd/Ncmsa	10	{H3815}	HNpm	1
+מֵאֵל	H9006/{H0410G}	HR/Ncmsa	3	H9006/{H0410G}	HR/Ncmsc	1
+שֶׁאֵל	H9007/{H0410G}	HTr/Ncmsc	1
+הַאֵל	H9008/{H0410G}	HTi/Ncmsa	1
+הַלְאֵל	H9008/H9005/{H0410G}	HTi/R/Ncmsa	3
+הָאֵל	H9009/{H0410G}	HTd/Ncmsa	18	H9009/{H0411}	HTd/Tm	8	H9009/{H0410G}	HTd/Ncmsc	1
+אֵלִים	{H0410K}	HNcmpa	4	{H0352A}	HNcmpa	1
+בָּאֵלִם	H9003/{H0410K}	HRd/Ncmpa	1
+לְאֵל	H9005/{H0410L}	HR/Ncmsc	5	H9005/{H0410K}	HR/Ncmsa	3	H9005/{H0410J}	HR/Ncmsa	2	H9005/{H0410G}	HR/Ncmsa	2	H9005/{H0410G}	HR/Ncmsc	2	H9005/{H0410K}	HR/Ncmsc	1
+אֶל	{H0413}	HR	3541	{H0408}	HTn	1
+אֱלֵי	{H0413}	HR	4
+אֵלַי	{H0413}/H9030	HR/Sp1bs	228	{H0413}/H9030	HRd/Sp1bs	138
+אֵלָי	{H0413}/H9030	HRd/Sp1bs	45	{H0413}/H9030	HR/Sp1bs	35
+אֵלֶיךָ	{H0413}/H9031	HR/Sp2ms	117	{H0413}/H9031	HRd/Sp2ms	109
+אֵלָיִךְ	{H0413}/H9032	HR/Sp2fs	4	{H0413}/H9032	HRd/Sp2fs	2
+אֵלַיִךְ	{H0413}/H9032	HR/Sp2fs	12	{H0413}/H9032	HRd/Sp2fs	9
+אֵלָיו	{H0413}/H9033	HRd/Sp3ms	231	{H0413}/H9033	HR/Sp3ms	197
+אֵלָיוס	{H0413}/H9033\ \H9018	HR/Sp3ms	1
+אֵלֶיהָ	{H0413}/H9034	HRd/Sp3fs	57	{H0413}/H9034	HR/Sp3fs	22
+אֵלֵינוּ	{H0413}/H9035	HRd/Sp1bp	24	{H0413}/H9035	HR/Sp1bp	17
+אֲלֵכֶם	{H0413}/H9036	HRd/Sp2mp	3	{H0413}/H9036	HR/Sp2mp	3
+אֲלֵיכֶם	{H0413}/H9036	HRd/Sp2mp	39	{H0413}/H9036	HR/Sp2mp	25
+אֲלֵהֶם	{H0413}/H9038	HRd/Sp3mp	85	{H0413}/H9038	HR/Sp3mp	44
+אֵלֵימוֹ	{H0413}/H9038	HR/Sp3mp	1
+אֲלֵיהֶם	{H0413}/H9038	HRd/Sp3mp	93	{H0413}/H9038	HR/Sp3mp	71
+אֲלֵיהֶםס	{H0413}/H9038\ \H9018	HRd/Sp3mp	1
+אֲלֵהֶן	{H0413}/H9039	HRd/Sp3fp	1
+אֲלֵיהֶן	{H0413}/H9039	HRd/Sp3fp	2	{H0413}/H9039	HR/Sp3fp	2
+וְאֶל	H9002/{H0413}	HC/R	335
+וְאֵלַי	H9002/{H0413}/H9030	HC/R/Sp1bs	3
+וְאֵלֶיךָ	H9002/{H0413}/H9031	HC/Rd/Sp2ms	3
+וְאֵלַיִךְ	H9002/{H0413}/H9032	HC/R/Sp2fs	1
+וְאֵלָיו	H9002/{H0413}/H9033	HC/Rd/Sp3ms	1
+וַאֲלֵיהֶם	H9002/{H0413}/H9038	HC/Rd/Sp3mp	1
+וַאֲלֵהֶם	H9002/{H0413}/H9038	HC/Rd/Sp3mp	1
+הַאֶל	H9008/{H0413}	HTi/R	1
+אֵלָא	{H0414}	HNpm	1
+אֶלְגָּבִישׁ	{H0417}	HNcmsa	3
+אַלְגּוּמִּים	{H0418}	HNcmpa	1
+וְאַלְגּוּמִּים	H9002/{H0418}	HC/Ncmpa	1
+הָאַלְגּוּמִּים	H9009/{H0418}	HTd/Ncmpa	1
+אֶלְדָּד	{H0419}	HNpm	2
+וְאֶלְדָּעָה	H9002/{H0420}	HC/Npm	2
+אֱלִי	{H0421}	HVqv2fs	1
+אָלִית	{H0422}	HVqp2fs	1
+אָלֹה	{H0422}	HVqaa	1
+וַיֹּאֶל	H9001/{H0422}	Hc/Vhw3ms	1	H9001/{H2974}	Hc/Vqw3ms	1
+לְהַאֲלֹתוֹ	H9005/{H0422}/H9033	HR/Vhcc/Sp3ms	1	H9005/{H0423}/H9023	HR/Vhcc/Sp3ms	1
+אָלוֹת	{H0423}	HNcfpc	1	{H0422}	HVqaa	1
+אָלָה	{H0423}	HNcfsa	12
+אָלָתִי	{H0423}/H9020	HNcfsc/Sp1bs	1
+אָלָתוֹ	{H0423}/H9023	HNcfsc/Sp3ms	1
+וּבְאָלָתוֹ	H9002/H9003/{H0423}/H9023	HC/R/Ncfsc/Sp3ms	1
+וּמֵאָלָה	H9002/H9006/{H0423}	HC/R/Ncfsa	1
+בְּאָלָה	H9003/{H0423}	HR/Ncfsa	3
+לְאָלָה	H9005/{H0423}	HR/Ncfsa	5
+מֵאָלָתִי	H9006/{H0423}/H9020	HR/Ncfsc/Sp1bs	2
+הָאָלוֹת	H9009/{H0423}	HTd/Ncfpa	2
+הָאָלֹת	H9009/{H0423}	HTd/Ncfpa	1
+הָאָלָה	H9009/{H0423}	HTd/Ncfsa	6
+וְאֵלָה	H9002/{H0424}	HC/Ncfsa	1	H9002/{H0425K}	HC/Npfsa	1
+בָאֵלָה	H9003/{H0424}	HRd/Ncfsa	1
+בָּאֵלָה	H9003/{H0424}	HRd/Ncfsa	1
+כְּאֵלָה	H9004/{H0424}	HR/Ncfsa	1
+כָּאֵלָה	H9004/{H0424}	HRd/Ncfsa	1
+הָאֵלָה	H9009/{H0424}	HTd/Ncfsa	7	H9009/{H0425L}	HTd/Ncfsa	3
+אֵלָה	{H0425H}	HNpfsa	4	{H0425I}	HNpfsa	4	{H0425J}	HNpfsa	2	{H0425G}	HNpfsa	2	{H0424}	HNcfsa	1
+אֱלָהִין	{H0426}	ANcmpa	9
+אֱלָה	{H0426}	ANcbsa	1
+אֱלָהּ	{H0426}	ANcbsc	13	{H0426}	ANcbsa	6
+אֱלָהַיָּא	{H0426}/H9010	ANcmpd/Ta	1
+אֱלָהָא	{H0426}/H9010	ANcbsd/Ta	29
+אֱלָהִי	{H0426}/H9020	ANcbsc/Sp1bs	2
+אֱלָהָךְ	{H0426}/H9021	ANcbsc/Sp2ms	8
+אֱלָהֵהּ	{H0426}/H9023	ANcbsc/Sp3ms	4
+אֱלָהַנָא	{H0426}/H9025	ANcbsc/Sp1bp	1
+אֱלָהֲכֹם	{H0426}/H9026	ANcbsc/Sp2mp	2
+אֱלָהֲכוֹן	{H0426}/H9026	ANcbsc/Sp2mp	1
+אֱלָהֲהֹם	{H0426}/H9028	ANcbsc/Sp3mp	2
+אֱלָהֲהוֹן	{H0426}/H9028	ANcbsc/Sp3mp	2
+וֵאלָהָא	H9002/{H0426}/H9010	AC/Ncbsd/Ta	1
+וְלֵאלָהֵי	H9002/H9005/{H0426}	AC/R/Ncmpc	1
+וְלֵאלָהָא	H9002/H9005/{H0426}/H9010	AC/R/Ncbsd/Ta	1
+בֵּאלָהֵהּ	H9003/{H0426}/H9023	AR/Ncbsc/Sp3ms	1
+לֵאלָהֵי	H9005/{H0426}	AR/Ncmpc	1
+לֶאֱלָהּ	H9005/{H0426}	AR/Ncbsc	5
+לֵאלָהַי	H9005/{H0426}/H9020	AR/Ncmpc/Sp1bs	1
+לֵאלָהֲהוֹן	H9005/{H0426}/H9028	AR/Ncbsc/Sp3mp	1
+הָאַלָּה	H9009/{H0427}	HTd/Ncfsa	1
+אֵלֶּה	{H0428}	HTm	320	{H0429}	ATm	1
+וְאֵלֶּה	H9002/{H0428}	HC/Tm	106
+וּבְאֵלֶּה	H9002/H9003/{H0428}	HC/R/Tm	1
+וְכָאֵלֶּה	H9002/H9004/{H0428}	HC/R/Tm	2
+וּלְאֵלֶּה	H9002/H9005/{H0428}	HC/R/Tm	3
+וּמֵאֵלֶּה	H9002/H9006/{H0428}	HC/R/Tm	3
+בְאֵלֶּה	H9003/{H0428}	HR/Tm	1
+בָּאֵלֶּה	H9003/{H0428}	HR/Tm	2
+בְּאֵלֶּה	H9003/{H0428}	HR/Tm	5
+כְאֵלֶּה	H9004/{H0428}	HR/Tm	3
+כָאֵלֶּה	H9004/{H0428}	HR/Tm	1
+כָּאֵלֶּה	H9004/{H0428}	HR/Tm	5
+לְאֵלֶּה	H9005/{H0428}	HR/Tm	1
+לָאֵלֶּה	H9005/{H0428}	HR/Tm	5
+מֵאֵלֶּה	H9006/{H0428}	HR/Tm	13
+הָאֵלֶּה	H9009/{H0428}	HTd/Tm	272
+הָאֵלֶה	H9009/{H0428}	HTd/Tm	1
+הָאֵלֶּהס	H9009/{H0428}\ \H9018	HTd/Tm	1
+אֱלֹהֵי	{H0430G}	HNcmpc	353	{H0430J}	HNcmpc	45	{H0430H}	HNcmpc	1
+אֱלֹהִים	{H0430G}	HNcmpa	601	{H0430J}	HNcmpa	78
+אֱלוֹהֵי	{H0430G}	HNcmpc	1
+אֱלוֹהָי	{H0430G}/H9020	HNcmpc/Sp1bs	1
+אֱלוֹהַי	{H0430G}/H9020	HNcmpc/Sp1bs	1
+אֱלֹהָי	{H0430G}/H9020	HNcmpc/Sp1bs	39	{H0430J}/H9020	HNcmpc/Sp1bs	1
+אֱלֹהַי	{H0430G}/H9020	HNcmpc/Sp1bs	60	{H0430J}/H9020	HNcmpc/Sp1bs	1
+אֱלֹהֶיךָ	{H0430G}/H9021	HNcmpc/Sp2ms	317	{H0430J}/H9021	HNcmpc/Sp2ms	9
+אֱלֹהַיִךְ	{H0430G}/H9022	HNcmpc/Sp2fs	6
+אֱלֹהָיִךְ	{H0430G}/H9022	HNcmpc/Sp2fs	8
+אֱלֹהָיו	{H0430G}/H9023	HNcmpc/Sp3ms	55	{H0430J}/H9023	HNcmpc/Sp3ms	3
+אֱלֹהֵינוּ	{H0430G}/H9025	HNcmpc/Sp1bp	173	{H0430J}/H9025	HNcmpc/Sp1bp	1
+אֱלֹהֵיכֶם	{H0430G}/H9026	HNcmpc/Sp2mp	159	{H0430J}/H9026	HNcmpc/Sp2mp	3
+אֱלֹהֵיהֶם	{H0430G}/H9028	HNcmpc/Sp3mp	55	{H0430J}/H9028	HNcmpc/Sp3mp	16
+וֵאלֹהֵי	H9002/{H0430G}	HC/Ncmpc	11	H9002/{H0430J}	HC/Ncmpc	2
+וֵאלֹהִים	H9002/{H0430G}	HC/Ncmpa	4	H9002/{H0430J}	HC/Ncmpa	1
+וֵאלֹהַי	H9002/{H0430G}/H9020	HC/Ncmpc/Sp1bs	2
+וֵאלֹהָי	H9002/{H0430G}/H9020	HC/Ncmpc/Sp1bs	4
+וֵאלֹהַיִךְ	H9002/{H0430G}/H9022	HC/Ncmpc/Sp2fs	3
+וֵאלֹהֵינוּ	H9002/{H0430G}/H9025	HC/Ncmpc/Sp1bp	2
+וּבֵאלֹהֵי	H9002/H9003/{H0430G}	HC/R/Ncmpc	1
+וּבֵאלֹהַי	H9002/H9003/{H0430G}/H9020	HC/R/Ncmpc/Sp1bs	1
+וּבֵאלֹהָיו	H9002/H9003/{H0430G}/H9023	HC/R/Ncmpc/Sp3ms	1
+וּמֵאֱלֹהִים	H9002/H9006/{H0430G}	HC/R/Ncmpa	1
+וּמֵאֱלֹהַי	H9002/H9006/{H0430G}/H9020	HC/R/Ncmpc/Sp1bs	1
+וְהָאֱלֹהִים	H9002/H9009/{H0430G}	HC/Td/Ncmpa	7
+בֵּאלֹהִים	H9003/{H0430G}	HR/Ncmpa	21	H9003/{H0430J}	HR/Ncmpa	2
+בֵאלֹהִים	H9003/{H0430G}	HR/Ncmpa	7
+בֵּאלֹהֵי	H9003/{H0430G}	HR/Ncmpc	5
+בֵּאלֹהַי	H9003/{H0430G}/H9020	HR/Ncmpc/Sp1bs	2
+בֵּאלֹהֶיךָ	H9003/{H0430G}/H9021	HR/Ncmpc/Sp2ms	1
+בֵּאלֹהֶיהָ	H9003/{H0430G}/H9024	HR/Ncmpc/Sp3fs	1
+בֵאלֹהֵינוּ	H9003/{H0430G}/H9025	HR/Ncmpc/Sp1bp	1
+בֵּאלֹהֵינוּ	H9003/{H0430G}/H9025	HR/Ncmpc/Sp1bp	1
+בֵּאלֹהֵיכֶם	H9003/{H0430G}/H9026	HR/Ncmpc/Sp2mp	1
+כֵּאלֹהִים	H9004/{H0430G}	HR/Ncmpa	3
+כֵּאלֹהֵינוּ	H9004/{H0430G}/H9025	HR/Ncmpc/Sp1bp	1
+לֵאלֹהֵי	H9005/{H0430G}	HR/Ncmpc	14	H9005/{H0430J}	HR/Ncmpc	1
+לֵאלֹהִים	H9005/{H0430G}	HR/Ncmpa	61	H9005/{H0430J}	HR/Ncmpa	17

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpers>
+
+' Non-negotiable helping verbs:
+<verb form="be" past="were" pcpl="been" thrdSing="is" gerund="being" actor="being/being" firstSing="am" presPlu="are" pastFirstThirdSing="was" actee="***ERROR-been***/***ERROR-beens***">be</verb>
+<verb past="made">make</verb>
+<verb past="let">let</verb>
+<verb>cause</verb>
+
+<verb past="did" pcpl="done" thrdSing="does" gerund="doing" actee="deed">do</verb>
+
+<verb past="spoke" pcpl="spoken" actor="speaker">speak</verb>
+<verb past="grew" pcpl="grown" actor="grower">grow</verb>
+<verb past="sang" pcpl="sung" actor="singer">sing</verb>
+
+<verb past="overthrew" pcpl="overthrown">overthrow</verb>
+<verb past="overtook" pcpl="overtaken">overtake</verb>
+<verb past="forgave" pcpl="forgiven">forgive</verb>
+<verb past="forsook" pcpl="forsaken">forsake</verb>
+<verb past="forgot" pcpl="forgotten">forget</verb>
+<verb past="befell" pcpl="befallen">befall</verb>
+<verb past="strode" pcpl="stridden">stride</verb>
+<verb past="strove" pcpl="striven">strive</verb>
+<verb past="became" pcpl="become">become</verb>
+<verb past="wrote" pcpl="written">write</verb>
+<verb past="smote" pcpl="smitten">smite</verb>
+<verb past="chose" pcpl="chosen">choose</verb>
+<verb past="broke" pcpl="broken">break</verb>
+<verb past="drove" pcpl="driven">drive</verb>
+<verb past="shook" pcpl="shaken">shake</verb>
+<verb past="stole" pcpl="stolen">steal</verb>
+<verb past="arose" pcpl="arisen">arise</verb>
+<verb past="awoke" pcpl="awoken">awake</verb>
+<verb past="drank" pcpl="drunk">drink</verb>
+<verb past="stank" pcpl="stunk">stink</verb>
+<verb past="wove" pcpl="woven">weave</verb>
+<verb past="fell" pcpl="fallen">fall</verb>
+<verb past="beat" pcpl="beaten">beat</verb>
+<verb past="knew" pcpl="known">know</verb>
+<verb past="drew" pcpl="drawn">draw</verb>
+<verb past="bore" pcpl="borne">bear</verb>
+<verb past="gave" pcpl="given">give</verb>
+<verb past="took" pcpl="taken">take</verb>
+<verb past="woke" pcpl="woken">wake</verb>
+<verb past="blew" pcpl="blown">blow</verb>
+<verb past="bit" pcpl="bitten">bite</verb>
+<verb past="hid" pcpl="hidden">hide</verb>
+<verb past="sowed" pcpl="sown">sow</verb>
+<verb past="flew" pcpl="flown">fly</verb>
+<verb past="got" pcpl="gotten">get</verb>
+<verb past="came" pcpl="come">come</verb>
+<verb past="tore" pcpl="torn">tear</verb>
+<verb past="sank" pcpl="sunk">sink</verb>
+<verb past="rang" pcpl="rung">ring</verb>
+<verb past="ate" pcpl="eaten">eat</verb>
+<verb past="saw" pcpl="seen" gerund="seeing">see</verb>
+<verb past="ran" pcpl="run" gerund="running">run</verb>
+<verb past="lay" pcpl="laid" gerund="lying">lie</verb>
+<verb past="went" pcpl="gone" thrdSing="goes">go</verb>
+<verb pcpl="trodden">tread</verb>
+<verb pcpl="proven">prove</verb>
+<verb pcpl="strewn">strew</verb>
+<verb pcpl="shown">show</verb>
+<verb pcpl="hewn">hew</verb>
+
+<verb past="had" thrdSing="has">have</verb>
+
+<verb past="fled" gerund="fleeing">flee</verb>
+<verb gerund="dying">die</verb>
+<verb gerund="tying">tie</verb>
+<verb gerund="lying" actor="liar">lìe</verb>
+
+<verb past="brought" actor="bringer">bring</verb>
+<verb past="ground" actor="grinder">grind</verb>
+<verb past="taught" actor="teacher">teach</verb>
+<verb past="shot" actor="shooter">shoot</verb>
+<verb past="found" actor="finder">find</verb>
+<verb past="withheld">withhold</verb> ' regular, except past forms, which match each other
+<verb past="fraught">freight</verb>
+<verb past="struck">strike</verb>
+<verb past="beheld">behold</verb>
+<verb past="brought">bring</verb>
+<verb past="thought">think</verb>
+<verb past="caught">catch</verb>
+<verb past="sought">seek</verb>
+<verb past="built">build</verb>
+<verb past="wrung">wring</verb>
+<verb past="flung">fling</verb>
+<verb past="slung">sling</verb>
+<verb past="knelt">kneel</verb>
+<verb past="stood">stand</verb>
+<verb past="slept">sleep</verb>
+<verb past="swept">sweep</verb>
+<verb past="crept">creep</verb>
+<verb past="bound">bind</verb>
+<verb past="unbound">unbind</verb>
+<verb past="wound">wind</verb>
+<verb past="heard">hear</verb>
+<verb past="sped">speed</verb>
+<verb past="left">leave</verb>
+<verb past="told">tell</verb>
+<verb past="felt">feel</verb>
+<verb past="rent">rend</verb>
+<verb past="spun">spin</verb>
+<verb past="kept">keep</verb>
+<verb past="wept">weep</verb>
+<verb past="lost">lose</verb>
+<verb past="sold">sell</verb>
+<verb past="spun">spin</verb>
+<verb past="held">hold</verb>
+<verb past="lit">light</verb>
+<verb past="said">say</verb>
+<verb past="met">meet</verb>
+<verb past="led">lead</verb>
+<verb past="sat">sit</verb>
+<verb past="dug">dig</verb>
+
+<verb thrdSing="echoes">echo</verb>
+
+<verb past="put">put</verb> ' past forms match infinitive
+<verb past="cut">cut</verb>
+<verb past="hit">hit</verb>
+<verb past="set">set</verb>
+<verb past="read">read</verb>
+<verb past="cast">cast</verb>
+<verb past="spit">spit</verb>
+<verb past="shut">shut</verb>
+<verb past="shed">shed</verb>
+<verb past="knit">knit</verb>
+<verb past="upset">upset</verb>
+<verb past="spread">spread</verb>
+<verb past="split" actor="splitter">split</verb>
+
+' Double final letter for past and progressive forms.
+' Need to flag for words ending in N or R.
+<verb form="doubleFinal">fan</verb>
+<verb form="doubleFinal">sin</verb>
+<verb form="doubleFinal">slur</verb>
+<verb form="doubleFinal">char</verb>
+<verb form="doubleFinal">shun</verb>
+<verb form="doubleFinal">span</verb>
+<verb form="doubleFinal">abhor</verb>
+<verb form="doubleFinal">occur</verb>
+
+' Do not double final letter for past and progressive forms.
+' Need to flag for words ending in T.
+<verb form="doNotDoubleFinal">benefit</verb>
+<verb form="doNotDoubleFinal">dishevel</verb>
+<verb form="doNotDoubleFinal">chisel</verb>
+<verb form="doNotDoubleFinal">cudgel</verb>
+<verb form="doNotDoubleFinal">imperil</verb>
+<verb form="doNotDoubleFinal">inherit</verb>
+<verb form="doNotDoubleFinal">interpret</verb>
+<verb form="doNotDoubleFinal">level</verb>
+<verb form="doNotDoubleFinal">orbit</verb>
+<verb form="doNotDoubleFinal">profit</verb>
+<verb form="doNotDoubleFinal">ransom</verb>
+<verb form="doNotDoubleFinal">shalom</verb>
+<verb form="doNotDoubleFinal">shovel</verb>
+<verb form="doNotDoubleFinal">shrivel</verb>
+<verb form="doNotDoubleFinal">target</verb>
+<verb form="doNotDoubleFinal">trumpet</verb>
+<verb form="doNotDoubleFinal">vomit</verb>
+
+<verb form="doubleFinal">squat</verb>
+<verb form="doubleFinal">mar</verb>
+
+' REGULAR
+' program recognizes terminal S, SH, CH, X: add ES to third-person singular
+' program recognizes terminal consonant+Y: change to I before ED and ES
+' program recognizes terminal cons+vowel+cons, except terminal H,N,R,W,Y,X: double final letter.
+<verb actor="glorifier">glorify</verb>
+<verb actor="sanctifier">sanctify</verb>
+
+</helpers>

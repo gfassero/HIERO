@@ -1,0 +1,64 @@
+﻿// This file is a sample of the Psalms Translator's corrections to STEP Bible's TAHOT
+// data. This sample contains 64 lines. The full file contains 1,145 lines.
+-
+// This content may not be copied, shared, distributed, modified, or used for any purpose,
+// commercial or non-commercial, without prior written permission from the author.
+-
+Gen.7.23#17=L	וַ/יִּמָּח֖וּ	va/i.yi.ma.Chu	and/ they were wiped out	H9001/{H4229A}	Hc/VNw3mp	Was Hc/Vqw3mp.
+Gen.8.10#01=L	וַ/יָּ֣חֶל	va/i.Ya.chel	and/ he waited	H9001/{H2342K}	Hc/Vqw3ms	Was Hc/VNw3ms.
+Gen.27.39#13=L	מֵ/עָֽל\׃	me./'Al	<from>/ above	H9006/{H5920H}\H9016	HR/Ncmsa	Was H9006/{H5921A}.
+Gen.30.42#06=L	הָ/עֲטֻפִים֙	ha./'a.tu.Fim	the/ enfeebled ones	H9009/{H5848C}	HTd/Vqsmpa	Verb was tagged Aampa.
+Gen.49.25#09=L	מֵ/עָ֔ל	me./'Al	<from>/ above	H9006/{H5920H}	HR/Ncmsa	Was H9006/{H5921A}.
+Exo.5.7#12=L	וְ/קֹשְׁשׁ֥וּ	ve./ko.she.Shu	and/ they may gather	H9002/{H7197A}	HC/Vpq3mp	Was HC/Vpu3mp.
+Exo.5.16#12=L	וְ/חָטָ֥את	ve./cha.Tat	and/ you have sinned	H9002/{H2398}	HC/Vqq2fs	Was HC/Ncfsc, but TAU suffix suggests a verb.
+Exo.10.28#08=L	אֶל\־	'el-	to	{H0408}\H9014	HTn	Was preposition H0413.
+Exo.12.48#08=L	הִמּ֧וֹל	hi.Mol	he will be circumcised	{H4135A}	HVNaa	Was HVNv2ms, but vowels are wrong.
+Num.20.26#01=L	וְ/הַפְשֵׁ֤ט	ve./haf.Shet	and/ strip off	H9002/{H6584}	HC/Vhv2ms	Was HC/Vhaa, but context suggests this identical form.
+Num.24.17#16=L	וְ/קַרְקַ֖ר	ve./kar.Kar	and/ it will destroy	H9002/{H6979C}	HC/Vpp3ms	Verb was tagged Ncbsc.
+Num.26.10#09=L	בְּ/מ֣וֹת	be./Mot	when/ died	H9003/{H4194}	HR/Ncmsc
+Num.33.32#06=L	הַגִּדְגָּֽד\׃	ha.gid.Gad	haggidgad	H9009/{H2735}\H9016	HTd/Npl	Tags were missing article.
+Num.33.33#03=L	הַגִּדְגָּ֑ד	ha.gid.Gad	haggidgad	H9009/{H2735}	HTd/Npl	Tags were missing article.
+Num.34.4#05=L	לְ/מַעֲלֵ֤ה	le./ma.'a.Leh	to/ [the] ascent of	H9005/{H4608}	HR/Npl
+Num.34.10#01=L	וְהִתְאַוִּיתֶ֥ם			H9001/{H0184}	Hc/Vtq2mp	Was Hc/Vhq2mp, but obviously Hithpael form.
+Deu.20.19#24=L	הָֽאָדָם֙			H9008/{H0120G}	HTd/Ncmsa	Was HTi/Ncmsa, but context seems slightly to favor article over interrogative.
+Deu.23.14(23.15)#06=L	מַחֲנֶ֗/ךָ	ma.cha.Ne./kha	camp/ your	{H4264}/H9021	HNcmpc/Sp2ms	Was HNcfsc/Sp2ms.
+Jdg.2.19#02=L	בְּ/מ֣וֹת	be./Mot	when/ died	H9003/{H4194}	HR/Ncmsc
+Jdg.5.13#02=L	יְרַ֣ד			{H3381}	HVqi3ms	Was HVqp3ms, but seems imperfect. Sources disagree.
+Jdg.5.13#07=L	יְרַד־			{H3381}\H9014	HVqi3ms	Was HVqp3ms, but seems imperfect. Sources disagree.
+Jdg.5.26#03=L	תִּשְׁלַ֔חְנָה			{H7971K}	HVqi3fp	Was HVqi3fs.
+Jdg.7.21#10=Q(K)	וַ/יָּנֽוּסוּ\׃			H9001/{H5127}\H9016	Hc/Vqw3mp	Was Hc/Vhw3mp.
+1Sa.2.28#08=L	לַעֲל֣וֹת			H9005/{H5927G}	HR/Vqcc	Was HR/Vqcc, but lacks HE for hiphil.
+1Sa.13.15#0506=X	אַחֲרֵי	'a.cha.Rei	after	{H0310A}	HAcmpc	Adjective was tagged Ncmpc.
+1Sa.14.41#0619=X	אוּרִים	'u.Rim	Urim	{H0224}	HNtmpa	Title noun was tagged common Ncmpa.
+1Sa.20.20#04=L	צִדָּ֣ה			{H6654}/H9011	HNcmsa/Sd	Was construct.
+1Sa.20.33#10=L	כָ֥לָה			{H3617}	HNcfsa	Was {H3615I} and HVqp3ms.
+2Sa.6.20#24=L	כְּהִגָּל֥וֹת			H9004/{H1540I}	HR/Vqrfpc
+2Sa.6.20#25=L	נִגְל֖וֹת			{H1540I}	HVNrfpa
+2Sa.23.8#07=L	בַּשֶּׁ֜בֶת			H9003/{H3429}	HRd/Ncfsc
+1Ki.1.40#08=L	וּ/שְׂמֵחִ֖ים	u./se.me.Chim	and/ joyful	H9002/{H8055}	HC/Vqrmpa	Was H9002/{H8056}.
+1Ki.7.30#15=L	יְצֻק֔וֹת	ye.tzu.Kot	[were] cast	{H3332G}	HVqsfpa	Was noun H3333.
+1Ki.8.31#11=L	אָלָ֛ה			{H0423}	HNcfsa	Was {H0422} and	HVqp3ms, but this seems smoother.
+1Ki.22.30#06=L	הִתְחַפֵּשׂ֙			{H2664}	HVtaa	Was construct, but following form is absolute.
+1Ki.22.30#07=L	וָבֹ֣א			H9002/{H0935G}	HC/Vqaa	Was construct, but form is absolute.
+2Ki.5.13#06=L	אָבִי֙	'a.Vi	would that	{H0001G}/H9020	HNcmsc/Sp1bs	Was tagged as interjection: {H0001G} & HTj.
+2Ki.17.16#09=L	מַסֵּכָ֖ה			{H4541A}	HNcfsa	Was tagged as dual.
+1Ch.4.6#11=L	הָאֲחַשְׁתָּרִ֑י			H9009/{H0326}	HTd/Ngmsa	Was {H0326}	HNgmsa.
+1Ch.18.10#09=L	ל֨/וֹ	l/o	of/ him	H9005/{H9033}	HR/Sp3ms
+2Ch.6.22#10=L	אָלָ֛ה			{H0423}	HNcfsa	Was {H0422} and	HVqp3ms, but this seems smoother.
+2Ch.18.29#06=L	הִתְחַפֵּשׂ֙			{H2664}	HVtaa	Was construct, but following form is absolute.
+2Ch.18.29#07=L	וָב֣וֹא			H9002/{H0935G}	HC/Vqaa	Was construct, but form is absolute.
+2Ch.25.23#24=L	הַ/פּוֹנֶ֔ה	ha./po.Neh	the/ Corner	H9009/{H6437H}	HTd/Vqrmsa	Was Ncfsa.
+2Ch.28.13#18=L	אַשְׁמָתֵ֑ינוּ			{H0819}/H9025	HNcfpc/Sp1bp	Was HNcfsc/Sp1bp.
+2Ch.34.7#08=L	לְהֵדַ֔ק			H9005/{H1854}	HR/Vhaa	Was construct.
+Ezr.9.15#13=L	בְּאַשְׁמָתֵ֔ינוּ			H9003/{H0819}/H9025	HR/Ncfpc/Sp1bp
+Neh.4.6(3.38)#04=L	וַ/תִּקָּשֵׁ֥ר	va./ti.ka.Sher	and/ it was joined together	H9001/{H7194}	Hc/VNw3fs	Was 2m.
+Neh.7.3#16=L	וְהַעֲמֵ֗יד			H9001/{H5975H}	Hc/Vhaa	Was Hc/Vhq3ms.
+Neh.10.36(10.37)#04=L	וּבְהֶמְתֵּ֔ינוּ			H9002/{H0929}/H9025	HC/Ncfpc/Sp1bp	Was HC/Ncfsc/Sp1bp.
+Job.24.25#07=L	לְ֝/אַ֗ל	le./'Al	into/ nothing	H9005/{H0408}	HR/Tn
+Job.29.6#05=L	יָצ֥וּק			{H6694}	HVqi3ms	Was Vqsmsa, but has initial Yod.
+Psa.35.9#02=L	תָּגִ֣יל			{H1523}	HVqi3fs	Was 2m.
+Psa.38.16(38.17)#06=L	בְּ/מ֥וֹט	be./Mot	when/ slips	H9003/{H4131}	HR/Vqcc	Was Ncbsc.
+Psa.45.0(45.1)#08=L	יְדִידֹֽת׃			{H3039B}\H9016	HNcfpa	Was singular.
+Psa.46.2(46.3)#07=L	וּ/בְ/מ֥וֹט	u./ve./Mot	and/ when/ shake	H9002/H9003/{H4131}	HC/R/Vqcc	Was Ncbsc.
+Psa.56.8(56.9)#01=L	נֹדִ/י֮	no.D/i	wandering/ my	{H5112}/H9020	HNcmsc/Sp1bs	Was Ncmsa/Sp1bs, absolute with pronomial suffix but no construct.
+Psa.65.10(65.11)#03=L			נַחֵ֣ת	{H5181}	HVpaa

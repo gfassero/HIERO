@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index>
+<!-- This file is a sample of the Psalm Translator's main lexicon. This sample contains
+     720 lines. The full file contains 12,298 lines.
+
+     This content may not be copied, shared, distributed, modified, or used for any purpose,
+     commercial or non-commercial, without prior written permission from the author. -->
+
+<section name="Body">
+	<section name="Body, in general">
+		<entry><w xlit="gpp">גפף</w>
+		  <entry><w xlit="gûp">גּוּף</w><pos>V</pos><hiphilAct>body [up]</hiphilAct><xref strong="1479" /></entry>
+		  <entry><w xlit="gûpâ">גּוּפָה</w><pos>N</pos><def>body</def><xref strong="1480" /></entry><!--2-->
+		  <entry><w xlit="gap">גַּף</w><pos>N</pos><def>body</def><xref strong="1610" /></entry><!--4-->
+		  <entry><w xlit="gap">גַּף</w><pos>N</pos><def>body[wing]</def><xref strong="A1611" /></entry><!--3-->
+		</entry>
+		<entry><w xlit="ʿṣm">עצם</w>
+		  <entry><w xlit="ʿāṣōm">עָצֹם</w><pos>V</pos><qalAct>be [strong]boned</qalAct>
+			<pielAct>[pick the] bone[s of]</pielAct>
+			<hiphilAct>make °[strong]boned</hiphilAct><xref strong="6105A" /></entry><!--18-->
+		  <entry><w xlit="ʿāṣûm">עָצוּם</w><pos>A</pos><def>[strong]boned</def><xref strong="6099" /></entry><!--31-->
+		  <entry><w xlit="ʿeṣem">עֶ֫צֶם</w><pos>N</pos><def>bone</def><xref strong="6106G,6106H,6106I" /></entry><!--126-->
+		  <entry><w xlit="ʿōṣem">עֹ֫צֶם</w><pos>N</pos><def>bone</def><xref strong="6108" /></entry>
+		  <entry><w xlit="ʿoṣmâ">עׇצְמָה</w><pos>N</pos><def>bone[strength]</def><xref strong="6109" /></entry><!--}7-->
+		  <entry><w xlit="taʿăṣumâ">תַּעֲצֻמָה</w><pos>N</pos><def>[strong] bone</def><xref strong="8592" /></entry>
+		  <entry><w xlit="ʿaṣumâ">עַצֻמָה</w><pos>N</pos><def>bone[ of contention]/bones[ of contention]</def><xref strong="6110" /></entry>
+		  <entry><w xlit="ʿāṣam">עָצַם</w><pos>V</pos><qalAct>bone [up]</qalAct><xref strong="6105B" /></entry>
+		</entry>
+		<!--SKELETON-->
+		<entry><w xlit="gāram">גָּרַם</w><pos>V</pos><qalAct>[have] frame</qalAct>
+			<pielAct>[un]frame</pielAct><xref strong="1633A,1633B" />
+		  <entry><w xlit="gerem">גֶּ֫רֶם</w><pos>N</pos><def>frame</def><xref strong="1634" /></entry><!--5-->
+		  <entry><w xlit="garmî">גַּרְמִי</w><pos>Ng</pos><def>frameïte</def><xref strong="1636" /></entry><!--Garmite-->
+		</entry>
+		<entry><w xlit="gyd">גיד</w>
+		  <entry><w xlit="gîd">גִּיד</w><pos>N</pos><def>muscle</def><xref strong="1517" /></entry><!--7-->
+		</entry>
+		<entry><w xlit="ʿrp">ערף</w>
+		  <entry><w xlit="ʿārap">עָרַף</w><pos>V</pos><qalAct>[break the] spine of</qalAct><xref strong="6202" /></entry><!--6-->
+		  <entry><w xlit="ʿōrep">עֹ֫רֶף</w><pos>N</pos><def>spine</def><xref strong="6203" /></entry><!--33-->
+		  <entry><w xlit="ʿorpâ">עׇרְפָּה</w><pos>Np</pos><def>spine</def><xref strong="6204" /></entry><!--ORPAH-->
+		</entry>
+		<entry><w xlit="bāśār">בָּשָׂר</w><pos>N</pos><def>flesh</def><xref strong="1320" /><!--270-->
+		  <entry><w xlit="bāśar">בָּשַׂר</w><pos>V</pos><pielAct>flesh °[out]</pielAct><xref strong="1319" /></entry><!--24: ANNOUNCE good news-->
+		  <entry><w xlit="bĕśōrâ">בְּשֹׂרָה</w><pos>N</pos><def>fleshing-[out]</def><xref strong="1309" /></entry><!--6: ANNOUNCEMENT of good news-->
+		</entry>
+		<entry><w xlit="šʾr">שׁאר</w>
+		  <entry><w xlit="šĕʾēr">שְׁאֵר</w><pos>N</pos><def dc="f">meat</def><xref strong="7607" /></entry><!--16-->
+		  <entry><w xlit="šaʾărâ">שַׁאֲרָה</w><pos>N</pos><def dc="f">meat</def><xref strong="7608" /></entry>
+		  <entry><w xlit="šeʾĕrâ">שֶׁאֱרָה</w><pos>Np</pos><def>meat</def><xref strong="7609,0242" /></entry>
+		</entry>
+		<entry><w xlit="yrk">ירך</w>
+		  <entry><w xlit="yārēk">יָרֵךְ</w><pos>N</pos><def>flank</def><xref strong="3409" /></entry><!--34: THIGH-->
+		  <entry><w xlit="yarkâ">יַרְכָה</w><pos>N</pos><def>flank</def><xref strong="3411" /></entry><!--28: SIDE-->
+		</entry>
+		<entry><w xlit="npš">נפשׁ</w>
+		  <entry><w xlit="nepeš">נֶ֫פֶשׁ</w><pos>N</pos><def dc="f">soul</def><xref strong="5315G,5315H,5315I,5315J,5315K,5315L,5315M,5315N" /></entry><!--754-->
+		  <entry><w xlit="nāpaš">נָפַשׁ</w><pos>V</pos><qalAct dc="f">resoul</qalAct><xref strong="5314" /></entry><!--3-->
+		</entry>
+		<entry><w xlit="dām, ʾādōm">דם/אדם</w><gloss>Almost identical to the words for "adam," "likeness," and "silent." The creation account plays on these similarities. Also the name of Edom.</gloss>
+		  <entry><w xlit="dām">דָּם</w><pos>N</pos><def>blood</def><xref strong="1818" /></entry><!--360-->
+		  <entry><w xlit="dammîm">דַּמִּים</w><pos>Np</pos><def>bloods</def><xref strong="0658,6450" /></entry>
+
+		  <entry><w xlit="ʾādōm">אָדֹם</w><pos>V</pos><qalAct>be bloody[red]</qalAct>
+			<pielPass actor="bloody[red]/bloody[red]">be bloody[red]</pielPass>
+			<pielReflex>bloody[red] oneself</pielReflex>
+			<hiphilAct>be bloody[red]</hiphilAct><xref strong="0119" /></entry><!--10: close to 0121/0127 ADAM/ADAMAH, 0122 RED, 1818 BLOOD, 1819 LIKENESS, 1826 SILENT -->
+		  <entry><w xlit="ʾādōm">אָדֹם</w><pos regex="Npl=Npmpa">A</pos><def>bloody[red]</def><xref strong="0122A,0131" /></entry><!--7-->
+		  <entry><w xlit="ʾōdem">אֹ֫דֶם</w><pos>N</pos><def>blood[stone]</def><xref strong="0124" /></entry><!--3-->
+		  <entry><w xlit="ʾĕdōm">אֱדֹם</w><pos>N</pos><def>bloody</def><xref strong="0122B" /></entry><!--2-->
+		  <entry><w xlit="ʾĕdôm">אֱדוֹם</w><pos>Np</pos><def>blood</def><xref strong="0123G,0123H,5654" /></entry><!--EDOM-->
+		  <entry><w xlit="ʾădōmî">אֲדֹמִי</w><pos>A</pos><def>bloodïte</def><xref strong="0130" /></entry><!--EDOMITE-->
+		  <entry><w xlit="ʾădamdām">אֲדַמְדָּם</w><pos>A</pos><def>blood[red]</def><xref strong="0125" /></entry><!--6-->
+		  <entry><w xlit="ʾadmônî">אַדְמוֹנִי</w><pos>A</pos><def>[red]blooded</def><xref strong="0132" /></entry><!--3-->
+		</entry>
+		<entry><w xlit="ʾādām">אדם</w><gloss>"Adam" means man or humanity as a whole, and "adamah" means the ground or the earth. Almost identical to the words for "blood," "likeness," and "silent." The creation account plays on these similarities.</gloss>
+		  <entry><w xlit="ʾādām">אָדָם</w><pos>N</pos><def>{adam}</def><xref strong="0121G,0121H,0120G,0120H" /></entry><!--563: MAN: close to 0121/0127 ADAM/ADAMAH, 0122 RED, 1818 BLOOD, 1819 LIKENESS, 1826 SILENT -->
+		  <entry><w xlit="ʾădāmâ">אֲדָמָה</w><pos>N</pos><def>{adamah}</def><xref strong="0127G,0127H,0127I,0128" /></entry><!--226: GROUND-->
+		  <entry><w xlit="ʾadmâ">אַדְמָה</w><pos>Np</pos><def>{adamah}</def><xref strong="0126" /></entry>
+		  <entry><w xlit="ʾădāmî">אֲדָמִי</w><pos>Np</pos><def>my-{adam}</def><xref strong="0129" /></entry>
+		</entry>
+
+		<entry><w xlit="gbb">גבב</w><!--*** FAILS UNIQUENESS ***-->
+		  <entry><w xlit="gab">גַּב</w><pos>N</pos><def dc="f">arch</def><xref strong="1354" /></entry>
+		</entry>
+	</section>
+	<section name="Head">
+		<entry><w xlit="rōʾš">רֹאשׁ</w><pos>N</pos><def>head</def><xref strong="7218A,7218H,7218I,7218J,7218K,7218L,7218B,7220" />
+		  <entry><w xlit="rōʾš">רֹאשׁ</w><pos>N</pos><def>head[weed]</def><xref strong="7219" /></entry><!--12-->
+		  <entry><w xlit="rōʾšâ">רֹאשָׁה</w><pos>N</pos><def dc="f">head</def><xref strong="7222" /></entry>
+		  <entry><w xlit="riʾšâ">רִאשָׁה</w><pos>N</pos><def dc="f">head</def><xref strong="7221" /></entry>
+		  <entry><w xlit="riʾšôn">רִאשׁוֹן</w><pos>A</pos><def dc="f">headmost</def><xref strong="7223G,7223H,7223I" /></entry>
+		  <entry><w xlit="riʾšōnî">רִאשֹׁנִי</w><pos>A</pos><def dc="f">headmost</def><xref strong="7224" /></entry>
+		  <entry><w xlit="rēʾšît">רֵאשִׁית</w><pos>N</pos><def dc="f">headmost</def><xref strong="7225G,7225H" /></entry>
+		  <entry><w xlit="raʾăšōt">רַאֲשֹׁת</w><pos>A</pos><def dc="f">[at the] head/[at the] head</def><xref strong="7226" /></entry>
+		  <entry><w xlit="mārēšâ">מָרֵשָׁה</w><pos>Np</pos><def>head[rest]</def><xref strong="4762G,4762H" /></entry><!--Mareshah-->
+		  <entry><w xlit="mĕraʾăšāwōt">מְרַאֲשָׁוֹת</w><pos>N</pos><def dc="f">head[rest]</def><xref strong="4761,4763" /></entry>
+		</entry>
+		<entry><w xlit="qdd">קדד</w>
+		  <entry><w xlit="qādad">קָדַד</w><pos>V</pos><qalAct>[down]scalp</qalAct><xref strong="6915" /></entry><!--15-->
+		  <entry><w xlit="qiddâ">קִדָּה</w><pos>N</pos><def>scalp[plant]</def><xref strong="6916" /></entry>
+		  <entry><w xlit="qodqōd">קׇדְקֹד</w><pos>N</pos><def>scalp</def><xref strong="6936" /></entry><!--11-->
+		</entry>
+		<entry><w xlit="ṣwr">צור</w>
+		  <entry><w xlit="ṣawwāʾr">צַוָּאר</w><pos>N</pos><def dc="f">neck</def><xref strong="6677A" /></entry>
+		  <entry><w xlit="ṣawwārôn">צַוָּרוֹן</w><pos>N</pos><def dc="f">necklace</def><xref strong="6677B" /></entry>
+		</entry>
+		<entry><w xlit="pānâ">פָּנָה</w><pos>V</pos><qalAct dc="f">face</qalAct>
+			<pielAct dc="f">reface</pielAct>
+			<hiphilAct dc="f">face</hiphilAct>
+			<hiphilPass dc="f">be faced</hiphilPass><xref strong="6437G,6437H" />
+		  <!--<entry><w xlit="lipnāy">לִפְנָ֑י</w><pos>R</pos><def dc="f">face</def><xref strong="3942" /></entry>-->
+		  <entry><w xlit="pāneh">פָּנֶה</w><pos>N</pos><def>face/face</def><xref strong="6440G,6440H,6440I,6440J,6440K,6440L,6440M,6440N" /></entry><!--one of four perpetual plurals: never occurs in singular: like "pants" in English.-->
+		  <entry><w xlit="pĕnîmâ">פְּנִ֫ימָה</w><pos>D</pos><def>faceward</def><xref strong="6441" /></entry>
+		  <entry><w xlit="pĕnîmî">פְּנִימִי</w><pos>A</pos><def dc="f">inface</def><xref strong="6442" /></entry>
+		  <entry><w xlit="pĕnûʾēl">פְּנוּאֵל</w><pos>Np</pos><def>face-of-powr</def><xref strong="6439G,6439H,6439I" /></entry>
+		  <entry><w xlit="yĕpunneh">יְפֻנֶּה</w><pos>Np</pos><def>he-faces</def><xref strong="3312G,3312H" /></entry>
+		  <entry><w xlit="pûn">פּוּן</w><pos>V</pos><qalAct>[show] one's face</qalAct><xref strong="6323" /></entry>
+		</entry>
+		<entry><w xlit="raqqâ">רַקָּה</w><pos>N</pos><def>temple[s]/temples</def><xref strong="7541" /></entry><!--5-->
+		<entry><w xlit="lḥh">לחה</w>
+		  <entry><w xlit="lĕḥî">לְחִי</w><pos>N</pos><def>cheek</def><xref strong="3895G,3895H,7437" /></entry>
+		  <entry><w xlit="leḥî">לֶחִי</w><pos>Np</pos><def>cheek</def><xref strong="3896" /></entry>
+		</entry>
+	</section>
+	<section name="Hair">
+		<entry><w xlit="qrḥ">קרח</w>
+		  <entry><w xlit="qāraḥ">קָרַח</w><pos>V</pos><qalAct>make °bald</qalAct>
+			<qalPass>make oneself bald</qalPass>
+			<hiphilAct>make °bald</hiphilAct>
+			<hiphilPass>be made bald</hiphilPass><xref strong="7139" /></entry><!--5-->
+		  <entry><w xlit="qōraḥ">קֹ֫רַח</w><pos>Np</pos><def>baldness</def><xref strong="7141G,7141H,7141I,7141J" /></entry><!--KORAH-->
+		  <entry><w xlit="qorḥî">קׇרְחִי</w><pos>Ng</pos><def>baldnessïte</def><xref strong="7145" /></entry><!--KORAHITES-->
+		  <entry><w xlit="qērēaḥ">קֵרֵחַ</w><pos>A</pos><def>bald[head]</def><xref strong="7142" /></entry><!--3-->
+		  <entry><w xlit="qārēaḥ">קָרֵחַ</w><pos>Np</pos><def>baldy</def><xref strong="7143" /></entry><!--Careah-->
+		  <entry><w xlit="qorḥâ">קׇרְחָה</w><pos>N</pos><def>baldness</def><xref strong="7144" /></entry><!--11-->
+		  <entry><w xlit="qāraḥat">קָרַ֫חַת</w><pos>N</pos><def>baldness</def><xref strong="7146" /></entry><!--4-->
+		  <entry><w xlit="qeraḥ">קֶ֫רַח</w><pos>N</pos><def>bald[ice]</def><xref strong="7140" /></entry><!--7-->
+		</entry>
+		<entry><w xlit="gbḥ">גבח</w>
+		  <entry><w xlit="gibbēaḥ">גִּבֵּחַ</w><pos>A</pos><def>receding [hairline]</def><xref strong="1371" /></entry><!--}4-->
+		  <entry><w xlit="gabbaḥat">גַּבַּ֫חַת</w><pos>N</pos><def>receding [hairline]</def><xref strong="1372" /></entry>
+		</entry>
+		<entry><w xlit="glb">גלב</w>
+		  <entry><w xlit="gallāb">גַּלָּב</w><pos>N</pos><def>√barber</def><xref strong="1532" /></entry>
+		</entry>
+		<entry><w xlit="gālaḥ">גָּלַח</w><pos>V</pos><pielAct>shave</pielAct>
+			<pielPass>be shaved</pielPass>
+			<pielReflex>shave oneself</pielReflex><xref strong="1548" /></entry><!--23-->
+		<entry><w xlit="prʿ">פרע</w>
+		  <entry><w xlit="pāraʿ">פָּרַע</w><pos>V</pos><qalAct>dishevel</qalAct>
+			<hiphilAct>dishevel</hiphilAct><xref strong="6544B,6544A" /></entry><!--16: maybe change to FLEECE-->
+		  <entry><w xlit="peraʿ">פֶּ֫רַע</w><pos>N</pos><def>disheveling</def><xref strong="6545,6546" /></entry><!--4-->
+		  <entry><w xlit="pirʿātôn">פִּרְעָתוֹן</w><pos>Np</pos><def>dishevel</def><xref strong="6552" /></entry>
+		  <entry><w xlit="pirʿātônî">פִּרְעָתוֹנִי</w><pos>Ng</pos><def>dishevelïte</def><xref strong="6553" /></entry>
+		</entry>
+		<entry><w xlit="môrâ">מוֹרָה</w><pos>N</pos><def>razor</def><xref strong="4177" /></entry><!--3-->
+		<entry><w xlit="śîb">שִׂיב</w><pos>V</pos><qalAct>gray</qalAct><xref strong="7867" />
+		  <entry><w xlit="śêb">שֵׂיב</w><pos>N</pos><def>gray [head]</def><xref strong="7869" /></entry>
+		  <entry><w xlit="śêbâ">שֵׂיבָה</w><pos>N</pos><def>gray [head]</def><xref strong="7872" /></entry><!--19-->
+		</entry>
+	</section>
+	<section name="Ears">
+		<entry><w xlit="ʾzn">אזן</w>
+		  <entry><w xlit="ʾāzēn">אָזֵן</w><pos>N</pos><def>ear[axe]</def><xref strong="0240" /></entry>
+		  <entry><w xlit="ʾāzan">אָזַן</w><pos>V</pos><pielAct>ear</pielAct>
+			<hiphilAct>[give] ear</hiphilAct><xref strong="0238,0239" /></entry><!--41-->
+		  <entry><w xlit="ʾōzen">אֹ֫זֶן</w><pos>N</pos><def>ear</def><xref strong="0241G,0241H,0241I" /></entry><!--187-->
+		  <entry><w xlit="ʾăzanyāhû">אֲזַנְיָ֫הוּ</w><pos>Np</pos><def>eared-by-Yʜᴡ</def><xref strong="0245" /></entry>
+		  <entry><w xlit="ʾaznôt">אַזְנוֹת</w><pos regex="Npl=Npfpc">Np</pos><def>ear</def><xref strong="0243+" /></entry>
+		  <entry><w xlit="ʾuzzēn">אֻזֵּן</w><pos>Np</pos><def>ear</def><xref strong="0242+" /></entry>
+		  <entry><w xlit="mōʾzēn">מֹאזֵן</w><pos>N</pos><def>ear[scale]</def><xref strong="3976" /></entry><!--15-->
+		  <entry><w xlit="ʾoznî">אׇזְנִי</w><pos>Np</pos><def>my-ear</def><xref strong="0244A,0244B" /></entry>
+		  <entry><w xlit="yaʾăzanyāhû">יַאֲזַנְיָ֫הוּ</w><pos>Np</pos><def>eared-of-Yʜᴡ</def><xref strong="2970G,2970H,2970I,2970J" /></entry><!--Jaazaniah-->
+		  <entry><w xlit="yĕzanyâ">יְזַנְיָה</w><pos>Np</pos><def>eard-of-Yʜ</def><xref strong="3153" /></entry><!--Jezaniah-->
+		</entry>
+		<entry><w xlit="šāmaʿ">שָׁמַע</w><pos>V</pos><qalAct dc="f">hear</qalAct>
+			<pielAct dc="f">make oneself heard</pielAct>
+			<hiphilAct>let °hear</hiphilAct><xref strong="8085G,8085H,8085I,8085J,8085K,8085L" />
+		  <entry><w xlit="šĕmûʾēl">שְׁמוּאֵל</w><pos>Np</pos><def>heard-by-powr</def><xref strong="8050G,8050H,8050I" /></entry><!--SAMUEL-->
+		  <entry><w xlit="hašmāʿût">הַשְׁמָעוּת</w><pos>N</pos><def>hear[say]</def><xref strong="2045" /></entry>
+		  <entry><w xlit="mišmāʿ">מִשְׁמָע</w><pos>N</pos><def>hear[say]</def><xref strong="4926" /></entry>
+		  <entry><w xlit="mišmaʿat">מִשְׁמַ֫עַת</w><pos>N</pos><def>hear[guard]</def><xref strong="4928" /></entry>
+		  <entry><w xlit="šĕmûʿâ">שְׁמוּעָה</w><pos>N</pos><def>hearing</def><xref strong="8052" /></entry>
+		  <entry><w xlit="šēmaʿ">שֵׁ֫מַע</w><pos>N</pos><def>hearing</def><xref strong="8088B" /></entry>
+		  <entry><w xlit="šemaʿ">שֶׁ֫מַע</w><pos>N</pos><def>hearing</def><xref strong="8088A,8087,8087G,8087H,8087I,8087J" /></entry>
+		  <entry><w xlit="šōmaʿ">שֹׁ֫מַע</w><pos>N</pos><def>hear[say]</def><xref strong="8089" /></entry>
+		  <entry><w xlit="yišmāʿēʾl">יִשְׁמָעֵאל</w><pos>Np</pos><def>powr-hears</def><xref strong="3458G,3458H,3458I,3458J,3458K,3458L" /></entry>
+		  <entry><w xlit="yišmĕʿēʾlî">יִשְׁמְעֵאלִי</w><pos>Ng</pos><def>powr-hearsïte</def><xref strong="3459" /></entry>
+		  <entry><w xlit="yišmaʿyāhû">יִשְׁמַעְיָ֫הוּ</w><pos>Np</pos><def>Yʜᴡ-hears</def><xref strong="3460G,3460H" /></entry>
+		  <entry><w xlit="šimʿôn">שִׁמְעוֹן</w><pos>Np</pos><def>heard</def><xref strong="8095G,8095H" /></entry><!--SIMEON-->
+		  <entry><w xlit="šimʿōnî">שִׁמְעֹנִי</w><pos>Ng</pos><def>heardïte</def><xref strong="8099" /></entry><!--SIMEONITE-->
+		  <entry><w xlit="ʾĕlîšāmāʿ">אֱלִישָׁמָע</w><pos>Np</pos><def>powr-hears</def><xref strong="0476G,0476H,0476I,0476J,0476K,0476L,0476M" /></entry><!--Elishama-->
+		  <entry><w xlit="šĕmaʿ">שְׁמַע</w><pos>Np</pos><def>heard</def><xref strong="8090" /></entry>
+		  <entry><w xlit="šāmāʿ">שָׁמָע</w><pos>Np</pos><def>hearing</def><xref strong="8091" /></entry>
+		  <entry><w xlit="šimʿâ">שִׁמְעָה</w><pos>Np</pos><def>hearing</def><xref strong="8093" /></entry>
+		  <entry><w xlit="šimʿāʾ">שִׁמְעָא</w><pos>Np</pos><def>hearing</def><xref strong="8092G,8092H,8092I,8092J" /></entry>
+		  <entry><w xlit="šĕmāʿâ">שְׁמָעָה</w><pos>Np</pos><def>hearing</def><xref strong="8094" /></entry>
+		  <entry><w xlit="šimʿî">שִׁמְעִי</w><pos>Np</pos><def>hearing</def><xref strong="8096G,8096H,8096I,8096J,8096K,8096L,8096M,8096N,8096O,8096P,8096Q,8096R,8096S,8096T,8096U,8096V,8096X,8096Y" /></entry>
+		  <entry><w xlit="šimʿî">שִׁמְעִי</w><pos>Ng</pos><def>hearingïte</def><xref strong="8097" /></entry>
+		  <entry><w xlit="šĕmaʿyāhû">שְׁמַעְיָ֫הוּ</w><pos>Np</pos><def>heard-Yʜᴡ</def><xref strong="8098,8098A,8098B,8098C,8098D,8098E,8098F,8098G,8098H,8098I,8098J,8098K,8098L,8098M,8098N,8098O,8098P,8098Q,8098R,8098S,8098T,8098U,8098V,8098W,8098X,8098Y,8098Z" /></entry>
+		  <entry><w xlit="šimʿāt">שִׁמְעָת</w><pos>Np</pos><def>hearing</def><xref strong="8100" /></entry>
+		  <entry><w xlit="šimʿātîm">שִׁמְעָתִים</w><pos>Ng</pos><def>hearingïte</def><xref strong="8101" /></entry>
+		  <entry><w xlit="yĕhôšāmāʿ">יְהוֹשָׁמָע</w><pos>Np</pos><def>Yʜᴡ-hearing</def><xref strong="1953" /></entry>
+		</entry>
+		<entry><w xlit="qāšab">קָשַׁב</w><pos>V</pos><qalAct>listen</qalAct>
+			<hiphilAct>listen</hiphilAct><xref strong="7181" />
+		  <entry><w xlit="qešeb">קֶ֫שֶׁב</w><pos>N</pos><def>listening</def><xref strong="7182" /></entry>
+		  <entry><w xlit="qaššāb">קַשָּׁב</w><pos>A</pos><def>listening</def><xref strong="7183A" /></entry>
+		  <entry><w xlit="qaššub">קַשֻּׁב</w><pos>A</pos><def>listening</def><xref strong="7183B" /></entry>
+		</entry>
+	</section>
+	<section name="Eyes">
+		<entry><w xlit="ʿayin">עַ֫יִן</w><pos>N</pos><def dc="f">eye</def><xref strong="5869A,5869H,5869I,5869J,5869K" />
+		  <entry><w xlit="ʿîn">עִין</w><pos>V</pos><qalAct dc="f">eye</qalAct><xref strong="5770" /></entry>
+		  <entry><w xlit="ʿayin">עַ֫יִן</w><pos>N</pos><def>eye[well]</def><xref strong="5869B,5869G,5869M,5871G,5871H,5873G+" /></entry>
+		  <entry><w xlit="ʿayin">עַ֫יִן</w><pos regex="Npl=Npfsc">N</pos><def>eye[well]</def><xref strong="5872+,5873H+,5875+,5876+,5877+,5878+,5880+,5882+,5883+,5884+,5885+,5887+" /></entry>
+		  <entry><w xlit="maʿyān">מַעְיָן</w><pos>N</pos><def>eye[well]</def><xref strong="4599" /></entry><!--}44: round, deep, reflective, source of water from adama-->
+		  <entry><w xlit="ʿênām">עֵינָם</w><pos regex="Npl=Npmda">Np</pos><def>eye[well]</def><xref strong="5879G,5879H" /></entry>
+		  <entry><w xlit="ʿênān">עֵינָן</w><pos>Np</pos><def>eyed</def><xref strong="5881" /></entry>
+		  <entry><w xlit="ʿênôn">עֵינוֹן</w><pos>Np</pos><def>eye[well]</def><xref strong="2703,2704" /></entry><!--Enon-->
+		  <entry><w xlit="ʿên">עֵין</w><pos regex="Npl=Npfsc">Np</pos><clone>5869B</clone><xref strong="5874+" /></entry>
+		  <!--<entry><w xlit="ʿên tannîm">עֵין תַּנִּים</w><pos>Np</pos><def>¬dragon well</def><xref strong="5886" /></entry>--><!--dragon well-->
+		  <entry><w xlit="ʾelyĕhôʿênay">אֶלְיְהוֹעֵינַי</w><pos>Np</pos><def>to-Yʜᴡ-my-eyes</def><xref strong="0454A,0454G" /></entry><!--Elihoenai-->
+		  <entry><w xlit="ʾelyôʿênay">אֶלְיוֹעֵינַי</w><pos>Np</pos><def>to-Yᴡ-my-eyes</def><xref strong="0454B,0454H,0454I,0454J,0454K,0454L,0462" /></entry><!--Elihoenai-->
+		</entry>
+
+		<entry><w xlit="rāʾâ">רָאָה</w><pos>V</pos><qalAct dc="f">see</qalAct>
+			<pielReflex dc="f">see each other</pielReflex>
+			<hiphilAct dc="f">show</hiphilAct><xref strong="7200G,7200H,7200I,7200J,7200K,7200L,7200M,7200N" /><!--1300-->
+		  <entry><w xlit="marʾeh">מַרְאֶה</w><pos>N</pos><def dc="f">sight</def><xref strong="4758" /></entry><!--103-->
+		  <entry><w xlit="marʾâ">מַרְאָה</w><pos>N</pos><def dc="f">seeing[mirror]</def><xref strong="4759B" /></entry>
+		  <entry><w xlit="marʾâ">מַרְאָה</w><pos>N</pos><def dc="f">insight</def><xref strong="4759A" /></entry><!--11-->
+		  <entry><w xlit="murʾâ">מֻרְאָה</w><pos>N</pos><def>showiness</def><xref strong="4760" /></entry><!--bird's CROP-->
+		  <entry><w xlit="rāʾâ">רָאָה</w><pos>N</pos><def>seer</def><xref strong="7201" /></entry><!--a sharp-sighted bird-->
+		  <entry><w xlit="rāʾeh">רָאֶה</w><pos>V</pos><qalAct dc="f">see</qalAct><xref strong="7202" /></entry>
+		  <entry><w xlit="rōʾeh">רֹאֶה</w><pos>N</pos><def dc="f">sight</def><xref strong="7203B" /></entry>
+		  <entry><w xlit="rōʾeh">רֹאֶה</w><pos>N</pos><def>seer</def><xref strong="7203A" /></entry><!--11-->
+		  <entry><w xlit="rĕʾûbēn">רְאוּבֵן</w><pos>Np</pos><def>see-son</def><xref strong="7205" /></entry><!--72-->
+		  <entry><w xlit="rĕʾûbēnî">רְאוּבֵנִי</w><pos>Ng</pos><def>see-sonïte</def><xref strong="7206" /></entry><!--Reubenite-->
+		  <entry><w xlit="rĕʾût">רְאוּת</w><pos>N</pos><def dc="f">sight</def><xref strong="7212" /></entry>
+		  <entry><w xlit="rĕʾî">רְאִי</w><pos>N</pos><def dc="f">seeing[mirror]</def><xref strong="7209" /></entry>
+		  <entry><w xlit="rŏʾî">רֳאִי</w><pos regex="Vqr=Nc">N</pos><def dc="f">sight</def><xref strong="7210" /></entry><!--5-->
+		  <entry><w xlit="mōrîyâ">מֹרִיָּה</w><pos>Np</pos><def>seen-of-Yʜ</def><xref strong="4179" /></entry><!--Moriah-->
+		  <entry><w xlit="rōʾî">רֹאִי</w><pos>Np</pos><def>that sees</def><xref strong="0883" /></entry><!--3: beer-lahai-ROI-->
+		</entry>
+		<entry><w xlit="nābaṭ">נָבַט</w><pos>V</pos><pielAct dc="f">look</pielAct>
+			<hiphilAct dc="f">look</hiphilAct><xref strong="5027" /><!--69-->
+		  <entry><w xlit="mabbāṭ">מַבָּט</w><pos>N</pos><def dc="f">thing looked at</def><xref strong="4007" /></entry><!--3-->
+		  <entry><w xlit="nĕbāṭ">נְבָט</w><pos>Np</pos><def>looked</def><xref strong="5028" /></entry><!--25-->
+		</entry>
+		<entry><w xlit="šāʿâ">שָׁעָה</w><pos>V</pos><qalAct>gaze</qalAct>
+			<pielAct>gaze [at]</pielAct>
+			<hiphilAct>gaze</hiphilAct><xref strong="8159" /><!--15-->
+		  <entry><w xlit="šāʿâ">שָׁעָה</w><pos>N</pos><def>gazing[hour]</def><xref strong="A8160" /></entry><!--5-->
+		  <entry><w xlit="šāʾâ">שָׁאָה</w><pos regex="Vtrmsc=Vtrmsa">V</pos><pielReflex>gaze</pielReflex><xref strong="7583" /></entry>
+		</entry>
+		<entry><w xlit="šāzap">שָׁזַף</w><pos>V</pos><qalAct>stare [down] on</qalAct><xref strong="7805" /></entry><!--3-->
+		<entry><w xlit="šāgaḥ">שָׁגַח</w><pos>V</pos><hiphilAct>peep</hiphilAct><xref strong="7688" /></entry><!--3: LOOK, SQUINT-->
+		<entry><w xlit="šātam">שָׁתַם</w><pos>N</pos><def>keen</def><xref strong="8365" /></entry><!--2-->
+		<entry><w xlit="ḥāzâ">חָזָה</w><pos>V</pos><qalAct dc="f">vision</qalAct><xref strong="2372,A2370" /><!--55-->
+		  <entry><w xlit="hāzâ">הָזָה</w><pos>V</pos><qalAct actor="visionary" dc="f">vision</qalAct><xref strong="1957" /></entry>
+		  <entry><w xlit="ḥōzeh">חֹזֶה</w><pos>N</pos><def dc="f">visionary</def><xref strong="2374,3626G,3626H" /></entry><!--19-->
+		  <entry><w xlit="ḥôzay">חוֹזַי</w><pos>N</pos><def dc="f">visionary</def><xref strong="2335" /></entry>
+		  <entry><w xlit="ḥāzôn">חָזוֹן</w><pos>N</pos><def dc="f">vision</def><xref strong="2377" /></entry><!--35-->
+		  <entry><w xlit="ḥāzôt">חָזוֹת</w><pos>N</pos><def dc="f">vision</def><xref strong="2378,A2379" /></entry>
+		  <entry><w xlit="ḥāzût">חָזוּת</w><pos>N</pos><def dc="f">envisioning</def><xref strong="2380" /></entry><!--5-->
+		  <entry><w xlit="ḥizzāyôn">חִזָּיוֹן</w><pos>N</pos><def dc="f">vision</def><xref strong="2384" /></entry><!--9-->
+		  <entry><w xlit="meḥĕzâ">מֶחֱזָה</w><pos>N</pos><def dc="f">vision[window]</def><xref strong="4237" /></entry><!--4-->
+		  <entry><w xlit="maḥăzeh">מַחֲזֶה</w><pos>N</pos><def dc="f">vision</def><xref strong="4236" /></entry><!--4-->
+		  <entry><w xlit="ḥĕzû">חֱזוּ</w><pos>N</pos><def>vision</def><xref strong="A2376" /></entry><!--12-->
+		  <entry><w xlit="ḥăzô">חֲזוֹ</w><pos>Np</pos><def>visioner</def><xref strong="2375" /></entry><!--Hazo-->
+		  <entry><w xlit="ḥăzāhʾēl">חֲזָהאֵל</w><pos>Np</pos><def>vision-of-powr</def><xref strong="2371" /></entry><!--Hazael-->
+		  <entry><w xlit="yaḥăzîʾēl">יַחֲזִיאֵל</w><pos>Np</pos><def>powr-visions</def><xref strong="3166G,3166H,3166I,3166J,3166K" /></entry><!--Jahaziel-->
+		</entry>
+		<entry><w xlit="śābar">שָׂבַר</w><pos>V</pos><qalAct>inspect</qalAct>
+			<pielAct>expect</pielAct><xref strong="7663A,7663B" /><!--8-->
+		  <entry><w xlit="śēber">שֵׂ֫בֶר</w><pos>N</pos><def>expectation</def><xref strong="7664" /></entry>
+		  <entry><w xlit="sĕbar">סְבַר</w><pos>V</pos><qalAct>expect</qalAct><xref strong="A5452" /></entry>
+		  <entry><w xlit="sibrayim">סִבְרַ֫יִם</w><pos regex="Npl=Npbda">Np</pos><def>expectation</def><xref strong="5453" /></entry><!--Sibraim-->
+		</entry>
+
+		<entry><w xlit="rāgaʿ">רָגַע</w><pos>V</pos><qalAct>wink at</qalAct>
+			<qalPass>[take a] wink</qalPass>
+			<hiphilAct>let °[take a] wink</hiphilAct><xref strong="7280A,7280B" /><!--9-->
+		  <entry><w xlit="rāgaʿ">רָגַע</w><pos>N</pos><def>[in a] wink</def><xref strong="7280A-NOUN" /></entry><!--3-->
+		  <entry><w xlit="rāgaʿ">רָגַע</w><pos>V</pos><qalAct>wince</qalAct><xref strong="7280C" /></entry>
+		  <entry><w xlit="regaʿ">רֶ֫גַע</w><pos>N</pos><def>wink</def><xref strong="7281" /></entry><!--22: SUDDENLY, IN A WINK-->
+		  <entry><w xlit="margôaʿ">מַרְגּוֹעַ</w><pos>N</pos><def>wink [of rest]</def><xref strong="4771" /></entry><!--should be a PLACE OF REST-->
+		  <entry><w xlit="margēʿâ">מַרְגֵּעָה</w><pos>N</pos><def>wink [of rest]</def><xref strong="4774" /></entry><!--should be a PLACE OF REST-->
+		  <entry><w xlit="rāgēaʿ">רָגֵעַ</w><pos>A</pos><def>winking</def><xref strong="7282" /></entry><!-- *** very, very bad translation, as with most of this root. Means PEACEFUL or RESTING ***-->
+		</entry>
+		<entry><w xlit="rāzam">רָזַם</w><pos>V</pos><qalAct>√wink</qalAct><xref strong="7335" /></entry>
+		<entry><w xlit="qāraṣ">קָרַץ</w><pos>V</pos><qalAct>twitch</qalAct><xref strong="7169" /><!--5: WINK-->
+		  <entry><w xlit="qĕraṣ">קְרַץ</w><pos>N</pos><def>twitch</def><xref strong="A7170" /></entry><!--2: Dan: in idiom-->
+		  <entry><w xlit="qereṣ">קֶ֫רֶץ</w><pos>N</pos><def>twitching</def><xref strong="7171" /></entry><!--DESTRUCTION-->
+		</entry>
+		<entry><w xlit="petaʿ">פֶּתַע</w><pos>N</pos><def dc="f">suddenly</def><xref strong="6621" /><!--lit. "in a wink", in an instant-->
+		  <entry><w xlit="pitʾōm">פִּתְאֹם</w><pos>D</pos><def dc="f">suddenly</def><xref strong="6597" /></entry>
+		</entry>
+
+		<entry><w xlit="sanwērîm">סַנְוֵרִים</w><pos>N</pos><def>anopia/anopia</def><xref strong="5575" /></entry><!--3: BLINDNESS, twice, both supernatural against an attacking mob.-->	</section>
+	<section name="Nose">
+		<entry><w xlit="ʾānap">אָנַף</w><pos>V</pos><qalAct dc="f">[flare one's] nostrils</qalAct>
+			<pielReflex dc="f">[flare] one's nostrils</pielReflex><xref strong="0599" />
+		  <entry><w xlit="ʾănāpâ">אֲנָפָה</w><pos>N</pos><def dc="f">nostril[bird]</def><xref strong="0601" /></entry>
+		  <entry><w xlit="ʾap">אַף</w><pos>N</pos><def dc="f">nostrils/nostrils</def><xref strong="0639G,0639H,0639I" /></entry><!--ANGER-->
+		</entry>
+		<entry><w xlit="nḥr">נחר</w>
+		  <entry><w xlit="nāḥîr">נָחִיר</w><pos>N</pos><def>snort</def><xref strong="5156" /></entry>
+		  <entry><w xlit="naḥar">נַ֫חַר</w><pos>N</pos><def>snort</def><xref strong="5170A" /></entry>
+		  <entry><w xlit="naḥărâ">נַחֲרָה</w><pos>N</pos><def>snorting</def><xref strong="5170B" /></entry>
+		  <entry><w xlit="nāḥôr">נָחוֹר</w><pos>Np</pos><def>snorer</def><xref strong="5152G,5152H" /></entry>
+		</entry>
+		<entry><w xlit="ʿṭš">עטשׁ</w>
+		  <entry><w xlit="ʿăṭîšâ">עֲטִישָׁה</w><pos>N</pos><def>√snort</def><xref strong="5846" /></entry>
+		</entry>
+		<entry><w xlit="bāʾaš">בָּאַשׁ</w><pos>V</pos><qalAct>stink</qalAct>
+			<qalPass>[make] oneself stink</qalPass>
+			<pielReflex>make oneself stink</pielReflex>
+			<hiphilAct>make °stink</hiphilAct><xref strong="0887" /><!--17-->
+		  <entry><w xlit="bĕʾōš">בְּאֹשׁ</w><pos>N</pos><def>stench</def><xref strong="0889" /></entry><!--3-->
+		  <entry><w xlit="boʾšâ">בׇּאְשָׁה</w><pos>N</pos><def>stink[weed]</def><xref strong="0890" /></entry>
+		  <entry><w xlit="bĕʾušîm">בְּאֻשִׁים</w><pos>N</pos><def>stink[weed]</def><xref strong="0891" /></entry>
+		</entry>
+		<entry><w xlit="ṣḥn">צחן</w>
+		  <entry><w xlit="ṣaḥănâ">צַחֲנָה</w><pos>N</pos><def>funk</def><xref strong="6709" /></entry>
+		</entry>
+	</section>
+	<section name="Mouth">
+		<entry><w xlit="peh">פֶּה</w><pos>N</pos><def dc="f">mouth</def><xref strong="6310G,6310H,6310I,6310J,6310K,6310L,6367+,6364+" />
+		  <entry><w xlit="pêâ">פֵּיָה</w><pos>N</pos><def dc="f">mouth</def><xref strong="6366" /></entry>
+		  <entry><w xlit="pîpîyâ">פִּיפִיָּה</w><pos>N</pos><def dc="f">mouth</def><xref strong="6374" /></entry>
+		  <entry><w xlit="pēʾâ">פֵּאָה</w><pos>N</pos><def>mouth</def><xref strong="6285" /></entry><!--86-->
+		  <entry><w xlit="pāʾâ">פָּאָה</w><pos>V</pos><hiphilAct>mouth</hiphilAct><xref strong="6284" /></entry>
+		  <entry><w xlit="mĕpîbōšet">מְפִיבֹשֶׁת</w><pos>Np</pos><def>mouther-of-shame</def><xref strong="4648G,4648H" /></entry><!--Mephibosheth-->
+		  <entry><w xlit="mĕpî">מְפִי</w><pos>Np</pos><def>mouther-of</def><xref strong="4648G+" /></entry><!--Mephi-of-->
+		</entry>
+		<entry><w xlit="šānan">שָׁנַן</w><pos>V</pos><qalAct dc="f">make °toothed</qalAct>
+			<pielAct dc="f">[put] teeth into</pielAct><xref strong="8150" />
+		  <entry><w xlit="šēn">שֵׁן</w><pos>N</pos><def dc="f">tooth/teeth</def><xref strong="8127G,8127H,8127I,8127J" /></entry>
+		  <entry><w xlit="šenhabbîm">שֶׁנְהַבִּים</w><pos>N</pos><def dc="f">elephant tooth/elephant teeth</def><xref strong="8143" /></entry>
+		  <entry><w xlit="šĕnînâ">שְׁנִינָה</w><pos>N</pos><def dc="f">toothed [word]</def><xref strong="8148" /></entry>
+		</entry>
+		<entry><w xlit="tlʿ">תלע</w>
+		  <entry><w xlit="maltāʿâ">מַלְתָּעָה</w><pos>N</pos><def>fang</def><xref strong="4459" /></entry>
+		  <entry><w xlit="mĕtallĕʿôt">מְתַלְּעוֹת</w><pos>N</pos><def>fang</def><xref strong="4973" /></entry><!--3-->
+		  <entry><w xlit="tôlāʿ">תּוֹלָע</w><pos>N</pos><def>fang[worm]</def><xref strong="8438A,8439G,8439H" /></entry><!--11-->
+		  <entry><w xlit="tôlāʿî">תּוֹלָעִי</w><pos>Ng</pos><def>fang[worm]ïte</def><xref strong="8440" /></entry>
+		  <entry><w xlit="tôlēʿâ">תּוֹלֵעָה</w><pos>N</pos><def dc="f">fang[worm]</def><xref strong="8438B" /></entry><!--38-->
+		  <entry><w xlit="tālaʿ">תָּלַע</w><pos>V</pos><pielPass actor="fang[worm red]">be fang[worm red]</pielPass><xref strong="8529" /></entry>
+		</entry>
+		<entry><w xlit="nāšak">נָשַׁךְ</w><pos>V</pos><qalAct>bite</qalAct>
+			<hiphilAct>bite [with interest]</hiphilAct><xref strong="5391A,5391B" /><!--16: not related in Hebrew to BITTER-->
+		  <entry><w xlit="nešek">נֶ֫שֶׁךְ</w><pos>N</pos><def>biting [interest]</def><xref strong="5392" /></entry><!--12: usury, interest-->
+		</entry>
+		<entry><w xlit="lšn">לשׁן</w>
+		  <entry><w xlit="lāšôn">לָשׁוֹן</w><pos>N</pos><def dc="f">tongue</def><xref strong="3956G,3956H,3956I" /></entry>
+		  <entry><w xlit="lāšan">לָשַׁן</w><pos>V</pos><pielAct dc="f">[use the] tongue [against]</pielAct>
+			<hiphilAct dc="f">[let] °[use the] tongue</hiphilAct><xref strong="3960" /></entry>
+		</entry>
+		<entry><w xlit="śph">שׂפה</w>
+		  <entry><w xlit="śāpâ">שָׂפָה</w><pos regex="Ncmpc=Ncfdc">N</pos><def>lip</def><xref strong="8193G,8193H,8193I,8193J,8193K" /></entry>
+		  <entry><w xlit="śāpām">שָׂפָם</w><pos>N</pos><def>lipstache</def><xref strong="8222" /></entry><!--5-->
+		</entry>
+		<entry><w xlit="ṭāʿam">טָעַם</w><pos>V</pos><qalAct>taste</qalAct><xref strong="2938" /><!--11-->
+		  <entry><w xlit="ṭāʿam">טָעַם</w><pos>N</pos><def>taste</def><xref strong="2940" /></entry><!--13-->
+		  <entry><w xlit="ṭĕʿēm">טְעֵם</w><pos>V</pos><pielAct>[give ]°[to ]taste</pielAct><xref strong="A2939" /></entry>
+		  <entry><w xlit="maṭʿām">מַטְעָם</w><pos>N</pos><def>tasty</def><xref strong="4303" /></entry><!--8-->
+		</entry>
+		<entry><w xlit="ḥēk">חֵךְ</w><pos>N</pos><def>palate</def><xref strong="2441" /></entry><!--18-->
+		<entry><w xlit="gārar">גָּרַר</w><pos>V</pos><qalAct>chew °[up]</qalAct>
+			<pielAct>chew °[apart]</pielAct>
+			<pielReflex actor="chewing/chewing">chew oneself</pielReflex><xref strong="1641" /><!--6-->
+		  <entry><w xlit="gargar">גַּרְגַּר</w><pos>N</pos><def>chew-chew [berry]/chew-chew [berrie]s</def><xref strong="1620" /></entry>
+		  <entry><w xlit="gargĕrôt">גַּרְגְּרוֹת</w><pos>N</pos><def>jaw-jaw</def><xref strong="1621" /></entry><!--4-->
+		  <entry><w xlit="gārôn">גָּרוֹן</w><pos>N</pos><def>jaw</def><xref strong="1627" /></entry><!--8-->
+		  <entry><w xlit="gērâ">גֵּרָה</w><pos>N</pos><def>chaw</def><xref strong="1625" /></entry><!--11: CUD-->
+		  <entry><w xlit="gērâ">גֵּרָה</w><pos>N</pos><def>chaw</def><xref strong="1626" /></entry><!--5: GERA weight-->
+		  <entry><w xlit="mĕgērâ">מְגֵרָה</w><pos>N</pos><def>jaw[cutter]</def><xref strong="4050" /></entry><!--4-->
+		  <entry><w xlit="gārâ">גָּרָה</w><pos>V</pos><pielAct>chew [on]</pielAct><xref strong="1624" /></entry><!--14-->
+		  <entry><w xlit="tigrâ">תִּגְרָה</w><pos>N</pos><def>chewing [out]</def><xref strong="8409" /></entry>
+		  <entry><w xlit="gûr">גּוּר</w><pos>N</pos><def>chew[cub]</def><xref strong="1482,1483,1485+" /></entry><!--7-->
+		  <entry><w xlit="gôr">גּוֹר</w><pos>N</pos><def>chew[cub]</def><xref strong="1484" /></entry>
+		  <entry><w xlit="gērāʾ">גֵּרָא</w><pos>Np</pos><def>chaw</def><xref strong="1617G,1617H,1617I,1617J" /></entry><!--Gera-->
+		</entry>
+		<entry><w xlit="ʿāraq">עָרַק</w><pos>V</pos><qalAct actor="gnawer">gnaw</qalAct><xref strong="6207" /></entry>
+		<entry><w xlit="ḥāraq">חָרַק</w><pos>V</pos><qalAct>gnash</qalAct><xref strong="2786" /></entry><!--5-->
+		<entry><w xlit="rāqaq">רָקַק</w><pos>V</pos><qalAct>spit</qalAct><xref strong="7556" />
+		  <entry><w xlit="yāraq">יָרַק</w><pos>V</pos><qalAct>spit</qalAct><xref strong="3417" /></entry>
+		  <entry><w xlit="rōq">רֹק</w><pos>N</pos><def>spittle</def><xref strong="7536" /></entry>
+		</entry>
+		<entry><w xlit="rîr">רִיר</w><pos>V</pos><qalAct>be phlegmy</qalAct><xref strong="7325" />
+		  <entry><w xlit="rîr">רִיר</w><pos>N</pos><def>phlegm</def><xref strong="7388" /></entry>
+		</entry>
+		<entry><w xlit="pāʿar">פָּעַר</w><pos>V</pos><qalAct>gape</qalAct><xref strong="6473" /><!--4: or YAWN-->
+		  <entry><w xlit="pĕʿôr">פְּעוֹר</w><pos>Np</pos><def>gap</def><xref strong="6465,1047,1187" /></entry><!--PEOR-->
+		</entry>
+	</section>
+	<section name="Arms">
+		<entry><w xlit="ktp">כתף</w>
+		  <entry><w xlit="kātēp">כָּתֵף</w><pos regex="Ncmp=Ncfd">N</pos><def>shoulder</def><xref strong="3802" /></entry><!--67-->
+		</entry>
+		<entry><w xlit="yād">יָד</w><pos>N</pos><def>hand</def><xref strong="3027G,3027H,3027I,3027J,3027K,3027L,3027M,3027N,3027O,3027P,3027Q,3027R,3027S,3027T,3027U,3027V,3027W,3027X" /><!--1619-->
+		  <entry><w xlit="yādâ">יָדָה</w><pos>V</pos><qalAct>[raise] hands against</qalAct>
+			<pielReflex>[raise] one's hands</pielReflex>
+			<hiphilAct>[glory]hand</hiphilAct><xref strong="3034" /></entry><!--114-->
+		  <entry><w xlit="yādad">יָדַד</w><pos>V</pos><qalAct>hand</qalAct><xref strong="3032" /></entry><!--3-->
+		  <entry><w xlit="huyyĕdôt">הֻיְּדוֹת</w><pos>N</pos><def>[glory]hand</def><xref strong="1960" /></entry>
+		  <entry><w xlit="tôdâ">תּוֹדָה</w><pos>N</pos><def>[glory]hand</def><xref strong="8426" /></entry><!--32-->
+		  <entry><w xlit="yĕhûdâ">יְהוּדָה</w><pos>Np</pos><def>[glory]hand</def><xref strong="3063G,3063H,3063I,3063J,3063K,3063L,3063M,3063N,3063O" /></entry><!--JUDAH-->
+		  <entry><w xlit="yĕhûdî">יְהוּדִי</w><pos>Ng</pos><def>[glory]handïte</def><xref strong="3064,3064G,3064H,3064I,3065,A3062" /></entry><!--JEW-->
+		  <entry><w xlit="yāhad">יָהַד</w><pos>V</pos><pielReflex>become [Glory]handïtes</pielReflex><xref strong="3054" /></entry><!--become JEWISH-->
+		  <entry><w xlit="yĕhudîyâ">יְהֻדִיָּה</w><pos>Ng</pos><def>[glory]handïte</def><xref strong="3057" /></entry><!--JEWISH woman-->
+		  <entry><w xlit="yĕhûdît">יְהוּדִית</w><pos>A</pos><def>[glory]handïte</def><xref strong="3066,3066G,3066H,3067" /></entry><!--in the JEWISH language-->
+		  <!--<entry><w xlit="baʿălê yĕhûdâ">בַּעֲלֵי יְהוּדָה</w><pos>Np</pos><def>¬Baale of Judah</def><xref strong="1184" /></entry>--><!--Baale of Judah-->
+		  <entry><w xlit="yĕhud">יְהֻד</w><pos>Np</pos><def>[glory]hand</def><xref strong="3055" /></entry>
+		  <entry><w xlit="yahday">יַהְדַּי</w><pos>Np</pos><def>[glory]hand</def><xref strong="3056" /></entry>
+		  <entry><w xlit="yĕhûd">יְהוּד</w><pos>Np</pos><def>[glory]hand</def><xref strong="A3061" /></entry>
+		  <entry><w xlit="yĕdāyâ">יְדָיָה</w><pos>Np</pos><def>hand-of-Yʜ</def><xref strong="3042G,3042H" /></entry>
+		  <entry><w xlit="yĕdûtûn">יְדוּתוּן</w><pos regex="N.*$=Npmsa">Np</pos><def>[glory]handish</def><xref strong="3038G,3038H" /></entry>
+		  <entry><w xlit="hādâ">הָדָה</w><pos>V</pos><qalAct>handle</qalAct><xref strong="1911" /></entry>
+		</entry>
+		<entry><w xlit="kāpap">כָּפַף</w><pos>V</pos><qalAct>spoon [out]</qalAct><xref strong="3721" /><!--5-->
+		  <entry><w xlit="kap">כַּף</w><pos>N</pos><def>spoon</def><xref strong="3709G,3709H,3709I" /></entry><!--193--><!--HOLLOW of hand, foot, or spoon-->
+		  <entry><w xlit="kippâ">כִּפָּה</w><pos>N</pos><def>spoon</def><xref strong="3712" /></entry><!--3-->
+		  <entry><w xlit="kēp">כֵּף</w><pos>N</pos><def>spoon[cave]</def><xref strong="3710" /></entry><!--2: HOLLOW of rock-->
+		</entry>
+		<entry><w xlit="kāpâ">כָּפָה</w><pos>V</pos><qalAct>soothe</qalAct><xref strong="3711" /></entry>
+		<entry><w xlit="nābab">נָבַב</w><pos>V</pos><qalAct actee="hollow/hollow">hollow</qalAct><xref strong="5014" /></entry><!--4: *** fails uniqueness w HOLE *** -->
+		<entry><w xlit="qāmaṣ">קָמַץ</w><pos>V</pos><qalAct>scoop</qalAct><xref strong="7061" /><!--3: [TAKE A] FIST[FUL]-->
+		  <entry><w xlit="qōmeṣ">קֹ֫מֶץ</w><pos>N</pos><def>scoop</def><xref strong="7062" /></entry><!--4: FIST[FUL]-->
+		</entry>
+		<entry><w xlit="gārap">גָּרַף</w><pos>V</pos><qalAct>fist °[away]</qalAct><xref strong="1640" />
+		  <entry><w xlit="ʾegrōp">אֶגְרֹף</w><pos>N</pos><def>fist</def><xref strong="0106" /></entry><!--2-->
+		  <entry><w xlit="megrāpâ">מֶגְרָפָה</w><pos>N</pos><def>fist</def><xref strong="4053" /></entry>
+		</entry>
+		<entry><w xlit="ḥpn">חפן</w>
+		  <entry><w xlit="ḥōpen">חֹ֫פֶן</w><pos>N</pos><def>paw</def><xref strong="2651" /></entry><!--6: HAND-->
+		</entry>
+		<entry><w xlit="šʿl">שׁעל</w>
+		  <entry><w xlit="mišʿôl">מִשְׁעוֹל</w><pos>N</pos><def>clutch[way]</def><xref strong="4934" /></entry>
+		  <entry><w xlit="šōʿal">שֹׁ֫עַל</w><pos>N</pos><def>clutch[ful]</def><xref strong="8168" /></entry><!--3: HANDFUL-->
+		</entry>
+		<entry><w xlit="zrʿ">זרע</w>
+		  <entry><w xlit="ʾezrôaʿ">אֶזְרוֹעַ</w><pos>N</pos><def>arm</def><xref strong="0248" /></entry><!--2-->
+		  <entry><w xlit="zĕrôaʿ">זְרוֹעַ</w><pos>N</pos><def>arm</def><xref strong="2220" /></entry><!--91-->
+		</entry>
+		<entry><w xlit="ṣbʿ">צבע</w>
+		  <entry><w xlit="ʾeṣbaʿ">אֶצְבַּע</w><pos>N</pos><def>finger</def><xref strong="0676" /></entry><!--31-->
+		</entry>
+		<entry><w xlit="bhn">בהן</w>
+		  <entry><w xlit="bōhen">בֹּ֫הֶן</w><pos>N</pos><def>thumb</def><xref strong="0931" /></entry><!--16: THUMB or BIG TOE-->
+		</entry>
+		<entry><w xlit="nāgaʿ">נָגַע</w><pos>V</pos><qalAct>touch</qalAct>
+			<hiphilAct>touch</hiphilAct><xref strong="5060" /><!--150: can be gentle touch, or a plague, or a leperous spot, or a man touching a woman, or the most mundane something touching something else -->
+		  <entry><w xlit="negaʿ">נֶ֫גַע</w><pos>N</pos><def>touch</def><xref strong="5061" /></entry><!--78-->
+		</entry>
+		<entry><w xlit="māšaš">מָשַׁשׁ</w><pos>V</pos><qalAct>feel</qalAct>
+			<pielAct>feel [around]</pielAct>
+			<hiphilAct>cause °to feel [around]</hiphilAct><xref strong="4959" /></entry><!--9-->
+		<entry><w xlit="lāpat">לָפַת</w><pos>V</pos><qalAct>fumble [for]</qalAct>
+			<qalPass>fumble [around]</qalPass><xref strong="3943" /></entry><!--3-->
+		<entry><w xlit="gāšaš">גָּשַׁשׁ</w><pos>V</pos><qalAct>grope</qalAct><xref strong="1659" /></entry>
+	</section>
+	<section name="Breath">
+		<entry><w xlit="rwḥ">רוח</w>
+		  <entry><w xlit="rîaḥ">רִיחַ</w><pos>V</pos><hiphilAct>breathe</hiphilAct><xref strong="7306" /></entry><!--11-->
+		  <entry><w xlit="rāwaḥ">רָוַח</w><pos>V</pos><qalAct>be rebreathed</qalAct>
+			<pielPass>breathe</pielPass><xref strong="7304" /></entry><!--3-->
+		  <entry><w xlit="rûaḥ">רוּחַ</w><pos>N</pos><def>breath</def><xref strong="7307G,7307H,7307I,7307J" /></entry><!--378-->
+		  <entry><w xlit="rêaḥ">רֵיחַ</w><pos>N</pos><def>breath</def><xref strong="7381" /></entry><!--58-->
+		  <entry><w xlit="yĕrîḥô">יְרִיחוֹ</w><pos>Np</pos><def>breath</def><xref strong="3405G,3405H" /></entry><!--JERICHO: might come from MOON instead-->
+		  <entry><w xlit="rewaḥ">רֶ֫וַח</w><pos>N</pos><def>breathing[room]</def><xref strong="7305" /></entry>
+		  <entry><w xlit="rĕwāḥâ">רְוָחָה</w><pos>N</pos><def>breathing</def><xref strong="7309" /></entry>
+		  <entry><w xlit="raḥat">רַ֫חַת</w><pos>N</pos><def>breath[fan]</def><xref strong="7371" /></entry>
+		</entry>
+		<entry><w xlit="nāšam">נָשַׁם</w><pos>V</pos><qalAct>gasp</qalAct><xref strong="5395" />
+		  <entry><w xlit="nĕšāmâ">נְשָׁמָה</w><pos>N</pos><def>gasp</def><xref strong="5397" /></entry><!--24-->
+		  <entry><w xlit="tinšemet">תִּנְשֶׁ֫מֶת</w><pos>N</pos><def>gasper</def><xref strong="8580" /></entry><!--3-->
+		</entry>
+		<entry><w xlit="zārar">זָרַר</w><pos>V</pos><pielAct>sneeze</pielAct><xref strong="2237" /></entry>
+	</section>
+	<section name="Abdomen">
+		<entry><w xlit="šdh">שׁדה</w>
+		  <entry><w xlit="šad">שַׁד</w><pos>N</pos><def>breast</def><xref strong="7699A" /></entry><!--21-->
+		  <entry><w xlit="šōd">שֹׁד</w><pos>N</pos><def>breast</def><xref strong="7699B" /></entry><!--3-->
+		  <entry><w xlit="šiddâ">שִׁדָּה</w><pos>N</pos><def>breasted [one]</def><xref strong="7705" /></entry>
+		  <entry><w xlit="šādad">שָׁדַד</w><pos>V</pos><qalAct>[over]breast</qalAct>
+			<hiphilAct>[over]breast</hiphilAct><xref strong="7703" /></entry><!--57-->
+		  <entry><w xlit="šōd">שֹׁד</w><pos>N</pos><def>[over]breasting</def><xref strong="7701" /></entry><!--25: like puffing out one's chest-->
+		  <entry><w xlit="šûd">שׁוּד</w><pos>V</pos><qalAct>[over]breast</qalAct><xref strong="7736" /></entry>
+		  <entry><w xlit="šadday">שַׁדַּי</w><pos>N</pos><def>breasted</def><xref strong="7706" /></entry><!--48: el SHADDAI: AFAIK, not sexual, nor even gendered: strength, fertility, provision-->
+		  <entry><w xlit="ʾašdôd">אַשְׁדּוֹד</w><pos>Np</pos><def>breaster</def><xref strong="0795" /></entry><!--Ahdod-->
+		  <entry><w xlit="ʾašdôdî">אַשְׁדּוֹדִי</w><pos>Ng</pos><def>breasterïte</def><xref strong="0796" /></entry><!--Ashdodite-->
+		  <entry><w xlit="ʾašdôdît">אַשְׁדּוֹדִית</w><pos>Ng</pos><def>breasterïte</def><xref strong="0797" /></entry><!--in language of Ashdod-->
+		</entry>
+		<entry><w xlit="ḥzh">חזה</w>
+		  <entry><w xlit="ḥāzeh">חָזֶה</w><pos>N</pos><def>brisket</def><xref strong="2373" /></entry>
+		</entry>
+		<entry><w xlit="ḥwq">חוק</w>
+		  <entry><w xlit="ḥêq">חֵיק</w><pos>N</pos><def>bosom</def><xref strong="2436G,2436H,2436I,2436J" /></entry><!--38-->
+		</entry>
+		<entry><w xlit="bṭn">בטן</w>
+		  <entry><w xlit="beṭen">בֶּ֫טֶן</w><pos>N</pos><def>belly</def><xref strong="0990G,0990H,0990I,0990J" /></entry><!--72-->
+		  <entry><w xlit="bāṭĕnîm">בָּטְנִים</w><pos>N</pos><def>belly[nut]</def><xref strong="0992" /></entry>
+		</entry>
+		<entry><w xlit="gḥn">גחן</w>
+		  <entry><w xlit="gîaḥ">גִּיחַ</w><pos>V</pos><qalAct>gush</qalAct>
+			<hiphilAct>gush</hiphilAct><xref strong="1518" /></entry><!--6-->
+		  <entry><w xlit="gāḥôn">גָּחוֹן</w><pos>N</pos><def>gut</def><xref strong="1512" /></entry>
+		  <entry><w xlit="gîḥôn">גִּיחוֹן</w><pos>Np</pos><def>gusher</def><xref strong="1521" /></entry>
+		</entry>
+		<entry><w xlit="qbb">קבב</w><!--INTESTINES-->
+		  <entry><w xlit="qēbâ">קֵבָה</w><pos>N</pos><def>stomach</def><xref strong="6896" /></entry>
+		  <entry><w xlit="qōbâ">קֹבָה</w><pos>N</pos><def>stomach</def><xref strong="6897" /></entry>
+		  <entry><w xlit="qab">קַב</w><pos regex="Ncmsa=Ncmsc">N</pos><def>stomach[full]</def><xref strong="6894" /></entry>
+		  <entry><w xlit="qubbâ">קֻבָּה</w><pos>N</pos><def>stomach[tent]</def><xref strong="6898" /></entry>
+		  <entry><w xlit="qābab">קָבַב</w><pos>V</pos><qalAct>stomach[curse]</qalAct><xref strong="6895" /></entry><!--14: mostly by Balaam-->
+		</entry>
+		<entry><w xlit="mʿh">מעה</w>
+		  <entry><w xlit="mēʿeh">מֵעֶה</w><pos>N</pos><def dc="f">bowel</def><xref strong="4578" /></entry><!--32-->
+		  <entry><w xlit="māʿâ">מָעָה</w><pos>N</pos><def>bowel</def><xref strong="4579" /></entry>
+		</entry>
+		<entry><w xlit="krś">כרשׂ</w>
+		  <entry><w xlit="kĕrēś">כְּרֵשׂ</w><pos>N</pos><def>√belly</def><xref strong="3770" /></entry>
+		</entry>
+		<entry><w xlit="rḥm">רחם</w>
+		  <entry><w xlit="raḥûm">רַחוּם</w><pos>A</pos><def>wombly</def><xref strong="7349" /></entry><!--COMPASSIONATE-->
+		  <entry><w xlit="reḥem">רֶ֫חֶם</w><pos>N</pos><def>womb</def><xref strong="7358" /></entry>
+		  <entry><w xlit="raḥam">רַחַם</w><pos>N</pos><def>womb</def><xref strong="7356A" /></entry>
+		  <entry><w xlit="raḥămîm">רַחֲמִים</w><pos>N</pos><def>wombliness/wombliness</def><xref strong="7356B" /></entry><!--COMPASSION-->
+		  <entry><w xlit="rāḥam">רָחַם</w><pos>V</pos><qalAct>enwomb</qalAct><xref strong="7355" /></entry>
+		  <entry><w xlit="ruḥāmâ">רֻחָ֫מָה</w><pos>Np</pos><def>enwombed</def><xref strong="3819" /></entry>
+		  <!--<entry><w xlit="raḥămâ">רַחֲמָה</w><pos>N</pos><def>a womb/two wombs</def><xref strong="7361" /></entry>-->
+		  <entry><w xlit="raḥămānî">רַחֲמָנִי</w><pos>A</pos><def>with womb/with wombs</def><xref strong="7362" /></entry>
+		  <entry><w xlit="rāḥām">רָחָם</w><pos>N</pos><def>womb[bird]</def><xref strong="7360" /></entry>
+		  <entry><w xlit="yĕrōḥām">יְרֹחָם</w><pos>Np</pos><def>wombing</def><xref strong="3395G,3395H,3395I,3395J,3395K,3395L,3395M" /></entry><!--Jeroham-->
+		  <entry><w xlit="yĕraḥmĕʾēl">יְרַחְמְאֵל</w><pos>Np</pos><def>powr-wombs</def><xref strong="3396G,3396H,3396I" /></entry><!--Jerahmeel-->
+		</entry>
+		<entry><w xlit="ṣēlāʿ">צֵלָע</w><pos>N</pos><def>rib</def><xref strong="6763" /></entry><!--32-->
+		<entry><w xlit="lbb">לבב</w>
+		  <entry><w xlit="lēb">לֵב</w><pos>N</pos><def>heart</def><xref strong="3820A,3820B" /></entry><!--594-->
+		  <entry><w xlit="lēbāb">לֵבָב</w><pos>N</pos><def>heart</def><xref strong="3824" /></entry><!--252-->
+		  <entry><w xlit="lābab">לָבַב</w><pos>V</pos><qalAct>hearten</qalAct><xref strong="3823A,3823B" /></entry>
+		  <entry><w xlit="lĕbibâ">לְבִבָה</w><pos>N</pos><def>heart [cake]</def><xref strong="3834" /></entry><!--3-->
+		  <entry><w xlit="libbâ">לִבָּה</w><pos>N</pos><def>heart</def><xref strong="3826" /></entry><!--7-->
+		</entry>
+		<entry><w xlit="mûl">מוּל</w><pos>V</pos><qalAct>snip</qalAct>
+			<pielAct>be snipped</pielAct>
+			<hiphilAct>snip</hiphilAct><xref strong="4135A" /><!--35: usually CIRCUMCISE-->
+		  <entry><w xlit="mûlâ">מוּלָה</w><pos>N</pos><def>snipping</def><xref strong="4139" /></entry>
+		  <entry><w xlit="mālal">מָלַל</w><pos>V</pos><qalAct>snip</qalAct><xref strong="5243A,4448B,4135B,4107" /></entry><!--8-->
+		  <entry><w xlit="mûl">מוּל</w><pos>N</pos><def>snip</def><xref strong="4136" /></entry><!--36: tricky preposition-ish word-->
+		  <entry><w xlit="mĕlîlâ">מְלִילָה</w><pos>N</pos><def>snip</def><xref strong="4425" /></entry>
+		  <entry><w xlit="bimhāl">בִּמְהָל</w><pos>Np</pos><def>in-snip</def><xref strong="1118" /></entry><!--Bimhal-->
+		</entry>
+		<entry><w xlit="ʿrl">ערל</w>
+		  <entry><w xlit="ʿārēl">עָרֵל</w><pos>A</pos><def>foreskinned</def><xref strong="6189" /></entry><!--35-->
+		  <entry><w xlit="ʿāral">עָרַל</w><pos>V</pos><qalAct>[consider] foreskinned</qalAct><xref strong="6188" /></entry>
+		  <entry><w xlit="ʿorlâ">עׇרְלָה</w><pos>N</pos><def>foreskin</def><xref strong="6190G,6190H" /></entry><!--16-->
+		</entry>
+		<entry><w xlit="gld">גלד</w>
+		  <entry><w xlit="geled">גֶּ֫לֶד</w><pos>N</pos><def>√skin</def><xref strong="1539" /></entry>
+		</entry>
+		<entry><w xlit="gwh">גוה</w>
+		  <entry><w xlit="gēw">גֵּו</w><pos>N</pos><def dc="f">backward</def><xref strong="1460B" /></entry>
+		  <entry><w xlit="gēw">גֵּו</w><pos>N</pos><def dc="f">back</def><xref strong="1460A" /></entry><!--6: human BACK-->
+		  <entry><w xlit="gaw">גַּו</w><pos>N</pos><def>back</def><xref strong="1458,A1459" /></entry><!--16-->
+		  <entry><w xlit="gēwâ">גֵּוָה</w><pos>N</pos><def dc="f">back</def><xref strong="1465" /></entry>
+		  <entry><w xlit="gĕwîyâ">גְּוִיָּה</w><pos>N</pos><def dc="f">back</def><xref strong="1472" /></entry><!--13: BODY-->
+		</entry>
+	</section>
+	<section name="Legs">
+		<entry><w xlit="šôq">שׁוֹק</w><pos>N</pos><def>leg</def><xref strong="7785" />
+		  <entry><w xlit="šûq">שׁוּק</w><pos>N</pos><def>leg[way]</def><xref strong="7784" /></entry>
+		</entry>
+		<entry><w xlit="bārak">בָּרַךְ</w><pos>V</pos><qalAct actee="knelt to/knelt to">kneel</qalAct>
+			<qalPass>kneel oneself</qalPass>
+			<pielAct>kneel</pielAct>
+			<pielPass actor="knelt to/knelt to">be knelt to</pielPass>
+			<pielReflex>kneel oneself</pielReflex>
+			<hiphilAct>make °kneel</hiphilAct><xref strong="1288" /><!--330-->
+		  <entry><w xlit="berek">בֶּ֫רֶךְ</w><pos>N</pos><def>knee</def><xref strong="1290" /></entry><!--25-->
+		  <entry><w xlit="bĕrēkâ">בְּרֵכָה</w><pos>N</pos><def dc="f">knee[pool]</def><xref strong="1295G,1295H" /></entry><!--17-->
+		  <entry><w xlit="bĕrākâ">בְּרָכָה</w><pos>N</pos><def dc="f">kneeling</def><xref strong="1293,1294,1294G,1294H" /></entry><!--72-->
+		  <entry><w xlit="ʾabrēk">אַבְרֵךְ</w><pos>Tj</pos><def>¡kneel!</def><xref strong="0086" /></entry>
+		  <entry><w xlit="bārûk">בָּרוּךְ</w><pos>Np</pos><def>knelt-to</def><xref strong="1263G,1263H,1263I,1263J" /></entry>
+		  <entry><w xlit="bārakʾēl">בָּרַכְאֵל</w><pos>Np</pos><def>kneeled-of-powr</def><xref strong="1292" /></entry>
+		  <entry><w xlit="berekyâ">בֶּרֶכְיָה</w><pos>Np</pos><def>kneel-of-Yʜ</def><xref strong="1296G,1296H,1296I,1296J,1296K,1296L" /></entry>
+		</entry>
+		<entry><w xlit="mtn">מתן</w>
+		  <entry><w xlit="motnayim">מׇתְנַ֫יִם</w><pos>N</pos><def>thigh</def><xref strong="4975" /></entry><!--47: literally "slender"-->
+		  <entry><w xlit="ʾêmĕtān">אֵימְתָן</w><pos>A</pos><def>thighed</def><xref strong="A0574" /></entry>
+		</entry>
+		<entry><w xlit="ṣdd">צדד</w>
+		  <entry><w xlit="ṣad">צַד</w><pos>N</pos><def>hip</def><xref strong="6654" /></entry><!--33: SIDE or HIP-->
+		  <entry><w xlit="ṣĕdād">צְדָד</w><pos>Np</pos><def>hip</def><xref strong="6657" /></entry><!--Zedad-->
+		  <entry><w xlit="ṣiddîm">צִדִּים</w><pos regex="Npl=Npmpc">Np</pos><def>hip</def><xref strong="6661" /></entry><!--Ziddim-->
+		</entry>
+
+		<entry><w xlit="rāṣad">רָצַד</w><pos>V</pos><pielAct>surge</pielAct><xref strong="7520" /></entry>
+		<entry><w xlit="dālag">דָּלַג</w><pos>V</pos><qalAct>leap</qalAct><xref strong="1801" /></entry><!--5-->
+		<entry><w xlit="pāsaḥ">פָּסַח</w><pos>V</pos><qalAct>hop [over]</qalAct><xref strong="6452A" /><!--4-->
+		  <entry><w xlit="pāsaḥ">פָּסַח</w><pos>V</pos><qalAct>hop [around]</qalAct>
+			<qalPass>be hobbled</qalPass>
+			<pielAct>hop [around]</pielAct><xref strong="6452B" /></entry><!--3-->
+		  <entry><w xlit="pesaḥ">פֶּ֫סַח</w><pos regex="Nc=Np">N</pos><def>hopover</def><xref strong="6453" /></entry><!--49-->
+		  <entry><w xlit="pissēaḥ">פִּסֵּחַ</w><pos>A</pos><def>hobbling</def><xref strong="6455" /></entry><!--14-->
+		  <entry><w xlit="tipsaḥ">תִּפְסַח</w><pos>Np</pos><def>she-hobbles</def><xref strong="8607G,8607H" /></entry>
+		</entry>
+		<entry><w xlit="ṣlʿ">צלע</w>
+		  <entry><w xlit="ṣālaʿ">צָלַע</w><pos>V</pos><qalAct>limp</qalAct><xref strong="6760" /></entry><!--4-->
+		  <entry><w xlit="ṣelaʿ">צֶ֫לַע</w><pos>N</pos><def>limping</def><xref strong="6761" /></entry><!--4-->
+		</entry>
+	</section>
+	<section name="Feet">
+		<entry><w xlit="regel">רֶ֫גֶל</w><pos>N</pos><def dc="f">foot/feet</def><xref strong="7272" />
+		  <entry><w xlit="margĕlôt">מַרְגְּלוֹת</w><pos>N</pos><def dc="f">foot/feet</def><xref strong="4772" /></entry>
+		  <entry><w xlit="rāgal">רָגַל</w><pos>V</pos><qalAct dc="f">foot</qalAct>
+			<pielAct actor="foot[spy]/foot[spie]s" dc="f">foot[spy]</pielAct><xref strong="7270" /></entry>
+		  <entry><w xlit="raglî">רַגְלִי</w><pos>A</pos><def dc="f">on foot</def><xref strong="7273" /></entry>
+		  <entry><w xlit="tirgal">תִּרְגַּל</w><pos>V</pos><hiphilAct dc="f">[give] feet</hiphilAct><xref strong="8637" /></entry>
+		  <entry><w xlit="rōgēl">רֹגֵל</w><pos>Np</pos><def>footer</def><xref strong="5883" /></entry>
+		</entry>
+		<entry><w xlit="hdm">הדם</w>
+		  <entry><w xlit="hădōm">הֲדֹם</w><pos>N</pos><def>stool</def><xref strong="1916" /></entry><!--6: always STOOL of feet-->
+		  <entry><w xlit="haddām">הַדָּם</w><pos>N</pos><def>stool</def><xref strong="A1917" /></entry><!--2-->
+		</entry>
+		<entry><w xlit="ʿqb">עקב</w>
+		  <entry><w xlit="ʿēqeb">עֵ֫קֶב</w><pos>A</pos><def>[on the] heels</def><xref strong="6118" /></entry><!--15-->
+		  <entry><w xlit="ʿāqēb">עָקֵב</w><pos>N</pos><def>heel</def><xref strong="6119" /></entry><!--14-->
+		  <entry><w xlit="ʿāqab">עָקַב</w><pos>V</pos><qalAct>heel</qalAct><xref strong="6117" /></entry><!--5-->
+		  <entry><w xlit="ʿāqōb">עָקֹב</w><pos>A</pos><def>heeling</def><xref strong="6121B,6121A" /></entry>
+		  <entry><w xlit="ʿoqbâ">עׇקְבָה</w><pos>N</pos><def>heeling</def><xref strong="6122" /></entry>
+		  <entry><w xlit="yaʿăqōb">יַעֲקֹב</w><pos>Np</pos><def>heeler</def><xref strong="3290" /></entry><!--JACOB-->
+		  <entry><w xlit="yaʿăqōbâ">יַעֲקֹ֫בָה</w><pos>Np</pos><def>heeler</def><xref strong="3291" /></entry>
+		  <entry><w xlit="ʿaqqûb">עַקּוּב</w><pos>Np</pos><def>heeler</def><xref strong="6126G,6126H,6126I,6126J" /></entry><!--Akkub-->
+		</entry>
+		<entry><w xlit="rāpas">רָפַס</w><pos>V</pos><qalAct>stomp</qalAct>
+			<pielReflex actor="stomped [down]">[let] oneself be stomped [down]</pielReflex><xref strong="7511,A7512" /><!--4-->
+		  <entry><w xlit="rapsōdâ">רַפְסֹדָה</w><pos>N</pos><def>stomp-raft</def><xref strong="7513" /></entry>
+		</entry>
+		<entry><w xlit="qāras">קָרַס</w><pos>V</pos><qalAct>angle [down]</qalAct><xref strong="7164" /><!--2-->
+		  <entry><w xlit="qeres">קֶ֫רֶס</w><pos>N</pos><def>anchor</def><xref strong="7165" /></entry><!--10: literal-->
+		  <entry><w xlit="qarsōl">קַרְסֹל</w><pos>N</pos><def>ankle</def><xref strong="7166" /></entry><!--2-->
+		</entry>
+		<entry><w xlit="rāmas">רָמַס</w><pos>V</pos><qalAct actor="trampler">trample</qalAct><xref strong="7429" /><!--19-->
+		  <entry><w xlit="mirmās">מִרְמָס</w><pos>N</pos><def>trampling [place]</def><xref strong="4823" /></entry><!--7-->
+		</entry>
+		<entry><w xlit="bāšas">בָּשַׁס</w><pos>V</pos><qalAct>√trample</qalAct><xref strong="1318" /></entry>
+		<entry><w xlit="bûs">בּוּס</w><pos>V</pos><qalAct>tread °[down]</qalAct>
+			<pielReflex>tread yourself</pielReflex>
+			<hiphilAct>tread °[down]</hiphilAct><xref strong="0947" /><!--12-->
+		  <entry><w xlit="mĕbûsâ">מְבוּסָה</w><pos>N</pos><def>[down]trodden</def><xref strong="4001" /></entry><!--3-->
+		  <entry><w xlit="tĕbûsâ">תְּבוּסָה</w><pos>N</pos><def>[down]treading</def><xref strong="8395" /></entry>
+		  <entry><w xlit="yĕbûs">יְבוּס</w><pos>Np</pos><def>trodden</def><xref strong="2982" /></entry>
+		  <entry><w xlit="yĕbûsî">יְבוּסִי</w><pos>N</pos><def>troddenïte</def><xref strong="2983G,2983H" /></entry>
+		</entry>
+	</section>
+	<section name="Sleep">
+		<entry><w xlit="yāšēn">יָשֵׁן</w><pos>V</pos><qalAct>sleep</qalAct>
+			<qalPass>be [put] to sleep</qalPass>
+			<pielAct>[put] °to sleep</pielAct><xref strong="3462" />
+		  <entry><w xlit="yāšēn">יָשֵׁן</w><pos>A</pos><def>asleep</def><xref strong="3463" /></entry><!--also "dead"-->
+		  <entry><w xlit="yāšān">יָשָׁן</w><pos>A</pos><def>sleeping</def><xref strong="3465G,3465H" /></entry><!--also "old"-->
+		  <entry><w xlit="šēnâ">שֵׁנָה</w><pos>N</pos><def>sleep</def><xref strong="8142" /></entry>
+		  <entry><w xlit="šĕnāt">שְׁנָת</w><pos>N</pos><def>sleep</def><xref strong="8153" /></entry>
+		</entry>
+		<entry><w xlit="rādam">רָדַם</w><pos>V</pos><qalPass>slumber</qalPass><xref strong="7290" />
+		  <entry><w xlit="tardēmâ">תַּרְדֵּמָה</w><pos>N</pos><def>slumber</def><xref strong="8639" /></entry>
+		</entry>
+		<entry><w xlit="nûm">נוּם</w><pos>V</pos><qalAct>snooze</qalAct><xref strong="5123" />
+		  <entry><w xlit="nûmâ">נוּמָה</w><pos>N</pos><def>snoozing</def><xref strong="5124" /></entry>
+		  <entry><w xlit="tĕnûmâ">תְּנוּמָה</w><pos>N</pos><def>snooze/snooze</def><xref strong="8572" /></entry>
+		</entry>
+		<entry><w xlit="šākab">שָׁכַב</w><pos>V</pos><qalAct>bed</qalAct>
+			<hiphilAct>[put] °[to] bed</hiphilAct>
+			<hiphilPass>be [laid to] bed</hiphilPass><xref strong="7901G,7901H,7901I,7901J" /><!--212-->
+		  <entry><w xlit="miškāb">מִשְׁכָּב</w><pos>N</pos><def>bed</def><xref strong="4904" /></entry><!--46: these four could also be: lie down, lying place, lying, lying-->
+		  <entry><w xlit="šĕkābâ">שְׁכָבָה</w><pos>N</pos><def>bed</def><xref strong="7902" /></entry><!--9-->
+		  <entry><w xlit="šĕkōbet">שְׁכֹ֫בֶת</w><pos>N</pos><def>bed</def><xref strong="7903" /></entry><!--4-->
+		</entry>
+		<entry><w xlit="yāṣaʿ">יָצַע</w><pos>V</pos><hiphilAct>[set one's] cot</hiphilAct>
+			<hiphilPass>be [a] cot</hiphilPass><xref strong="3331" /><!--4-->
+		  <entry><w xlit="yāṣûaʿ">יָצוּעַ</w><pos>N</pos><def>cot/cot</def><xref strong="3326A" /></entry><!--5-->
+		  <entry><w xlit="yāṣîaʿ">יָצִיעַ</w><pos>N</pos><def>cot[room]</def><xref strong="3326B" /></entry><!--3-->
+		  <entry><w xlit="maṣṣāʿ">מַצָּע</w><pos>N</pos><def>cot</def><xref strong="4702" /></entry>
+		</entry>
+		<entry><w xlit="ʿrś">ערשׂ</w>
+		  <entry><w xlit="ʿereś">עֶ֫רֶשׂ</w><pos>N</pos><def>mattress</def><xref strong="6210" /></entry><!--10-->
+		</entry>
+		<entry><w xlit="śĕmîkâ">שְׂמִיכָה</w><pos>N</pos><def>quilt</def><xref strong="8063" /></entry>
+		<entry><w xlit="rābaṣ">רָבַץ</w><pos>V</pos><qalAct>lie [down]</qalAct>
+			<hiphilAct>let °lie [down]</hiphilAct><xref strong="7257" /><!--30-->
+		  <entry><w xlit="marbēṣ">מַרְבֵּץ</w><pos>N</pos><def>lying [place]</def><xref strong="4769" /></entry>
+		  <entry><w xlit="rēbeṣ">רֵ֫בֶץ</w><pos>N</pos><def>lying [place]</def><xref strong="7258" /></entry><!--4-->
+		</entry>
+		<entry><w xlit="ḥlm">חלם</w>
+		  <entry><w xlit="ḥālam">חָלַם</w><pos>V</pos><qalAct dc="f">dream</qalAct>
+			<hiphilAct dc="f">cause to be dreamed</hiphilAct><xref strong="2492B,2492A" /></entry><!--29-->
+		  <entry><w xlit="ḥălôm">חֲלוֹם</w><pos>N</pos><def dc="f">dream</def><xref strong="2472" /></entry><!--65-->
+		  <entry><w xlit="ḥallāmût">חַלָּמוּת</w><pos>N</pos><def dc="f">dream[plant]</def><xref strong="2495" /></entry>
+		  <entry><w xlit="ʾaḥlāmâ">אַחְלָ֑מָה</w><pos>N</pos><def>dream[stone]</def><xref strong="0306" /></entry><!--2-->
+		  <entry><w xlit="ḥēlem">חֵ֫לֶם</w><pos>Np</pos><def>dream</def><xref strong="2494" /></entry><!--Helem-->
+		</entry>
+
+		<entry><w xlit="qîṣ">קִיץ</w><pos>V</pos><qalAct dc="f">wake</qalAct>
+			<hiphilAct dc="f">awake</hiphilAct><xref strong="6974" />
+		  <entry><w xlit="yāqaṣ">יָקַץ</w><pos>V</pos><qalAct dc="f">wake</qalAct><xref strong="3364" /></entry>
+		</entry>
+
+	</section>
+</section>
+
+</index>
