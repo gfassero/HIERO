@@ -19,6 +19,7 @@ This happens in English too:
 - “The faithful” (adjective as noun)
 - “The suffering” (active participle as noun)
 - “The fallen” (passive participle as noun)
+  
 This is very common in Hebrew, and it can be disorienting. If you see “the” followed by an adjective or participle and no noun, this is probably why. Read as “*x* one(s)” if that helps. For active participles, consider reading it as an agent: For example, “he ruling” may mean “he [was] ruler.”
 ### Verse breaks
 The verse breaks usually follow the *sof passuk* punctuation marks in the Hebrew text. *Sof passuk*, which looks like a colon (:), is stronger than a comma but often weaker than a period.

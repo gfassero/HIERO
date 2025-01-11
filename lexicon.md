@@ -85,7 +85,7 @@ The following suffixes have been used in the lexicon to derive English words fro
 Similarly, Latin and Greek prepositional prefixes are not subject to the root-for-root translation parameter when they appear as part of an accepted English word.
 
 ### Function words as auxiliaries
-HIERO uses the following function words as auxiliaries to represent the various forms of Hebrew verbs and nouns. Those marked with an **asterisk** (*) also appear in the lexicon as standalone roots. As standalone roots, they are subject to the two translation parameters. As auxiliaries that represent verb and noun forms, they are joined to the root verb or noun by a middle dot (·) and are not subject to the parameters.
+HIERO uses the following function words as auxiliaries to represent the various forms of Hebrew verbs and nouns. Those marked with an asterisk (*) also appear in the lexicon as standalone roots. As standalone roots, they are subject to the two translation parameters. As auxiliaries that represent verb and noun forms, they are joined to the root verb or noun by a middle dot (·) and are not subject to the parameters.
 - Personal pronouns*
 - Possessive adjectives*
 - Reflexive affixes: -*self*, -*selves*, *self*-
@@ -94,7 +94,7 @@ HIERO uses the following function words as auxiliaries to represent the various 
 - Other minor words: *that*\*, *over*, *off*
 
 ### Independant function words
-The following words are not compliant with the root-for-root translation parameter. Each line represents a unique Hebrew root and lists how the root is translated in English. In HIERO, the underlying roots can be distinguished only by the diacritics added to the English translation. Details can be found in the [glossary](alphas/glossary.html), where these words are grouped under “Function Words” and are marked in gray ![gray](https://placehold.co/15x15/c0c0c0/c0c0c0.png)
+The following words are not compliant with the root-for-root translation parameter. Each line represents a unique Hebrew root and lists how the root is translated in English. In HIERO, the underlying roots can be distinguished only by the diacritics added to the English translation. Details can be found in the [glossary](alphas/glossary.html), where these words are grouped under “Function Words” and are marked in gray ![gray](https://placehold.co/15x15/c0c0c0/c0c0c0.png).
 - Demonstratives
   - Root *zeh*, *hallazeh*: *this*, *ⱦhat*
   - Root *'el*, *'elleh*: *these*

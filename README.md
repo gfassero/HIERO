@@ -1,5 +1,5 @@
 # Introduction
-HIERO is a partial translation of the Old Testament from Hebrew into English, in which Hebrew word order and vocabulary choices are transparent to the reader. Its intended audience is studious English readers with little or no knowledge of the Hebrew language. Its purpose is to give some insight into the poetic language that the sacred authors chose to use.
+HIERO (Hebrew Idiom in English Roots) is a partial translation of the Old Testament from Hebrew into English, in which Hebrew word order and vocabulary choices are transparent to the reader. Its intended audience is studious English readers with little or no knowledge of the Hebrew language. Its purpose is to give some insight into the poetic language that the sacred authors chose to use.
 
 You can browse the [full HIERO translation here](alphas/000%20toc.html). Or read one of the following familiar passages:
 - [The Creation](output%20samples/creation.html) (Genesis 1)
@@ -33,4 +33,4 @@ HIERO also uses code from the “[OSHB Hebrew Lexicon](http://github.com/openscr
 The rest of my sources are [listed here](sources.md).
 
 # No License
-This project is still in progress and updated at least weekly. I have posted it online only so that I can receive feedback on it. As a result, I am not offering any license to use my work. Nothing on this website may be copied, shared, distributed, modified, or used for any purpose, commercial or non-commercial, without my prior written permission. Feel free to read and provide suggestions for improvement.
+HIERO is still in progress and updated often. I have posted it online only so that I can receive feedback on it. As a result, I am not offering any license to use my work. Nothing on this website may be copied, shared, distributed, modified, or used for any purpose, commercial or non-commercial, without my prior written permission. Feel free to read and provide suggestions for improvement.
