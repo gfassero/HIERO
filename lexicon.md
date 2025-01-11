@@ -79,6 +79,8 @@ The lexicon is still in progress, so not every root is coherent and unique yet. 
 
 ## Permanent exceptions
 
+In the glossary, permanent exceptions to the root-for-root translation parameter are are marked in gray ![light silver](https://placehold.co/15x15/d8d8d8/d8d8d8.png). The following is a complete list of these exceptions.
+
 ### Suffixes in English derivatives
 The following suffixes have been used in the lexicon to derive English words from English roots in a way that represents the meaning of the corresponding Hebrew words: -*fy*, -*ly*, -*ish*, -*ous*, -*ful*, -*ize*, -*hood*, -*ward*, -*ness*, -*dom*, -*er*, -*ster*, -*tion*, -*ive*, -*ant*/-*ent*, -*able*/-*ible*, -*y*, -*ery*, -*en*, -*est*, -*let*/-*ette*. These suffixes do not correspond to particular Hebrew suffixes. They have been added on the basis of meaning, not form.
 
@@ -94,7 +96,7 @@ HIERO uses the following function words as auxiliaries to represent the various 
 - Other minor words: *that*\*, *over*, *off*
 
 ### Independant function words
-The following words are not compliant with the root-for-root translation parameter. Each line represents a unique Hebrew root and lists how the root is translated in English. In HIERO, the underlying roots can be distinguished only by the diacritics added to the English translation. Details can be found in the [glossary](alphas/glossary.html), where these words are grouped under “Function Words” and are marked in gray ![light silver](https://placehold.co/15x15/d8d8d8/d8d8d8.png).
+The following words are not compliant with the root-for-root translation parameter. Each line represents a unique Hebrew root and lists how the root is translated in English. In HIERO, the underlying roots can be distinguished only by the diacritics added to the English translation. Details can be found in the [glossary](alphas/glossary.html), where these roots are grouped under “Function Words” and are marked in gray ![light silver](https://placehold.co/15x15/d8d8d8/d8d8d8.png).
 - Demonstratives
   - Root *zeh*, *hallazeh*: *this*, *ⱦhat*
   - Root *'el*, *'elleh*: *these*
