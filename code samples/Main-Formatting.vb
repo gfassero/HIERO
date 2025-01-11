@@ -38,7 +38,7 @@
 	Public Const CitationEnd = "</span> "
 	Public Const AramaicFlag = " ▲"
 
-	Public Const OutputHeader = "<!DOCTYPE html>" & vbCrLf &
+	Public Const OutputHeaderString = "<!DOCTYPE html>" & vbCrLf &
 		"<!-- This content may not be copied, shared, distributed, modified, or used for any purpose," & vbCrLf &
 		"     commercial or non-commercial, without prior written permission from the author. -->" & vbCrLf &
 		"<html lang=""en"">" & vbCrLf &
@@ -48,7 +48,7 @@
 		"</head>" & vbCrLf &
 		"<body>" & vbCrLf &
 		"<span id=""header"">" & vbCrLf &
-		"<a href=""000 toc.html"" class=""title"">HIERO</a>"
+		"<a href=""000 toc.html"" class=""title"">HIERO</a> / " ' OUTPUTHEADER() will append current date and sequence number
 
 	Public Const OutputBeginTranslation = vbCrLf &
 		" / <a href=""#table-of-contents"">Book Sections</a>" & vbCrLf &
@@ -240,4 +240,10 @@
 					 Replace("}"c, CloseXlit)
 	End Function
 
+	Private runtimeHeader As String
+	Sub GenerateRuntimeHeader()
+		runtimeHeader = OutputHeaderString &
+			Now.ToString("yy.MM-") &
+			(((((Now.Day - 1) * 24 + Now.Hour) * 60 + Now.Minute) * 60 + Now.Second) \ 27).ToString("D5")
+	End Sub
 End Module

@@ -10,50 +10,46 @@ Partial Module Main
 		CompileHelpingVerbs()
 		RtLexicon.Clear()
 
-		For Each lexicon As String In Lexicons
+		Dim lexdoc As New XmlDocument
+		lexdoc.Load(ProjectPath & "\" & Lexicon)
 
-			Dim lexdoc As New XmlDocument
-			lexdoc.Load(ProjectPath & "\" & lexicon)
+		Dim entries As XmlNodeList = lexdoc.GetElementsByTagName("entry")
+		Dim strong As String
+		Dim parallelStrongs() As String
 
-			Dim entries As XmlNodeList = lexdoc.GetElementsByTagName("entry")
-			Dim strong As String
-			Dim parallelStrongs() As String
+		Dim topLevelEntry As XmlNode
+		Dim topLevelStrong As String
 
-			Dim topLevelEntry As XmlNode
-			Dim topLevelStrong As String
+		For Each entry As XmlNode In entries
+			If entry.Name <> "#comment" AndAlso entry.Item("xref") IsNot Nothing Then
 
-			For Each entry As XmlNode In entries
-				If entry.Name <> "#comment" AndAlso entry.Item("xref") IsNot Nothing Then
+				strong = entry.Item("xref").GetAttribute("strong")
 
-					strong = entry.Item("xref").GetAttribute("strong")
+				If Not String.IsNullOrEmpty(strong) Then
+					parallelStrongs = strong.Split(",")
 
-					If Not String.IsNullOrEmpty(strong) Then
-						parallelStrongs = strong.Split(",")
+					topLevelEntry = entry
+					While topLevelEntry.ParentNode.Name = "entry"
+						topLevelEntry = topLevelEntry.ParentNode
+					End While
+					If topLevelEntry.Item("xref") IsNot Nothing Then
+						topLevelStrong = topLevelEntry.Item("xref").GetAttribute("strong")
+					Else
+						topLevelStrong = topLevelEntry.Item("entry").Item("xref").GetAttribute("strong")
+					End If
 
-						topLevelEntry = entry
-						While topLevelEntry.ParentNode.Name = "entry"
-							topLevelEntry = topLevelEntry.ParentNode
-						End While
-						If topLevelEntry.Item("xref") IsNot Nothing Then
-								topLevelStrong = topLevelEntry.Item("xref").GetAttribute("strong")
-							Else
-								topLevelStrong = topLevelEntry.Item("entry").Item("xref").GetAttribute("strong")
-							End If
+					For Each strongsItem As String In parallelStrongs
 
-							For Each strongsItem As String In parallelStrongs
-
-							If Not RtLexicon.TryAdd(strongsItem.TrimStart("A"), New LexEntry(entry, strongsItem.TrimStart("A"), topLevelStrong.TrimStart("A"))) Then
-								errorlist.Add("Lexicon contains duplicate entries #" & strongsItem.TrimStart("A"))
-								Console.WriteLine(vbCrLf & "*** ERROR: Lexicon contains duplicate entries #" & strongsItem.TrimStart("A") & " ***")
-							End If
-
-						Next
-
+						If Not RtLexicon.TryAdd(strongsItem.TrimStart("A"), New LexEntry(entry, strongsItem.TrimStart("A"), topLevelStrong.TrimStart("A"))) Then
+							errorlist.Add("Lexicon contains duplicate entries #" & strongsItem.TrimStart("A"))
+							Console.WriteLine(vbCrLf & "*** ERROR: Lexicon contains duplicate entries #" & strongsItem.TrimStart("A") & " ***")
 						End If
 
-					End If
-			Next
+					Next
 
+				End If
+
+			End If
 		Next
 
 		aramaicThe = RtLexicon("9010").Particle & WordLink

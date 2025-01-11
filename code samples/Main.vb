@@ -34,10 +34,6 @@ Module Main
 	' Check error log (.err).
 	' Article with perfect verb Td/V.p => "the one who ran" x20. Unknown nuance. (happens   1x in construct chain: Dan.8.1#12=L: probably a tagging error) (happens once with preposition Rd/V.p)
 
-	' *** DOCUMENTATION ***
-	' https://github.com/code4policy/simple-website
-	' Change COHERENT to COHESIVE.
-
 	' *** UNDERSTANDING ***
 	' What sense should I make of--and what room is allowed for--suffixes as in 1503 and respellings as in 5421/5422, 2413?
 
@@ -63,36 +59,3 @@ Module Main
 	End Sub
 
 End Module
-
-' *** DISCOVERIES THAT HAVE IMPRESSED ME ***
-' - Psalm 2:6 "I have set my king on my holy hill" is actually "libated out".
-' - There's an Aramaic root that yields both "word" and "lamb".
-' - Hannah's name means "gracious".
-' - Jesse's name is similar to the tetragrammaton.
-' - Songs 5:10 My beloved is "ruddy, the chiefest" is actually "red, bannered"
-' - Songs 5:11 "locks" of hair are also "thorns"
-' - Ezekiel 9:4-6: God's people are marked with and protected by the cross; Psalm 78:41: they forgot his mercy and crossed the holy one.
-' - Isaiah 25:11 The saving God has apertures in his hands.
-' - The word for "good tidings" (30x) is the same as the word for "flesh" (270x).
-
-
-
-
-
-
-
-' *** REPORTED ISSUES with the STEPBible TEXT ***
-' These should all be fixed in future STEPBible uploads, but I should verify them.
-
-
-' There are 154 words that are tagged As Strongs #854 (preposition) with grammar "To" (direct object indicator). My Hebrew isn't strong enough to determine whether they should be #853 With "To" Or #854 With "R", Or there might be some of both.
-'
-' \{H0854\}.*To			154 matches
-'
-' Broken down by type:
-' H9006/\ {H0854 \} \ t.*To		112 matches: preceded by #9006 "from"; Nothing following.
-' H9006/\ {H0854 \} / H903.*To	 37 matches: preceded by #9006 "from"; followed by an object pronoun #903x.
-' H9006/\ {H0854 \} \\ H901.*To	  4 matches: preceded by #9006 "from"; followed by #9014 maqqef Or #9015 paseq.
-' H9002/\ {H0854 \}.*To		  1 match: preceded by #9002 vav; followed by #9014 maqqef.
-
-' Sent 28 apparent errors from overlay file.

@@ -29,7 +29,7 @@ Partial Module Main
             ' Open File Stream and HTML
             OutputFile = FileIO.FileSystem.OpenTextFileWriter(outputDest, False)
 
-            OutputFile.Write(OutputHeader)
+            OutputFile.Write(runtimeHeader)
             OutputFile.Write(OutputBeginTranslation)
 
             ' Translate everything
