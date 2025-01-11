@@ -2,7 +2,7 @@
 HIERO consists of an [English lexicon](#english-lexicon), an [annotated Hebrew text](#annotated-hebrew-text), a [Hebrew parsing dictionary](#hebrew-parsing-dictionary), and the [program code](#program-code).
 
 # English Lexicon
-The English lexicon is the most important part of HIERO—and the part that has taken the most time by far to develop. The primary goal of the English lexicon is to link each Hebrew root with a single English root and vice versa. HIERO’s English lexicon contains about 8,985 definitions of Hebrew and Aramaic words. The lexicon is written in XML code. The XML code, part-of-speech mappings, and Strongs number mappings that structure the lexicon are based on the [OSHB Hebrew Lexicon](http://github.com/openscriptures/HebrewLexicon/blob/master/LexicalIndex.xml) by the [Open Scriptures Hebrew Bible Project](http://hb.openscriptures.org/), licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). All of the definitions are my own. The following is a partial sample from the lexicon:
+The English lexicon is the most important part of HIERO—and the part that has taken the most time by far to develop. The primary goal of the English lexicon is to link each Hebrew root with a single English root and vice versa. HIERO’s English lexicon contains about 8,985 definitions of Hebrew and Aramaic words. The lexicon is written in XML code. The XML code, part-of-speech mappings, and Strongs number mappings that structure the lexicon are based on the [OSHB Hebrew Lexicon](http://github.com/openscriptures/HebrewLexicon/blob/master/LexicalIndex.xml) by the [Open Scriptures Hebrew Bible Project](http://hb.openscriptures.org/). All of the definitions are my own. The following is a partial sample from the lexicon:
 ```xml
 <entry><w xlit="bārāʾ">בָּרָא</w><pos>V</pos><qalAct>shape</qalAct>
 		<pielAct>reshape</pielAct>
@@ -33,7 +33,7 @@ Further reading:
 - [Complete glossary in alphabetical order](alphas/glossary-alphabetical.html)
 
 # Annotated Hebrew Text
-HIERO translates from the four-part [Translators Amalgamated Hebrew OT](http://github.com/STEPBible/STEPBible-Data/tree/master/Translators%20Amalgamated%20OT%2BNT) (TAHOT) by [STEP Bible](http://www.stepbible.org/), licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). TAHOT is an edition of the Leningrad codex, following the qere of the Masoretic Text.
+HIERO translates from the four-part [Translators Amalgamated Hebrew OT](http://github.com/STEPBible/STEPBible-Data/tree/master/Translators%20Amalgamated%20OT%2BNT) (TAHOT) by [STEP Bible](http://www.stepbible.org/). TAHOT is an edition of the Leningrad codex, following the qere of the Masoretic Text.
 
 I have extracted the relevant data from TAHOT and reformatted it for use with HIERO. The following is a sample from the reformatted text:
 

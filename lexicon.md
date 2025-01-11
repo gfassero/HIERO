@@ -75,14 +75,14 @@ If you want to learn more about the lexicon, you can [read about the lexicon’s
 This section lists all exceptions to the root-for-root translation parameter. The etymologies of these words are so uncertain or interwoven that applying the root-for-root translation parameter seems impossible. I allow exceptions for them because they are function words that do not seem generally to indicate significant word choices.
 
 ## Temporary exceptions
-The lexicon is still in progress, so not every root is coherent and unique yet. Roots that are not yet coherent are marked in pink ![persian pink](https://placehold.co/15x15/ff80c0/ff80c0.png), roots that are not yet unique are marked in orange ![pastel orange](https://placehold.co/15x15/ffc040/ffc040.png), and roots that are neither coherent nor unique are marked in red ![red-orange](https://placehold.co/15x15/ff4000/ff4000.png). All roots that are not marked are both coherent and unique.
+The lexicon is still in progress, so not every root is coherent and unique yet. Roots that are not yet coherent are marked in pink ![persian pink](https://placehold.co/15x15/ff80c0/ff80c0.png), roots that are not yet unique are marked in orange ![pastel orange](https://placehold.co/15x15/ffc040/ffc040.png), and roots that are neither coherent nor unique are marked in red ![red-orange](https://placehold.co/15x15/ff4000/ff4000.png). All roots that are not marked are both coherent and unique. A [complete list of exceptions to be resolved](alphas/glossary-noncompliant.html) is available.
 
 ## Permanent exceptions
 
 ### Suffixes in English derivatives
 The following suffixes have been used in the lexicon to derive English words from English roots in a way that represents the meaning of the corresponding Hebrew words: -*fy*, -*ly*, -*ish*, -*ous*, -*ful*, -*ize*, -*hood*, -*ward*, -*ness*, -*dom*, -*er*, -*ster*, -*tion*, -*ive*, -*ant*/-*ent*, -*y*, -*ery*, -*en*, -*est*, -*let*/-*ette*. These suffixes do not correspond to particular Hebrew suffixes. They have been added on the basis of meaning, not form.
 
-Similarly, Latin and Greek prepositional prefixes are not subject to the root-for-root translation parameter when they appear as part of an accepted English word.
+Similarly, Latin and Greek prepositional prefixes are not subject to the root-for-root translation parameter when they appear as part of an English word.
 
 ### Function words as auxiliaries
 HIERO uses the following function words as auxiliaries to represent the various forms of Hebrew verbs and nouns. Those marked with an asterisk (*) also appear in the lexicon as standalone roots. As standalone roots, they are subject to the two translation parameters. As auxiliaries that represent verb and noun forms, they are joined to the root verb or noun by a middle dot (·) and are not subject to the parameters.
