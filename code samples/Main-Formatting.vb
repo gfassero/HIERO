@@ -38,7 +38,7 @@
 	Public Const CitationEnd = "</span> "
 	Public Const AramaicFlag = " ▲"
 
-	Public Const OutputHeaderString = "<!DOCTYPE html>" & vbCrLf &
+	Public Const OutputHeaderString1 = "<!DOCTYPE html>" & vbCrLf &
 		"<!-- This content may not be copied, shared, distributed, modified, or used for any purpose," & vbCrLf &
 		"     commercial or non-commercial, without prior written permission from the author. -->" & vbCrLf &
 		"<html lang=""en"">" & vbCrLf &
@@ -48,16 +48,16 @@
 		"</head>" & vbCrLf &
 		"<body>" & vbCrLf &
 		"<span id=""header"">" & vbCrLf &
-		"<a href=""000 toc.html"" class=""title"">HIERO</a> / " ' OUTPUTHEADER() will append current date and sequence number
+		"<a href=""../"" class=""title"">HIERO</a> " ' OUTPUTHEADER() will append current date and sequence number
+	Public Const OutputHeaderString2 = " / <a href=""000 toc.html"">Contents</a>"
 
-	Public Const OutputBeginTranslation = vbCrLf &
-		" / <a href=""#table-of-contents"">Book Sections</a>" & vbCrLf &
+	Public Const OutputBeginTranslation = " / <a href=""#table-of-sections"">Sections</a>" & vbCrLf &
 		"</span>" & vbCrLf &
 		"<span id=""translation"">"
 
 	Public Const OutputFooterTOC = vbCrLf &
 		"</span>" & vbCrLf &
-		"<span id=""table-of-contents"">" & vbCrLf &
+		"<span id=""table-of-sections"">" & vbCrLf &
 		"<span class=""columnsTOC"">"
 	Public Const OutputFooterTOCBook1 = vbCrLf &
 		"</span>"
@@ -242,8 +242,9 @@
 
 	Private runtimeHeader As String
 	Sub GenerateRuntimeHeader()
-		runtimeHeader = OutputHeaderString &
+		runtimeHeader = OutputHeaderString1 &
 			Now.ToString("yy.MM-") &
-			(((((Now.Day - 1) * 24 + Now.Hour) * 60 + Now.Minute) * 60 + Now.Second) \ 27).ToString("D5")
+			(((((Now.Day - 1) * 24 + Now.Hour) * 60 + Now.Minute) * 60 + Now.Second) \ 27).ToString("D5") &
+			OutputHeaderString2
 	End Sub
 End Module

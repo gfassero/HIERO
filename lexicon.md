@@ -72,7 +72,7 @@ The English lexicon is the most important part of HIERO—and the part that has 
 If you want to learn more about the lexicon, you can [read about the lexicon’s XML code](technical.md#english-lexicon) or review [an excerpt from the lexicon code here](resource%20samples/multilex_EXCERPT.xml).
 
 # Exceptions to the Root-for-Root Parameter
-This section lists all exceptions to the root-for-root translation parameter. The etymologies of these words are so uncertain or interwoven that applying the root-for-root translation parameter seems impossible. I allow exceptions for them because they are function words that do not seem generally to indicate significant word choices.
+This section lists all exceptions to the root-for-root parameter. The etymologies of these words are so uncertain or interwoven that applying the root-for-root translation parameter seems impossible. I allow exceptions for them because they are function words that do not seem generally to indicate significant word choices.
 
 ## Temporary exceptions
 The lexicon is still in progress, so not every root is coherent and unique yet. Roots that are not yet coherent are marked in pink ![persian pink](https://placehold.co/15x15/ff80c0/ff80c0.png), roots that are not yet unique are marked in orange ![pastel orange](https://placehold.co/15x15/ffc040/ffc040.png), and roots that are neither coherent nor unique are marked in red ![red-orange](https://placehold.co/15x15/ff4000/ff4000.png). All roots that are not marked are both coherent and unique. A [complete list of exceptions to be resolved](alphas/glossary-noncompliant.html) is available.
@@ -84,7 +84,7 @@ In the glossary, permanent exceptions to the root-for-root translation parameter
 ### Suffixes in English derivatives
 The following suffixes have been used in the lexicon to derive English words from English roots in a way that represents the meaning of the corresponding Hebrew words: -*fy*, -*ly*, -*ish*, -*ous*, -*ful*, -*ize*, -*hood*, -*ward*, -*ness*, -*dom*, -*er*, -*ster*, -*tion*, -*ive*, -*ant*/-*ent*, -*able*/-*ible*, -*y*, -*ery*, -*en*, -*est*, -*let*/-*ette*. These suffixes do not correspond to particular Hebrew suffixes. They have been added on the basis of meaning, not form.
 
-Similarly, Latin and Greek prepositional prefixes are not subject to the root-for-root translation parameter when they appear as part of an English word.
+Similarly, Latin and Greek prepositional prefixes are not subject to the root-for-root parameter when they appear as part of an English word.
 
 ### Function words as auxiliaries
 HIERO uses the following function words as auxiliaries to represent the various forms of Hebrew verbs and nouns. Those marked with an asterisk (*) also appear in the lexicon as standalone roots. As standalone roots, they are subject to the two translation parameters. As auxiliaries that represent verb and noun forms, they are joined to the root verb or noun by a middle dot (·) and are not subject to the parameters.
@@ -96,7 +96,11 @@ HIERO uses the following function words as auxiliaries to represent the various 
 - Other minor words: *that*\*, *over*, *off*
 
 ### Independant function words
+<<<<<<< Updated upstream
 The following words are not compliant with the root-for-root translation parameter. Each line represents a unique Hebrew root and lists how the root is translated in English. In HIERO, the underlying roots can be distinguished only by the diacritics added to the English translation. Details can be found in the [glossary](alphas/glossary.html), where these roots are grouped under “Function Words” and are marked in gray ![light silver](https://placehold.co/15x15/d8d8d8/d8d8d8.png).
+=======
+The following words are not compliant with the root-for-root parameter. Each line represents a unique Hebrew root and lists how the root is translated in English. In HIERO, the underlying roots can be distinguished only by the diacritics added to the English translation. Details can be found in the [glossary](alphas/glossary.html), where these words are grouped under “Function Words” and are marked in gray ![light silver](https://placehold.co/15x15/d8d8d8/d8d8d8.png).
+>>>>>>> Stashed changes
 - Demonstratives
   - Root *zeh*, *hallazeh*: *this*, *ⱦhat*
   - Root *'el*, *'elleh*: *these*
@@ -124,11 +128,12 @@ The following words are not compliant with the root-for-root translation paramet
   - Root *lu*: *iᵮ*, *ᵰot*
 
 ### The English root “one”
-The English root “one” is not compliant with the root-for-root translation parameter. It appears both as an auxiliary and as a standalone root. Still, the underlying root can always be distinguished, because each Hebrew root uses a different form of the word, or uses it in a restricted construction.
+The English root “one” is not compliant with the root-for-root parameter. It appears both as an auxiliary and as a standalone root. Still, the underlying root can always be distinguished, because each Hebrew root uses a different form of the word, or uses it in a restricted construction.
 - Coherent root *'echad*: *one* (x974) and *unit* (x164)
 - Coherent root *`ashtey*, always in the construction “øne and ten,” meaning “eleven”: *øne* (x19)
 - Coherent root *raq*: *only* (x109)
 - Incoherent root *bad*/*badad*: *alone* (x105)
+- Coherent root *kipper*: *atone* (x169)
 - Function words used as auxiliaries and joined to the root by a middle dot (·): *one’s*, *one another*, *oneself*, *a*, *an*
 
 ### Some gendered terms for people
