@@ -31,7 +31,7 @@ This gets challenging when a the Hebrew root has a derivative that seems unrelat
 Usually, the connection between the Hebrew words is more intuitive. For example, the word *ro'sh*, meaning “head” of the human body, also means the leader or “head” of a group of people. The related word *re'shyt*, meaning “beginning” or “first,” translates as “headmost” without much difficulty. And the related word *me**ra'ash**awot*, meaning “pillow,” translates easily as “head[rest].”
 
 ### Related words
-Both root coherence and root uniqueness focus on whether words are related. In order to determine whether words are related in Hebrew, I rely primarily on [Strong’s Hebrew Dictionary](http://openscriptures.github.io/HebrewLexicon/HomeFiles/Lexicon.html) and [Gesenius’s Hebrew and Chaldee Lexicon](http://www.blueletterbible.org/study/lexica/gesenius/index.cfm). In English, I rely on the [Online Etymology Dictionary](http://www.etymonline.com/) and [Wiktionary](http://www.wiktionary.org/). Usually, there is a good consensus about word histories, but sometimes it is a judgment call that I have to make. I am open to input from others.
+Both root coherence and root uniqueness focus on whether words are related—and how closely. In order to determine word relationships in Hebrew, I rely primarily on [Strong’s Hebrew Dictionary](http://openscriptures.github.io/HebrewLexicon/HomeFiles/Lexicon.html) and [Gesenius’s Hebrew and Chaldee Lexicon](http://www.blueletterbible.org/study/lexica/gesenius/index.cfm). In English, I rely on the [Online Etymology Dictionary](http://www.etymonline.com/) and [Wiktionary](http://www.wiktionary.org/). Usually, there is a good consensus about word histories, but sometimes it is a judgment call that I have to make. In addition, far more words are related than most people realize, and the number of unique roots is fairly small, so this parameter cannot be applied in an entirely objective way. But I think my application of it is helpful and fairly intuitive. I am open to input from others.
 
 ### Special cases
 The lexicon uses two kinds of special notation to make root-for-root translation more feasible.
@@ -82,7 +82,7 @@ The lexicon is still in progress, so not every root is coherent and unique yet. 
 In the glossary, permanent exceptions to the root-for-root translation parameter are are marked in gray ![light silver](https://placehold.co/15x15/d8d8d8/d8d8d8.png). The following is a complete list of these exceptions.
 
 ### Suffixes in English derivatives
-The following suffixes have been used in the lexicon to derive English words from English roots in a way that represents the meaning of the corresponding Hebrew words: -*fy*, -*ly*, -*ish*, -*ous*, -*ful*, -*ize*, -*hood*, -*ward*, -*ness*, -*dom*, -*er*, -*ster*, -*tion*, -*ive*, -*ant*/-*ent*, -*able*/-*ible*, -*y*, -*ery*, -*en*, -*est*, -*let*/-*ette*. These suffixes do not correspond to particular Hebrew suffixes. They have been added on the basis of meaning, not form.
+The following suffixes have been used in the lexicon to derive English words from English roots in a way that represents the meaning of the corresponding Hebrew words: -*fy*, -*ly*, -*ish*, -*ous*, -*ful*, -*ize*, -*hood*, -*ward*, -*ness*, -*less*, -*dom*, -*er*, -*ster*, -*tion*, -*ive*, -*ant*/-*ent*, -*able*/-*ible*, -*y*, -*ery*, -*en*, -*est*, -*let*/-*ette*. These suffixes do not correspond to particular Hebrew suffixes. They have been added on the basis of meaning, not form.
 
 Similarly, Latin and Greek prepositional prefixes are not subject to the root-for-root parameter when they appear as part of an English word.
 
@@ -124,8 +124,8 @@ The following words are not compliant with the root-for-root parameter. Each lin
   - Root *'ayin*: *ńot*
   - Root *lu*: *iᵮ*, *ᵰot*
 
-### The English root “one”
-The English root “one” is not compliant with the root-for-root parameter. It appears both as an auxiliary and as a standalone root. Still, the underlying root can always be distinguished, because each Hebrew root uses a different form of the word, or uses it in a restricted construction.
+### Some numbers
+The English root “one” is not root unique. It appears both as an auxiliary and as representing standalone roots. The underlying roots are all root coherent and can always be distinguished, because each Hebrew root uses a different form of the word, or uses it in a restricted construction.
 - Coherent root *'echad*: *one* (x974) and *unit* (x164)
 - Coherent root *`ashtey*, always in the construction “øne and ten,” meaning “eleven”: *øne* (x19)
 - Coherent root *raq*: *only* (x109)
@@ -133,8 +133,10 @@ The English root “one” is not compliant with the root-for-root parameter. It
 - Coherent root *kipper*: *atone* (x169)
 - Function words used as auxiliaries and joined to the root by a middle dot (·): *one’s*, *one another*, *oneself*, *a*, *an*
 
+The Hebrew root *'aleph* is not root coherent. It appears either as “thousand” or as “aleph”/“alpha.” These two senses are separated because they have no common meaning and no common word history. The sense of “thousand” is derived not from the word *'aleph*, but from the position of the letter Aleph in the alphabet.
+
 ### Some gendered terms for people
-When Hebrew uses a single root to refer to a person, identifying the gender by a suffix, but English uses different roots to differentiate gender, the lexicon sometimes allows an exception from the requirement for root coherence (but not for root uniqueness). The following is a complete list of these exceptions.
+When Hebrew uses a single root to refer to a person, identifying the gender by a suffix, but English uses different roots to differentiate gender, the lexicon sometimes allows an exception from the requirement for root coherence. The words must still be root unique. The following is a complete list of these exceptions.
 - Root *'ach*/*'achowt*: *brother*, *sister*
 - Root *'almah*/*'elem*: *girl*, *boy*
 
