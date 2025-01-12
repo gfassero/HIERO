@@ -97,7 +97,11 @@ HIERO uses the following function words as auxiliaries to represent the various 
 
 ### Independant function words
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 The following words are not compliant with the root-for-root translation parameter. Each line represents a unique Hebrew root and lists how the root is translated in English. In HIERO, the underlying roots can be distinguished only by the diacritics added to the English translation. Details can be found in the [glossary](alphas/glossary.html), where these roots are grouped under “Function Words” and are marked in gray ![light silver](https://placehold.co/15x15/d8d8d8/d8d8d8.png).
+=======
+The following words are not compliant with the root-for-root parameter. Each line represents a unique Hebrew root and lists how the root is translated in English. In HIERO, the underlying roots can be distinguished only by the diacritics added to the English translation. Details can be found in the [glossary](alphas/glossary.html), where these words are grouped under “Function Words” and are marked in gray ![light silver](https://placehold.co/15x15/d8d8d8/d8d8d8.png).
+>>>>>>> Stashed changes
 =======
 The following words are not compliant with the root-for-root parameter. Each line represents a unique Hebrew root and lists how the root is translated in English. In HIERO, the underlying roots can be distinguished only by the diacritics added to the English translation. Details can be found in the [glossary](alphas/glossary.html), where these words are grouped under “Function Words” and are marked in gray ![light silver](https://placehold.co/15x15/d8d8d8/d8d8d8.png).
 >>>>>>> Stashed changes
