@@ -12,6 +12,7 @@
 
 * {
     scroll-margin-top: 6em;
+    scroll-behavior: smooth;
 }
 
 /*

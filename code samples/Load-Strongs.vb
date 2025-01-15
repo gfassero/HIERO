@@ -8,6 +8,7 @@ Partial Module Main
         Public ReadOnly IsPunctuation As Boolean = False
         Public Definite As Boolean = False
         Public HasDefiniteArticle As Boolean = False
+        Public SpecialSuppressDefArt As Boolean = False
         Public CustomArticle As String = Nothing
         Public Skip_ADDED_IN_PREPROCESSING = False
         Public ParticlePrefix As String = Nothing
@@ -139,6 +140,8 @@ Partial Module Main
                     Throw New ArgumentException("Lemma " & StrongsLemma & " missing from lexicon.")
                 End If
             End If
+
+            SpecialSuppressDefArt = RtLexicon(StrongsLemma).SpecialSuppressDefArt
         End Sub
 
         Private _ecsholder As String = Nothing
@@ -251,7 +254,7 @@ Partial Module Main
                 ' Add "THE" to construct chains, or add possessives, or add "THOSE THAT...", etc.
                 If CustomArticle IsNot Nothing Then
                     Reveal(CustomArticle & WordLink)
-                ElseIf Definite AndAlso Not RtLexicon(StrongsLemma).SpecialSuppressDefArt AndAlso (Not IsProper OrElse HasDefiniteArticle) Then
+                ElseIf Definite AndAlso Not SpecialSuppressDefArt AndAlso (Not IsProper OrElse HasDefiniteArticle) Then
                     Reveal(RtLexicon("9009").Particle & WordLink)
                 End If
 
