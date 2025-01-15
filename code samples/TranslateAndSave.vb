@@ -10,7 +10,7 @@ Partial Module Main
         If outputDest = Nothing Then
             defaultDir = True
             Console.WriteLine(vbCrLf & "Updating translation...")
-            outputDest = ProjectPath & "\Psalms_Translator.html"
+            outputDest = ProjectPath & "\HIERO.html"
         End If
         UntranslatedRoots.Clear()
         Anchors.Clear()

@@ -8,7 +8,7 @@ Partial Module Main
         Dim parsingDictionary As New Dictionary(Of (String, Integer), (String, String))
         Dim currentRow As String()
 
-        Using MyReader As New Microsoft.VisualBasic.FileIO.TextFieldParser("C:\Users\Graham\Downloads\Psalms Translator\STEPBible\parsingDictionary.bin")
+        Using MyReader As New Microsoft.VisualBasic.FileIO.TextFieldParser(ProjectPath & "\STEPBible\parsingDictionary.bin")
             MyReader.TextFieldType = FileIO.FieldType.Delimited
             MyReader.SetDelimiters(vbTab)
             While Not MyReader.EndOfData
@@ -29,8 +29,8 @@ Partial Module Main
 
         ' Make one mega array containing the entire OT
 
-        Using MyReader As New Microsoft.VisualBasic.FileIO.TextFieldParser("C:\Users\Graham\Downloads\Psalms Translator\STEPBible\annotatedHebrewText.bin"),
-            compWriter As New StreamWriter("C:\Users\Graham\Downloads\Psalms Translator\STEPBible\development\expandedFromAnnotations.bin")
+        Using MyReader As New Microsoft.VisualBasic.FileIO.TextFieldParser(ProjectPath & "\STEPBible\annotatedHebrewText.bin"),
+            compWriter As New StreamWriter(ProjectPath & "\STEPBible\development\expandedFromAnnotations.bin")
             MyReader.TextFieldType = FileIO.FieldType.Delimited
             MyReader.SetDelimiters(vbTab)
             While Not MyReader.EndOfData
@@ -136,7 +136,7 @@ Partial Module Main
 
         LoadBookNames()
 
-        Using errorfile As System.IO.StreamWriter = FileIO.FileSystem.OpenTextFileWriter(ProjectPath & "\Psalms_Translator.err", False)
+        Using errorfile As System.IO.StreamWriter = FileIO.FileSystem.OpenTextFileWriter(ProjectPath & "\HIERO.err", False)
             errorlist.Sort()
             For Each e As String In errorlist
                 errorfile.WriteLine(e)

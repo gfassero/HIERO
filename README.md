@@ -1,7 +1,7 @@
 # Introduction
 HIERO (Hebrew Idiom in English Roots) is a partial translation of the Old Testament from Hebrew into English, in which Hebrew word order and vocabulary choices are transparent to the reader. Its intended audience is studious English readers with little or no knowledge of the Hebrew language. Its purpose is to give some insight into the poetic idiom that the sacred authors chose to use.
 
-You can browse the [full HIERO translation here](alphas/000%20toc.html). Or read one of the following familiar passages:
+You can browse the [full HIERO translation here](hiero.html). Or read one of the following familiar passages:
 - [The Creation](output%20samples/creation.html) (Genesis 1)
 - [The Binding of Isaac](output%20samples/akedah.html) (Genesis 22)
 - [The Shema](output%20samples/shema.html) (Deuteronomy 6)

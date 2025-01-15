@@ -49,7 +49,7 @@
 		"<body>" & vbCrLf &
 		"<span id=""header"">" & vbCrLf &
 		"<a href=""../"" class=""title"">HIERO</a> " ' OUTPUTHEADER() will append current date and sequence number
-	Public Const OutputHeaderString2 = " / <a href=""000 toc.html"">Contents</a>"
+	Public Const OutputHeaderString2 = " / <a href=""../hiero.html"">Contents</a>"
 
 	Public Const OutputBeginTranslation = " / <a href=""#table-of-sections"">Sections</a>" & vbCrLf &
 		"</span>" & vbCrLf &
