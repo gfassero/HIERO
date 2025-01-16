@@ -70,17 +70,17 @@
 <verb gerund="tying">tie</verb>
 <verb gerund="lying" actor="liar">lìe</verb>
 
-<verb past="brought" actor="bringer">bring</verb>
 <verb past="ground" actor="grinder">grind</verb>
 <verb past="taught" actor="teacher">teach</verb>
 <verb past="shot" actor="shooter">shoot</verb>
 <verb past="found" actor="finder">find</verb>
 <verb past="withheld">withhold</verb> ' regular, except past forms, which match each other
 <verb past="fraught">freight</verb>
-<verb past="struck">strike</verb>
-<verb past="beheld">behold</verb>
+<verb past="brought">bring</verb>
 <verb past="brought">bring</verb>
 <verb past="thought">think</verb>
+<verb past="struck">strike</verb>
+<verb past="beheld">behold</verb>
 <verb past="caught">catch</verb>
 <verb past="sought">seek</verb>
 <verb past="built">build</verb>

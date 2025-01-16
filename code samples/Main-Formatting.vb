@@ -48,8 +48,8 @@
 		"</head>" & vbCrLf &
 		"<body>" & vbCrLf &
 		"<span id=""header"">" & vbCrLf &
-		"<a href=""../"" class=""title"">HIERO</a> " ' OUTPUTHEADER() will append current date and sequence number
-	Public Const OutputHeaderString2 = " / <a href=""../hiero.html"">Contents</a>"
+		"<a href=""../"" class=""title"">HIERO Docs</a> " ' OUTPUTHEADER() will append current date and sequence number
+	Public Const OutputHeaderString2 = " / <a href=""index.html"">Bible</a>"
 
 	Public Const OutputBeginTranslation = " / <a href=""#table-of-sections"">Sections</a>" & vbCrLf &
 		"</span>" & vbCrLf &
@@ -160,9 +160,9 @@
 		If SaveToFileInsteadOfConsole Then ' SAVE to FILE
 
 			If ((citParts(1) = "1" AndAlso citParts(2) = "1") OrElse announceStart) AndAlso Not suppressBookStart Then
-				Console.Title = citParts(0)
 
 				AnnounceHeader(citParts(0))
+
 				'Anchors.Add((
 				'			"book-" & citParts(0),      ' Anchor name
 				'			"anchor-book",              ' CSS class in TOC
