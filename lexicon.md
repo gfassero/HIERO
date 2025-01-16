@@ -96,7 +96,7 @@ HIERO uses the following function words as auxiliaries to represent the various 
 - Other minor words: *that*\*, *over*, *off*
 
 ### Independant function words
-The following words are not compliant with the root-for-root parameter. Each line represents a unique Hebrew root and lists how the root is translated in English. In HIERO, the underlying roots can be distinguished only by the diacritics added to the English translation. Details can be found in the [glossary](alphas/glossary.html), where these words are grouped under “Function Words” and are marked in gray ![light silver](https://placehold.co/15x15/d8d8d8/d8d8d8.png).
+The following words are not compliant with the root-for-root parameter. Each line represents a unique Hebrew root and lists how the root is translated in English. In HIERO, some of these underlying roots can be distinguished only by the diacritics added to the English translation. Details can be found in the [glossary](alphas/glossary.html), where these words are grouped under “Function Words” and are marked in gray ![light silver](https://placehold.co/15x15/d8d8d8/d8d8d8.png).
 
 - Demonstratives
   - Root *zeh*, *hallazeh*: *this*, *ⱦhat*
@@ -119,6 +119,7 @@ The following words are not compliant with the root-for-root parameter. Each lin
   - Root *'az*: *then*
   - Root *matay*: *¿wħen*
   - Root *b*: *in*, *when*
+  - Root *'ad*/*'aden*/*'owd*/*ba'ad*: *unto*, *about*, *again*, *onward*, *still*
 - Negatives
   - Root *lo'*/*'al*: *not*
   - Root *'ayin*: *ńot*
