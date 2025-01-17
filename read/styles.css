@@ -108,11 +108,6 @@
     border-bottom: 1px solid #c0c0c0;
 }
 
-#table-of-sections {
-    order: -1; /* Place TOC first */
-    padding: 1em 2em; /* top/bottom first, then left/right second */
-}
-
 #translation {
     padding: 0em 2em; /* top/bottom first, then left/right second */
 }
@@ -121,11 +116,17 @@
     display: block;
 }
 
-.columnsTOC {
+#table-of-sections {
+    order: -1; /* Place TOC first */
+    padding: 1em 2em; /* top/bottom first, then left/right second */
     display: block;
-    margin-left: 2em;
     column-count: auto;
     column-width: 6em;
+}
+
+#footer {
+    padding: 1em 2em; /* top/bottom first, then left/right second */
+    display: block;
 }
 
 :root {

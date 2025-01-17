@@ -29,19 +29,18 @@ Partial Module Main
             ' Open File Stream and HTML
             OutputFile = FileIO.FileSystem.OpenTextFileWriter(outputDest, False)
 
-            OutputFile.Write(runtimeHeader)
-            OutputFile.Write(OutputBeginTranslation)
+            OutputFile.Write(OutputHeader & OutputBeginTranslation)
 
             ' Translate everything
             SaveToFileInsteadOfConsole = True
             TranslateArrayOfDabar(referenceMatches) ' Translate
             SaveToFileInsteadOfConsole = False
 
-            OutputFile.Write(OutputFooterTOC)
+            OutputFile.Write(OutputTOC)
             ' Write TOC
             For Each anchor As (String, String, String) In Anchors
                 If anchor.Item2 = "anchor-book" Then
-                    OutputFile.Write(OutputFooterTOCBook1)
+                    OutputFile.Write(OutputTOCBook1)
                 End If
                 Dim refSplits = anchor.Item3.Split(".")
                 Dim sectionRef As String
@@ -52,12 +51,12 @@ Partial Module Main
                 End If
                 OutputFile.Write(vbCrLf & "<a href=""#" & anchor.Item1 & """ class=""" & anchor.Item2 & """>" & sectionRef & "</a>")
                 If anchor.Item2 = "anchor-book" Then
-                    OutputFile.Write(OutputFooterTOCBook2)
+                    OutputFile.Write(OutputTOCBook2)
                 End If
             Next
 
             ' Close out HTML and File Stream
-            OutputFile.Write(OutputFooterFinal)
+            OutputFile.Write(RuntimeFooter & OutputEnd)
             OutputFile.Close()
 
             Console.Title = "Translate"

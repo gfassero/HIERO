@@ -38,7 +38,7 @@
 	Public Const CitationEnd = "</span> "
 	Public Const AramaicFlag = " ▲"
 
-	Public Const OutputHeaderString1 = "<!DOCTYPE html>" & vbCrLf &
+	Public Const OutputHeader = "<!DOCTYPE html>" & vbCrLf &
 		"<!-- This content may not be copied, shared, distributed, modified, or used for any purpose," & vbCrLf &
 		"     commercial or non-commercial, without prior written permission from the author. -->" & vbCrLf &
 		"<html lang=""en"">" & vbCrLf &
@@ -48,26 +48,25 @@
 		"</head>" & vbCrLf &
 		"<body>" & vbCrLf &
 		"<span id=""header"">" & vbCrLf &
-		"<a href=""../"" class=""title"">HIERO Docs</a> " ' OUTPUTHEADER() will append current date and sequence number
-	Public Const OutputHeaderString2 = " / <a href=""index.html"">Bible</a>"
+		"<a href=""../"" class=""title"">About</a> / <a href=""index.html"">Bible</a>"
 
 	Public Const OutputBeginTranslation = " / <a href=""#table-of-sections"">Sections</a>" & vbCrLf &
 		"</span>" & vbCrLf &
 		"<span id=""translation"">"
 
-	Public Const OutputFooterTOC = vbCrLf &
+	Public Const OutputTOC = vbCrLf &
 		"</span>" & vbCrLf &
-		"<span id=""table-of-sections"">" & vbCrLf &
-		"<span class=""columnsTOC"">"
-	Public Const OutputFooterTOCBook1 = vbCrLf &
+		"<span id=""table-of-sections"">"
+	Public Const OutputTOCBook1 = vbCrLf &
 		"</span>"
-	Public Const OutputFooterTOCBook2 = vbCrLf &
+	Public Const OutputTOCBook2 = vbCrLf &
 		"<span class=""columnsTOC"">"
-	Public Const OutputFooterFinal = vbCrLf &
+	Public Const OutputFooterBegin = vbCrLf &
 		"</span>" & vbCrLf &
-		"</span>" & vbCrLf &
-		"</body>" & vbCrLf &
-		"</html>"
+		"<span id=""footer""><a href=""../"" class=""title"">About HIERO</a> / build "
+	Public Const OutputEnd = "</span>" & vbCrLf &
+							 "</body>" & vbCrLf &
+							 "</html>"
 
 	Public Const CustomTab = "&emsp;&emsp;"
 	Public Const CustomTabx2 = CustomTab & CustomTab
@@ -240,11 +239,10 @@
 					 Replace("}"c, CloseXlit)
 	End Function
 
-	Private runtimeHeader As String
-	Sub GenerateRuntimeHeader()
-		runtimeHeader = OutputHeaderString1 &
+	Private RuntimeFooter As String
+	Sub GenerateRuntimeFooter()
+		RuntimeFooter = OutputFooterBegin &
 			Now.ToString("yy.MM-") &
-			(((((Now.Day - 1) * 24 + Now.Hour) * 60 + Now.Minute) * 60 + Now.Second) \ 27).ToString("D5") &
-			OutputHeaderString2
+			(((((Now.Day - 1) * 24 + Now.Hour) * 60 + Now.Minute) * 60 + Now.Second) \ 27).ToString("D5")
 	End Sub
 End Module
