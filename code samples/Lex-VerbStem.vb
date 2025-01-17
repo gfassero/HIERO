@@ -16,23 +16,23 @@ Partial Module Main
 		Public ReadOnly _acteePlural As String
 		Public ReadOnly HasCustomActor As Boolean = False
 		Public Sub New(entry As XmlElement) ' Create stem from LEXICON.XML or HELPING-VERBS.XML 
-			Dim fixes As String() = PrefixVerbSuffix(entry.InnerText.Replace(" "c, WordLink))
-			infinitive = fixes(0) & fixes(1) & fixes(2)
+			Dim fixes As String() = PrefixVerbCloserSuffix(entry.InnerText.Replace(" "c, WordLink))
+			infinitive = fixes(0) & fixes(1) & fixes(2) & fixes(3)
 
 			Dim handled As Boolean = False
 			For Each helpingVerb As VerbStem In helpingVerbs
 				If fixes(1) = helpingVerb.infinitive Then
-					past = fixes(0) & helpingVerb.past & fixes(2)
-					_passiveParticiple = fixes(0) & helpingVerb._passiveParticiple & fixes(2)
-					_actorSingular = fixes(0) & helpingVerb._actorSingular & fixes(2)
-					_actorPlural = fixes(0) & helpingVerb._actorPlural & fixes(2)
-					thirdPersonSingular = fixes(0) & helpingVerb.thirdPersonSingular & fixes(2)
-					firstPersonSingular = fixes(0) & helpingVerb.firstPersonSingular & fixes(2)
-					presentPlural = fixes(0) & helpingVerb.presentPlural & fixes(2)
-					past13PersonSingular = fixes(0) & helpingVerb.past13PersonSingular & fixes(2)
-					gerund = fixes(0) & helpingVerb.gerund & fixes(2)
-					_acteeSingular = fixes(0) & helpingVerb._acteeSingular & fixes(2)
-					_acteePlural = fixes(0) & helpingVerb._acteePlural & fixes(2)
+					past = fixes(0) & helpingVerb.past & fixes(2) & fixes(3)
+					_passiveParticiple = fixes(0) & helpingVerb._passiveParticiple & fixes(2) & fixes(3)
+					_actorSingular = fixes(0) & helpingVerb._actorSingular & fixes(2) & fixes(3)
+					_actorPlural = fixes(0) & helpingVerb._actorPlural & fixes(2) & fixes(3)
+					thirdPersonSingular = fixes(0) & helpingVerb.thirdPersonSingular & fixes(2) & fixes(3)
+					firstPersonSingular = fixes(0) & helpingVerb.firstPersonSingular & fixes(2) & fixes(3)
+					presentPlural = fixes(0) & helpingVerb.presentPlural & fixes(2) & fixes(3)
+					past13PersonSingular = fixes(0) & helpingVerb.past13PersonSingular & fixes(2) & fixes(3)
+					gerund = fixes(0) & helpingVerb.gerund & fixes(2) & fixes(3)
+					_acteeSingular = fixes(0) & helpingVerb._acteeSingular & fixes(2) & fixes(3)
+					_acteePlural = fixes(0) & helpingVerb._acteePlural & fixes(2) & fixes(3)
 					HasCustomActor = helpingVerb.HasCustomActor
 					handled = True
 					Exit For
@@ -43,31 +43,31 @@ Partial Module Main
 
 				firstPersonSingular = infinitive
 				presentPlural = infinitive
-				gerund = fixes(0) & fixes(1) & "ing" & fixes(2)
+				gerund = fixes(0) & fixes(1) & fixes(2) & "ing" & fixes(3)
 
 				If fixes(1).EndsWith("e"c) Then
-					thirdPersonSingular = fixes(0) & fixes(1) & "s" & fixes(2)
-					past = fixes(0) & fixes(1) & "d" & fixes(2)
-					gerund = String.Concat(fixes(0), fixes(1).AsSpan(0, fixes(1).Length - 1), "ing", fixes(2))
+					thirdPersonSingular = fixes(0) & fixes(1) & fixes(2) & "s" & fixes(3)
+					past = fixes(0) & fixes(1) & fixes(2) & "d" & fixes(3)
+					gerund = fixes(0) & fixes(1).Remove(fixes(1).Length - 1) & fixes(2) & "ing" & fixes(3)
 
 				ElseIf fixes(1).EndsWith("y"c) AndAlso Not "aeiou".Contains(fixes(1)(fixes(1).Length - 2)) Then
-					thirdPersonSingular = String.Concat(fixes(0), fixes(1).AsSpan(0, fixes(1).Length - 1), "ies", fixes(2))
-					past = String.Concat(fixes(0), fixes(1).AsSpan(0, fixes(1).Length - 1), "ied", fixes(2))
+					thirdPersonSingular = fixes(0) & fixes(1).Remove(fixes(1).Length - 1) & fixes(2) & "ies" & fixes(3)
+					past = fixes(0) & fixes(1).Remove(fixes(1).Length - 1) & fixes(2) & "ied" & fixes(3)
 
 				ElseIf fixes(1).EndsWith("s"c) OrElse fixes(1).EndsWith("sh") OrElse fixes(1).EndsWith("ch") OrElse fixes(1).EndsWith("x"c) Then
-					thirdPersonSingular = fixes(0) & fixes(1) & "es" & fixes(2)
-					past = fixes(0) & fixes(1) & "ed" & fixes(2)
+					thirdPersonSingular = fixes(0) & fixes(1) & fixes(2) & "es" & fixes(3)
+					past = fixes(0) & fixes(1) & fixes(2) & "ed" & fixes(3)
 
 				Else
-					thirdPersonSingular = fixes(0) & fixes(1) & "s" & fixes(2)
-					past = fixes(0) & fixes(1) & "ed" & fixes(2)
+					thirdPersonSingular = fixes(0) & fixes(1) & fixes(2) & "s" & fixes(3)
+					past = fixes(0) & fixes(1) & fixes(2) & "ed" & fixes(3)
 				End If
 
-				If entry.HasAttribute("form") Then
+			If entry.HasAttribute("form") Then
 					Select Case entry.Attributes.GetNamedItem("form").Value
 						Case "doubleFinal"
-							past = fixes(0) & fixes(1) & fixes(1)(fixes(1).Length - 1) & "ed" & fixes(2)
-							gerund = fixes(0) & fixes(1) & fixes(1)(fixes(1).Length - 1) & "ing" & fixes(2)
+							past = fixes(0) & fixes(1) & fixes(1)(fixes(1).Length - 1) & fixes(2) & "ed" & fixes(3)
+							gerund = fixes(0) & fixes(1) & fixes(1)(fixes(1).Length - 1) & fixes(2) & "ing" & fixes(3)
 
 						Case "doNotDoubleFinal"
 							' Regular (as in ORBIT -> ORBITED), but don't double the final letter as in (FIT -> FITTED)
@@ -81,8 +81,8 @@ Partial Module Main
 							Throw New ArgumentException("Exception Occured")
 					End Select
 				ElseIf DoubleFinalLetterForEdIng.IsMatch(fixes(1)) Then
-					past = fixes(0) & fixes(1) & fixes(1)(fixes(1).Length - 1) & "ed" & fixes(2)
-					gerund = fixes(0) & fixes(1) & fixes(1)(fixes(1).Length - 1) & "ing" & fixes(2)
+					past = fixes(0) & fixes(1) & fixes(1)(fixes(1).Length - 1) & fixes(2) & "ed" & fixes(3)
+					gerund = fixes(0) & fixes(1) & fixes(1)(fixes(1).Length - 1) & fixes(2) & "ing" & fixes(3)
 
 				End If
 
@@ -204,9 +204,14 @@ Partial Module Main
 
 	Dim DoubleFinalLetterForEdIng As New Regex("[^aeiou][aeiou][^aeiouhnrwyx]$")
 
-	Public Function PrefixVerbSuffix(root As String) As String()
+	Public Function PrefixVerbCloserSuffix(root As String) As String()
 
-		Dim fixes(3) As String
+		' PREFIX = optional character [ or { or √
+		' VERB = main verb
+		' CLOSER = optional character }
+		' SUFFIX = ] and anything after a space
+
+		Dim fixes(4) As String
 
 		If root(0) = "["c OrElse root(0) = "{"c OrElse root(0) = "√"c Then
 			fixes(0) = root(0)
@@ -214,15 +219,15 @@ Partial Module Main
 		End If
 
 		If root.Contains(WordLink) Then
-			fixes(2) = root.Substring(root.IndexOf(WordLink))
+			fixes(3) = root.Substring(root.IndexOf(WordLink))
 			root = root.Substring(0, root.IndexOf(WordLink))
 		End If
 
 		If root.EndsWith("]"c) Then
-			fixes(2) = "]"c & fixes(2)
+			fixes(3) = "]"c & fixes(3)
 			root = root.Substring(0, root.Length - 1)
 		ElseIf root.EndsWith("}"c) Then
-			fixes(2) = "}"c & fixes(2)
+			fixes(2) = "}"c
 			root = root.Substring(0, root.Length - 1)
 		End If
 
