@@ -12,7 +12,7 @@ Module Main
 	' - Remove all clones.
 	' - Download a list of ~1000 most common words: make sure that the lexicon uses few rare words, and see if any rarer words can be replaced with more common words instead.
 	' - Address for/for-/fore-/before/forward, which is not marked as FAIL, nor listed in lexicon.md.
-	 ' Make sure that no entries are being regexed out of the construct state if they ought to be specialled into suppression.
+	' Make sure that no entries are being regexed out of the construct state if they ought to be suppress="Of" instead.
 
 	' *** PARSING DICTIONARY: ***
 	' - Merge parsing variants into main parsing.

@@ -8,7 +8,7 @@ Partial Module Main
         Public ReadOnly IsPunctuation As Boolean = False
         Public Definite As Boolean = False
         Public HasDefiniteArticle As Boolean = False
-        Public SpecialSuppressDefArt As Boolean = False
+        Public SuppressDefArt As Boolean = False
         Public CustomArticle As String = Nothing
         Public Skip_ADDED_IN_PREPROCESSING = False
         Public ParticlePrefix As String = Nothing
@@ -141,13 +141,13 @@ Partial Module Main
                 End If
             End If
 
-            SpecialSuppressDefArt = RtLexicon(StrongsLemma).SpecialSuppressDefArt
+            SuppressDefArt = RtLexicon(StrongsLemma).SuppressThe
         End Sub
 
         Private _ecsholder As String = Nothing
         Public Property EnglishConstructSuffix As String
             Get
-                If RtLexicon(StrongsLemma).SpecialSuppressOf Then
+                If RtLexicon(StrongsLemma).SuppressOf Then
                     Return Nothing
                 Else
                     Return _ecsholder
@@ -254,7 +254,7 @@ Partial Module Main
                 ' Add "THE" to construct chains, or add possessives, or add "THOSE THAT...", etc.
                 If CustomArticle IsNot Nothing Then
                     Reveal(CustomArticle & WordLink)
-                ElseIf Definite AndAlso Not SpecialSuppressDefArt AndAlso (Not IsProper OrElse HasDefiniteArticle) Then
+                ElseIf Definite AndAlso Not SuppressDefArt AndAlso (Not IsProper OrElse HasDefiniteArticle) Then
                     Reveal(RtLexicon("9009").Particle & WordLink)
                 End If
 

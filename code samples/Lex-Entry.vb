@@ -7,9 +7,9 @@ Partial Module Main
         Public ReadOnly TopLevelStrongs As String
         Public ReadOnly regexGramSrc() As String
         Public ReadOnly regexGramDest() As String
-        Public ReadOnly SpecialSuppressOf As Boolean = False
-        Public ReadOnly SpecialSuppressDefArt As Boolean = False
-        Public ReadOnly SpecialSuppressPossessive As Boolean = False
+        Public ReadOnly SuppressOf As Boolean = False
+        Public ReadOnly SuppressThe As Boolean = False
+        Public ReadOnly SuppressPossessive As Boolean = False
 
         Public Sub New(entry As XmlElement, strong As String, topLevelEntry As String)
             LexiconPartOfSpeech = entry.Item("pos").InnerText
@@ -19,11 +19,11 @@ Partial Module Main
                 TopLevelStrongs = topLevelEntry
             End If
 
-            If entry.Item("xref").HasAttribute("special") Then
-                Dim specials = entry.Item("xref").Attributes.GetNamedItem("special").Value
-                If specials.Contains("SuppressOf") Then SpecialSuppressOf = True
-                If specials.Contains("SuppressDefArt") Then SpecialSuppressDefArt = True
-                If specials.Contains("SuppressPossessive") Then SpecialSuppressPossessive = True
+            If entry.Item("xref").HasAttribute("suppress") Then
+                Dim supressions = entry.Item("xref").Attributes.GetNamedItem("suppress").Value
+                If supressions.Contains("of") Then SuppressOf = True
+                If supressions.Contains("the") Then SuppressThe = True
+                If supressions.Contains("possessive") Then SuppressPossessive = True
             End If
 
             If entry.Item("pos").HasAttribute("regex") Then
