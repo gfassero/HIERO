@@ -25,6 +25,7 @@ Module Main
 
 	' *** TEXT: ***
 	' Most proper nouns aren't tagged with gender or number. Can I add them programatically?
+	' H9016.*c$ shouldn't happen.
 
 	' *** HEBREW COMPILER ***
 	' Further ideas for reducing parsing notes to a minimum:
