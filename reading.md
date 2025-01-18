@@ -1,9 +1,9 @@
 # Only a Partial Translation
-HIERO is a partial translation of the Hebrew text, not a full translation. As a result, HIERO is not grammatical or idiomatic English. Instead, it represents the sequence of Hebrew roots and inflections by means of English roots and inflections. HIERO stands somewhere between translation and transliteration. What a transliteration does on the level of letters or sounds, and what a translation does on the level of clauses or sentences, HIERO attempts to do on the level of words or morphemes. HIERO retains mostly Hebrew syntax, so reading it requires effort, just as reading the Hebrew text would require effort even of a reader who had memorized the Hebrew lexicon and inflections.
+HIERO is a partial translation of the Hebrew text, not a full translation. As a result, HIERO is not rendered in grammatical or idiomatic English. Instead, it represents Hebrew roots and inflections by means of English roots and inflections. HIERO stands somewhere between a translation and a transliteration. What a transliteration does on the level of letters or sounds, and what a translation does on the level of clauses or sentences, HIERO attempts to do on the level of words or morphemes. HIERO retains mostly Hebrew syntax, so reading it requires effort, just as reading the Hebrew text would require effort even of a reader who had memorized the Hebrew lexicon and inflections.
+
+Translations represent meaning, and I believe that our modern English translations already represent the meaning of the Hebrew text accurately. HIERO attempts to do something rather different—that is, to represent more of the author’s poetic choices than is possible in a translation. HIERO should always be read in light of the meaning given by existing translations.
 
 To understand HIERO best, I like to read passages that I already know well. While reading HIERO, I keep the familiar passage in mind and allow the words of HIERO to supplement how I already understand the text. For less familiar passages, I like to read HIERO with a normal translation on hand, or, even better, listen to someone else reading a normal translation aloud while I follow along in HIERO.
-
-Translations represent meaning, and I believe that our modern English translations already represent the Hebrew text accurately. HIERO attempts to do something rather different—that is, to represent more of the author’s poetic choices than is possible in a translation. HIERO should always be read in light of the meaning given by existing translations.
 
 # Hebrew Idiom Quickstart
 A few facts about Hebrew that may help you understand HIERO’s translation:
@@ -29,7 +29,7 @@ This happens in English too:
   
 This is very common in Hebrew, and it can be disorienting. If you see “the” followed by an adjective or participle and no noun, this is probably why. Read as “*x* one(s)” if that helps. For active participles, consider reading it as an agent: For example, “he ruling” may mean “he [was] ruler.”
 ### “from” can signal a comparative
-There is no comparative form of an adjective. Instead, two things being compared are often joined with the preposition “from,” which can mean “than.” For example, “good day in your courtyards from thousand” could be read as “[more] good [is a] day in your courtyards [than a] thousand [days]”
+There is no comparative form of an adjective. Instead, two things being compared are often joined with the preposition “from,” which can mean “than.” For example, “good day in your courtyards from thousand” can be read as “[more] good [is a] day in your courtyards [than a] thousand [days]”
 ### Verse breaks
 The verse breaks usually follow the *sof passuk* punctuation marks in the Hebrew text. *Sof passuk*, which looks like a colon (:), is stronger than a comma but often weaker than a period.
 ### Line breaks
