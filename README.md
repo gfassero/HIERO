@@ -14,7 +14,7 @@ You can browse the [full HIERO translation here](http://gfassero.github.io/HIERO
 # Rationale
 Modern English readers are blessed with more and better translations of the Bible than anyone else in history. Some translations specialize in theological precision, others swell with rhetorical beauty, and others use such everyday words that they sound like they were written yesterday. The Hebrew scriptures, however, are not written in modern, everyday language, modern technical language, or even classical rhetorical language. They are written in ancient Hebrew poetry, and HIERO tries to reflects that.
 
-HIERO does not try to interpret the Hebrew scriptures in a precise, beautiful, or accessible way. Instead—recognizing the word choice and word order are two of the most basic elements of poetry—HIERO tries to represent the Hebrew idiom in a way that lets the English reader see which Hebrew root words are used and in what order. Some readers will find beauty in this. Read [more about HIERO here](notes.md).
+HIERO does not try to interpret the Hebrew scriptures in a precise, beautiful, or accessible way. Instead—recognizing the word choice and word order are two of the most basic elements of poetry—HIERO tries to represent the Hebrew idiom in a way that lets the English reader see which Hebrew root words are used and in what order. Some readers will find beauty in this.
 
 # Parameters
 Two parameters guide the translation:
