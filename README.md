@@ -1,15 +1,15 @@
 # Introduction
 HIERO (Hebrew Idiom in English Roots) is a partial translation of the Old Testament from Hebrew into English, in which Hebrew word order and vocabulary choices are transparent to the reader. Its intended audience is studious English readers with little or no knowledge of the Hebrew language. Its purpose is to give some insight into the poetic idiom that the sacred authors chose to use.
 
-You can browse the [full HIERO translation here](read/). Or read one of the following familiar passages:
-- [The Creation](output%20samples/creation.html) (Genesis 1)
-- [The Binding of Isaac](output%20samples/akedah.html) (Genesis 22)
-- [The Shema](output%20samples/shema.html) (Deuteronomy 6)
-- [Psalm 1](output%20samples/psalm001.html)
-- [Psalm 51](output%20samples/psalm051.html)
-- [Psalm 121](output%20samples/psalm121.html)
-- [The Suffering Servant](output%20samples/servant.html) (Isaiah 53)
-- [The final promise](output%20samples/final.html) (Malachi 4).
+You can browse the [full HIERO translation here](http://gfassero.github.io/HIERO/read/). Or read one of the following familiar passages:
+- [The Creation](http://gfassero.github.io/HIERO/output%20samples/creation.html) (Genesis 1)
+- [The Binding of Isaac](http://gfassero.github.io/HIERO/output%20samples/akedah.html) (Genesis 22)
+- [The Shema](http://gfassero.github.io/HIERO/output%20samples/shema.html) (Deuteronomy 6)
+- [Psalm 1](http://gfassero.github.io/HIERO/output%20samples/psalm001.html)
+- [Psalm 51](http://gfassero.github.io/HIERO/output%20samples/psalm051.html)
+- [Psalm 121](http://gfassero.github.io/HIERO/output%20samples/psalm121.html)
+- [The Suffering Servant](http://gfassero.github.io/HIERO/output%20samples/servant.html) (Isaiah 53)
+- [The final promise](http://gfassero.github.io/HIERO/output%20samples/final.html) (Malachi 4).
 
 # Rationale
 Modern English readers are blessed with more and better translations of the Bible than anyone else in history. Some translations specialize in theological precision, others swell with rhetorical beauty, and others use such everyday words that they sound like they were written yesterday. The Hebrew scriptures, however, are not written in modern, everyday language, modern technical language, or even classical rhetorical language. They are written in ancient Hebrew poetry, and HIERO tries to reflects that.
