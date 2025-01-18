@@ -28,6 +28,8 @@ This happens in English too:
 - “The fallen” (passive participle as noun)
   
 This is very common in Hebrew, and it can be disorienting. If you see “the” followed by an adjective or participle and no noun, this is probably why. Read as “*x* one(s)” if that helps. For active participles, consider reading it as an agent: For example, “he ruling” may mean “he [was] ruler.”
+### “from” can signal a comparative
+There is no comparative form of an adjective. Instead, two things being compared are often joined with the preposition “from,” which can mean “than.” For example, “good day in your courtyards from thousand” could be read as “[more] good [is a] day in your courtyards [than a] thousand [days]”
 ### Verse breaks
 The verse breaks usually follow the *sof passuk* punctuation marks in the Hebrew text. *Sof passuk*, which looks like a colon (:), is stronger than a comma but often weaker than a period.
 ### Line breaks
