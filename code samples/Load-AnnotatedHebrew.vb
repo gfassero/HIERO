@@ -4,7 +4,7 @@ Partial Module Main
 
     Sub LoadAnnotatedHebrew()
 
-        Console.WriteLine("Loading Hebrew lexicon...")
+        Console.Write("Loading Hebrew lexicon...")
         Dim parsingDictionary As New Dictionary(Of (String, Integer), (String, String))
         Dim currentRow As String()
 
@@ -20,8 +20,7 @@ Partial Module Main
 
             End While
         End Using
-
-
+        Console.WriteLine(" Done!")
 
 
         Console.Write("Reading Hebrew text...")

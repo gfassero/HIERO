@@ -7,6 +7,7 @@ Partial Module Main
         Public ReadOnly TopLevelStrongs As String
         Public ReadOnly regexGramSrc() As String
         Public ReadOnly regexGramDest() As String
+        Public ReadOnly IsMoveableNegator As Boolean = False
         Public ReadOnly SuppressOf As Boolean = False
         Public ReadOnly SuppressThe As Boolean = False
         Public ReadOnly SuppressPossessive As Boolean = False
@@ -24,6 +25,10 @@ Partial Module Main
                 If supressions.Contains("of") Then SuppressOf = True
                 If supressions.Contains("the") Then SuppressThe = True
                 If supressions.Contains("possessive") Then SuppressPossessive = True
+            End If
+            If entry.Item("xref").HasAttribute("moveable") AndAlso
+                entry.Item("xref").Attributes.GetNamedItem("moveable").Value = "negator" Then
+                IsMoveableNegator = True
             End If
 
             If entry.Item("pos").HasAttribute("regex") Then

@@ -11,7 +11,17 @@ Partial Module Main
 		RtLexicon.Clear()
 
 		Dim lexdoc As New XmlDocument
-		lexdoc.Load(ProjectPath & "\" & Lexicon)
+		While True
+			Try
+				lexdoc.Load(ProjectPath & "\" & Lexicon)
+				Exit While
+			Catch e As XmlException
+				Console.WriteLine()
+				Console.WriteLine()
+				Console.Write("XML error in main lexicon: " & e.Message & " Press enter to try again...")
+				Console.ReadLine()
+			End Try
+		End While
 
 		Dim entries As XmlNodeList = lexdoc.GetElementsByTagName("entry")
 		Dim strong As String
