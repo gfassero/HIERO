@@ -98,7 +98,7 @@ HIERO uses the following function words as auxiliaries to represent the various 
 - Other minor words: *that*\*, *over*, *off*
 
 ### Independant function words
-The following words are not compliant with the root-for-root parameter. Each line represents a unique Hebrew root and lists how the root is translated in English. In HIERO, some of these underlying roots can be distinguished only by the diacritics added to the English translation. Details can be found in the [glossary](alphas/glossary.html), where these words are grouped under “Function Words” and are marked in gray ![light silver](https://placehold.co/15x15/d8d8d8/d8d8d8.png).
+The following words are not compliant with the root-for-root parameter. Each line represents a unique Hebrew root and lists how the root is translated in English. In HIERO, some of these underlying roots can be distinguished only by the diacritics added to the English translation. Details can be found in the [glossary](alphas/glossary.html), where these words are grouped under “Function Words” and marked in gray ![light silver](https://placehold.co/15x15/d8d8d8/d8d8d8.png).
 
 - Demonstratives
   - Root *zeh*, *hallazeh*: *this*, *ⱦhat*
@@ -111,6 +111,7 @@ The following words are not compliant with the root-for-root parameter. Each lin
   - Root *k*: *as*, *but*, *for*, *thus*
   - Root *qobel*: *ḟor*
   - Root *'im*: *if*, *rather*
+  - Root *lu*: *iᵮ*
   - Root *beram*: *ƀut*
 - Adverbs of place
   - Root *hennah*/*halom*: *here*
@@ -125,9 +126,9 @@ The following words are not compliant with the root-for-root parameter. Each lin
 - Negatives
   - Root *lo'*/*'al*: *not*
   - Root *'ayin*: *ńot*
-  - Root *lu*: *iᵮ*, *ᵰot*
 
 ### Some numbers
+#### “one”—not root unique
 The English root “one” is not root unique. It appears both as an auxiliary and as representing standalone roots. The underlying roots are all root coherent and can always be distinguished, because each Hebrew root uses a different form of the word, or uses it in a restricted construction.
 - Coherent root *'echad*: *one* (x974) and *unit* (x164)
 - Coherent root *`ashtey*, always in the construction “øne and ten,” meaning “eleven”: *øne* (x19)
@@ -136,6 +137,7 @@ The English root “one” is not root unique. It appears both as an auxiliary a
 - Coherent root *kipper*: *atone* (x169)
 - Function words used as auxiliaries and joined to the root by a middle dot (·): *one’s*, *one another*, *oneself*, *a*, *an*
 
+#### *'aleph*—not root coherent
 The Hebrew root *'aleph* is not root coherent. It appears either as “thousand” or as “aleph”/“alpha.” These two senses are separated because they have no common meaning and no common word history. The sense of “thousand” is derived not from the word *'aleph*, but from the position of the letter Aleph in the alphabet.
 
 ### Some gendered terms for people
