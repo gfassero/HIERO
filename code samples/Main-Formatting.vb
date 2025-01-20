@@ -33,10 +33,10 @@
 	Public Const JussiveNeut = CommandFlag & "let" & WordLink & "it" & WordLink
 	Public Const JussivePlur = CommandFlag & "let" & WordLink & "them" & WordLink
 
-	Public Const CitationBegin = vbCrLf & "<span class=""citation"">"
-	Public Const CitationBeginChapter = vbCrLf & "<span class=""citation chapter"">"
-	Public Const CitationEnd = "</span> "
-	Public Const AramaicFlag = " ▲"
+	Public Const CitationBegin = vbCrLf & "<p data-number="""
+	Public Const CitationBeginChapter = vbCrLf & "<p class=""chapter"" data-number="""
+	Public Const CitationEnd = """>"
+	Public Const AramaicFlag = "&#9653; "
 
 	Public Const OutputHeader = "<!DOCTYPE html>" & vbCrLf &
 		"<!-- This content may not be copied, shared, distributed, modified, or used for any purpose," & vbCrLf &
@@ -44,27 +44,27 @@
 		"<html lang=""en"">" & vbCrLf &
 		"<head>" & vbCrLf &
 		"<title>HIERO - Hebrew Idiom in English Roots</title>" & vbCrLf &
-		"<link rel=""stylesheet"" href=""styles.css"">" & vbCrLf & ' "<script type=""text/javascript"" src=""slurs.js""></script>" & vbCrLf &
+		"<link rel=""stylesheet"" href=""styles.css"" />" & vbCrLf & ' "<script type=""text/javascript"" src=""slurs.js""></script>" & vbCrLf &
 		"</head>" & vbCrLf &
 		"<body>" & vbCrLf &
-		"<span id=""header"">" & vbCrLf &
+		"<div id=""header"">" & vbCrLf &
 		"<a href=""../"" class=""title"">About</a> / <a href=""index.html"">Bible</a>"
 
-	Public Const OutputBeginTranslation = " / <a href=""#table-of-sections"">Sections</a>" & vbCrLf &
-		"</span>" & vbCrLf &
-		"<span id=""translation"">"
+	Public Const OutputBeginTranslationMinimal = "</div>" & vbCrLf &
+		"<div id=""translation"">"
+	Public Const OutputBeginTranslation = " / <a href=""#table-of-sections"">Sections</a>" & vbCrLf & OutputBeginTranslationMinimal
 
 	Public Const OutputTOC = vbCrLf &
-		"</span>" & vbCrLf &
-		"<span id=""table-of-sections"">"
+		"</div>" & vbCrLf &
+		"<div id=""table-of-sections"">"
 	Public Const OutputTOCBook1 = vbCrLf &
 		"</span>"
 	Public Const OutputTOCBook2 = vbCrLf &
 		"<span class=""columnsTOC"">"
 	Public Const OutputFooterBegin = vbCrLf &
-		"</span>" & vbCrLf &
-		"<span id=""footer""><a href=""../"" class=""title"">About HIERO</a> / build "
-	Public Const OutputEnd = "</span>" & vbCrLf &
+		"</div>" & vbCrLf &
+		"<div id=""footer""><a href=""../"" class=""title"">About HIERO</a> / build "
+	Public Const OutputEnd = "</div>" & vbCrLf &
 							 "</body>" & vbCrLf &
 							 "</html>"
 
@@ -72,12 +72,16 @@
 	Public Const CustomTabx2 = CustomTab & CustomTab
 	Public Const CustomTabx4 = CustomTabx2 & CustomTabx2
 
+	Public Const Indent1 = "</p><p class=""in1"">" ' "<br/>" & CustomTab
+	Public Const Indent2 = "</p><p class=""in2"">" ' "<br/>" & CustomTabx2
+
 	'Public Const SofPasuq = " <span class=""sofpasuq"">:</span>"
 	'Public Const PeOpenMajorBreak = vbCrLf & "<span class=""majorbreak""></span>"
 	'Public Const SamekhClosedMinorBreak = vbCrLf & "<span class=""minorbreak""></span>"
-	Public Const SofPasuq = " :<br/>"
-	Public Const PeOpenMajorBreak = vbCrLf & "<br/>" & CustomTabx4 & "&sect;<br/><br/>"
-	Public Const SamekhClosedMinorBreak = vbCrLf & "<br/>"
+	Public Const SofPasuq = " :</p>"
+	Public Const PeOpenMajorBreakBegin = vbCrLf & "<p class=""section"" id=""section-"
+	Public Const PeOpenMajorBreakEnd = """>&sect;</p>"
+	Public Const SamekhClosedMinorBreak = vbCrLf & "<p class=""paragraph""></p>"
 
 	Public Const ConstructChainBegin = "<span class=""cchain"">"
 	Public Const ConstructChainEnd = "</span>"
@@ -117,34 +121,15 @@
 		End If
 	End Function
 
-	Sub AnnounceHeader(bookNameThreeChars As String, Optional heading As String = Nothing, Optional subheading As String = Nothing)
+	Sub AnnounceHeader(bookNameThreeChars As String)
 
-		If bookNameThreeChars IsNot Nothing Then
-			heading = "Book of " & Books(bookNameThreeChars).Item1
-			subheading = Books(bookNameThreeChars).Item3
-		End If
+		Reveal(String.Concat("<p class=""book"" id=""book-", bookNameThreeChars, """>",
+					 "Book of " & Books(bookNameThreeChars).Item1, ' ENGLISH TITLE
+					 "</p>", vbCrLf), True)
 
-		Reveal(String.Concat("<br/>", vbCrLf), True)
-
-		If bookNameThreeChars IsNot Nothing OrElse heading IsNot Nothing Then
-			Reveal(String.Concat(CustomTabx4, "<span class=""book"" id=""book-", bookNameThreeChars, """>",
-					 heading, ' ENGLISH TITLE
-					 "</span><br/>", vbCrLf), True)
-		End If
-
-		If bookNameThreeChars IsNot Nothing OrElse subheading IsNot Nothing Then
-			Reveal(CustomTabx4 & "<span class=""edit"">", True)
-		End If
-
-		If bookNameThreeChars IsNot Nothing Then
-			TranslateArrayOfDabar(Books(bookNameThreeChars).Item2, Nothing, False) ' HEBREW TITLE
-		End If
-
-		If bookNameThreeChars IsNot Nothing Then
-			Reveal(subheading & "</span><br/><br/>", True)
-		ElseIf subheading IsNot Nothing Then
-			Reveal(subheading & "</span><br/>", True)
-		End If
+		Reveal("<p class=""subtitle"">", True)
+		TranslateArrayOfDabar(Books(bookNameThreeChars).Item2, Nothing, False) ' HEBREW TITLE
+		Reveal(Books(bookNameThreeChars).Item3 & "</p>", True)
 
 	End Sub
 
@@ -173,7 +158,7 @@
 			End If
 
 			If citParts(0) = "Psa" AndAlso (citParts(1) <> lastCitChap OrElse announceStart) AndAlso Not suppressBookStart Then
-				Reveal(String.Concat(vbCrLf & "<br/>" & vbCrLf & "<span class=""psalm"" id=""psalm-" & citParts(1) & """>Psalm ", citParts(1), "</span><br/>"), True)
+				Reveal(String.Concat(vbCrLf & "<p class=""psalm"" id=""psalm-" & citParts(1) & """>Psalm ", citParts(1), "</p>"), True)
 				Anchors.Add((
 							"psalm-" & citParts(1),   ' Anchor name
 							"anchor-psalm",           ' CSS class in TOC
@@ -183,23 +168,23 @@
 			End If
 
 			If citParts(2) = "0" Then
-				' Print nothing for Psalm dedication
+				Reveal("<p>", True)
 
 			ElseIf citParts(2) <> "1" OrElse citParts(0) = "Psa" Then
-				Reveal(CitationBegin & citParts(2) & aramflag & CitationEnd, True)
+				Reveal(CitationBegin & aramflag & citParts(2) & CitationEnd, True)
 
 			Else
-				Reveal(CitationBeginChapter & citParts(1) & aramflag & CitationEnd, True)
+				Reveal(CitationBeginChapter & aramflag & citParts(1) & CitationEnd, True)
 
 			End If
 
 		Else ' PRINT to CONSOLE
 
 			If announceStart Then
-				Reveal(citation & aramflag & ": ", True)
+				Reveal(aramflag & citation & ": ", True)
 
 			Else
-				Reveal(" (" & citParts(1) & ":" & citParts(2) & aramflag & ") ", True)
+				Reveal(" (" & citParts(1) & ":" & aramflag & citParts(2) & ") ", True)
 
 			End If
 

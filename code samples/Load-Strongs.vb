@@ -233,13 +233,25 @@ Partial Module Main
 
                 ' TRANSLATE 90xx dStrong lemmas (punctuation) ... handled here to avoid spacing issues.
             ElseIf IsPunctuation Then
-                If nextCitation IsNot Nothing AndAlso StrongsLemma = "9017" Then
-                    Reveal(String.Concat(PeOpenMajorBreak & "<span id=""section-" & nextCitation & """></span>"), True)
+
+                If nextCitation Is Nothing AndAlso (StrongsLemma = "9017" OrElse StrongsLemma = "9018") Then
+                    ' Omit section break at end of printout
+
+                ElseIf StrongsLemma = "9017" Then
+                    If nextCitation = ParentDabar.Citation Then Reveal("</p>", True)
+                    Reveal(PeOpenMajorBreakBegin & nextCitation & PeOpenMajorBreakEnd, True)
+                    If nextCitation = ParentDabar.Citation Then Reveal(vbCrLf & "<p>", True)
                     Anchors.Add((
                             "section-" & nextCitation,                ' Anchor name
                             "anchor-section",                         ' CSS class in TOC
                             StripAlternativeNumbering(nextCitation)   ' Display name in TOC
                             ))
+
+                ElseIf StrongsLemma = "9018" Then
+                    If nextCitation = ParentDabar.Citation Then Reveal("</p>", True)
+                    Reveal(SamekhClosedMinorBreak, True)
+                    If nextCitation = ParentDabar.Citation Then Reveal(vbCrLf & "<p>", True)
+
                 Else
                     Reveal(ParseMorph(), True)
                 End If

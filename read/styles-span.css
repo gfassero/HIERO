@@ -1,0 +1,88 @@
+﻿
+/* EDITORIAL ANNOTATIONS */
+
+.edit, p.subtitle {
+    color: gray;
+}
+
+
+/* WORD GENDER */
+
+.m {
+    /* background-color: #d0d0fa; */
+    border-bottom: 0.75pt solid #c0c0c0;
+    border-radius: 3.75pt;
+}
+.f {
+    /* background-color: #ffc0cb; */
+    border-bottom: 1.25pt dashed #c0c0c0;
+    border-radius: 3.75pt;
+}
+
+
+
+
+
+
+/*
+.tipcha::after {}
+.pashta::after {}
+.geresh::after {}
+.tevir::after {}
+.gereshmuqdam.revia::after {}
+.dehi::after {}
+.gershayim::after {}
+.zaqefgadol::after {}
+.zinor::after {}
+.qarney::after {}
+.telishagedola::after {}
+.yetiv::after {}
+.zarqa::after {}
+.gereshmuqdam:not([class*=" "])::after {}
+.shalshelet::after {}
+.ole::after {}
+*/
+
+/*
+.revia:not([class*=" "])::after {
+    content: ',';
+}
+.pazer::after {
+    content: ',';
+}
+
+
+.zaqefqatan::after {
+    content: '\a\00A0';
+    white-space: pre;
+    margin-inline-end: 4em;
+}
+
+
+.segol::after {
+    content: ' /\a\00A0';
+    white-space: pre;
+    margin-inline-end: 2em;
+}
+.atnach::after {
+    content: ' \a\00A0';
+    white-space: pre;
+    margin-inline-end: 2em;
+}
+
+.sofpasuq::after {
+    content: '\a';
+    white-space: pre;
+}
+.minorbreak::after {
+    margin: 1em 0em;
+    content: '\a';
+    white-space: pre;
+}
+.majorbreak::after {
+    margin: 1em 0em;
+    text-indent: 8em;
+    content: "§";
+    display: block;
+}
+*/

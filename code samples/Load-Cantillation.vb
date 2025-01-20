@@ -131,12 +131,12 @@
 
         If Strip(HebrewText, Cons_Vow_Conj_TagPunct_Code) = ChrW(&H5AB) & ChrW(&H5A5) Then ' Ole we-Yored (Ole + Merkha)
             lastCantOle = False
-            Return "<br/>" & CustomTab
+            Return Indent1
         ElseIf Strip(HebrewText, Cons_Vow_Conj_TagPunct_Code) = ChrW(&H5AB) Then ' Ole
             lastCantOle = True
         ElseIf lastCantOle AndAlso Strip(HebrewText, Cons_Vow_Conj_TagPunct_Code) = ChrW(&H5A5) Then ' Yored (Merkha)
             lastCantOle = False
-            Return "<br/>" & CustomTab
+            Return Indent1
         Else
             lastCantOle = False
         End If
@@ -144,10 +144,10 @@
         For Each c As Char In HebrewText
             If Not Cons_Vow_Conj_TagPunct_Code.Contains(c) Then
                 Select Case c
-                    Case ChrW(&H591) : Return "<br/>" & CustomTab ' Accent etnahta/atnach     - EMPEROR     43423    empr    king
+                    Case ChrW(&H591) : Return Indent1 ' Accent etnahta/atnach     - EMPEROR     43423    empr    king
 
-                    Case ChrW(&H594) : cant &= "<br/>" & CustomTabx2 ' Accent zaqef qatan        -  KING       51278    king    
-                    Case ChrW(&H592) : Return "<br/>" & CustomTab ' Accent segol/sgol/segolta -  KING strong  1919   king   
+                    Case ChrW(&H594) : cant &= Indent2 ' Accent zaqef qatan        -  KING       51278    king    
+                    Case ChrW(&H592) : Return Indent1 ' Accent segol/sgol/segolta -  KING strong  1919   king   
                     Case ChrW(&H59D) ': cant &= "gereshmuqdam" ' Accent geresh muqdam      -  KING        5960             
                     Case ChrW(&H593) ': cant &= "shalshelet"' Accent shalshelet         -  KING          92  king     not bad at all, just too few to be much use right now
                     Case ChrW(&H595) ': cant &= "zaqefgadol"' Accent zaqef gadol        -  KING        3324  king     bad king

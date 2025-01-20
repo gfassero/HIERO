@@ -124,6 +124,11 @@ Partial Module Main
             End While
         End Using
 
+        ' Remove Dabars that have requested self-destruct
+        For i As Integer = hebrewTextList.Count - 1 To 0 Step -1
+            If hebrewTextList(i).Reference = Nothing Then hebrewTextList.RemoveAt(i)
+        Next
+
         HebrewText = hebrewTextList.ToArray
         Console.WriteLine(" Done!")
 

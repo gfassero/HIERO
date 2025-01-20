@@ -77,3 +77,4 @@ HIERO is formatted to indicate features of the Hebrew text:
   - The links at the top of the translation link to the *parashah peh* “open portion” section breaks (§).
   - Book titles are given as found in most modern Christian Bibles.
   - Book subtitles are given as translated from the traditional Hebrew titles.
+- Verses in Aramaic have a small triangle (&#9653;) before their verse numbers. The one verse that switches to Aramaic mid-verse is marked with a triangle where the Aramaic begins.

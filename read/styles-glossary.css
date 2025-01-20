@@ -1,0 +1,79 @@
+﻿#translation {
+    column-count: 1 !important;
+    -webkit-column-count: 1 !important;
+    -moz-column-count: 1 !important;
+}
+
+
+.glossary-caption {
+    padding: 0em;
+}
+
+.glossary-entry {
+    display: table-row;
+}
+
+.uniqueness {
+    background-color: #ffc040;
+}
+
+.coherence {
+    background-color: #ff80c0;
+}
+
+.uniqueness.coherence {
+    background-color: #ff4000;
+}
+
+.excused {
+    background-color: #d8d8d8;
+}
+
+.gloss-heb {
+    display: table-cell;
+    width: 5em;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.gloss-count {
+    display: table-cell;
+    font-style: italic;
+    text-align: right;
+}
+
+.gloss-eng {
+    display: table-cell;
+    width: 6em;
+    padding: 0em 1em;
+}
+
+.gloss-xlit {
+    font-style: italic;
+}
+
+    .gloss-xlit::after {
+        content: '. ';
+    }
+
+.gloss-comment {
+    display: table-cell;
+}
+
+details {
+    padding-left: 2em;
+}
+
+summary {
+    margin-left: -2em;
+}
+
+details[open] {
+    border-left: 1px solid black; /* Black border when open */
+    border-radius: 15px;
+}
+
+details {
+    border-left: 1px solid transparent; /* Black border when open */
+    border-radius: 15px;
+}

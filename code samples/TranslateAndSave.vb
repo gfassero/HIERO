@@ -1,4 +1,5 @@
-﻿Imports System.Xml
+﻿Imports System.Reflection
+Imports System.Xml
 
 Partial Module Main
 
@@ -6,6 +7,8 @@ Partial Module Main
     Dim Anchors As New List(Of (String, String, String))
 
     Sub TranslateAndSave(Optional biblicalcitation As String = Nothing, Optional outputDest As String = Nothing)
+        CleanVariables()
+
         Dim defaultDir As Boolean = False
         If outputDest = Nothing Then
             defaultDir = True

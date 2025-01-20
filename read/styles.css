@@ -1,4 +1,7 @@
-﻿body {
+﻿@import "styles-paragraph.css";
+@import "styles-span.css";
+
+body {
     display: flex;
     flex-direction: column;
     line-height: 1.5em; /* line spacing */
@@ -6,110 +9,44 @@
     margin: 0em;
 }
 
-.edit {
-    color: gray;
-}
-
 * {
     scroll-margin-top: 6em;
     scroll-behavior: smooth;
 }
 
-/*
-.tipcha::after {}
-.pashta::after {}
-.geresh::after {}
-.tevir::after {}
-.gereshmuqdam.revia::after {}
-.dehi::after {}
-.gershayim::after {}
-.zaqefgadol::after {}
-.zinor::after {}
-.qarney::after {}
-.telishagedola::after {}
-.yetiv::after {}
-.zarqa::after {}
-.gereshmuqdam:not([class*=" "])::after {}
-.shalshelet::after {}
-.ole::after {}
-*/
-
-/*
-.revia:not([class*=" "])::after {
-    content: ',';
-}
-.pazer::after {
-    content: ',';
-}
-
-
-.zaqefqatan::after {
-    content: '\a\00A0';
-    white-space: pre;
-    margin-inline-end: 4em;
-}
-
-
-.segol::after {
-    content: ' /\a\00A0';
-    white-space: pre;
-    margin-inline-end: 2em;
-}
-.atnach::after {
-    content: ' \a\00A0';
-    white-space: pre;
-    margin-inline-end: 2em;
-}
-
-.sofpasuq::after {
-    content: '\a';
-    white-space: pre;
-}
-.minorbreak::after {
-    margin: 1em 0em;
-    content: '\a';
-    white-space: pre;
-}
-.majorbreak::after {
-    margin: 1em 0em;
-    text-indent: 8em;
-    content: "§";
-    display: block;
-}
-*/
-
-.title, .book, .psalm, .anchor-book {
-    font-weight: bold;
-}
-/*
-.title, .book, .psalm, .anchor-book {
-    display: block;
-    margin-top: 2em;
-}
-.book {
-    margin-bottom: 0em;
-    text-indent: 8em;
-}
-.sepher {
-    display: block;
-    margin-top: 0em;
-    margin-bottom: 1em;
-    font-style: italic;
-    text-indent: 8em;
-}
-*/
-
 #header {
     order: -2; /* Place TOC first */
     position: sticky;
     top: 0px;
-    background-color: white;
-    padding: 1em 2em; /* top/bottom first, then left/right second */
+    padding: 1em; /* top/bottom first, then left/right second */
     border-bottom: 1px solid #c0c0c0;
+    z-index: 99;
+    background: white;
 }
 
 #translation {
-    padding: 0em 2em; /* top/bottom first, then left/right second */
+    padding: 0em 1em; /* top/bottom first, then left/right second */
+}
+
+@media print {
+    body {
+        font-size: 7pt;
+    }
+
+    #header, #table-of-sections, #footer {
+        display: none !important;
+    }
+
+    #translation {
+        padding: 0;
+        column-count: 2;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-fill: balance; /* Vertical use of space, default: balance the creation of columns is symmetrical. Auto with width: 100%, First complete the first column vertically, then the next column until the end of the content. */
+        column-gap: 2em; /* Distance between columns */
+        column-rule: 0.5pt solid #c0c0c0; /* Lines between columns */
+        column-width: auto; /* Width of all columns */
+    }
 }
 
 .anchor, .anchor-section, .anchor-psalm {
@@ -118,157 +55,14 @@
 
 #table-of-sections {
     order: -1; /* Place TOC first */
-    padding: 1em 2em; /* top/bottom first, then left/right second */
+    padding: 1em; /* top/bottom first, then left/right second */
     display: block;
     column-count: auto;
     column-width: 6em;
+    background: #e0e0e0;
 }
 
 #footer {
-    padding: 1em 2em; /* top/bottom first, then left/right second */
+    padding: 1em; /* top/bottom first, then left/right second */
     display: block;
 }
-
-:root {
-    --citation-box-width: 2.5em;
-    --chapter-diameter: 2.5em;
-}
-
-.citation {
-    vertical-align: top;
-    font-size: xx-small;
-    width: var(--citation-box-width);
-    display: inline-block;
-    position: relative;
-    z-index: -1;
-    right: var(--citation-box-width);
-    margin-right: calc(var(--citation-box-width) * -1);
-    text-align: right;
-}
-
-.chapter {
-    font-size: unset;
-    font-weight: 900;
-    background-color: #d8d8d8;
-    border-radius: 1000px;
-    z-index: -2;
-    /*  */
-    padding: var(--chapter-diameter);
-    margin: calc(var(--chapter-diameter) * -1);
-    padding-left: calc(var(--chapter-diameter) - 1em);
-    margin-left: calc(var(--chapter-diameter) * -1 + 1em);
-    padding-right: calc(1.5em + var(--chapter-diameter) - 1em);
-    margin-right: calc(var(--citation-box-width) * -1 - var(--chapter-diameter) - 0.5em);
-}
-
-.m {
-    /* background-color: #d0d0fa; */
-    border-bottom: 1px solid #c0c0c0;
-    border-radius: 5px;
-    /* text-decoration: underline 1px solid #c0c0c0; */
-}
-
-.f {
-    /* background-color: #ffc0cb; */
-    /* ANOTHER OPTION border-bottom: 2px dashed #808080;*/
-    border-bottom: 2px dashed #c0c0c0;
-    border-radius: 3px;
-    /* text-decoration: underline 2px dashed #c0c0c0; */
-}
-
-.c {
-    /* background-color: #C7F6C7; */
-}
-
-.m, .f, .c {
-    /* box-shadow: inset 0px 3px 4px 4px white; /* inset, right-offset, down-offset, blur, size, color */
-}
-
-/*
-.cchain {
-     border-bottom: 1px solid gray;
-}
-*/
-
-.glossary-caption {
-    padding: 0em;
-}
-
-.glossary-entry {
-    display: table-row;
-}
-.uniqueness {
-    background-color: #ffc040;
-}
-.coherence {
-    background-color: #ff80c0;
-}
-.uniqueness.coherence {
-    background-color: #ff4000;
-}
-.excused {
-    background-color: #d8d8d8;
-}
-
-.gloss-heb {
-    display: table-cell;
-    width: 5em;
-    font-size: 120%;
-    font-weight: bold;
-}
-
-.gloss-count {
-    display: table-cell;
-    font-style: italic;
-    text-align: right;
-}
-
-.gloss-eng {
-    display: table-cell;
-    width: 6em;
-    padding: 0em 1em;
-}
-
-.gloss-xlit {
-    font-style: italic;
-}
-
-.gloss-xlit::after {
-    content: '. ';
-}
-
-.gloss-comment {
-    display: table-cell;
-}
-
-details {
-    padding-left: 2em;
-}
-
-summary {
-    margin-left: -2em;
-}
-
-details[open] {
-    border-left: 1px solid black; /* Black border when open */
-    border-radius: 15px;
-}
-
-details {
-    border-left: 1px solid transparent; /* Black border when open */
-    border-radius: 15px;
-}
-
-
-
-/*
-.slur-container {
-    position: relative;
-    display: inline-block;
-}
-svg.slur {
-    position: absolute;
-    pointer-events: none;
-    overflow: visible;
-}
-*/

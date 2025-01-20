@@ -12,11 +12,11 @@
 				AnnounceCitation(dabar.Citation, (lastCitation = "" AndAlso Not suppressBookStart), dabar.Aramaic, suppressBookStart)
 				lastCitation = dabar.Citation
 
-			ElseIf dabar.Aramaic <> lastAramaic Then
-				Dim aramflag As String = IIf(dabar.Aramaic, AramaicFlag.Trim, Nothing)
+			ElseIf dabar.Aramaic <> lastAramaic Then ' Once in Dan.2.4
+				Dim aramflag As String = IIf(dabar.Aramaic, AramaicFlag, Nothing)
 				lastAramaic = dabar.Aramaic
 				If SaveToFileInsteadOfConsole Then ' SAVE to FILE
-					Reveal(CitationBegin & aramflag & CitationEnd, True)
+					Reveal(aramflag, True)
 				Else ' PRINT to CONSOLE
 					Reveal(" {" & aramflag & "} ", True)
 				End If

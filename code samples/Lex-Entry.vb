@@ -59,10 +59,8 @@ Partial Module Main
                             If particleholder = "" Then particleholder = " "c
                         Case 9016
                             particleholder = SofPasuq
-                        Case 9017
-                            particleholder = PeOpenMajorBreak
-                        Case 9018
-                            particleholder = SamekhClosedMinorBreak
+                        Case 9017, 9018
+                            particleholder = Nothing
                         Case Else
                             ReplaceSpaces(particleholder)
                     End Select
