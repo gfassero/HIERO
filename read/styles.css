@@ -4,7 +4,7 @@
 body {
     display: flex;
     flex-direction: column;
-    line-height: 1.5em; /* line spacing */
+    line-height: 1.3em; /* line spacing */
     padding: 0em;
     margin: 0em;
 }
@@ -12,12 +12,14 @@ body {
 * {
     scroll-margin-top: 6em;
     scroll-behavior: smooth;
+    font-family: serif;
+    font-size: 100%;
 }
 
 #header {
     order: -2; /* Place TOC first */
     position: sticky;
-    top: 0px;
+    top: 0;
     padding: 1em; /* top/bottom first, then left/right second */
     border-bottom: 1px solid #c0c0c0;
     z-index: 99;
@@ -42,9 +44,9 @@ body {
         column-count: 2;
         -webkit-column-count: 2;
         -moz-column-count: 2;
-        column-fill: balance; /* Vertical use of space, default: balance the creation of columns is symmetrical. Auto with width: 100%, First complete the first column vertically, then the next column until the end of the content. */
+        column-fill: balance; /* Creation of columns is symmetrical. */
         column-gap: 2em; /* Distance between columns */
-        column-rule: 0.5pt solid #c0c0c0; /* Lines between columns */
+        column-rule: 1px solid black; /* Lines between columns */
         column-width: auto; /* Width of all columns */
     }
 }

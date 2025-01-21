@@ -11,6 +11,9 @@
 .title, .book, .psalm, .anchor-book {
     font-weight: bold;
 }
+p.book:not(:first-of-type) {
+    break-before: page;
+}
 p.book, p.subtitle {
     padding-left: 5.4em; /* 1.8 + 1.2 * 3 */
 }
