@@ -16,7 +16,14 @@ Partial Module Main
 		Public ReadOnly _acteePlural As String
 		Public ReadOnly HasCustomActor As Boolean = False
 		Public Sub New(entry As XmlElement) ' Create stem from LEXICON.XML or HELPING-VERBS.XML 
-			Dim fixes As String() = PrefixVerbCloserSuffix(entry.InnerText.Replace(" "c, WordLink))
+			Dim fixes As String()
+			If System.String.IsNullOrEmpty(entry.InnerText) Then
+				Console.WriteLine()
+				Console.WriteLine("ERROR: Empty verb stem near " & entry.ParentNode.Item("xref").GetAttribute("strong"))
+				fixes = {"", "", "[NO VERB STEM]", ""}
+			Else
+				fixes = PrefixVerbCloserSuffix(entry.InnerText.Replace(" "c, WordLink))
+			End If
 			infinitive = fixes(0) & fixes(1) & fixes(2) & fixes(3)
 
 			Dim handled As Boolean = False
@@ -24,13 +31,19 @@ Partial Module Main
 				If fixes(1) = helpingVerb.infinitive Then
 					past = fixes(0) & helpingVerb.past & fixes(2) & fixes(3)
 					_passiveParticiple = fixes(0) & helpingVerb._passiveParticiple & fixes(2) & fixes(3)
-					_actorSingular = fixes(0) & helpingVerb._actorSingular & fixes(2) & fixes(3)
-					_actorPlural = fixes(0) & helpingVerb._actorPlural & fixes(2) & fixes(3)
 					thirdPersonSingular = fixes(0) & helpingVerb.thirdPersonSingular & fixes(2) & fixes(3)
 					firstPersonSingular = fixes(0) & helpingVerb.firstPersonSingular & fixes(2) & fixes(3)
 					presentPlural = fixes(0) & helpingVerb.presentPlural & fixes(2) & fixes(3)
 					past13PersonSingular = fixes(0) & helpingVerb.past13PersonSingular & fixes(2) & fixes(3)
-					gerund = fixes(0) & helpingVerb.gerund & fixes(2) & fixes(3)
+					If helpingVerb Is vBe AndAlso fixes(3) IsNot Nothing Then
+						gerund = fixes(3).TrimStart(WordLink)
+						_actorSingular = gerund
+						_actorPlural = gerund
+					Else
+						gerund = fixes(0) & helpingVerb.gerund & fixes(2) & fixes(3)
+						_actorSingular = fixes(0) & helpingVerb._actorSingular & fixes(2) & fixes(3)
+						_actorPlural = fixes(0) & helpingVerb._actorPlural & fixes(2) & fixes(3)
+					End If
 					_acteeSingular = fixes(0) & helpingVerb._acteeSingular & fixes(2) & fixes(3)
 					_acteePlural = fixes(0) & helpingVerb._acteePlural & fixes(2) & fixes(3)
 					HasCustomActor = helpingVerb.HasCustomActor
@@ -63,7 +76,7 @@ Partial Module Main
 					past = fixes(0) & fixes(1) & fixes(2) & "ed" & fixes(3)
 				End If
 
-			If entry.HasAttribute("form") Then
+				If entry.HasAttribute("form") Then
 					Select Case entry.Attributes.GetNamedItem("form").Value
 						Case "doubleFinal"
 							past = fixes(0) & fixes(1) & fixes(1)(fixes(1).Length - 1) & fixes(2) & "ed" & fixes(3)
@@ -211,7 +224,7 @@ Partial Module Main
 		' CLOSER = optional character }
 		' SUFFIX = ] and anything after a space
 
-		Dim fixes(4) As String
+		Dim fixes(3) As String
 
 		If root(0) = "["c OrElse root(0) = "{"c OrElse root(0) = "√"c Then
 			fixes(0) = root(0)

@@ -68,9 +68,9 @@
 							 "</body>" & vbCrLf &
 							 "</html>"
 
-	Public Const CustomTab = "&emsp;&emsp;"
-	Public Const CustomTabx2 = CustomTab & CustomTab
-	Public Const CustomTabx4 = CustomTabx2 & CustomTabx2
+	' Public Const CustomTab = "&emsp;&emsp;"
+	' Public Const CustomTabx2 = CustomTab & CustomTab
+	' Public Const CustomTabx4 = CustomTabx2 & CustomTabx2
 
 	Public Const Indent1 = "</p><p class=""in1"">" ' "<br/>" & CustomTab
 	Public Const Indent2 = "</p><p class=""in2"">" ' "<br/>" & CustomTabx2
@@ -78,7 +78,7 @@
 	'Public Const SofPasuq = " <span class=""sofpasuq"">:</span>"
 	'Public Const PeOpenMajorBreak = vbCrLf & "<span class=""majorbreak""></span>"
 	'Public Const SamekhClosedMinorBreak = vbCrLf & "<span class=""minorbreak""></span>"
-	Public Const SofPasuq = " :</p>"
+	Public Const SofPasuq = "&nbsp;:</p>"
 	Public Const PeOpenMajorBreakBegin = vbCrLf & "<p class=""section"" id=""section-"
 	Public Const PeOpenMajorBreakEnd = """>&sect;</p>"
 	Public Const SamekhClosedMinorBreak = vbCrLf & "<p class=""paragraph""></p>"
@@ -197,7 +197,7 @@
 	Sub Reveal(revelation As String, Optional bypassSpaceCheck As Boolean = False)
 
 		If Not SaveToFileInsteadOfConsole Then
-			revelation = Text.RegularExpressions.Regex.Replace(revelation, "<[^<>]+>", "").Replace("&emsp;", "")
+			revelation = Text.RegularExpressions.Regex.Replace(revelation, "<[^<>]+>", "").Replace("&nbsp;", " "c).Replace("&#9653; ", "")
 		End If
 
 		If (Not bypassSpaceCheck) AndAlso Text.RegularExpressions.Regex.Replace(revelation, "<[^<>]+>", "").Contains(" "c) Then
