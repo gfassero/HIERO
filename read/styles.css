@@ -7,14 +7,12 @@ body {
     line-height: 1.3em; /* line spacing */
     padding: 0em;
     margin: 0em;
-    font-size: 1rem !important;
 }
 
 * {
     scroll-margin-top: 6em;
     scroll-behavior: smooth;
     font-family: serif;
-    font-size: 1rem !important;
 }
 
 #header {
@@ -25,7 +23,6 @@ body {
     border-bottom: 1px solid #c0c0c0;
     z-index: 99;
     background: white;
-    font-size: 1em;
 }
 
 #translation {
@@ -57,7 +54,6 @@ body {
     display: block;
     width: 6em;
     white-space: nowrap;
-    font-size: 1rem !important;
 }
 
 #table-of-sections {
