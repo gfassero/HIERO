@@ -144,5 +144,6 @@ The Hebrew root *'aleph* is not root coherent. It appears either as “thousand�
 When Hebrew uses a single root to refer to a person, identifying the gender by a suffix, but English uses different roots to differentiate gender, the lexicon sometimes allows an exception from the requirement for root coherence. The words must still be root unique. The following is a complete list of these exceptions.
 - Root *'ach*/*'achowt*: *brother*, *sister*
 - Root *'almah*/*'elem*: *girl*, *boy*
+- Root *melek*/*malkah*: *king*, *queen*
 
-These words are excused because the words “brother” and “sister” and the words “girl” and “boy” are so closely related in English. These roots are still root unique, meaning that no other Hebrew word is translated “brother,” “sister,” “girl,” or “boy.” Details are in the lexicon.
+These words are excused because the masculine and feminine words in each pair are so closely related in English that we think of them as related. These roots are still root unique, meaning that no other Hebrew word is translated “brother,” “sister,” etc. Details are in the lexicon.
