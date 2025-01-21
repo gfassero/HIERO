@@ -13,7 +13,6 @@ body {
     scroll-margin-top: 6em;
     scroll-behavior: smooth;
     font-family: serif;
-    font-size: 100%;
 }
 
 #header {
@@ -24,9 +23,7 @@ body {
     border-bottom: 1px solid #c0c0c0;
     z-index: 99;
     background: white;
-}
-#header * {
-    font-size: 100%;
+    font-size: 1em;
 }
 
 #translation {
@@ -63,9 +60,14 @@ body {
 #table-of-sections {
     order: -1; /* Place TOC first */
     padding: 1em; /* top/bottom first, then left/right second */
-    display: block;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+
+    /*  display: block;
     column-count: auto;
     column-width: 6em;
+    grid-auto-columns: 1fr; */
     background: #e0e0e0;
 }
 
