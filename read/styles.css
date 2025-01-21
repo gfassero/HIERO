@@ -54,6 +54,8 @@ body {
 
 .anchor, .anchor-section, .anchor-psalm {
     display: block;
+    width: 6em;
+    white-space: nowrap;
 }
 
 #table-of-sections {
@@ -61,7 +63,7 @@ body {
     padding: 1em; /* top/bottom first, then left/right second */
     display: block;
     column-count: auto;
-    column-width: 6em !important;
+    column-width: 6em;
     background: #e0e0e0;
 }
 
