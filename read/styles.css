@@ -53,21 +53,16 @@ body {
 
 .anchor, .anchor-section, .anchor-psalm {
     display: block;
-    width: 12em;
+    width: 6em;
     white-space: nowrap;
+    font-size: 1rem;
 }
 
 #table-of-sections {
     order: -1; /* Place TOC first */
     padding: 1em; /* top/bottom first, then left/right second */
-
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
-
-    /*  display: block;
-    column-count: auto;
-    column-width: 6em;
-    grid-auto-columns: 1fr; */
+    grid-template-columns: repeat(auto-fill, minmax(6em, 1fr));
     background: #e0e0e0;
 }
 
