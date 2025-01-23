@@ -2,8 +2,10 @@
 Module Main
 
 	' *** CODE: ***
-	' Review INTERROGATIVE pronouns in Parse(). It was returning before getting tagged, and I have no idea whether it's being translated consistently.
-	' Preserve particle order in words such as Ecc.4.10#08, in which prepositions are AFTER the main lemma.
+	' Systematically review handling of:
+	' - relative particles and words
+	' - demonstrative particles
+	' - affirmative particles
 
 	' *** LEXICON: ***
 	' - Pierce => strike/stricken/strike [out]
@@ -16,21 +18,14 @@ Module Main
 	' - Merge parsing variants into main parsing.
 	' - Make Nt = Np
 
-	' Systematically review:
-	' - relative particles and words
-	' - demonstrative particles
-	' - affirmative particles
-
 	' *** TEXT: ***
 	' Most proper nouns aren't tagged with gender or number. Can I add them programatically?
 	' H9016.*c$ shouldn't happen.
 
 	' *** HEBREW COMPILER ***
-	' Further ideas for reducing parsing notes to a minimum:
-	' - Bring in the regexGrams from the lexicon. IDK how yet.
+	' Bring in the regexGrams from the lexicon. IDK how yet.
 
 	' *** GRAMMAR & IDIOM: ***
-	' Clean up prepositions: fork preposition translations depending on preceding verb.
 	' Check error log (.err).
 	' Article with perfect verb Td/V.p => "the one who ran" x20. Unknown nuance. (happens   1x in construct chain: Dan.8.1#12=L: probably a tagging error) (happens once with preposition Rd/V.p)
 
