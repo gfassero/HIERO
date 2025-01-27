@@ -10,7 +10,7 @@
 	Public Const ColorEnd = "</span>"
 
 	Public Const WordLink = "·"c
-	Public Const Space = " "c
+	Public Const Space = "&nbsp;&shy;" ' " "c
 	Public Const UnverifiedLexiconFlag = "¬"c ' "⌐"c
 
 	' Public Const beginQuestion = "¿"c
@@ -196,11 +196,11 @@
 
 	Sub Reveal(revelation As String, Optional bypassSpaceCheck As Boolean = False)
 
-		If Not SaveToFileInsteadOfConsole Then
-			revelation = Text.RegularExpressions.Regex.Replace(revelation, "<[^<>]+>", "").Replace("&nbsp;", " "c).Replace("&#9653; ", "")
+		If Not SaveToFileInsteadOfConsole Then ' IF PRINTING TO CONSOLE...
+			revelation = Text.RegularExpressions.Regex.Replace(revelation.Replace(":</p>", ":").Replace("</p>", ", "), "<[^<>]+>", "").Replace(Space, " "c).Replace("&nbsp;", " "c).Replace("&#9653; ", "")
 		End If
 
-		If (Not bypassSpaceCheck) AndAlso Text.RegularExpressions.Regex.Replace(revelation, "<[^<>]+>", "").Contains(" "c) Then
+		If (Not bypassSpaceCheck) AndAlso Text.RegularExpressions.Regex.Replace(revelation.TrimEnd, "<[^<>]+>", "").Contains(" "c) Then
 			Throw New ArgumentException("Unexpected space character in translation of single word")
 		End If
 

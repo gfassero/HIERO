@@ -56,7 +56,7 @@ Partial Module Main
                     Select Case CInt(strong)
                         Case 9014, 9015, 9019 ' PUNCTUATION
                             ' DO NOTHING
-                            If particleholder = "" Then particleholder = " "c
+                            If particleholder = "" Then particleholder = Space
                         Case 9016
                             particleholder = SofPasuq
                         Case 9017, 9018
