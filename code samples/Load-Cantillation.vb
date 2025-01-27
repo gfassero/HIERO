@@ -127,7 +127,7 @@
 
     Dim lastCantOle As Boolean = False
     Function ExtractCantillationHTML(HebrewText As String) As String
-        Dim cant As String = ""
+        Dim cant As String = Nothing
 
         If Strip(HebrewText, Cons_Vow_Conj_TagPunct_Code) = ChrW(&H5AB) & ChrW(&H5A5) Then ' Ole we-Yored (Ole + Merkha)
             lastCantOle = False
@@ -164,7 +164,7 @@
                     Case ChrW(&H59E) ': cant &= "gershayim" ' COUNT
                     Case ChrW(&H59F) ': cant &= "qarney" ' COUNT : qarney pfara/pazer gadol
                     Case ChrW(&H5A0) ': cant &= "telishagedola" ' COUNT
-                    Case ChrW(&H5A1) : cant &= "," ' COUNT pazer
+                    Case ChrW(&H5A1) ': cant &= "," ' COUNT pazer
 
                     Case ChrW(&H5AE) ': cant &= "" ' zinor
                     Case ChrW(&H5AB) ': cant &= "" ' ole
