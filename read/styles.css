@@ -52,7 +52,6 @@ body {
 
 .anchor, .anchor-section, .anchor-psalm {
     display: block;
-    width: 6em;
     white-space: nowrap;
 }
 
