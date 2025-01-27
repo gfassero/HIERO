@@ -10,7 +10,6 @@
 <verb past="did" pcpl="done" thrdSing="does" gerund="doing" actee="deed">do</verb>
 
 <verb past="spoke" pcpl="spoken" actor="speaker">speak</verb>
-<verb past="grew" pcpl="grown" actor="grower">grow</verb>
 <verb past="sang" pcpl="sung" actor="singer">sing</verb>
 
 <verb past="overthrew" pcpl="overthrown">overthrow</verb>
@@ -42,6 +41,7 @@
 <verb past="gave" pcpl="given">give</verb>
 <verb past="took" pcpl="taken">take</verb>
 <verb past="woke" pcpl="woken">wake</verb>
+<verb past="grew" pcpl="grown">grow</verb>
 <verb past="blew" pcpl="blown">blow</verb>
 <verb past="bit" pcpl="bitten">bite</verb>
 <verb past="hid" pcpl="hidden">hide</verb>
@@ -98,6 +98,7 @@
 <verb past="heard">hear</verb>
 <verb past="sped">speed</verb>
 <verb past="left">leave</verb>
+<verb past="sent">send</verb>
 <verb past="told">tell</verb>
 <verb past="felt">feel</verb>
 <verb past="rent">rend</verb>
@@ -148,6 +149,7 @@
 <verb form="doNotDoubleFinal">dishevel</verb>
 <verb form="doNotDoubleFinal">chisel</verb>
 <verb form="doNotDoubleFinal">cudgel</verb>
+<verb form="doNotDoubleFinal">disinherit</verb>
 <verb form="doNotDoubleFinal">imperil</verb>
 <verb form="doNotDoubleFinal">inherit</verb>
 <verb form="doNotDoubleFinal">interpret</verb>
