@@ -79,10 +79,9 @@
 								Throw New ArgumentException("Unexpected short, non-proper noun morph: " + GramMorph)  ' ERROR
 							End If
 
-							Select Case GramMorph(1)
-								Case "g"c, "p"c ' NOUN TYPE GENTILIC, or PROPER
-									ParseMorph = ProperNoun(ParseMorph)
-							End Select
+							If IsProper Then
+								ParseMorph = ProperNoun(ParseMorph)
+							End If
 
 							TagGender(ParseMorph, GramMorph(2), True)
 							ParseMorph &= EnglishConstructSuffix
