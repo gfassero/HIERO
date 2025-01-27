@@ -8,13 +8,13 @@ To understand HIERO best, I like to read passages that I already know well. Whil
 # Hebrew Idiom Quickstart
 A few facts about Hebrew that may help you understand HIERO’s translation:
 ### There is a dual number.
-Nouns, adjectives, and verbs have number. In addition to singular and plural number, Hebrew also offers a dual number, representing two of something. Two of something can be represented by either the dual or the plural. The dual usually represents not simply two things, but usually a pair of things, most often a part of the body.
+Nouns, adjectives, and verbs have number. In addition to singular and plural number, Hebrew also offers a dual number, representing two of something. Two of something can be represented by either the dual or the plural. The dual usually represents not simply two things, but usually a pair of things, most often a part of the body. The bodily association cannot be overemphasized and sometimes overshadows actual duality, as in Genesis 49:12, where the teeth, as a plural body part, are referred to in the dual.
 ### There are only two genders.
 Hebrew has only two genders—masculine and feminine—and no neuter gender. In HIERO, masculine words are underlined with a thin gray line, and feminine words are underlined with a thick dashed line. Nouns, adjectives, and verbs without an underline still have gender, but HIERO has not been able to identify their gender yet.
 ### Verbs have gender.
 Hebrew nouns, adjectives, and verbs are gendered (except first-person verbs). Verbs are gendered to match their subjects, just as adjectives are gendered to match their nouns.
 ### “°” marks the direct object.
-Hebrew has an untranslatable word *'et* that exists to point out the direct object of a verb. Like a preposition, it always precedes its object immediately. In HIERO, it is represented by the degree sign (°). The object is not always marked with this word, but it is helpful when it appears.
+Hebrew has an untranslatable word *'et* that exists to point out the direct object of a verb. Like a preposition, it always precedes its object immediately. In HIERO, it is represented by the degree sign (°). The object is not always marked with this word, but it is helpful when it appears. Sometimes an indirect object is marked in the same way.
 ### Word order varies.
 Expect some variation in word order. The normal order is Verb-Subject-Object, but other orders are common as well. Gender can provide a clue in matching a verb to its subject, just as in matching a modifier to what it modifies. The direct object marker, when present, is the best identifier of the object. 
 ### There is no copula.
@@ -28,12 +28,17 @@ This happens in English too:
 - “The fallen” (passive participle as noun)
   
 This is very common in Hebrew, and it can be disorienting. If you see “the” followed by an adjective or participle and no noun, this is probably why. Read as “*x* one(s)” if that helps. For active participles, consider reading it as an agent: For example, “he ruling” may mean “he [was] ruler.”
-### “from” can signal a comparative
+### “from” can signal a comparative.
 There is no comparative form of an adjective. Instead, two things being compared are often joined with the preposition “from,” which can mean “than.” For example, “good day in your courtyards from thousand” can be read as “[more] good [is a] day in your courtyards [than a] thousand [days]”
+### There is no “with” of instrument.
+A noun following a verb may be the noun by means of which an action is done. For example, Abimelech’s men “filled the wells [with] dust.” 
 ### Verse breaks
 The verse breaks usually follow the *sof passuk* punctuation marks in the Hebrew text. *Sof passuk*, which looks like a colon (:), is stronger than a comma but often weaker than a period.
 ### Line breaks
 The line breaks are based on a selection of *cantillation marks* in the Hebrew text. These usually have punctuating force, but their weight can vary. There can be a need for mental punctuation mid-line as well, so the reader should be alert to the needs of the text. Cantillation is more like music notation than like punctuation, so think of how song lyric lines do not always correspond to punctuation—they are more of an indication of where the author wants you to pause than of grammatical structure.
+
+When a line given by HIERO is too long to fit on the page, it wraps at the same indentation level, and a hyphen appears, not joined to any word, to mark the point where the line is wrapped.
+
 ### Section and paragraph breaks
 The chapter breaks do not exist in Hebrew. Instead, Hebrew has two different kinds of section breaks. HIERO represents the minor break as a paragraph break and the major break as a section break (§). At the top of the page, HIERO lists all the section breaks in the book as a kind of table of contents.
 ### Prepositions
@@ -71,7 +76,6 @@ HIERO is formatted to indicate features of the Hebrew text:
   - A colon (:) at the end of a line represents a *sof passuk* punctuation mark.
   - An indentation represents an *etnachta*, a *segol*, or an *ole we-jored* cantillation mark.
   - A double indentation represents a *zakef katan* cantillation mark.
-  - A comma (,) represents a *pazer* cantillation mark.
   - Other cantillation marks are ignored.
 - Header material
   - The links at the top of the translation link to the *parashah peh* “open portion” section breaks (§).
