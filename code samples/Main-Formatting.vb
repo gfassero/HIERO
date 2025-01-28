@@ -63,7 +63,7 @@
 		"<span class=""columnsTOC"">"
 	Public Const OutputFooterBegin = vbCrLf &
 		"</div>" & vbCrLf &
-		"<div id=""footer""><a href=""../"" class=""title"">About HIERO</a> / build "
+		"<div id=""footer""><a href=""../"" class=""title"">About HIERO</a>"
 	Public Const OutputEnd = "</div>" & vbCrLf &
 							 "</body>" & vbCrLf &
 							 "</html>"
@@ -223,11 +223,4 @@
 					 Replace("{"c, OpenXlit).
 					 Replace("}"c, CloseXlit)
 	End Function
-
-	Private RuntimeFooter As String
-	Sub GenerateRuntimeFooter()
-		RuntimeFooter = OutputFooterBegin &
-			Now.ToString("yy.MM-") &
-			(((((Now.Day - 1) * 24 + Now.Hour) * 60 + Now.Minute) * 60 + Now.Second) \ 27).ToString("D5")
-	End Sub
 End Module

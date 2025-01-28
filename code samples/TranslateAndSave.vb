@@ -59,7 +59,7 @@ Partial Module Main
             Next
 
             ' Close out HTML and File Stream
-            OutputFile.Write(RuntimeFooter & OutputEnd)
+            OutputFile.Write(OutputFooterBegin & OutputEnd)
             OutputFile.Close()
 
             Console.Title = "Translate"
