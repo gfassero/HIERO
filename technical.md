@@ -2,7 +2,7 @@
 HIERO consists of an [English lexicon](#english-lexicon), an [annotated Hebrew text](#annotated-hebrew-text), a [Hebrew parsing dictionary](#hebrew-parsing-dictionary), and the [program code](#program-code).
 
 # English Lexicon
-The English lexicon is the most important part of HIERO—and the part that has taken the most time by far to develop. The primary goal of the English lexicon is to link each Hebrew root with a single English root and vice versa. HIERO’s English lexicon contains about 9,500 definitions of Hebrew and Aramaic words. The lexicon is written in XML code. The XML code, part-of-speech mappings, and Strongs number mappings that structure the lexicon are based on the [OSHB Hebrew Lexicon](http://github.com/openscriptures/HebrewLexicon/blob/master/LexicalIndex.xml) by the [Open Scriptures Hebrew Bible Project](http://hb.openscriptures.org/). All of the definitions are my own. The following is a partial sample from the lexicon:
+The English lexicon is the most important part of HIERO—and the part that has taken the most time by far to develop. The primary goal of the English lexicon is to link each Hebrew root with a single English root and vice versa. HIERO’s English lexicon contains about 9,500 definitions of Hebrew and Aramaic words. The lexicon is written in XML code. The XML code, part-of-speech mappings, and Strongs number mappings that structure the lexicon are based on the [OSHB Hebrew Lexicon](http://github.com/openscriptures/HebrewLexicon/blob/master/HebrewStrong.xml) by the [Open Scriptures Hebrew Bible Project](http://hb.openscriptures.org/). All of the definitions are my own. The following is a partial sample from the lexicon:
 ```xml
 <entry><w xlit="bārāʾ">בָּרָא</w><pos>V</pos><qalAct>shape</qalAct>
 		<pielAct>reshape</pielAct>
@@ -88,5 +88,6 @@ The user views the output by opening the [HTML output files](read/). Read about 
 - Verify that interrogative pronouns are being tagged correctly.
 - Eliminate tagging errors caught by the error log.
 - Tag proper nouns with gender and number.
+- Finish adding proper nouns to lexicon.
 - Make translations of compound proper nouns more consistent.
 - Clean up translation of prepositions to improve English idiom.

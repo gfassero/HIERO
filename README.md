@@ -28,7 +28,7 @@ Following these two parameters—the second one especially—makes it impossible
 # Credits
 HIERO depends on the “[Translators Amalgamated Hebrew OT](http://github.com/STEPBible/STEPBible-Data/tree/master/Translators%20Amalgamated%20OT%2BNT)” (TAHOT) by [STEP Bible](http://www.stepbible.org/), licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). TAHOT provides the Hebrew text from which HIERO works, as well as lexical and grammatical tags on which HIERO’s Hebrew parsing dictionary is primarily based.
 
-HIERO also uses code from the “[OSHB Hebrew Lexicon](http://github.com/openscriptures/HebrewLexicon/blob/master/LexicalIndex.xml)” by the [Open Scriptures Hebrew Bible Project](http://hb.openscriptures.org/), licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). The OSHB Hebrew Lexicon contains XML code, part-of-speech mappings, and Strongs number mappings that structure HIERO’s English lexicon.
+HIERO also uses code from the “[OSHB Hebrew Lexicon](http://github.com/openscriptures/HebrewLexicon/blob/master/HebrewStrong.xml)” by the [Open Scriptures Hebrew Bible Project](http://hb.openscriptures.org/), licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). The OSHB Hebrew Lexicon contains XML code, part-of-speech mappings, and Strongs number mappings that structure HIERO’s English lexicon.
 
 The rest of my sources are [listed here](sources.md).
 
