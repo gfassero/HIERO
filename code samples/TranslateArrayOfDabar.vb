@@ -34,10 +34,12 @@
 			'If dabar.ConstructChainPos = ConstructChainPosition.Close AndAlso PrintConstructChains Then _
 			'	Reveal(ConstructChainEnd, True) ' Close construct chain
 
-			If dabar.Cantillation IsNot Nothing Then
-				Reveal(dabar.Cantillation, True) ' Add cantillation-based punctuation
+			If dabar.Cantillation Is Nothing Then ' Add a space to prepare for the next dabar
+				If dabar.Entries.Length <> 0 AndAlso Not dabar.Entries(dabar.Entries.Length - 1).SuppressFollowingSpace Then
+					Reveal(Space, True)
+				End If
 			Else
-				dabar.PrintFollowingSpaceIfAppropriate() ' Add a space to prepare for the next dabar
+				Reveal(dabar.Cantillation, True) ' Add cantillation-based punctuation
 			End If
 
 		Next

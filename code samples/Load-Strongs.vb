@@ -89,13 +89,13 @@ Partial Module Main
             End If
 
             Select Case StrongsLemma
-                Case "9012", "9013", "9016" To "9019"
+                Case "9012", "9013", "9019"
                     IsPunctuation = True
                 Case "9020" To "9049"
                     Is90xxPronoun = True
                 Case "0853", "9008"
                     SuppressFollowingSpace = True
-                Case "9014", "9015"
+                Case "9014" To "9018"
                     IsPunctuation = True
                     SuppressFollowingSpace = True
             End Select
@@ -111,27 +111,29 @@ Partial Module Main
                 ElseIf lexentry.LexiconPartOfSpeech.Length > 2 Then
                     Throw New ArgumentException("Unexpected <pos> in lexicon.")
 
-                ElseIf (
-                        lexentry.LexiconPartOfSpeech.Length = 1 AndAlso (
-                            Not lexentry.LexiconPartOfSpeech.Equals(GramMorph(0).ToString, StringComparison.CurrentCultureIgnoreCase) AndAlso
-                            Not (
-                                (GramMorph(0) = "N"c OrElse GramMorph(0) = "A"c) AndAlso
-                                (lexentry.LexiconPartOfSpeech = "N"c OrElse lexentry.LexiconPartOfSpeech = "A"c)
-                            )
-                        )
-                    ) OrElse
-                    (
-                        lexentry.LexiconPartOfSpeech.Length = 2 AndAlso (
-                            lexentry.LexiconPartOfSpeech.Length > GramMorph.Length OrElse (
-                                lexentry.LexiconPartOfSpeech <> GramMorph.Substring(0, 2) AndAlso (
-                                    lexentry.LexiconPartOfSpeech(0) <> "N"c OrElse
-                                    GramMorph(0) <> "N"c
-                                )
-                            )
-                        )
-                    ) Then
+                Else
+                    Dim err As Boolean = False
 
-                    errorlist.Add("Unexpected use of root " & StrongsLemma & " as " & GramMorph & "; lexicon lists as " & lexentry.LexiconPartOfSpeech & "; " & Regex.Matches(comp, StrongsLemma).Count & " instances; " & reference)
+                    If lexentry.LexiconPartOfSpeech.Length = 1 Then
+                        If Not lexentry.LexiconPartOfSpeech.Equals(GramMorph(0).ToString, StringComparison.CurrentCultureIgnoreCase) Then
+                            If GramMorph(0) <> "N"c AndAlso GramMorph(0) <> "A"c Then
+                                err = True
+                            ElseIf lexentry.LexiconPartOfSpeech <> "N"c AndAlso lexentry.LexiconPartOfSpeech <> "A"c Then
+                                err = True
+                            End If
+                        End If
+                    ElseIf lexentry.LexiconPartOfSpeech.Length = 2 Then
+                        If lexentry.LexiconPartOfSpeech.Length > GramMorph.Length Then
+                            err = True
+                        ElseIf lexentry.LexiconPartOfSpeech <> GramMorph.Substring(0, 2) Then
+                            If lexentry.LexiconPartOfSpeech(0) <> "N"c OrElse GramMorph(0) <> "N"c Then
+                                err = True
+                            End If
+                        End If
+                    End If
+
+                    If err Then errorlist.Add("Unexpected use of root " & StrongsLemma & " as " & GramMorph & "; lexicon lists as " & lexentry.LexiconPartOfSpeech & "; " & Regex.Matches(comp, StrongsLemma).Count & " instances; " & reference)
+
                 End If
             ElseIf (Not Is90xxPronoun) Then
                 If StrongsLemma.EndsWith("+"c) Then
