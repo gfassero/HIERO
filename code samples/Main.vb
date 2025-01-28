@@ -16,16 +16,13 @@ Module Main
 
 	' *** PARSING DICTIONARY: ***
 	' - Merge parsing variants into main parsing.
-	' - Make Nt = Np
+	' - Bring in the regexGrams from the lexicon. IDK how yet.
 
 	' *** TEXT: ***
 	' Most proper nouns aren't tagged with gender or number. Can I add them programatically?
 	' H9016.*c$ shouldn't happen.
 	' Verify all \{.*\{
 	' Should there be any words in the construct state with articles?
-
-	' *** HEBREW COMPILER ***
-	' Bring in the regexGrams from the lexicon. IDK how yet.
 
 	' *** GRAMMAR & IDIOM: ***
 	' Check error log (.err).
