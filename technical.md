@@ -74,7 +74,7 @@ Further reading:
 - [A longer excerpt from the parsing dictionary](resource%20samples/parsingDictionary_EXCERPT.bin)
 
 # Program Code
-HIERO is written in Visual Basic and contains 2,100 lines of executable code. HIERO can start up and translate the entire Hebrew Old Testament in fifteen seconds on an ordinary laptop. Much of the code is available in HIERO’s GitHub repository under “code samples.” HIERO does not use artificial intelligence.
+HIERO is written in Visual Basic and contains 2,100 lines of executable code. Much of the code is available in HIERO’s GitHub repository under “code samples.” HIERO does not use artificial intelligence. Translating the Hebrew Old Testament takes 24 seconds on an ordinary laptop.
 
 To begin translation, HIERO iterates through the annotated Hebrew text, one word at a time. For each word, HIERO looks up the corresponding parsing from the Hebrew parsing dictionary, using the annotations from the Hebrew text, if any exist. Once the parsing has been obtained, HIERO uses the word’s lexicon tag to look up its translation in the English lexicon. HIERO uses the word’s morphology tag to inflect the English translation and apply appropriate formatting via CSS. HIERO extracts cantillation marks from the Hebrew word and uses them to apply English punctuation or line breaks via XHTML. Finally, HIERO outputs the result to an HTML file. HIERO then moves to the next word and repeats.
 
@@ -89,7 +89,4 @@ The user views the output by opening the [HTML output files](read/). Read about 
 - Eliminate tagging errors caught by the error log.
 - Tag proper nouns with gender and number.
 - Make translations of compound proper nouns more consistent.
-- Look into Hebrew texts of deuterocanonical books.
-- Provide textual footnotes, including ketiv.
-- Determine whether additional punctuation or cantillation marks should be rendered.
 - Clean up translation of prepositions to improve English idiom.
