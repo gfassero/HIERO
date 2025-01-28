@@ -1,5 +1,6 @@
 ﻿// This file is a sample of the Psalms Translator's corrections to STEP Bible's TAHOT
-// data. This sample contains 32 lines. The full file contains 1,145 lines.
+// data. This sample contains 32 lines. The complete list is split into four files and
+// contains 4,948 lines.
 -
 // This content may not be copied, shared, distributed, modified, or used for any purpose,
 // commercial or non-commercial, without prior written permission from the author.
