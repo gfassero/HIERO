@@ -140,12 +140,5 @@ Partial Module Main
 
         LoadBookNames()
 
-        Using errorfile As System.IO.StreamWriter = FileIO.FileSystem.OpenTextFileWriter(ProjectPath & "\HIERO.err", False)
-            errorlist.Sort()
-            For Each e As String In errorlist
-                errorfile.WriteLine(e)
-            Next
-        End Using
-
     End Sub
 End Module
