@@ -60,7 +60,8 @@ p::before {
     font-size: 60%;
 }
 p.chapter::before {
-    width: 1em; /* Reserves space for the number */
+    width: 1.5em; /* Reserves space for the number */
+    left: -0.5em;
     font-size: 166.67%;
     font-weight: bold;
 }

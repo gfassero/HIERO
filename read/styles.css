@@ -22,7 +22,7 @@ body {
     padding: 1em; /* top/bottom first, then left/right second */
     border-bottom: 1px solid #c0c0c0;
     z-index: 99;
-    background: white;
+    background: #f4f4f4;
 }
 
 #translation {

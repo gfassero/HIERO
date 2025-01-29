@@ -131,7 +131,6 @@
 	Sub AnnounceCitation(citation As String, announceStart As Boolean, aramaic As Boolean, Optional suppressBookStart As Boolean = False)
 		citation = StripAlternativeNumbering(citation)
 
-		Dim aramflag As String = IIf(aramaic, AramaicFlag, Nothing)
 		lastAramaic = aramaic
 
 		Dim citParts() As String = citation.Split("."c)
@@ -166,20 +165,20 @@
 				Reveal("<p>", True)
 
 			ElseIf citParts(2) <> "1" OrElse citParts(0) = "Psa" Then
-				Reveal(CitationBegin & aramflag & citParts(2) & CitationEnd, True)
+				Reveal(CitationBegin & IIf(aramaic, AramaicFlag, Nothing) & citParts(2) & CitationEnd, True)
 
 			Else
-				Reveal(CitationBeginChapter & aramflag & citParts(1) & CitationEnd, True)
+				Reveal(CitationBeginChapter & IIf(aramaic, AramaicFlag.TrimEnd, Nothing) & citParts(1) & CitationEnd, True)
 
 			End If
 
 		Else ' PRINT to CONSOLE
 
 			If announceStart Then
-				Reveal(aramflag & citation & ": ", True)
+				Reveal(IIf(aramaic, AramaicFlag, Nothing) & citation & ": ", True)
 
 			Else
-				Reveal(" (" & citParts(1) & ":" & aramflag & citParts(2) & ") ", True)
+				Reveal(" (" & citParts(1) & ":" & IIf(aramaic, AramaicFlag, Nothing) & citParts(2) & ") ", True)
 
 			End If
 
