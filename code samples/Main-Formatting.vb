@@ -15,7 +15,6 @@
 
 	' Public Const beginQuestion = "¿"c
 
-	Private maqqef As String ' Defined later, after the lexicon is generated.
 	Private aramaicThe As String ' Defined later, after the lexicon is generated.
 	'Public ParticipleSingDefinite As String
 	'Public ParticiplePlurDefinite As String
@@ -75,10 +74,10 @@
 	Public Const Indent1 = "</p><p class=""in1"">" ' "<br/>" & CustomTab
 	Public Const Indent2 = "</p><p class=""in2"">" ' "<br/>" & CustomTabx2
 
-	'Public Const SofPasuq = " <span class=""sofpasuq"">:</span>"
-	'Public Const PeOpenMajorBreak = vbCrLf & "<span class=""majorbreak""></span>"
-	'Public Const SamekhClosedMinorBreak = vbCrLf & "<span class=""minorbreak""></span>"
 	Public Const SofPasuq = "&nbsp;:</p>"
+	Public Const EndLine = "</p>"
+	Public Const FLAG_PeOpenMajor = "FLAG_PeOpenMajor"
+	Public Const FLAG_SaClosMinor = "FLAG_SaClosMinor"
 	Public Const PeOpenMajorBreakBegin = vbCrLf & "<p class=""section"" id=""section-"
 	Public Const PeOpenMajorBreakEnd = """>&sect;</p>"
 	Public Const SamekhClosedMinorBreak = vbCrLf & "<p class=""paragraph""></p>"
@@ -195,6 +194,7 @@
 	End Sub
 
 	Sub Reveal(revelation As String, Optional bypassSpaceCheck As Boolean = False)
+		If revelation Is Nothing Then Exit Sub
 
 		If Not SaveToFileInsteadOfConsole Then ' IF PRINTING TO CONSOLE...
 			revelation = Text.RegularExpressions.Regex.Replace(revelation.Replace(":</p>", ":").Replace("</p>", ", "), "<[^<>]+>", "").Replace(Space, " "c).Replace("&nbsp;", " "c).Replace("&#9653; ", "")

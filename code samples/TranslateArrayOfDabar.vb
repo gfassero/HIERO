@@ -25,11 +25,7 @@
 			'If dabar.ConstructChainPos = ConstructChainPosition.Open AndAlso PrintConstructChains Then _
 			'	Reveal(ConstructChainBegin, True) ' Open construct chain
 
-			If h + 1 < dabars.Length Then
-				dabar.Translate(searchList, dabars(h + 1).Citation) ' Translate the dabar
-			Else
-				dabar.Translate(searchList) ' Translate the dabar
-			End If
+			dabar.Translate(searchList) ' Translate the dabar
 
 			'If dabar.ConstructChainPos = ConstructChainPosition.Close AndAlso PrintConstructChains Then _
 			'	Reveal(ConstructChainEnd, True) ' Close construct chain
@@ -38,8 +34,38 @@
 				If dabar.Entries.Length <> 0 AndAlso Not dabar.Entries(dabar.Entries.Length - 1).SuppressFollowingSpace Then
 					Reveal(Space, True)
 				End If
+
+			ElseIf dabar.Cantillation.EndsWith(FLAG_PeOpenMajor) Then
+				Reveal(IIf(dabar.Cantillation.StartsWith(SofPasuq), SofPasuq, EndLine), True)
+
+				If h < dabars.Length - 1 Then
+
+					If dabars(h + 1).Citation = dabars(h).Citation Then Reveal("</p>", True)
+
+					Reveal(PeOpenMajorBreakBegin & dabars(h + 1).Citation & PeOpenMajorBreakEnd, True)
+
+					If dabars(h + 1).Citation = dabars(h).Citation Then Reveal(vbCrLf & "<p>", True)
+
+					Anchors.Add((
+							"section-" & dabars(h + 1).Citation,                ' Anchor name
+							"anchor-section",                                   ' CSS class in TOC
+							StripAlternativeNumbering(dabars(h + 1).Citation)   ' Display name in TOC
+							))
+				End If
+
+			ElseIf dabar.Cantillation.EndsWith(FLAG_SaClosMinor) Then
+				Reveal(IIf(dabar.Cantillation.StartsWith(SofPasuq), SofPasuq, EndLine), True)
+
+				If h < dabars.Length - 1 Then
+					If dabars(h + 1).Citation = dabars(h).Citation Then Reveal("</p>", True)
+
+					Reveal(SamekhClosedMinorBreak, True)
+
+					If dabars(h + 1).Citation = dabars(h).Citation Then Reveal(vbCrLf & "<p>", True)
+				End If
+
 			Else
-				Reveal(dabar.Cantillation, True) ' Add cantillation-based punctuation
+					Reveal(dabar.Cantillation, True) ' Add cantillation-based punctuation
 			End If
 
 		Next

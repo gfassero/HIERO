@@ -129,14 +129,30 @@
     Function ExtractCantillationHTML(HebrewText As String) As String
         Dim cant As String = Nothing
 
-        If Strip(HebrewText, Cons_Vow_Conj_TagPunct_Code) = ChrW(&H5AB) & ChrW(&H5A5) Then ' Ole we-Yored (Ole + Merkha)
+        HebrewText = HebrewText.Replace(ChrW(&H5C6), "").TrimEnd(" "c)
+
+        If HebrewText.EndsWith("׃"c) Then
+            Return SofPasuq
+        ElseIf HebrewText.EndsWith("׃פ") OrElse HebrewText.EndsWith(" פ") Then
+            Return IIf(HebrewText.Contains("׃"c), SofPasuq, Nothing) & FLAG_PeOpenMajor
+        ElseIf HebrewText.EndsWith("׃ס") OrElse HebrewText.EndsWith(" ס") Then
+            Return IIf(HebrewText.Contains("׃"c), SofPasuq, Nothing) & FLAG_SaClosMinor
+        End If
+
+        If HebrewText.Contains("׃"c) Then
+            Throw New ArgumentException("This function should have returned already!")
+
+        ElseIf Strip(HebrewText, Cons_Vow_Conj_TagPunct_Code) = ChrW(&H5AB) & ChrW(&H5A5) Then ' Ole we-Yored (Ole + Merkha)
             lastCantOle = False
             Return Indent1
+
         ElseIf Strip(HebrewText, Cons_Vow_Conj_TagPunct_Code) = ChrW(&H5AB) Then ' Ole
             lastCantOle = True
+
         ElseIf lastCantOle AndAlso Strip(HebrewText, Cons_Vow_Conj_TagPunct_Code) = ChrW(&H5A5) Then ' Yored (Merkha)
             lastCantOle = False
             Return Indent1
+
         Else
             lastCantOle = False
         End If
@@ -179,71 +195,71 @@
         Return cant
     End Function
 
-    Function ExtractCantillationCSS(HebrewText As String) As String
-        Dim cant As String = ""
+    'Function ExtractCantillationCSS(HebrewText As String) As String
+    '    Dim cant As String = ""
 
-        For Each c As Char In HebrewText
-            If Not Cons_Vow_Conj_TagPunct_Code.Contains(c) Then
-                Select Case c
-                    Case ChrW(&H591) : cant &= "atnach" ' Accent etnahta/atnach     - EMPEROR     43423    empr    king
+    '    For Each c As Char In HebrewText
+    '        If Not Cons_Vow_Conj_TagPunct_Code.Contains(c) Then
+    '            Select Case c
+    '                Case ChrW(&H591) : cant &= "atnach" ' Accent etnahta/atnach     - EMPEROR     43423    empr    king
 
-                    Case ChrW(&H594) : cant &= "zaqefqatan" ' Accent zaqef qatan        -  KING       51278    king    
-                    Case ChrW(&H592) : cant &= "segol" ' Accent segol/sgol/segolta -  KING strong  1919   king   
-                    Case ChrW(&H59D) : cant &= "gereshmuqdam" ' Accent geresh muqdam      -  KING        5960             
-                    Case ChrW(&H593) ': cant &= "shalshelet"' Accent shalshelet         -  KING          92  king     not bad at all, just too few to be much use right now
-                    Case ChrW(&H595) ': cant &= "zaqefgadol"' Accent zaqef gadol        -  KING        3324  king     bad king
-                    Case ChrW(&H596) ': cant &= "tipcha"' Accent tipeha/meayla/tipcha/tarcha KING 74469  king    
+    '                Case ChrW(&H594) : cant &= "zaqefqatan" ' Accent zaqef qatan        -  KING       51278    king    
+    '                Case ChrW(&H592) : cant &= "segol" ' Accent segol/sgol/segolta -  KING strong  1919   king   
+    '                Case ChrW(&H59D) : cant &= "gereshmuqdam" ' Accent geresh muqdam      -  KING        5960             
+    '                Case ChrW(&H593) ': cant &= "shalshelet"' Accent shalshelet         -  KING          92  king     not bad at all, just too few to be much use right now
+    '                Case ChrW(&H595) ': cant &= "zaqefgadol"' Accent zaqef gadol        -  KING        3324  king     bad king
+    '                Case ChrW(&H596) ': cant &= "tipcha"' Accent tipeha/meayla/tipcha/tarcha KING 74469  king    
 
-                    Case ChrW(&H598) ': cant &= "zarqa" ' DUKE
-                    Case ChrW(&H599) ': cant &= "pashta" ' DUKE
-                    Case ChrW(&H59A) ': cant &= "yetiv" ' DUKE
-                    Case ChrW(&H59B) ': cant &= "tevir" ' DUKE
-                    Case ChrW(&H597) : cant &= "revia" ' DUKE
-                    Case ChrW(&H5AD) ': cant &= "dehi" ' DUKE
+    '                Case ChrW(&H598) ': cant &= "zarqa" ' DUKE
+    '                Case ChrW(&H599) ': cant &= "pashta" ' DUKE
+    '                Case ChrW(&H59A) ': cant &= "yetiv" ' DUKE
+    '                Case ChrW(&H59B) ': cant &= "tevir" ' DUKE
+    '                Case ChrW(&H597) : cant &= "revia" ' DUKE
+    '                Case ChrW(&H5AD) ': cant &= "dehi" ' DUKE
 
-                    Case ChrW(&H59C) ': cant &= "geresh" ' COUNT
-                    Case ChrW(&H59E) ': cant &= "gershayim" ' COUNT
-                    Case ChrW(&H59F) ': cant &= "qarney" ' COUNT : qarney pfara/pazer gadol
-                    Case ChrW(&H5A0) ': cant &= "telishagedola" ' COUNT
-                    Case ChrW(&H5A1) : cant &= "pazer" ' COUNT
+    '                Case ChrW(&H59C) ': cant &= "geresh" ' COUNT
+    '                Case ChrW(&H59E) ': cant &= "gershayim" ' COUNT
+    '                Case ChrW(&H59F) ': cant &= "qarney" ' COUNT : qarney pfara/pazer gadol
+    '                Case ChrW(&H5A0) ': cant &= "telishagedola" ' COUNT
+    '                Case ChrW(&H5A1) : cant &= "pazer" ' COUNT
 
-                    Case ChrW(&H5AB) ': cant &= "ole"
-                    Case ChrW(&H5AE) ': cant &= "zinor"
+    '                Case ChrW(&H5AB) ': cant &= "ole"
+    '                Case ChrW(&H5AE) ': cant &= "zinor"
 
-                    Case Else : Throw New ArgumentException("Exception Occurred")
-                End Select
-                cant &= " "c
-            End If
-        Next
+    '                Case Else : Throw New ArgumentException("Exception Occurred")
+    '            End Select
+    '            cant &= " "c
+    '        End If
+    '    Next
 
-        If Not CantillationVariations.TryAdd(cant, 1) Then
-            CantillationVariations(cant) += 1
-        End If
+    '    If Not CantillationVariations.TryAdd(cant, 1) Then
+    '        CantillationVariations(cant) += 1
+    '    End If
 
-        If cant.Replace(" "c, "").Length = 0 Then
-            Return Nothing
-        Else
-            Return CantillationOpen & cant.TrimEnd(" "c) & CantillationClose
-        End If
-    End Function
+    '    If cant.Replace(" "c, "").Length = 0 Then
+    '        Return Nothing
+    '    Else
+    '        Return CantillationOpen & cant.TrimEnd(" "c) & CantillationClose
+    '    End If
+    'End Function
 
-    Function ParseTaggedPunctuation(punctuation As String) As String
-        Dim parsing As String = ""
+    'Function ParseTaggedPunctuation(punctuation As String) As String
+    '    Dim parsing As String = ""
 
-        For Each c As Char In punctuation
-            Select Case c
-                Case ChrW(&H5BE) : parsing &= "\H9014" ' Maqaf
-                Case ChrW(&H5C0) : parsing &= "\H9015" ' Paseq
-                Case ChrW(&H5C3) : parsing &= "\H9016" ' Sof Pasuq
-                Case ChrW(&H5E4) : parsing &= "\ \H9017" ' Pe break
-                Case ChrW(&H5E1) : parsing &= "\ \H9018" ' Samekh break
-                Case ChrW(&H5C6) : parsing &= "\ \H9019" ' Reversed Nun
+    '    For Each c As Char In punctuation
+    '        Select Case c
+    '            Case ChrW(&H5BE) : parsing &= "\H9014" ' Maqaf
+    '            Case ChrW(&H5C0) : parsing &= "\H9015" ' Paseq
+    '            Case ChrW(&H5C3) : parsing &= "\H9016" ' Sof Pasuq
+    '            Case ChrW(&H5E4) : parsing &= "\ \H9017" ' Pe break
+    '            Case ChrW(&H5E1) : parsing &= "\ \H9018" ' Samekh break
+    '            Case ChrW(&H5C6) : parsing &= "\ \H9019" ' Reversed Nun
 
-                Case Else : Throw New ArgumentException("Exception Occurred")
-            End Select
-        Next
+    '            Case Else : Throw New ArgumentException("Exception Occurred")
+    '        End Select
+    '    Next
 
-        Return parsing
-    End Function
+    '    Return parsing
+    'End Function
 
 End Module

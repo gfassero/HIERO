@@ -132,7 +132,7 @@ Partial Module Main
                         End If
                     End If
 
-                    If err Then errorlist.Add("Unexpected use of root " & StrongsLemma & " as " & GramMorph & "; lexicon lists as " & lexentry.LexiconPartOfSpeech & "; " & Regex.Matches(comp, StrongsLemma).Count & " instances; " & reference)
+                    If err Then errorlist.Add("Unexpected use of root " & StrongsLemma & " as " & GramMorph & "; lexicon lists as " & lexentry.LexiconPartOfSpeech & "; " & Regex.Matches("COMPILED STEP FILE", StrongsLemma).Count & "%% instances; " & reference)
 
                 End If
             ElseIf (Not Is90xxPronoun) Then
@@ -227,88 +227,62 @@ Partial Module Main
 
         End Sub
 
-        Sub Translate(searchList() As String, Optional nextCitation As String = Nothing)
+        Sub Translate(searchList() As String)
             ' TRANSLATE 90xx dStrong lemmas (some of the pronouns) ... handled here because they aren't in the lexicon.
             If Is90xxPronoun Then
                 Reveal(ParseMorph())
+                Exit Sub
+            End If
+
+            ' Else... TRANSLATE MOST OF EVERYTHING HERE
+
+            Dim translation As String = ParseMorph()
+
+            ' CAPITALIZE THE WORD THAT THE CONCORDANCE IS SEARCHING FOR
+            If searchList IsNot Nothing _
+                AndAlso searchList.Contains(StrongsLemma) Then translation = translation.ToUpper
+
+            ' Add "THE" to construct chains, or add possessives, or add "THOSE THAT...", etc.
+            If CustomArticle IsNot Nothing Then
+                Reveal(CustomArticle & WordLink)
+            ElseIf Definite AndAlso Not SuppressDefArt AndAlso (Not IsProper OrElse HasDefiniteArticle) Then
+                Reveal(RtLexicon("9009").Particle & WordLink)
+            End If
 
 
-                ' TRANSLATE 90xx dStrong lemmas (punctuation) ... handled here to avoid spacing issues.
-            ElseIf IsPunctuation Then
-
-                If nextCitation Is Nothing AndAlso (StrongsLemma = "9017" OrElse StrongsLemma = "9018") Then
-                    ' Omit section break at end of printout
-
-                ElseIf StrongsLemma = "9017" Then
-                    If nextCitation = ParentDabar.Citation Then Reveal("</p>", True)
-                    Reveal(PeOpenMajorBreakBegin & nextCitation & PeOpenMajorBreakEnd, True)
-                    If nextCitation = ParentDabar.Citation Then Reveal(vbCrLf & "<p>", True)
-                    Anchors.Add((
-                            "section-" & nextCitation,                ' Anchor name
-                            "anchor-section",                         ' CSS class in TOC
-                            StripAlternativeNumbering(nextCitation)   ' Display name in TOC
-                            ))
-
-                ElseIf StrongsLemma = "9018" Then
-                    If nextCitation = ParentDabar.Citation Then Reveal("</p>", True)
-                    Reveal(SamekhClosedMinorBreak, True)
-                    If nextCitation = ParentDabar.Citation Then Reveal(vbCrLf & "<p>", True)
-
-                Else
-                    Reveal(ParseMorph(), True)
-                End If
-
-            Else ' TRANSLATE MOST OF EVERYTHING HERE
-                Dim translation As String = ParseMorph()
-
-                ' CAPITALIZE THE WORD THAT THE CONCORDANCE IS SEARCHING FOR
-                If searchList IsNot Nothing _
-                    AndAlso searchList.Contains(StrongsLemma) Then translation = translation.ToUpper
-
-                ' Add "THE" to construct chains, or add possessives, or add "THOSE THAT...", etc.
-                If CustomArticle IsNot Nothing Then
-                    Reveal(CustomArticle & WordLink)
-                ElseIf Definite AndAlso Not SuppressDefArt AndAlso (Not IsProper OrElse HasDefiniteArticle) Then
-                    Reveal(RtLexicon("9009").Particle & WordLink)
-                End If
-
-
-                ' HANDLE MULTI-WORD VERBS THAT PREFER INTERNALIZED OBJECT
-                If IsMainLemma AndAlso ParentDabar.ObjectPronounSuffix IsNot Nothing Then
-                    If translation.Contains("°"c) Then
-                        If translation.Length > 1 Then ' translation is a verb that prefers direct object as infix
-                            translation = translation.Replace("°", ParentDabar.ObjectPronounSuffix & WordLink)
-                        Else
-                            translation &= ParentDabar.ObjectPronounSuffix
-                            SuppressFollowingSpace = False
-                        End If
+            ' HANDLE MULTI-WORD VERBS THAT PREFER INTERNALIZED OBJECT
+            If IsMainLemma AndAlso ParentDabar.ObjectPronounSuffix IsNot Nothing Then
+                If translation.Contains("°"c) Then
+                    If translation.Length > 1 Then ' translation is a verb that prefers direct object as infix
+                        translation = translation.Replace("°", ParentDabar.ObjectPronounSuffix & WordLink)
                     Else
-                        translation &= WordLink & ParentDabar.ObjectPronounSuffix
+                        translation &= ParentDabar.ObjectPronounSuffix
                         SuppressFollowingSpace = False
                     End If
-                ElseIf translation.Contains("°"c) AndAlso translation.Length > 1 Then
-                    translation = translation.Replace("°", Nothing)
+                Else
+                    translation &= WordLink & ParentDabar.ObjectPronounSuffix
+                    SuppressFollowingSpace = False
                 End If
+            ElseIf translation.Contains("°"c) AndAlso translation.Length > 1 Then
+                translation = translation.Replace("°", Nothing)
+            End If
 
-                Reveal(translation)
+            Reveal(translation)
 
 
-                Dim topLevelEntry As String = RtLexicon(StrongsLemma).TopLevelStrongs
+            Dim topLevelEntry As String = RtLexicon(StrongsLemma).TopLevelStrongs
 
-                If Not IsProper Then ' TRACK WORD FREQUENCIES for use in glossary
-                    If Not UsedWords.TryAdd(topLevelEntry, 1) Then
-                        UsedWords.Item(topLevelEntry) += 1
-                    End If
+            If Not IsProper Then ' TRACK WORD FREQUENCIES for use in glossary
+                If Not UsedWords.TryAdd(topLevelEntry, 1) Then
+                    UsedWords.Item(topLevelEntry) += 1
                 End If
+            End If
 
-                ' TRACK UNTRANSLATED WORDS while developing the lexicon
-                If translation.Contains(UnverifiedLexiconFlag) Then
-                    If Not UntranslatedRoots.TryAdd(topLevelEntry, 1) Then _
-                        UntranslatedRoots.Item(topLevelEntry) += 1
-                End If
-
+            ' TRACK UNTRANSLATED WORDS while developing the lexicon
+            If translation.Contains(UnverifiedLexiconFlag) Then
+                If Not UntranslatedRoots.TryAdd(topLevelEntry, 1) Then _
+                    UntranslatedRoots.Item(topLevelEntry) += 1
             End If
         End Sub
-
     End Class
 End Module
