@@ -13,11 +13,7 @@
 	Public Const Space = "&nbsp;&shy;" ' " "c
 	Public Const UnverifiedLexiconFlag = "¬"c ' "⌐"c
 
-	' Public Const beginQuestion = "¿"c
-
 	Private aramaicThe As String ' Defined later, after the lexicon is generated.
-	'Public ParticipleSingDefinite As String
-	'Public ParticiplePlurDefinite As String
 
 	Public Const ParticipleSing = "that"
 	Public Const ParticiplePlur = "that" ' "those" & WordLink & "that"
@@ -82,8 +78,8 @@
 	Public Const PeOpenMajorBreakEnd = """>&sect;</p>"
 	Public Const SamekhClosedMinorBreak = vbCrLf & "<p class=""paragraph""></p>"
 
-	Public Const ConstructChainBegin = "<span class=""cchain"">"
-	Public Const ConstructChainEnd = "</span>"
+	' Public Const ConstructChainBegin = "<span class=""cchain"">"
+	' Public Const ConstructChainEnd = "</span>"
 
 	Public Const OpenBrackets = "<span class=""edit"">"
 	Public Const CloseBrackets = "</span>"

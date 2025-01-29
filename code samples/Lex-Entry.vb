@@ -52,21 +52,7 @@ Partial Module Main
             If entry.Item("def") IsNot Nothing Then
                 particleholder = entry.Item("def").InnerText
                 defTag = True
-                If strong.Length = 4 AndAlso IsNumeric(strong) Then
-                    Select Case CInt(strong)
-                        Case 9014, 9015, 9019 ' PUNCTUATION
-                            ' DO NOTHING
-                            If particleholder = "" Then particleholder = Space
-                        Case 9016
-                            particleholder = SofPasuq
-                        Case 9017, 9018
-                            particleholder = Nothing
-                        Case Else
-                            ReplaceSpaces(particleholder)
-                    End Select
-                Else
-                    ReplaceSpaces(particleholder)
-                End If
+                ReplaceSpaces(particleholder)
                 If LexiconPartOfSpeech = "V"c Then Throw New ArgumentException("Did not expect <def>: " & strong)
             End If
 

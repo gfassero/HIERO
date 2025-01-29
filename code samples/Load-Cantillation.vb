@@ -94,8 +94,8 @@
 }
     Dim HebrewTaggedPunctuation() As Char = {
                                              _ ' PUNCTUATION (already encoded as lemmas)
-    ChrW(&H5BE), ' Punctuation Maqaf (*** conjunctive)
-    ChrW(&H5C0), ' Punctuation Paseq (*** actually conjunctive, according to Mechon Mamre)
+    ChrW(&H5BE), ' Punctuation Maqaf (conjunctive)
+    ChrW(&H5C0), ' Punctuation Paseq (actually conjunctive, according to Mechon Mamre)
     ChrW(&H5C3), ' Punctuation Sof Pasuq (disjunctive) ' EMPEROR
     ChrW(&H5C6)  ' Punctuation Reversed Nun
 }

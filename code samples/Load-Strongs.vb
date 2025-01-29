@@ -89,14 +89,11 @@ Partial Module Main
             End If
 
             Select Case StrongsLemma
-                Case "9012", "9013", "9019"
+                Case "9012", "9013"
                     IsPunctuation = True
                 Case "9020" To "9049"
                     Is90xxPronoun = True
                 Case "0853", "9008"
-                    SuppressFollowingSpace = True
-                Case "9014" To "9018"
-                    IsPunctuation = True
                     SuppressFollowingSpace = True
             End Select
 
@@ -132,7 +129,9 @@ Partial Module Main
                         End If
                     End If
 
-                    If err Then errorlist.Add("Unexpected use of root " & StrongsLemma & " as " & GramMorph & "; lexicon lists as " & lexentry.LexiconPartOfSpeech & "; " & Regex.Matches("COMPILED STEP FILE", StrongsLemma).Count & "%% instances; " & reference)
+                    If err Then
+                        errorlist.Add("Unexpected use of root " & StrongsLemma & " as " & GramMorph & "; lexicon lists as " & lexentry.LexiconPartOfSpeech & "; " & Regex.Matches("COMPILED STEP FILE", StrongsLemma).Count & "%% instances; " & reference)
+                    End If
 
                 End If
             ElseIf (Not Is90xxPronoun) Then

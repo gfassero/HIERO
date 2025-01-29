@@ -63,8 +63,6 @@ Partial Module Main
 		Next
 
 		aramaicThe = RtLexicon("9010").Particle & WordLink
-		'ParticipleSingDefinite = RtLexicon("9009").Particle & WordLink & "[one]" & WordLink
-		'ParticiplePlurDefinite = RtLexicon("9009").Particle & WordLink & "[one]s"
 
 		Console.WriteLine(" Done!")
 
