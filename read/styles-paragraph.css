@@ -35,6 +35,14 @@ p.in2 {
     padding-left: 4.2em; /* 1.8 + 1.2 * 2 */
 }
 
+    /* Aramaic lines in Hebrew verses */
+p.in1::before {
+    width: 5em; /* padding-left divided by font-size */
+}
+p.in2::before {
+    width: 7em; /* padding-left divided by font-size */
+}
+
 
     /* PARASHAH BREAKS */
 

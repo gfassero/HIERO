@@ -11,15 +11,6 @@
 			If dabar.Citation <> lastCitation AndAlso printCitations Then ' Reveal verse/chapter/book change
 				AnnounceCitation(dabar.Citation, (lastCitation = "" AndAlso Not suppressBookStart), dabar.Aramaic, suppressBookStart)
 				lastCitation = dabar.Citation
-
-			ElseIf dabar.Aramaic <> lastAramaic Then ' Once in Dan.2.4
-				Dim aramflag As String = IIf(dabar.Aramaic, AramaicFlag, Nothing)
-				lastAramaic = dabar.Aramaic
-				If SaveToFileInsteadOfConsole Then ' SAVE to FILE
-					Reveal(aramflag, True)
-				Else ' PRINT to CONSOLE
-					Reveal(" {" & aramflag & "} ", True)
-				End If
 			End If
 
 			'If dabar.ConstructChainPos = ConstructChainPosition.Open AndAlso PrintConstructChains Then _
@@ -64,8 +55,10 @@
 					If dabars(h + 1).Citation = dabars(h).Citation Then Reveal(vbCrLf & "<p>", True)
 				End If
 
+			ElseIf h < dabars.Length - 1 AndAlso dabars(h + 1).Aramaic AndAlso Not dabar.Aramaic Then  ' Mid-verse Aramaic/Hebrew changes Gen.31.46 and Dan.2.4
+				Reveal(dabar.Cantillation.Insert(dabar.Cantillation.LastIndexOf(">"c), MidverseAramaicSwitch), True) ' Add cantillation-based punctuation
 			Else
-					Reveal(dabar.Cantillation, True) ' Add cantillation-based punctuation
+				Reveal(dabar.Cantillation, True) ' Add cantillation-based punctuation
 			End If
 
 		Next

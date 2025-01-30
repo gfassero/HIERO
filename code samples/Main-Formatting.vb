@@ -32,6 +32,7 @@
 	Public Const CitationBeginChapter = vbCrLf & "<p class=""chapter"" data-number="""
 	Public Const CitationEnd = """>"
 	Public Const AramaicFlag = "&#9653; "
+	Public Const MidverseAramaicSwitch = " data-number=""" & AramaicFlag & """"
 
 	Public Const OutputHeader = "<!DOCTYPE html>" & vbCrLf &
 		"<!-- This content may not be copied, shared, distributed, modified, or used for any purpose," & vbCrLf &
