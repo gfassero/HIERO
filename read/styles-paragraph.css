@@ -3,7 +3,7 @@
     margin: 0;
     padding-left: 1.8em; /* Aligns the text flush */
     text-indent: 0; /* Keeps all lines flush with each other */
-    hyphenate-character: "–";
+    hyphenate-character: "\2013";
 }
 
 
