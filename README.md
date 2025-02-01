@@ -7,9 +7,7 @@ You can browse the [full HIERO translation here](http://gfassero.github.io/HIERO
 - [The Shema](http://gfassero.github.io/HIERO/output%20samples/shema.html) (Deuteronomy 6)
 - [Psalm 1](http://gfassero.github.io/HIERO/output%20samples/psalm001.html)
 - [Psalm 51](http://gfassero.github.io/HIERO/output%20samples/psalm051.html)
-- [Psalm 121](http://gfassero.github.io/HIERO/output%20samples/psalm121.html)
 - [The Suffering Servant](http://gfassero.github.io/HIERO/output%20samples/servant.html) (Isaiah 53)
-- [The final promise](http://gfassero.github.io/HIERO/output%20samples/final.html) (Malachi 4).
 
 # Rationale
 Modern English readers are blessed with more and better translations of the Bible than anyone else in history. Some translations specialize in theological precision, others swell with rhetorical beauty, and others use such everyday words that they sound like they were written yesterday. The Hebrew scriptures, however, are not written in modern, everyday language, modern technical language, or even classical rhetorical language. They are written in ancient Hebrew poetry, and HIERO tries to reflect that.
