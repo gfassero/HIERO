@@ -73,7 +73,7 @@ Partial Module Main
                 result.Append(Char.ToUpper(word(0)) & word.Substring(1))
                 capitalizeNext = False
 
-            ElseIf word = "of" OrElse word = "by" OrElse word = "as" OrElse word = "to" OrElse word = "in" OrElse word = "with" Then
+            ElseIf word = "of" OrElse word = "by" OrElse word = "as" OrElse word = "to" OrElse word = "in" OrElse word = "with" OrElse word = "the" OrElse word = "a" OrElse word = "an" Then
                 If result.Length + word.Length < noun.Length - 1 Then
 
                     ' Don't capitalize a preposition (unless it's the last word)
