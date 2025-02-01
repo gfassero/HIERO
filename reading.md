@@ -80,7 +80,7 @@ HIERO is formatted to indicate features of the Hebrew text:
   - Small caps represent the divine name (Yʜᴡʜ) and its abbreviations (Yʜ).
   - Hebrew words usually have more morphemes than English words, so each Hebrew word is represented by multiple English words joined with a middle dot (·).
   - Gray text ![gray](https://placehold.co/15x15/808080/808080.png) marks a part of a translation that is not derived from the Hebrew root but that seems essential to the meaning. The black text indicates what the text says; the gray indicates what it means.
-  - Italic text (*italic*) marks a word that is transliterated from the Hebrew root, either because the transliteration is familiar in English, or because the meaning is unknown.
+  - Italic text (*italic*) marks a word that is transliterated from the Hebrew root, generally because the transliteration is familiar in English or because the word is not a Hebrew or West Semitic word.
   - An inverted question mark (¿) precedes words that usually introduce a question. The question may begin with this word, but does not always. Not all questions are marked, as Hebrew does not have a question mark.
   - The logical “not” sign (¬) precedes a word (usually a proper noun) that has not been translated yet.
   - Proper nouns denoting the descendants of an individual or the inhabitants of a place are generally translated by appending the suffix “-ïte” to the name of the individual or place. The diaeresis is included to help the reader distinguish between the translated name and the suffix.

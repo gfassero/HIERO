@@ -49,7 +49,13 @@ Other guiding principles in developing the lexicon are:
 When possible, the lexicon represents a Hebrew root with a word similar to that used in [popular existing translations](sources.md#bible-translations). HIERO is not an attempt to innovate.
 
 ### Transliterate familiar words
-If the Hebrew root is somewhat familiar, a transliteration may be used. This is useful if the root’s meaning is unknown or if available English translations are fraught. For example, the root שׁלם is transliterated as “shalom,” ירה as “torah,” and חרם as “herem.”
+Some Hebrew roots are transliterated. These roots are italicized, and are still required to follow the root-fot-root translation parameter. Roots may be transliterated for the following reasons:
+- The root is foreign (e.g., *Pharaoh*, *Purim*).
+- The root’s meaning has been lost (e.g., many kinds of plants and animals).
+- The root has an English cognate with the same meaning (e.g., *matzah*, *camel*, *horn*, *peg*).
+- The root is onomatopoeic, and English has a similar onomatopoeic word (e.g., m*ama*, *hum*, *hush*).
+- The root appears to be a technical word with no equivalent in English (e.g., *herem*, *goel*, *yabam*).
+- The root is somewhat familiar and covers a range of meanings that HIERO is otherwise unable to represent in English (e.g., *shalom*, *adam*, *torah*).
 
 ### Make up words
 When no suitable English word is available, the lexicon may use a made-up word. The new word should be simple and quickly intelligible with some explanation.
