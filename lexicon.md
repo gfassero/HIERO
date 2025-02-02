@@ -49,7 +49,7 @@ Other guiding principles in developing the lexicon are:
 When possible, the lexicon represents a Hebrew root with a word similar to that used in [popular existing translations](sources.md#bible-translations). HIERO is not an attempt to innovate.
 
 ### Translate proper nouns
-When the meaning of a proper noun is known, HIERO translates it instead of translating it as other translations do. Proper nouns hold to the root-fot-root translation parameter just as other words do. Because there is no existing tradition of translating proper nouns, HIERO’s translations of proper nouns are a “best guess” and may be unreliable.
+When the meaning of a proper noun is known, HIERO translates it instead of translating it as other translations do. Proper nouns hold to the root-fot-root translation parameter just as other words do. Because there is no existing tradition of translating proper nouns, HIERO’s translations of proper nouns are a “best guess” and may be imprecise.
 
 ### Transliterate familiar words
 Some Hebrew roots are transliterated. These roots are italicized, and are still required to follow the root-fot-root translation parameter. Roots may be transliterated for the following reasons:
