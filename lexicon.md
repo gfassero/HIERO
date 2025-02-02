@@ -38,7 +38,7 @@ In addition, far more words are related than most people realize, and the number
 ### Special cases
 The lexicon uses two kinds of special notation to make root-for-root translation more feasible.
 
-One special notation is brackets [brackets]. Brackets indicate a word that is not part of the Hebrew root but is helpful in clarifying the meaning of the word. In the examples above “head[rest]” contains brackets because the Hebrew word *mera'ashawot* contains the word *ro'sh*, meaning “head,” but does not contain the word *shabat*, meaning “rest.” This is especially common in names of plants and animals—for example, “algum[tree],” “'eshel[tree],” “white[tree],” and “smooth[tree]” are all trees, but none contains the word *`etz*, meaning “tree.”
+One special notation is brackets [brackets]. Brackets indicate a word that is not part of the Hebrew root but is helpful in clarifying the meaning of the word. In the examples above “head[rest]” contains brackets because the Hebrew word *mera'ashawot* contains the word *ro'sh*, meaning “head,” but does not contain the word *shabat*, meaning “rest.” This is especially common in names of plants and animals—for example, “algum[tree],” “'eshel[tree],” “white[tree],” and “smooth[tree]” are all trees, but none contains the word *`etz*, meaning “tree.” In HIERO’s final output, brackets are replaced by gray text ![gray](https://placehold.co/15x15/808080/808080.png).
 
 The other special notation is the square root sign (√). The square root sign indicates a word that occurs only once and is unrelated to any other word in the Hebrew scriptures. This is helpful because Hebrew sometimes has more unrelated synonyms for the same thing than English does. For example, there are seven Hebrew words that mean something like “goat,” but I only know of four in English. One of the Hebrew words, *'aqqow*, appears only once and is not related to any other word in the Hebrew scriptures. Using the square root sign, I can translate *'aqqow* as “√goat” instead of having to find or invent another word that might be unintelligible to the reader. The square root sign indicates that the rare word “√goat” (*'aqqow*) is not related to the common word “goat” (*karar*). This satisfies the need for root uniqueness. The lexicon contains 85 definitions marked with the square root sign; since each word occurs only once, the sign appears 85 times in HIERO.
 
@@ -47,6 +47,11 @@ Other guiding principles in developing the lexicon are:
 
 ### Follow existing translations
 When possible, the lexicon represents a Hebrew root with a word similar to that used in [popular existing translations](sources.md#bible-translations). HIERO is not an attempt to innovate.
+
+### Translate proper nouns
+When the meaning of a proper noun is known, HIERO translates it instead of translating it as other translations do. Proper nouns hold to the root-fot-root translation parameter just as other words do.
+> [!NOTE]
+> Because there is no existing tradition of translating proper nouns, HIERO’s translations of proper nouns are a “best guess” and may be unreliable.
 
 ### Transliterate familiar words
 Some Hebrew roots are transliterated. These roots are italicized, and are still required to follow the root-fot-root translation parameter. Roots may be transliterated for the following reasons:

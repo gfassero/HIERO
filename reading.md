@@ -70,7 +70,7 @@ Numbers (spelled out, not numerals) can appear as singulars or as plurals, with 
 
 # Formatting
 HIERO is formatted to indicate features of the Hebrew text:
-- Verses are numbered in small type (<sub>123</sub>). Chapters are numbered in bold (**123**) and surrounded by a gray disk ![gray](https://placehold.co/15x15/808080/808080.png).
+- Verses are numbered in small type (<sub>123</sub>). Chapters are numbered in bold (**123**).
 - Capitalization does not reflect any feature of the Hebrew text. Words that appear to be proper nouns are capitalized.
 - Inflections:
   - Words with identifiable gender are underlined solid (masculine) or dashed (feminine). Where the gender has not been identified, the word is not underlined. There are only two genders: masculine and feminine.
