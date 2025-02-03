@@ -11,7 +11,9 @@ A few facts about Hebrew that may help you understand HIERO’s translation:
 ### There is a dual number.
 Nouns, adjectives, and verbs have number. In addition to singular and plural number, Hebrew also offers a dual number, representing two of something. HIERO translates the dual as plural with a superscript number two (²).
 
-Two of something can be represented by either the dual or the plural. The dual usually represents not simply two things, but usually a pair of things, most often a part of the body. The bodily association cannot be overemphasized and sometimes overshadows actual duality, as in Genesis 49:12, where the teeth, as a plural body part, are referred to in the dual. The most common non-bodily words that appear in the dual are “Egypts²” (the two united kingdoms of Upper Egypt and Lower Egypt) and “Fruits²” (Ephraim, the second son of Joseph).
+Two of something can be represented by either the dual or the plural. The dual usually represents not simply two things, but usually a pair of things, most often a part of the body. The bodily association is so important that it sometimes overshadows actual duality, as in Genesis 49:12, where the teeth, as a plural body part, are in the dual. The most common non-bodily words that appear in the dual are “Egypts²” (the two united kingdoms of Upper Egypt and Lower Egypt) and “Fruits²” (Ephraim, the second son of Joseph).
+
+A dual noun takes a plural adjective.
 
 ### There are only two genders.
 Hebrew has only two genders—masculine and feminine—and no neuter gender. In HIERO, masculine words are underlined with a thin gray line, and feminine words are underlined with a thick dashed line. Nouns, adjectives, and verbs without an underline still have gender, but HIERO has not been able to identify their gender yet.
