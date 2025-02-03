@@ -44,11 +44,21 @@
 		"</head>" & vbCrLf &
 		"<body>" & vbCrLf &
 		"<div id=""header"">" & vbCrLf &
-		"<a href=""../"" class=""title"">About</a> / <a href=""index.html"">Bible</a>"
+		"<a href=""http://gfassero.github.io/HIERO/"" class=""title"">About</a> / <a href=""index.html"">Bible</a>"
 
 	Public Const OutputBeginTranslationMinimal = "</div>" & vbCrLf &
+		"<div id=""printable"">" & vbCrLf &
 		"<div id=""translation"">"
 	Public Const OutputBeginTranslation = " / <a href=""#table-of-sections"">Sections</a>" & vbCrLf & OutputBeginTranslationMinimal
+
+
+
+	Public Const OutputFooter = vbCrLf &
+		"</div>" & vbCrLf &
+		"<div id=""footer"">" &
+		vbCrLf & "<a href=""http://gfassero.github.io/HIERO/"" class=""title"">HIERO"
+	Public Const OutputFooterClose = "</a>" & vbCrLf &
+		"</div>"
 
 	Public Const OutputTOC = vbCrLf &
 		"</div>" & vbCrLf &
@@ -57,12 +67,13 @@
 		"</span>"
 	Public Const OutputTOCBook2 = vbCrLf &
 		"<span class=""columnsTOC"">"
-	Public Const OutputFooterBegin = vbCrLf &
-		"</div>" & vbCrLf &
-		"<div id=""footer""><a href=""../"" class=""title"">About HIERO</a>"
-	Public Const OutputEnd = "</div>" & vbCrLf &
+
+	Public Const OutputEnd = vbCrLf &
+							 "</div>" & vbCrLf &
 							 "</body>" & vbCrLf &
 							 "</html>"
+
+
 
 	' Public Const CustomTab = "&emsp;&emsp;"
 	' Public Const CustomTabx2 = CustomTab & CustomTab

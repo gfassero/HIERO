@@ -39,6 +39,9 @@ Partial Module Main
             TranslateArrayOfDabar(referenceMatches) ' Translate
             SaveToFileInsteadOfConsole = False
 
+            OutputFile.Write(OutputFooter & "</a> / <a href=""http://github.com/gfassero/HIERO/commits/"">updated " & Now.ToString("dd MMM yy a\t HH:mm G\MT") & OutputFooterClose)
+
+#Region "Write Table of Contents"
             OutputFile.Write(OutputTOC)
             ' Write TOC
             For Each anchor As (String, String, String) In Anchors
@@ -57,9 +60,10 @@ Partial Module Main
                     OutputFile.Write(OutputTOCBook2)
                 End If
             Next
+#End Region
 
             ' Close out HTML and File Stream
-            OutputFile.Write(OutputFooterBegin & OutputEnd)
+            OutputFile.Write(OutputEnd)
             OutputFile.Close()
 
             Console.Title = "Translate"

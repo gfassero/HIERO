@@ -1,6 +1,5 @@
 ﻿@import "styles-paragraph.css";
 @import "styles-span.css";
-@import "styles-data.css";
 
 body {
     display: flex;
@@ -40,12 +39,11 @@ body {
         font-size: 7pt;
     }
 
-    #header, #table-of-sections, #footer {
+    #header, #table-of-sections {
         display: none !important;
     }
 
-    #translation {
-        padding: 0;
+    #printable {
         column-count: 2;
         -webkit-column-count: 2;
         -moz-column-count: 2;
@@ -54,11 +52,19 @@ body {
         column-rule: 1px solid black; /* Lines between columns */
         column-width: auto; /* Width of all columns */
     }
-    #translation::after {
-        display: block;
-        padding-top: 1em;
-        padding-left: 1em;
-        content: "// HIERO updated " var(--update-time);
+
+    #translation {
+        padding: 0;
+    }
+
+    #footer {
+        border: none;
+        background: none;
+        margin-top: 2em;
+    }
+    #footer > a:link, #footer > a:visited {
+        color: black;
+        text-decoration: none;
     }
 }
 
@@ -70,12 +76,7 @@ body {
 #table-of-sections {
     order: -1; /* Place TOC first */
     padding: 1em; /* top/bottom first, then left/right second */
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(6em, 1fr));
     background: #e0e0e0;
     border-bottom: 1px solid #c0c0c0;
-}
-
-#footer:last-child::after {
-    content: " / updated " var(--update-time);
+    column-width: 5em;
 }
