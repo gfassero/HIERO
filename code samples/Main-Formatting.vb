@@ -168,7 +168,7 @@
 				Reveal(String.Concat(vbCrLf & "<p class=""psalm"" id=""psalm-" & citParts(1) & """>Psalm ", citParts(1), "</p>"), True)
 				Anchors.Add((
 							"psalm-" & citParts(1),   ' Anchor name
-							"Psalm " & citParts(1)    ' Display name in TOC
+							citParts(1)               ' Display name in TOC. Was:   "Psalm " & citParts(1)
 							))
 
 			End If

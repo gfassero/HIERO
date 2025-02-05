@@ -50,7 +50,7 @@ Partial Module Main
                 If refSplits.Length = 1 Then
                     sectionRef = refSplits(0)
                 Else
-                    sectionRef = Books(refSplits(0)).Item4 & " " & refSplits(1) & ":" & refSplits(2)
+                    sectionRef = refSplits(1) & ":" & refSplits(2) ' Was:   Books(refSplits(0)).Item4 & " " & refSplits(1) & ":" & refSplits(2)
                 End If
                 OutputFile.Write(vbCrLf & "<a href=""#" & anchor.Item1 & """>" & sectionRef & "</a>")
             Next
