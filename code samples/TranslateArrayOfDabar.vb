@@ -39,7 +39,6 @@
 
 					Anchors.Add((
 							"section-" & dabars(h + 1).Citation,                ' Anchor name
-							"anchor-section",                                   ' CSS class in TOC
 							StripAlternativeNumbering(dabars(h + 1).Citation)   ' Display name in TOC
 							))
 				End If

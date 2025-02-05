@@ -4,7 +4,7 @@ Imports System.Xml
 Partial Module Main
 
     Dim UntranslatedRoots As New Dictionary(Of String, Integer)
-    Dim Anchors As New List(Of (String, String, String))
+    Dim Anchors As New List(Of (String, String))
 
     Sub TranslateAndSave(Optional biblicalcitation As String = Nothing, Optional outputDest As String = Nothing)
         CleanVariables()
@@ -39,26 +39,20 @@ Partial Module Main
             TranslateArrayOfDabar(referenceMatches) ' Translate
             SaveToFileInsteadOfConsole = False
 
-            OutputFile.Write(OutputFooter & "</a> / <a href=""http://github.com/gfassero/HIERO/commits/"">updated " & Now.ToString("dd MMM yy a\t HH:mm G\MT") & OutputFooterClose)
+            OutputFile.Write(OutputFooter & "</a><a href=""http://github.com/gfassero/HIERO/commits/"">updated " & Now.ToString("dd MMM yy a\t HH:mm G\MT") & OutputFooterClose)
 
 #Region "Write Table of Contents"
             OutputFile.Write(OutputTOC)
             ' Write TOC
-            For Each anchor As (String, String, String) In Anchors
-                If anchor.Item2 = "anchor-book" Then
-                    OutputFile.Write(OutputTOCBook1)
-                End If
-                Dim refSplits = anchor.Item3.Split(".")
+            For Each anchor As (String, String) In Anchors
+                Dim refSplits = anchor.Item2.Split(".")
                 Dim sectionRef As String
                 If refSplits.Length = 1 Then
                     sectionRef = refSplits(0)
                 Else
                     sectionRef = Books(refSplits(0)).Item4 & " " & refSplits(1) & ":" & refSplits(2)
                 End If
-                OutputFile.Write(vbCrLf & "<a href=""#" & anchor.Item1 & """ class=""" & anchor.Item2 & """>" & sectionRef & "</a>")
-                If anchor.Item2 = "anchor-book" Then
-                    OutputFile.Write(OutputTOCBook2)
-                End If
+                OutputFile.Write(vbCrLf & "<a href=""#" & anchor.Item1 & """>" & sectionRef & "</a>")
             Next
 #End Region
 

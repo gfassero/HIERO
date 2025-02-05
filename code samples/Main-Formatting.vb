@@ -43,26 +43,28 @@
 		"<link rel=""stylesheet"" href=""styles.css"" />" & vbCrLf & ' "<script type=""text/javascript"" src=""slurs.js""></script>" & vbCrLf &
 		"</head>" & vbCrLf &
 		"<body>" & vbCrLf &
-		"<div id=""header"">" & vbCrLf &
-		"<a href=""http://gfassero.github.io/HIERO/"" class=""title"">About</a> / <a href=""index.html"">Bible</a>"
+		"<div id=""header"" class=""headfoot"">" & vbCrLf &
+		"<a href=""http://gfassero.github.io/HIERO/"" class=""split"">About</a>" &
+		"<a href=""key.html"">Key</a>" &
+		"<a href=""index.html"">Bible</a>"
 
 	Public Const OutputBeginTranslationMinimal = "</div>" & vbCrLf &
 		"<div id=""printable"">" & vbCrLf &
 		"<div id=""translation"">"
-	Public Const OutputBeginTranslation = " / <a href=""#table-of-sections"">Sections</a>" & vbCrLf & OutputBeginTranslationMinimal
+	Public Const OutputBeginTranslation = "<a href=""#table-of-sections"">Sections</a>" & vbCrLf & OutputBeginTranslationMinimal
 
 
 
 	Public Const OutputFooter = vbCrLf &
 		"</div>" & vbCrLf &
-		"<div id=""footer"">" &
+		"<div id=""footer"" class=""headfoot"">" &
 		vbCrLf & "<a href=""http://gfassero.github.io/HIERO/"" class=""title"">HIERO"
 	Public Const OutputFooterClose = "</a>" & vbCrLf &
 		"</div>"
 
 	Public Const OutputTOC = vbCrLf &
 		"</div>" & vbCrLf &
-		"<div id=""table-of-sections"">"
+		"<div id=""table-of-sections"" class=""headfoot"">"
 	Public Const OutputTOCBook1 = vbCrLf &
 		"</span>"
 	Public Const OutputTOCBook2 = vbCrLf &
@@ -155,7 +157,6 @@
 
 				'Anchors.Add((
 				'			"book-" & citParts(0),      ' Anchor name
-				'			"anchor-book",              ' CSS class in TOC
 				'			Books(citParts(0)).Item1    ' Display name in TOC
 				'			))
 
@@ -167,7 +168,6 @@
 				Reveal(String.Concat(vbCrLf & "<p class=""psalm"" id=""psalm-" & citParts(1) & """>Psalm ", citParts(1), "</p>"), True)
 				Anchors.Add((
 							"psalm-" & citParts(1),   ' Anchor name
-							"anchor-psalm",           ' CSS class in TOC
 							"Psalm " & citParts(1)    ' Display name in TOC
 							))
 

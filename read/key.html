@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+<!-- This content may not be copied, shared, distributed, modified, or used for any purpose,
+     commercial or non-commercial, without prior written permission from the author. -->
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HIERO - Hebrew Idiom in English Roots</title>
+<link rel="stylesheet" href="styles.css" />
+<style>
+* {
+    scroll-margin-top: 10px;
+}
+body {
+    height: 100vh;
+}
+#translation {
+    /* These rules exist to shrink-wrap the paragraphs to the size of their text,
+       instead of letting them take up the entire width of the viewport. */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.panel {
+    width: 50%;
+    overflow-y: auto; /* Allow scrolling */
+    box-sizing: border-box;
+}
+#key {
+    padding: 0px 10px 10px 10px;
+}
+.content-container {
+    display: flex;
+    flex: 1; /* This makes sure the content takes up the remaining space */
+    overflow: hidden; /* Prevent content from overflowing the container */
+}
+h3 {margin-bottom: 10px;}
+#translation {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#key div p {
+    margin-bottom: 10px;
+    padding: 0 1em;
+}
+#key div ul {margin: 0;}
+#key div {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid var(--darkborder);
+    border-radius: 3.75pt;
+}
+#key > div {
+    padding-top: 0;
+}
+#key div .focusable-div {
+    margin-top: 0;
+    display: inline-block;
+}
+
+#key .focusable-div, #translation span, #translation p {
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+#translation p, #translation span {
+    border-radius: 3.75pt;
+}
+
+div.hovered  {background-color: var(--navhover);}             /* YELLOW */
+div.clicked  {background-color: var(--darkbg);}
+#translation .hovered,
+#translation .clicked {background-color: #ffc020;}    /* ORANGE */
+#translation .indivhover {background-color: var(--boldhilite);} /* MAGENTA */
+#translation .clicked.indivhover {background-color: #ffe090;} /* LIGHT ORANGE */
+
+/* Media query for smaller screens */
+@media (max-width: 40em) {
+    .content-container {
+        flex-direction: column; /* Stack panels vertically */
+    }
+    .panel {
+        width: 100%; /* Make panels take full width */
+        height: auto; /* Let height adjust to content */
+        max-height: 50vh;
+    }
+    #key {
+        border-bottom: 1px solid #c0c0c0;
+    }
+}
+
+@media print {
+    body {height: auto;}
+    .content-container {flex-direction: column;}
+    .panel {
+        width: 100%;
+        margin: 0;
+    }
+}
+</style>
+</head>
+<body>
+<div id="header" class="headfoot">
+<a href="http://gfassero.github.io/HIERO/" class="split">About</a><a href="index.html">Bible</a>
+</div>
+
+<div class="content-container">
+<div class="panel" id="key">
+
+<div><h3>Lexicon</h3>
+<p>Italic text marks a word that is transliterated from the Hebrew root, generally because the transliteration is familiar in English
+or because the word is not a Hebrew word.</p>
+<p>Gray text marks a note, a part of a translation that is not derived from the Hebrew root but that seems essential to the meaning:
+The black text indicates what the text says; the gray indicates what it means.</p>
+<div id="i" class="focusable-div i"><i>Transliteration</i></div>
+<div id="edit" class="focusable-div edit">Editorial note</div>
+</div>
+<div><h3>Gender</h3>
+<p>There are only two genders—masculine and feminine—and no neuter gender. Nouns, adjectives, verbs, and some prepositions are gendered
+(except first-person verbs). Verbs are gendered to match their subjects, just as adjectives are gendered to match their nouns.
+First-person pronouns and verbs are not inflected with gender. HIERO is not yet able to parse the gender of all words, particularly some
+proper nouns.</p>
+<div id="m" class="focusable-div"><span class="m">Masculine</span></div>
+<div id="f" class="focusable-div"><span class="f">Feminine</span></div>
+<div id="c" class="focusable-div"><span class="c">First-person</span></div>
+<div id="cx" class="focusable-div"><span class="cx">Not parsed</span></div>
+</div>
+<div><h3>Number</h3>
+<p>Nouns, adjectives, and verbs have number. In addition to singular and plural number, Hebrew also offers a dual number, representing two of something. Words in the plural are followed by a superscript plus sign. Words in the dual are followed by a superscript number two. Words in the singular are not marked.</p>
+<p>Two of something can be represented either by the dual or by the plural. The dual usually represents not simply two things, but a pair of things, most often a part of the body. A dual noun takes a plural adjective.</p>
+<div id="dual" class="focusable-div">Dual (²)</div>
+<div id="plur" class="focusable-div">Plural (⁺)</div>
+</div>
+
+<div><h3>Citations</h3>
+<p>Book titles are given first as found in most modern Christian Bibles, and then as translated by HIERO from the traditional Hebrew titles. Normal chapter and verse breaks are
+given, although neither exists in the Hebrew text. Verse breaks usually follow the <i>sof passuk</i> punctuation marks in the Hebrew text.</p>
+<div id="book" class="focusable-div book">English title</div>
+<div id="subtitle" class="focusable-div edit">Hebrew title</div>
+<div id="chapter" class="focusable-div">Chapter (<span class="book">3</span>)</div>
+<div id="in0" class="focusable-div">Verse (<small>12</small>)</div>
+</div>
+<div><h3>Lines &amp; indentation</h3>
+<p>A colon (:) at the end of a line represents a <i>sof passuk</i> punctuation mark, which is stronger than a comma but often weaker than a period. A single indentation represents
+an <i>etnachta</i>, a <i>segol</i>, or an <i>ole we-jored</i> cantillation mark. A double indentation represents a <i>zakef katan</i> cantillation mark. These indentations usually
+have some punctuating force, but their weight can vary. There can be a need for mental punctuation mid-line as well, so the reader should be alert to the needs of the text.
+Cantillation is more like music notation than like punctuation, so think of how song lyric lines do not always correspond to punctuation—they are more of an indication of where the
+author wants you to pause than of grammatical structure.</p>
+<div id="sofpassuk" class="focusable-div">Sof passuk (:)</div>
+<div id="in1" class="focusable-div">Single indent</div>
+<div id="in2" class="focusable-div">Double indent</div>
+</div>
+<div><h3>Breaks</h3>
+<p>Section and paragraph breaks are derived from the formatting of the Hebrew text. A section break (§) represents a <i>parashah peh</i> “open portion” break. A paragraph break
+represents a <i>parashah setumah</i> “closed portion” break. At the top of the page, HIERO lists all the section breaks in the book as a kind of table of contents.</p>
+<div id="section" class="focusable-div">Section (&sect;)</div>
+<div id="paragraph" class="focusable-div">Paragraph</div>
+</div>
+
+<div id="dot" class="focusable-div"><h3>Middle dot (·)</h3>
+<p>Hebrew words usually have more morphemes than English words, so each Hebrew word is represented by multiple English words joined with a middle dot.</p>
+</div>
+<div id="do" class="focusable-div"><h3>Direct object (°)</h3>
+<p>Hebrew has an untranslatable word that exists to point out the direct object of a verb. Like a preposition, it always precedes its object immediately. In HIERO, it is represented by the degree sign. The object is not always marked with this word, but it is helpful when it appears. Sometimes an indirect object is marked in the same way.</p>
+</div>
+<div id="quest" class="focusable-div"><h3>Question mark (¿)</h3>
+<p>An inverted question mark precedes words that usually introduce a question. The question may begin with this word, but does not always. Not all questions are marked, as Hebrew does not have a question mark.</p>
+</div>
+<div><h3>Exclamation mark</h3>
+<p>There are three kinds of exclamation marks in HIERO. Interjection words are preceded by an inverted exclamation mark and
+followed by an exclamation mark. An exclamation mark alone represents the emphatic suffix (paragogic <i>he</i>). A superscript
+exclamation mark precedes volative verbs (commands, cohortatives, and jussives).</p>
+<div id="extj" class="focusable-div">Interjection (¡...!)</div>
+<div id="exsh" class="focusable-div">Emphatic (!)</div>
+<div id="excvj" class="focusable-div">Volative (ꜝ)</div>
+</div>
+<div id="dir" class="focusable-div"><h3>Directional suffix (→)</h3>
+<p>A rightward-pointing arrow precedes words bearing the directional suffix, which indicates the direction of motion.</p>
+</div>
+<div id="wrap" class="focusable-div"><h3>Line wrap (&ndash;)</h3>
+<p>Lines long enough to wrap at the edge of the screen or column are broken by a dash (&ndash;).</p>
+</div>
+
+<div id="hashem" class="focusable-div"><h3>The Divine Name</h3>
+<p>Small caps represent the divine name Yʜᴡʜ and the abbreviated forms Yʜ and Yʜᴡ. As in Hebrew, the divine name is written without its vowel and is replaced with “Lord” when read aloud.</p>
+</div>
+<div id="caps" class="focusable-div"><h3>Capitalization</h3>
+<p>Hebrew does not have capital letters. HIERO capitalizes the word “I” and words that appear to be proper nouns.</p>
+</div>
+<div id="gens" class="focusable-div"><h3>Gentilic (-ïte)</h3>
+<p>Proper nouns denoting the descendants of a person or the inhabitants of a place are generally translated by appending the suffix “-ïte” to the name of the person or place. The diaeresis is included to help the reader distinguish between the translated name and the suffix.</p>
+</div>
+
+<div id="conj" class="focusable-div"><h3>Conjunctions</h3>
+<p>Hebrew has only one common conjunction, translated “and.” This conjuction can indicate similarity (“and”), contrast (“but”), causality (“so”), or sequence (“then”). In one way or another, it always continues the narrative.</p>
+</div>
+<div><h3>Verb tense</h3>
+<p>Hebrew has two verb tenses (or aspects). The perfect is translated as the English past tense, and the imperfect is translated as the
+English present tense. However, these tenses do not mean the same thing as in English. Either tense can indicate past, present, or future
+action depending on context. Infinitives function similarly as in English.</p>
+<div id="perf" class="focusable-div">Perfect</div>
+<div id="impf" class="focusable-div">Imperfect</div>
+<div id="inf" class="focusable-div">Infinitive</div>
+</div>
+<div id="ing" class="focusable-div"><h3>Double verbs</h3>
+<p>Verbs are often repeated, first in the infinitive (translated as a participle), and then a definite form. This construction intensifies the verb.</p>
+</div>
+<div><h3>Clause order</h3>
+<p>Expect some variation in word order. The most normal clause order is Verb-Subject-Object, but other orders are common as well. Gender can provide a clue in matching a verb to its subject, just as in matching a modifier to what it modifies. The direct object marker, when present, is the best identifier of the object.</p>
+<div id="vs" class="focusable-div">Verb-Subj</div>
+<div id="vo" class="focusable-div">Verb-Obj</div>
+<div id="vos" class="focusable-div">Verb-Obj-Subj</div>
+<div id="svo" class="focusable-div">Subj-Verb-Obj</div>
+</div>
+<div id="cop" class="focusable-div"><h3>No copula</h3>
+<p>The verb “be” rarely appears as a copula and usually has existential import. This means that some sentences do not have verbs. For
+example, “this place holy,” means that “this place [is] holy.”</p>
+</div>
+<div id="art" class="focusable-div"><h3>Articles</h3>
+<p>Hebrew has a definite article, which may appear before adjectives and verbs as well as before nouns. There is no indefinite article.</p>
+</div>
+<div id="apn" class="focusable-div"><h3>Adjectives and participles as nouns</h3>
+<p>Adjectives and participles can act as nouns, which can be disorienting. If you see “the” followed by an adjective or participle and
+no obvious noun, this is probably why. Read as “<i>x</i> one(s)” if that helps. For active participles, consider reading it as an agent:
+For example, “he ruling” may mean “he [was] ruler,” and “the ruling” probably means “the ruler.” This happens in English too:
+<ul>
+<li>“The faithful” (adjective as noun)</li>
+<li>“The suffering” (active participle as noun)</li>
+<li>“The fallen” (passive participle as noun)</li>
+</ul>
+</p>
+</div>
+<div id="agvb" class="focusable-div"><h3>Agents as verbs</h3>
+<p>Occasionally, a noun of agency can act as a verb. For example, “he was ruler them” probably means “he was ruling them.”</p>
+</div>
+<div><h3>Modifier order</h3>
+<p>An adjective usually follows the noun it modifies. Gender and number can provide a clue in matching an adjective to its noun. When a
+noun takes the definite article, any adjective that modifies the noun usually takes the article as well.</p>
+<p>Demonstratives function similarly as in English, except that a pronoun can function as a demonstrative. A demonstrative or
+demonstrative pronoun follows the noun it modifies.</p>
+<div id="nadj" class="focusable-div">Noun - Adj</div>
+<div id="artadj" class="focusable-div">With article</div>
+<div id="ndem" class="focusable-div">Demonstrative</div>
+<div id="npro" class="focusable-div">Noun - Demonstrative Pronoun</div>
+</div>
+<div id="desc" class="focusable-div"><h3>Construct of description</h3>
+<p>Instead of using an adjective, the usual way of describing a thing is to describe it with another noun. For example, instead of saying
+describing a “coloful coat,” Hebrew prefers to call it a “coat of colors.”</p>
+</div>
+<div><h3>Adverbs &amp; instrumentality</h3>
+<p>Hebrew has few adverbs. Instead, nouns appear in the text with a kind of adverbial function. Read them as “with <i>x</i>” or
+“in <i>x</i>.”</p>
+<p>Similarly, a noun following a verb may be the noun by means of which an action is done. For example, Abimelech’s men “filled the
+wells dust,” which means that they “filled the wells [with] dust.”</p>
+<div id="adv" class="focusable-div">Adverbs</div>
+<div id="nadv" class="focusable-div">Nouns as adverbs</div>
+</div>
+<div id="prep" class="focusable-div"><h3>Prepositions</h3>
+<p>Hebrew does not have a great variety of preposition. Preposition choices may be unintuitive. Do not read too much into this.</p>
+<p>Pay particular attention to the preposition “from,” which often signals a comparison, since there is no comparative form of
+most adjectives. Two things being compared are often joined with the preposition “from,” which can mean “than.” For
+example, “great Jacob from Esau” means “great[er] was Jacob [than] Esau.”</p>
+<p>The preposition “as,” can mean “for” or “because.”</p>
+</div>
+
+<div><h3>Aramaic</h3>
+<p>Verses in Aramaic have a small triangle (&#9653;) before their verse numbers.</p>
+</div>
+
+</div>
+
+<div class="panel" id="translation">
+<p class="book" id="book-Exo">Book of Exodus (edited sample)</p>
+<p class="subtitle"><span class="f"><span class="caps">N</span>ames<span class="plur">⁺</span></span></p>
+
+<p class="in0" data-number="19"><span class="conj">and</span><span class="dot">·</span><span class="f">they<span class="dot">·</span><span class="impf">say</span><span class="plur">⁺&nbsp;</span></span><span class="wrap">&shy;</span><span class="nadj"><span class="m">man&nbsp;</span><span class="wrap">&shy;</span><span class="m"><span class="caps">E</span>gyptian</span></span></p><p class="in2"><span class="m">he<span class="dot">·</span><span class="perf">snatched</span><span class="dot">·</span><span class="c">us</span><span class="edit"><span class="dot">·</span>away&nbsp;</span></span><span class="wrap">&shy;</span><span class="prep">from</span><span class="dot">·</span><span class="art">the</span><span class="dot">·</span><span class="cx">hand</span><span class="dot">·</span><span class="prep">of&nbsp;</span><span class="wrap">&shy;</span><span class="art">the</span><span class="dot">·</span><span class="apn m">bullying<span class="plur">⁺</span></span></p><p class="in1"><span class="conj">and</span><span class="dot">·</span><span class="adv">also&nbsp;</span><span class="wrap">&shy;</span><span class="ing">pulling<span class="edit"><span class="dot">·</span>up&nbsp;</span><span class="wrap">&shy;</span><span class="m">he<span class="dot">·</span><span class="perf">pulled</span><span class="edit"><span class="dot">·</span>up</span></span>&nbsp;</span><span class="wrap">&shy;</span><span class="prep">to</span><span class="dot">·</span><span class="c">us</span></p><p class="in2"><span class="conj">and</span><span class="dot">·</span><span class="vo"><span class="m">he<span class="impf"><span class="edit"><span class="dot">·</span>gives<span class="dot">·</span></span><span class="prep">to</span><span class="dot">·</span>drink</span></span><span class="wrap">&shy;</span><span class="do">&nbsp;°</span><span class="art">the</span><span class="dot">·</span><span class="cx">sheep</span></span><span class="sofpassuk">&nbsp;:</span></p>
+<p class="in0" data-number="20"><span class="conj">and</span><span class="dot">·</span><span class="m">he<span class="dot">·</span><span class="impf">says&nbsp;</span></span><span class="wrap">&shy;</span><span class="prep">to&nbsp;</span><span class="wrap">&shy;</span><span class="m">his</span><span class="dot">·</span><span class="f">daughters<span class="plur">⁺&nbsp;</span></span><span class="wrap">&shy;</span><span class="conj">and</span><span class="dot">·</span><span class="quest">¿where</span><span class="dot">·</span><span class="m">him</span></p><p class="in1"><span class="prep">to</span><span class="dot">·</span><span class="quest">¿what&nbsp;</span><span class="wrap">&shy;</span><span class="ndem">this&nbsp;</span><span class="wrap">&shy;</span><span class="f">you<span class="dot">·</span><span class="perf">abandoned</span><span class="plur">⁺&nbsp;</span></span><span class="wrap">&shy;</span><span class="do">&nbsp;°</span><span class="art">the</span><span class="dot">·</span><span class="m">man</span></p><p class="in2"><span class="excvj f">ꜝcall<span class="plur">⁺&nbsp;</span></span><span class="wrap">&shy;</span><span class="prep">to</span><span class="dot">·</span><span class="m">him&nbsp;</span><span class="wrap">&shy;</span><span class="conj">and</span><span class="dot">·</span><span class="m">he<span class="dot">·</span><span class="impf">eats&nbsp;</span></span><span class="wrap">&shy;</span><span class="m">bread</span><span class="sofpassuk">&nbsp;:</span></p>
+<p class="section" id="section-Exo.2.23">&sect;</p>
+<p class="in0" data-number="23"><span class="conj">and</span><span class="dot">·</span><span class="m">he<span class="dot">·</span><span class="impf">is&nbsp;</span></span><span class="wrap">&shy;</span><span class="prep">in</span><span class="dot">·</span><span class="artadj"><span class="art">the</span><span class="dot">·</span><span class="nadj m npro">days<span class="plur">⁺&nbsp;</span></span><span class="wrap">&shy;</span><span class="art">the</span><span class="dot">·</span><span class="nadj m">many<span class="plur">⁺&nbsp;</span></span></span><span class="wrap">&shy;</span><span class="m npro">they<span class="plur">⁺&nbsp;</span></span><span class="wrap">&shy;</span><span class="conj">and</span><span class="dot">·</span><span class="vs"><span class="m">they<span class="dot">·</span><span class="impf">groan</span><span class="plur">⁺&nbsp;</span></span><span class="wrap">&shy;</span><span class="art">the</span><span class="dot">·</span><span class="m">sons<span class="plur">⁺</span></span></span><span class="dot">·</span><span class="prep">of&nbsp;</span><span class="wrap">&shy;</span><span class="cx"><span class="caps">P</span>rincepowr</span></p><p class="in1"><span class="conj">and</span><span class="dot">·</span><span class="vs"><span class="f">she<span class="impf"><span class="edit"><span class="dot">·</span>goes<span class="dot">·</span></span>up&nbsp;</span></span><span class="wrap">&shy;</span><span class="m">their</span><span class="dot">·</span><span class="f"><span class="edit">cry<span class="dot">·</span>for<span class="dot">·</span></span>safety&nbsp;</span></span><span class="wrap">&shy;</span><span class="prep">to&nbsp;</span><span class="wrap">&shy;</span><span class="art">the</span><span class="dot">·</span><span class="m"><span class="caps">P</span>owers<span class="plur">⁺</span></span><span class="sofpassuk">&nbsp;:</span></p>
+<p class="paragraph"></p>
+<p class="chapter" data-number="3"><span class="conj">and</span><span class="dot">·</span><span class="svo"><span class="i m"><i><span class="caps">M</span>oseh</i>&nbsp;</span><span class="wrap">&shy;</span><span class="agvb m">shepherd</span><span class="wrap">&shy;</span><span class="do">&nbsp;°</span><span class="art">the</span><span class="dot">·</span><span class="cx">sheep</span></span><span class="dot">·</span><span class="prep">of&nbsp;</span><span class="wrap">&shy;</span><span class="wrap">&shy;</span><span class="m">his</span><span class="dot">·</span><span class="m"><span class="edit">relative-by-</span>marriage&nbsp;</span><span class="wrap">&shy;</span><span class="art">the</span><span class="dot">·</span><span class="m">priest</span><span class="dot">·</span><span class="prep">of&nbsp;</span><span class="wrap">&shy;</span><span class="cx"><span class="caps">V</span>indictiveness</span></p><p class="in1"><span class="conj">and</span><span class="dot">·</span><span class="m">he<span class="dot">·</span><span class="impf">enters&nbsp;</span></span><span class="wrap">&shy;</span><span class="prep">to&nbsp;</span><span class="wrap">&shy;</span><span class="art">the</span><span class="dot">·</span><span class="m">mount</span><span class="dot">·</span><span class="prep">of&nbsp;</span><span class="wrap">&shy;</span><span class="art">the</span><span class="dot">·</span><span class="m"><span class="caps">P</span>owers<span class="plur">⁺&nbsp;</span></span><span class="wrap">&shy;</span><span class="dir">➝</span><span class="cx"><span class="caps">W</span>ithered</span><span class="sofpassuk">&nbsp;:</span></p>
+<p class="in0" data-number="2"><span class="conj">and</span><span class="dot">·</span><span class="m">he<span class="dot">·</span><span class="impf">sees&nbsp;</span></span><span class="wrap">&shy;</span><span class="conj">and</span><span class="dot">·</span><span class="extj">¡lo!&nbsp;</span><span class="wrap">&shy;</span><span class="art">the</span><span class="dot">·</span><span class="cop"><span class="m"><span class="i"><i>seneh</i></span><span class="edit">bush&nbsp;</span></span><span class="wrap">&shy;</span><span class="m">consumed&nbsp;</span></span><span class="wrap">&shy;</span><span class="nadv cx">fire</span></p><p class="in1"><span class="conj">and</span><span class="dot">·</span><span class="art">the</span><span class="dot">·</span><span class="m"><span class="i"><i>seneh</i></span><span class="edit">bush&nbsp;</span></span><span class="wrap">&shy;</span><span class="m">he<span class="dot">·</span>is<span class="dot">·</span>ńot&nbsp;</span><span class="wrap">&shy;</span><span class="m">eaten<span class="edit"><span class="dot">·</span>up</span></span><span class="sofpassuk">&nbsp;:</span></p>
+<p class="in0" data-number="4"><span class="conj">and</span><span class="dot">·</span><span class="vos"><span class="m">he<span class="dot">·</span><span class="impf">calls&nbsp;</span></span><span class="wrap">&shy;</span><span class="prep">to</span><span class="dot">·</span><span class="m">him&nbsp;</span><span class="wrap">&shy;</span><span class="m"><span class="caps">P</span>owers<span class="plur">⁺&nbsp;</span></span></span><span class="wrap">&shy;</span><span class="prep">from</span><span class="dot">·</span><span class="art">the</span><span class="dot">·</span><span class="m">midst</span><span class="dot">·</span><span class="prep">of&nbsp;</span><span class="wrap">&shy;</span><span class="art">the</span><span class="dot">·</span><span class="m"><span class="i"><i>seneh</i></span><span class="edit">bush&nbsp;</span></span><span class="wrap">&shy;</span><span class="conj">and</span><span class="dot">·</span><span class="m">he<span class="dot">·</span><span class="impf">says&nbsp;</span></span><span class="wrap">&shy;</span><span class="i m"><i><span class="caps">M</span>oseh</i>&nbsp;</span><span class="wrap">&shy;</span><span class="i m"><i><span class="caps">M</span>oseh</i></span></p><p class="in1"><span class="conj">and</span><span class="dot">·</span><span class="m">he<span class="dot">·</span><span class="impf">says&nbsp;</span></span><span class="wrap">&shy;</span><span class="extj">¡lo!</span><span class="dot">·</span><span class="c">me</span><span class="sofpassuk">&nbsp;:</span></p>
+<p class="in0" data-number="5"><span class="conj">and</span><span class="dot">·</span><span class="m">he<span class="dot">·</span><span class="impf">says&nbsp;</span></span><span class="wrap">&shy;</span><span class="excvj m">ꜝstrip<span class="dot">·</span>off&nbsp;</span><span class="wrap">&shy;</span><span class="m">your</span><span class="dot">·</span><span class="m"><span class="edit">shoe</span>latchets<span class="plur">⁺&nbsp;</span></span><span class="wrap">&shy;</span><span class="prep">from</span><span class="dot">·</span><span class="prep">upon&nbsp;</span><span class="wrap">&shy;</span><span class="m">your</span><span class="dot">·</span><span class="f">feet<span class="dual">²&nbsp;</span></span></p><p class="in1"><span class="prep">as&nbsp;</span><span class="wrap">&shy;</span><span class="art">the</span><span class="dot">·</span><span class="m cop">rising<span class="dot">·</span>place&nbsp;</span><span class="wrap">&shy;</span><span class="ndem">that&nbsp;</span><span class="wrap">&shy;</span><span class="m">you&nbsp;</span><span class="wrap">&shy;</span><span class="m">standing&nbsp;</span><span class="wrap">&shy;</span><span class="prep">upon</span><span class="dot">·</span><span class="m">him</span></p><p class="in2"><span class="desc cop"><span class="f">ground</span><span class="dot">·</span><span class="prep">of&nbsp;</span><span class="wrap">&shy;</span><span class="m">sanctuary&nbsp;</span></span><span class="wrap">&shy;</span><span class="m">he</span><span class="sofpassuk">&nbsp;:</span></p>
+<p class="in0" data-number="7"><span class="conj">and</span><span class="dot">·</span><span class="m">he<span class="dot">·</span><span class="impf">says&nbsp;</span></span><span class="wrap">&shy;</span><span class="hashem cx">Yʜᴡʜ</span></p><p class="in2"><span class="ing">seeing&nbsp;<span class="wrap">&shy;</span><span class="c"><span class="caps">I</span><span class="dot">·</span><span class="perf">saw</span></span></span><span class="wrap">&shy;</span><span class="do">&nbsp;°</span><span class="art">the</span><span class="dot">·</span><span class="m">humiliation</span><span class="dot">·</span><span class="prep">of&nbsp;</span><span class="wrap">&shy;</span><span class="c">my</span><span class="dot">·</span><span class="m">people</span><span class="sofpassuk">&nbsp;:</span></p>
+<p class="in0" data-number="8"><span class="conj">and</span><span class="dot">·</span><span class="c"><span class="caps">I</span><span class="dot">·</span><span class="impf">descend&nbsp;</span></span><span class="wrap">&shy;</span><span class="inf">to<span class="dot">·</span>snatch</span><span class="dot">·</span><span class="m">him&nbsp;</span><span class="wrap">&shy;</span><span class="prep">from</span><span class="dot">·</span><span class="art">the</span><span class="dot">·</span><span class="cx">hand</span><span class="dot">·</span><span class="prep">of&nbsp;</span><span class="wrap">&shy;</span><span class="m"><span class="caps">E</span>gypt<span class="dual">s²&nbsp;</span></span><span class="wrap">&shy;</span><span class="conj">and</span><span class="dot">·</span><span class="inf">to<span class="dot">·</span><span class="edit">offer<span class="dot">·</span></span><span class="m">him</span><span class="dot">·</span>up&nbsp;</span><span class="wrap">&shy;</span><span class="prep">from&nbsp;</span><span class="wrap">&shy;</span><span class="art">the</span><span class="dot">·</span><span class="npro"><span class="f">land&nbsp;</span><span class="wrap">&shy;</span><span class="f">she</span></span></p><p class="in1"><span class="prep">to&nbsp;</span><span class="wrap">&shy;</span><span class="nadj"><span class="f">land&nbsp;</span><span class="wrap">&shy;</span><span class="f">good&nbsp;</span><span class="wrap">&shy;</span><span class="conj">and</span><span class="dot">·</span><span class="f">broad</span></span></p><p class="in2"><span class="prep">to&nbsp;</span><span class="wrap">&shy;</span><span class="art">the</span><span class="dot">·</span><span class="m">rising<span class="dot">·</span>place</span><span class="dot">·</span><span class="prep">of&nbsp;</span><span class="wrap">&shy;</span><span class="art">the</span><span class="dot">·</span><span class="gens m"><span class="caps">C</span>ashierïte&nbsp;</span><span class="wrap">&shy;</span><span class="conj">and</span><span class="dot">·</span><span class="art">the</span><span class="dot">·</span><span class="gens m"><span class="caps">C</span>astdownïte</span><span class="sofpassuk">&nbsp;:</span></p>
+<p class="in0" data-number="10"><span class="conj">and</span><span class="dot">·</span><span class="adv">now&nbsp;</span><span class="wrap">&shy;</span><span class="exsh m">walk!&nbsp;</span><span class="wrap">&shy;</span><span class="nadv m">haste</span></p><p class="in2"><span class="conj">and</span><span class="dot">·</span><span class="c"><span class="caps">I</span><span class="dot">·</span><span class="impf">send</span></span><span class="dot">·</span><span class="m">you&nbsp;</span><span class="wrap">&shy;</span><span class="prep">to&nbsp;</span><span class="wrap">&shy;</span><span class="i m"><i><span class="caps">P</span>haraoh</i></span><span class="sofpassuk">&nbsp;:</span></p>
+</div>
+</div>
+
+<script>
+const divs = document.querySelectorAll('.focusable-div');
+const spans = document.querySelectorAll('#translation span, #translation p');
+
+let lastClickedDiv = null;
+
+function highlightSpans(div, classToAdd) {
+    const divId = div.id;
+    const relatedSpans = document.querySelectorAll(`#translation .${divId}`);
+    relatedSpans.forEach(span => span.classList.add(classToAdd));
+}
+
+function resetAllHighlights() {
+    spans.forEach(span => span.classList.remove('hovered', 'clicked'));
+}
+
+function clickDiv(div) {
+    resetAllHighlights();
+    if (lastClickedDiv === div) {
+        lastClickedDiv = null;
+        div.classList.remove('clicked');
+    } else {
+        divs.forEach(d => d.classList.remove('clicked'));
+        div.classList.add('clicked');
+        lastClickedDiv = div;
+        highlightSpans(div, 'clicked');
+    }
+}
+
+function hoverDiv(div) {
+    if (lastClickedDiv === div) {
+    } else {
+        div.classList.add('hovered');
+        resetAllHighlights();
+        highlightSpans(div, 'hovered');
+    }
+}
+
+divs.forEach(div => {
+    div.addEventListener('click', () => clickDiv(div));
+
+    div.addEventListener('mouseover', () => hoverDiv(div));
+
+    div.addEventListener('mouseout', () => {
+        div.classList.remove('hovered');
+        resetAllHighlights();
+        if (lastClickedDiv) highlightSpans(lastClickedDiv, 'clicked');
+    });
+});
+
+spans.forEach(span => {
+    span.addEventListener('mouseover', (evt) => {
+        span.classList.add('indivhover');
+        evt.stopPropagation();
+    });
+
+    span.addEventListener('mouseout', () => {
+        span.classList.remove('indivhover');
+    });
+
+    span.addEventListener('click', (evt) => {
+        const divId = span.classList[0];
+        const correspondingDiv = document.getElementById(divId);
+        clickDiv(correspondingDiv);
+        if (correspondingDiv.parentElement.id === 'key') {
+            correspondingDiv.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            correspondingDiv.parentElement.scrollIntoView({ behavior: 'smooth' });
+        }
+        evt.stopPropagation();
+    });
+});
+</script>
+
+</body>
+</html>

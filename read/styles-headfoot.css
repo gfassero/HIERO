@@ -1,0 +1,60 @@
+﻿#header {
+    order: -2; /* Place TOC first */
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    border-bottom: 1px solid var(--darkborder);
+}
+#header, #footer {
+    background-color: var(--blackbg);
+    overflow: hidden;
+}
+#footer {
+    border-top: 1px solid var(--darkborder);
+}
+
+#table-of-sections {
+    order: -1; /* Place TOC first */
+    background: var(--darkbg);
+    border-bottom: 1px solid var(--darkborder);
+    column-width: 6em;
+    column-gap: 0;
+    overflow: hidden;
+}
+
+/* .headfoot = header, footer, and table-of-sections */
+
+.headfoot a {
+  float: left;
+  text-align: center;
+  padding: 0.8em 1em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+#header a, #footer a {
+  color: var(--lightbg);
+  font-size: 1.05em;
+}
+#table-of-sections a {
+  color: var(--blackbg);
+  width: 4em;
+}
+
+.headfoot a:hover,
+.headfoot a.split:hover,
+.headfoot a.title:hover {
+  background-color: var(--navhover);
+  color: black !important;
+}
+
+.headfoot a.title,
+.headfoot a.split {
+  background-color: var(--boldhilite);
+  color: var(--lightbg);
+  font-weight: bold;
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+#header a.split {
+  float: right;
+}
