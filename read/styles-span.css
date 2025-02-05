@@ -10,12 +10,12 @@
 
 .m {
     /* background-color: #d0d0fa; */
-    border-bottom: 0.75pt solid #c0c0c0;
+    border-bottom: 0.75pt solid var(--textgray);
     border-radius: 3.75pt;
 }
 .f {
     /* background-color: #ffc0cb; */
-    border-bottom: 1.25pt dashed #c0c0c0;
+    border-bottom: 1.25pt dashed var(--textgray);
     border-radius: 3.75pt;
 }
 

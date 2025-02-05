@@ -4,11 +4,19 @@
 
 :root {
   --lightbg: white;
-  --darkbg: #c0e0d4;
-  --blackbg: #303030;
-  --darkborder: #80c0a8;
+  --darkbg: #bbccdd; /* LIGHT BLUE hsl(210 33% 80%) */
+  --blackbg: #333333; /* DARK GRAY hsl(0 0% 20%) */
+  --darkborder: #7799bb; /* STEEL BLUE hsl(210 33% 60%) */
   --navhover: #dddddd;
-  --boldhilite: #04aa6d;
+
+  --boldhilite: #0454a4; /* DARK BLUE hsl(210 95% 33%) */
+  --boldhiliteText: WHITE;
+
+  --keybold: #ffb41f; /* ORANGE hsl(40 100% 56%) */
+  --keylite: #ffda8f; /* LIGHT ORANGE hsl(40 100% 78%) */
+  --keycontrast: #ff1fb4; /* MAGENTA */
+
+  --textgray: #c0c0c0; /* MID-GRAY */
 }
 
 body {

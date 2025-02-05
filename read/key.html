@@ -66,12 +66,13 @@ h3 {margin-bottom: 10px;}
     border-radius: 3.75pt;
 }
 
-div.hovered  {background-color: var(--navhover);}             /* YELLOW */
+div.hovered  {background-color: var(--navhover);}
 div.clicked  {background-color: var(--darkbg);}
+
 #translation .hovered,
-#translation .clicked {background-color: #ffc020;}    /* ORANGE */
-#translation .indivhover {background-color: var(--boldhilite);} /* MAGENTA */
-#translation .clicked.indivhover {background-color: #ffe090;} /* LIGHT ORANGE */
+#translation .clicked {background-color: var(--keybold);}
+#translation .clicked.indivhover {background-color: var(--keylite);}
+#translation .indivhover {background-color: var(--keycontrast);}
 
 /* Media query for smaller screens */
 @media (max-width: 40em) {
@@ -84,7 +85,7 @@ div.clicked  {background-color: var(--darkbg);}
         max-height: 50vh;
     }
     #key {
-        border-bottom: 1px solid #c0c0c0;
+        border-bottom: 1px solid var(--textgray);
     }
 }
 
