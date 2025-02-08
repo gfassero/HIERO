@@ -5,8 +5,6 @@ HIERO stands somewhere between a translation and a transliteration. What a trans
 
 HIERO retains mostly Hebrew syntax, so reading it requires effort, just as reading the Hebrew text would require effort even of a reader who had memorized the Hebrew lexicon and inflections.
 
-Translations represent meaning, and our modern English translations already represent the meaning of the Hebrew text accurately. HIERO attempts to do something rather different—that is, to represent more of the author’s poetic choices than is possible in a translation. HIERO should always be read in light of the meaning given by existing translations.
-
 To understand HIERO best, begin with passages that you already know well, keeping the familiar passage in mind. For less familiar passages, it may be easiest to read HIERO with a normal translation on hand, or, even better, to listen to someone else read a normal translation aloud while you follow along in HIERO.
 
 # Formatting
