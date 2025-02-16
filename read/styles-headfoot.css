@@ -1,8 +1,4 @@
 ﻿#header {
-    order: -2; /* Place TOC first */
-    position: sticky;
-    top: 0;
-    z-index: 99;
     border-bottom: 1px solid var(--darkborder);
 }
 #header, #footer {
@@ -25,6 +21,10 @@
 }
 
 /* .headfoot = header, footer, and table-of-sections */
+
+.headfoot {
+    flex: none;
+}
 
 .headfoot a {
     float: left;

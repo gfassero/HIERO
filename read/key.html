@@ -7,12 +7,6 @@
 <title>HIERO - Hebrew Idiom in English Roots</title>
 <link rel="stylesheet" href="styles.css" />
 <style>
-* {
-    scroll-margin-top: 10px;
-}
-body {
-    height: 100vh;
-}
 #translation {
     /* These rules exist to shrink-wrap the paragraphs to the size of their text,
        instead of letting them take up the entire width of the viewport. */
@@ -22,16 +16,10 @@ body {
 }
 .panel {
     width: 50%;
-    overflow-y: auto; /* Allow scrolling */
-    box-sizing: border-box;
 }
+
 #key {
     padding: 0px 10px 10px 10px;
-}
-.content-container {
-    display: flex;
-    flex: 1; /* This makes sure the content takes up the remaining space */
-    overflow: hidden; /* Prevent content from overflowing the container */
 }
 h3 {margin-bottom: 10px;}
 #translation {
@@ -74,20 +62,25 @@ div.clicked  {background-color: var(--darkbg);}
 #translation .clicked.indivhover {background-color: var(--keylite);}
 #translation .indivhover {background-color: var(--keycontrast);}
 
-/* Media query for smaller screens */
-@media (max-width: 40em) {
+
+/* Media query for narrow screens */
+@media (max-aspect-ratio: 4/5) {
     .content-container {
         flex-direction: column; /* Stack panels vertically */
     }
     .panel {
         width: 100%; /* Make panels take full width */
         height: auto; /* Let height adjust to content */
-        max-height: 50vh;
     }
     #key {
-        border-bottom: 1px solid var(--textgray);
+        max-height: 40vh;
+        border-bottom: 2px solid var(--blackbg);
+    }
+    #translation {
+        max-height: 60vh;
     }
 }
+
 
 @media print {
     body {height: auto;}

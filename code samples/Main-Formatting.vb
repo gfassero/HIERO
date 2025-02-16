@@ -39,6 +39,7 @@
 		"     commercial or non-commercial, without prior written permission from the author. -->" & vbCrLf &
 		"<html lang=""en"">" & vbCrLf &
 		"<head>" & vbCrLf &
+		"<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">" & vbCrLf &
 		"<title>HIERO - Hebrew Idiom in English Roots</title>" & vbCrLf &
 		"<link rel=""stylesheet"" href=""styles.css"" />" & vbCrLf & ' "<script type=""text/javascript"" src=""slurs.js""></script>" & vbCrLf &
 		"</head>" & vbCrLf &
@@ -49,7 +50,7 @@
 		"<a href=""index.html"">Bible</a>"
 
 	Public Const OutputBeginTranslationMinimal = "</div>" & vbCrLf &
-		"<div id=""printable"">" & vbCrLf &
+		"<div id=""printable"" class=""panel"">" & vbCrLf &
 		"<div id=""translation"">"
 	Public Const OutputBeginTranslation = "<a href=""#table-of-sections"">Sections</a>" & vbCrLf & OutputBeginTranslationMinimal
 
@@ -59,8 +60,7 @@
 		"</div>" & vbCrLf &
 		"<div id=""footer"" class=""headfoot"">" &
 		vbCrLf & "<a href=""http://gfassero.github.io/HIERO/"" class=""title"">HIERO"
-	Public Const OutputFooterClose = "</a>" & vbCrLf &
-		"</div>"
+	Public Const OutputFooterClose = "</a>"
 
 	Public Const OutputTOC = vbCrLf &
 		"</div>" & vbCrLf &
@@ -71,6 +71,7 @@
 		"<span class=""columnsTOC"">"
 
 	Public Const OutputEnd = vbCrLf &
+							 "</div>" & vbCrLf &
 							 "</div>" & vbCrLf &
 							 "</body>" & vbCrLf &
 							 "</html>"

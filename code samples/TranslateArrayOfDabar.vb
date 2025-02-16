@@ -30,8 +30,7 @@
 				Reveal(IIf(dabar.Cantillation.StartsWith(SofPasuq), SofPasuq, EndLine), True)
 
 				If h < dabars.Length - 1 Then
-
-					If dabars(h + 1).Citation = dabars(h).Citation Then Reveal("</p>", True)
+					' If dabars(h + 1).Citation = dabars(h).Citation Then Reveal("</p>", True)
 
 					Reveal(PeOpenMajorBreakBegin & dabars(h + 1).Citation & PeOpenMajorBreakEnd, True)
 
@@ -47,7 +46,7 @@
 				Reveal(IIf(dabar.Cantillation.StartsWith(SofPasuq), SofPasuq, EndLine), True)
 
 				If h < dabars.Length - 1 Then
-					If dabars(h + 1).Citation = dabars(h).Citation Then Reveal("</p>", True)
+					' If dabars(h + 1).Citation = dabars(h).Citation Then Reveal("</p>", True)
 
 					Reveal(SamekhClosedMinorBreak, True)
 
