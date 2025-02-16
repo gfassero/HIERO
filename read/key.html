@@ -8,6 +8,9 @@
 <link rel="stylesheet" href="styles.css" />
 <style>
 #translation {
+    padding-top: 0;
+    padding-bottom: 0;
+
     /* These rules exist to shrink-wrap the paragraphs to the size of their text,
        instead of letting them take up the entire width of the viewport. */
     display: flex;
@@ -22,10 +25,6 @@
     padding: 0px 10px 10px 10px;
 }
 h3 {margin-bottom: 10px;}
-#translation {
-    padding-top: 0;
-    padding-bottom: 0;
-}
 
 #key div p {
     margin-bottom: 10px;
@@ -49,6 +48,10 @@ h3 {margin-bottom: 10px;}
 #key .focusable-div, #translation span, #translation p {
     cursor: pointer;
     transition: background-color 0.2s;
+}
+#translation p {
+    max-width: 100%;
+    box-sizing: border-box;
 }
 #translation p, #translation span {
     border-radius: 3.75pt;
