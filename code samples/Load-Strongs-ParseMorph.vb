@@ -168,11 +168,7 @@
 							Not (StrongsLemma = "9048" AndAlso GramMorph = "Pp3mp") AndAlso
 							Not (StrongsLemma = "9049" AndAlso GramMorph = "Pp3fp") Then
 
-								' Lemma 859C "you (fs)" occurs 4x with morph Pp2ms "you (ms)": Psa.6.3(6.4)#04, Num.11.15#03, Deu.5.27#10, and Ezk.28.14#01
-								' These are tagged incorrectly, so fix the tag and render them as feminine.
-								If StrongsLemma = "0859C" Then : GramMorph = "Pp2fs"
-								Else : Throw New ArgumentException("Lemma " & StrongsLemma & " occurred with morph " & GramMorph & ".")
-								End If
+								Throw New ArgumentException("Lemma " & StrongsLemma & " occurred with morph " & GramMorph & ".")
 
 							End If
 						Case Else
