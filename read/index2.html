@@ -83,34 +83,6 @@ div.clicked  {background-color: var(--darkbg);}
 #translation .clicked.indivhover {background-color: var(--keylite);}
 #translation .indivhover {background-color: var(--keycontrast);}
 
-
-/* Media query for narrow screens */
-@media (max-aspect-ratio: 4/5) {
-    .content-container {
-        flex-direction: column; /* Stack panels vertically */
-    }
-    .panel {
-        width: 100%; /* Make panels take full width */
-        height: auto; /* Let height adjust to content */
-    }
-    #key {
-        max-height: 40vh;
-        border-bottom: 2px solid var(--blackbg);
-    }
-    #translation {
-        max-height: 60vh;
-    }
-}
-
-
-@media print {
-    body {height: auto;}
-    .content-container {flex-direction: column;}
-    .panel {
-        width: 100%;
-        margin: 0;
-    }
-}
 </style>
 </head>
 <body>
