@@ -9,7 +9,6 @@
 <style>
 #translation {
     padding-top: 0;
-    padding-bottom: 0;
 
     /* These rules exist to shrink-wrap the paragraphs to the size of their text,
        instead of letting them take up the entire width of the viewport. */
@@ -19,9 +18,6 @@
 }
 .panel {
     width: 50%;
-}
-#translation {
-    margin-bottom: 1em;
 }
 
 #key {
@@ -89,11 +85,24 @@ div.clicked  {background-color: var(--darkbg);}
 
 
 @media print {
-    body {height: auto;}
-    .content-container {flex-direction: column;}
+    body {
+        height: auto;
+        overflow: visible;
+    }
+    .content-container {
+        flex-direction: column;
+        overflow: visible;
+    }
     .panel {
         width: 100%;
         margin: 0;
+    }
+    #key {
+        max-height: none;
+        border-bottom: none;
+    }
+    #translation {
+        max-height: none;
     }
 }
 </style>

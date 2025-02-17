@@ -11,6 +11,7 @@
 
 .glossary-entry {
     display: table-row;
+    width: 100%;
 }
 
 .uniqueness {background-color: #ffc040;}
@@ -20,7 +21,6 @@
 
 .gloss-heb {
     display: table-cell;
-    width: 5em;
     font-size: 120%;
     font-weight: bold;
 }
@@ -41,9 +41,9 @@
     font-style: italic;
 }
 
-    .gloss-xlit::after {
-        content: '. ';
-    }
+.gloss-xlit::after {
+    content: '. ';
+}
 
 .gloss-comment {
     display: table-cell;
@@ -57,12 +57,21 @@ summary {
     margin-left: -2em;
 }
 
+details {
+    border-left: 1px solid transparent; /* Black border when open */
+    border-radius: 15px;
+}
 details[open] {
     border-left: 1px solid black; /* Black border when open */
     border-radius: 15px;
 }
 
-details {
-    border-left: 1px solid transparent; /* Black border when open */
-    border-radius: 15px;
+@media print {
+    .panel, #translation {
+        width: 100vw;
+        margin: 0;
+    }
+    .gloss-heb {
+        max-width: 4em;
+    }
 }
