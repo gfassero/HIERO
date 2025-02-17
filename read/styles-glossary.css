@@ -16,10 +16,10 @@
     width: 100%;
 }
 
-.uniqueness {background-color: #ffc040;}
-.coherence { background-color: #ff80c0;}
-.uniqueness.coherence {background-color: #ff4000;}
-.excused {   background-color: #d8d8d8;}
+.uniqueness {background-color: #ffc040;} /* ORANGE */
+.coherence { background-color: #ff80c0;} /* MAGENTA */
+.uniqueness.coherence {background-color: #ff4000;} /* RED */
+.excused {   background-color: #d8d8d8;} /* LIGHT GRAY */
 
 .gloss-heb {
     display: table-cell;

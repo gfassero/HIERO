@@ -3,26 +3,31 @@
 @import "styles-headfoot.css" screen;
 
 :root {
-  --lightbg: white;
-  --darkbg: #bbccdd; /* LIGHT BLUE hsl(210 33% 80%) */
-  --blackbg: #333333; /* DARK GRAY hsl(0 0% 20%) */
-  --darkborder: #7799bb; /* STEEL BLUE hsl(210 33% 60%) */
-  --navhover: #dddddd;
+  --hue-main: 220;
+  --hue-hili:  40;
+  --hue-altr: 310;
 
-  --boldhilite: #0454a4; /* DARK BLUE hsl(210 95% 33%) */
+  --lightbg: WHITE;
+  --darkbg:      hsl(var(--hue-main)  67% 78%); /* LIGHT BLUE */
+  --blackbg:     hsl(var(--hue-main)   0% 22%); /* DARK GRAY */
+  --darkborder:  hsl(var(--hue-main)  33% 67%); /* STEEL BLUE */
+  --navhover:    hsl(var(--hue-hili)  67% 78%);
+
+  --boldhilite:  hsl(var(--hue-main)  95% 44%); /* DARK BLUE */
   --boldhiliteText: WHITE;
 
-  --keybold: #ffb41f; /* ORANGE hsl(40 100% 56%) */
-  --keylite: #ffda8f; /* LIGHT ORANGE hsl(40 100% 78%) */
-  --keycontrast: #ff1fb4; /* MAGENTA */
+  --keybold:     hsl(var(--hue-hili) 100% 56%); /* ORANGE */
+  --keylite:     hsl(var(--hue-hili) 100% 78%); /* LIGHT ORANGE */
+  --keycontrast: hsl(var(--hue-altr) 100% 56%); /* MAGENTA */
 
-  --textgray: #c0c0c0; /* MID-GRAY */
+  --textgray:    hsl(var(--hue-main)   0% 78%); /* MID-GRAY */
 }
 
 * {
     scroll-margin-top: 0.65em;
     scroll-behavior: smooth;
     font-family: serif;
+    transition: color 0.15s, background-color 0.15s;
 }
 
 body {
@@ -50,6 +55,11 @@ body {
     padding: 1em;
 }
 
+.panel a {transition: none;}
+.panel a:link,
+.panel a:visited {color: var(--boldhilite);}
+.panel a:hover {  color: var(--blackbg);}
+.panel a:active { color: var(--darkbg);}
 
 @media print {
     body {
