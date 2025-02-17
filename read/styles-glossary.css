@@ -77,3 +77,7 @@ details[open] {
         max-width: 4em;
     }
 }
+
+details summary {
+  cursor: pointer;
+}

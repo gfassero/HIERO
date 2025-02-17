@@ -11,6 +11,7 @@ Partial Module Main
         Public ReadOnly SuppressOf As Boolean = False
         Public ReadOnly SuppressThe As Boolean = False
         Public ReadOnly SuppressPossessive As Boolean = False
+        Public ReadOnly Suppress9005 As Boolean = False
 
         Public Sub New(entry As XmlElement, strong As String, topLevelEntry As String)
             LexiconPartOfSpeech = entry.Item("pos").InnerText
@@ -25,6 +26,7 @@ Partial Module Main
                 If supressions.Contains("of") Then SuppressOf = True
                 If supressions.Contains("the") Then SuppressThe = True
                 If supressions.Contains("possessive") Then SuppressPossessive = True
+                If supressions.Contains("pre9005") Then Suppress9005 = True
             End If
             If entry.Item("xref").HasAttribute("moveable") AndAlso
                 entry.Item("xref").Attributes.GetNamedItem("moveable").Value = "negator" Then

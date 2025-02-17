@@ -103,7 +103,7 @@ HIERO uses the following function words as auxiliaries to represent the various 
 - Possessive adjectives*
 - Reflexive affixes: -*self*, -*selves*, *self*-
 - Auxiliary verbs: *be*\*, *do*\*, *cause*\*, *have*, *make*, *let*
-- Some prepositions: *of*, *to*, *on*, *by*, *at*, *among*, *against*
+- Some prepositions: *of*, *to*\*, *on*, *by*, *at*, *among*, *against*
 - Other minor words: *that*\*, *over*, *off*
 
 ### Independant function words
