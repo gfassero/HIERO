@@ -3,7 +3,9 @@
     -webkit-column-count: 1 !important;
     -moz-column-count: 1 !important;
 }
-
+#table-of-sections {
+    column-width: 8em;
+}
 
 .glossary-caption {
     padding: 0em;
@@ -58,12 +60,12 @@ summary {
 }
 
 details {
-    border-left: 1px solid transparent; /* Black border when open */
-    border-radius: 15px;
+    border-left: 1px solid transparent;
+    border-radius: 3.75pt;
 }
 details[open] {
-    border-left: 1px solid black; /* Black border when open */
-    border-radius: 15px;
+    border-left: 1px solid var(--darkborder); /* Dark border when open */
+    border-radius: 3.75pt;
 }
 
 @media print {

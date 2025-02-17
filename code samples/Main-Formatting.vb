@@ -70,6 +70,12 @@
 	Public Const OutputTOCBook2 = vbCrLf &
 		"<span class=""columnsTOC"">"
 
+	Public Const OutputTOCGlossary = "</div>" & vbCrLf &
+									 "<div id=""table-of-sections"" class=""headfoot"">" & vbCrLf &
+									 "<a href=""glossary.html"">By Category</a>" & vbCrLf &
+									 "<a href=""glossary-frequency.html"">By Frequency</a>" & vbCrLf &
+									 "<a href=""glossary-alphabetical.html"">Alphabetical</a>"
+
 	Public Const OutputEnd = vbCrLf &
 							 "</div>" & vbCrLf &
 							 "</div>" & vbCrLf &
