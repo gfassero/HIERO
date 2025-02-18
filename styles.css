@@ -62,7 +62,7 @@ pre *, code {
   font-size: 110%;
 }
 pre, code {
-  color: var(--nearblack);
+  background-color: var(--nearblack);
 }
 pre {
   padding: 8px 15px;
