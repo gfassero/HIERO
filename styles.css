@@ -1,25 +1,25 @@
 .highlight table td {
-  padding:5px
+  padding: 5px;
 }
 .highlight table pre {
-  margin:0
+  margin: 0;
 }
 .highlight .cm {
-  color:#999988;
-  font-style:italic
+  color: #999988;
+  font-style: italic;
 }
 .highlight .cp {
-  color:#999999;
-  font-weight:bold
+  color: #999999;
+  font-weight: bold;
 }
 .highlight .c1 {
-  color:#999988;
-  font-style:italic
+  color: #999988;
+  font-style: italic;
 }
 .highlight .cs {
-  color:#999999;
-  font-weight:bold;
-  font-style:italic
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
 }
 .highlight .c,
 .highlight .cd {
@@ -221,15 +221,13 @@ h1, h2, h3, h4, h5, h6 {
 ul, ol,
 table,
 pre {
-  margin:0 0 20px
+  margin: 0 0 1.3em;
 }
-.wrapper {
-  width:860px;
-  margin:0 auto
+p, ol li {
+  margin: 0 0 0.65em;
 }
 table {
-  width:100%;
-  border-collapse:collapse
+  border-collapse: collapse;
 }
 th,
 td {
@@ -245,10 +243,10 @@ pre *, code {
   font-size: 110%;
 }
 pre {
-  color:#333
-  padding:8px 15px;
-  background:#f8f8f8;
+  color: #333;
+  padding: 8px 15px;
+  background: #f8f8f8;
   border-radius: 3.75pt;
   border: 1px solid var(--darkborder);
-  overflow-x:auto
+  overflow-x: auto;
 }
