@@ -215,39 +215,13 @@
 .highlight {
   background-color:#f8f8f8
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color:#222;
-  margin:0 0 20px
+h1, h2, h3, h4, h5, h6 {
+  color: var(--blackbg);
 }
-p,
-ul,
-ol,
+ul, ol,
 table,
-pre,
-dl {
+pre {
   margin:0 0 20px
-}
-h1,
-h2,
-h3 {
-  line-height:1.1
-}
-h1 {
-  font-size:28px
-}
-h2 {
-  color:#393939
-}
-h3,
-h4,
-h5,
-h6 {
-  color:#494949
 }
 .wrapper {
   width:860px;
@@ -261,12 +235,20 @@ th,
 td {
   text-align:left;
   padding:5px 10px;
-  border-bottom:1px solid #e5e5e5
-}
-dt {
-  color:#444;
-  font-weight:700
+  border-bottom: 1px solid var(--textgray);
 }
 th {
-  color:#444
+  color: var(--blackbg);
+}
+pre *, code {
+  font-family: monospace;
+  font-size: 110%;
+}
+pre {
+  color:#333
+  padding:8px 15px;
+  background:#f8f8f8;
+  border-radius: 3.75pt;
+  border: 1px solid var(--darkborder);
+  overflow-x:auto
 }

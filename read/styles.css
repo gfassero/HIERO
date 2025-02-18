@@ -26,8 +26,8 @@
 * {
     scroll-margin-top: 0.65em;
     scroll-behavior: smooth;
-    font-family: serif;
     transition: color 0.15s, background-color 0.15s;
+    font-family: serif;
 }
 
 body {
