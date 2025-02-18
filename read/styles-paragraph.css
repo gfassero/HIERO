@@ -1,4 +1,10 @@
-﻿p {
+﻿.title, .book, .psalm, .anchor-book {
+    font-weight: bold;
+}
+
+#translation {
+
+p {
     position: relative; /* Enables positioning for the ::before pseudo-element */
     margin: 0;
     padding-left: 1.8em; /* Aligns the text flush */
@@ -8,9 +14,6 @@
 
     /* HEADINGS */
 
-.title, .book, .psalm, .anchor-book {
-    font-weight: bold;
-}
 p.book:not(:first-of-type) {
     break-before: page;
 }
@@ -23,7 +26,6 @@ p.book, p.psalm {
 p.subtitle {
     margin-bottom: 1em;
 }
-
 
     /* LINE INDENTATION */
 
@@ -72,4 +74,6 @@ p.chapter::before {
     left: -0.5em;
     font-size: 166.67%;
     font-weight: bold;
+}
+
 }

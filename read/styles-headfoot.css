@@ -11,13 +11,15 @@
 
 #table-of-sections {
     order: -1; /* Place TOC first */
-    background: var(--darkbg);
-    border-bottom: 1px solid var(--darkborder);
     overflow: hidden;
 
     display: flex-column;
     column-width: 4em;
     column-gap: 0;
+
+    margin: 10px;
+    border: 1px solid var(--darkborder);
+    border-radius: 3.75pt;
 }
 
 /* .headfoot = header, footer, and table-of-sections */
