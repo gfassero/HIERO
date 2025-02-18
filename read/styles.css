@@ -5,22 +5,21 @@
 :root {
   --hue-main: 220;
   --hue-hili:  40;
-  --hue-altr: 310;
 
-  --lightbg: WHITE;
-  --darkbg:      hsl(var(--hue-main)  67% 78%); /* LIGHT BLUE */
-  --blackbg:     hsl(var(--hue-main)   0% 22%); /* DARK GRAY */
+  --litebg:      hsl(var(--hue-main)  67% 78%); /* LIGHT BLUE */
+  --navhover:    hsl(var(--hue-hili)  67% 78%); /* LIGHT ORANGE */
+
   --darkborder:  hsl(var(--hue-main)  33% 67%); /* STEEL BLUE */
-  --navhover:    hsl(var(--hue-hili)  67% 78%);
 
-  --boldhilite:  hsl(var(--hue-main)  95% 44%); /* DARK BLUE */
-  --boldhiliteText: WHITE;
+  --nearblack:   hsl(var(--hue-main)   0% 22%); /* DARK GRAY */
+  --boldmain:    hsl(var(--hue-main)  95% 44%); /* DARK BLUE */
+  --whitetext:   WHITE;
 
-  --keybold:     hsl(var(--hue-hili) 100% 56%); /* ORANGE */
-  --keylite:     hsl(var(--hue-hili) 100% 78%); /* LIGHT ORANGE */
-  --keycontrast: hsl(var(--hue-altr) 100% 56%); /* MAGENTA */
+  --boldhilite:  hsl(var(--hue-hili) 100% 56%); /* ORANGE */
 
   --textgray:    hsl(var(--hue-main)   0% 78%); /* MID-GRAY */
+
+  --verylitebg:    hsl(var(--hue-main)   0% 97%); /* MID-GRAY */
 }
 
 * {
@@ -56,10 +55,9 @@ body {
 }
 
 .panel a {transition: none;}
-.panel a:link,
-.panel a:visited {color: var(--boldhilite);}
-.panel a:hover {  color: var(--blackbg);}
-.panel a:active { color: var(--darkbg);}
+.panel a:link, .panel a:visited {color: var(--boldmain);}
+.panel a:hover {  color: var(--nearblack);}
+.panel a:active { color: var(--litebg);}
 
 @media print {
     body {
