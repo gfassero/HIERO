@@ -79,6 +79,7 @@ pre {
     .panel {
         width: 100% !important; /* Make panels take full width */
         height: auto; /* Let height adjust to content */
+        overflow-y: visible;
     }
     #key {
         padding-right: 2.3em;
