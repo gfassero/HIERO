@@ -26,14 +26,19 @@
     display: inline-block;
 }
 
-.panel > p, ol li {
+.panel > p, ol li, ul {
   margin: 0 0 0.65em;
 }
 h1, h2, h3, h4, h5, h6 {
-  margin: 0.65em 0;
   color: var(--blackbg);
 }
-ul, ol,
+h1, h2, h3 {
+  margin: 0.65em 0;
+}
+h4, h5, h6 {
+  margin: 0 0 0.26em 0;
+}
+ol,
 table,
 pre {
   margin: 0 0 1.3em;
@@ -55,7 +60,7 @@ pre *, code {
   font-size: 110%;
 }
 pre {
-  color: #333;
+  color: var(--blackbg);
   padding: 8px 15px;
   background: #f8f8f8;
   border-radius: 3.75pt;
