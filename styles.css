@@ -74,12 +74,12 @@ pre {
 @media print, screen and (max-width: 960px) {
     .content-container {
         flex-direction: column; /* Stack panels vertically */
-        overflow: visible;
+        overflow: visible !important;
     }
     .panel {
         width: 100% !important; /* Make panels take full width */
         height: auto; /* Let height adjust to content */
-        overflow-y: visible;
+        overflow-y: visible !important;
     }
     #key {
         padding-right: 2.3em;
