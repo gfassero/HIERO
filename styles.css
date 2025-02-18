@@ -1,3 +1,49 @@
+#key {
+    width: 410px;
+    padding-right: 0px;
+}
+.panel {
+    padding: 1em 2.3em;
+}
+
+
+#key div p {
+    margin-bottom: 10px;
+    padding: 0 1em;
+}
+#key div ul {margin: 0;}
+#key div {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid var(--darkborder);
+    border-radius: 3.75pt;
+}
+#key > div {
+    padding-top: 0;
+}
+#key div .focusable-div {
+    margin-top: 0;
+    display: inline-block;
+}
+
+
+
+/* Media query for narrow screens */
+@media print, screen and (max-width: 960px) {
+    .content-container {
+        flex-direction: column; /* Stack panels vertically */
+        overflow: visible;
+    }
+    .panel {
+        width: 100% !important; /* Make panels take full width */
+        height: auto; /* Let height adjust to content */
+    }
+    #key {
+        padding-right: 2.3em;
+    }
+}
+
+
 .highlight table td {
   padding: 5px;
 }
@@ -223,7 +269,7 @@ table,
 pre {
   margin: 0 0 1.3em;
 }
-p, ol li {
+.panel > p, ol li {
   margin: 0 0 0.65em;
 }
 table {
