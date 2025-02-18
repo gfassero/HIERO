@@ -57,13 +57,13 @@ td {
 th {
   color: var(--nearblack);
 }
-pre *, code {
-  font-family: monospace;
-  font-size: 110%;
-}
+
+
 pre, code {
   color: var(--nearblack);
   background: var(--verylitebg);
+  font-family: monospace;
+  font-size: 110%;
 }
 pre {
   padding: 8px 15px;
