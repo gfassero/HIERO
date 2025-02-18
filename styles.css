@@ -62,11 +62,11 @@ pre *, code {
   font-size: 110%;
 }
 pre, code {
-  background-color: var(--nearblack);
+  color: var(--nearblack);
+  background: var(--verylitebg);
 }
 pre {
   padding: 8px 15px;
-  background: var(--verylitebg);
   border-radius: 3.75pt;
   border: 1px solid var(--darkborder);
   overflow-x: auto;
