@@ -1,12 +1,3 @@
-# Only a Partial Translation
-HIERO is a partial translation of the Hebrew text, not a full translation. As a result, HIERO is not rendered in grammatical or idiomatic English. Instead, it represents Hebrew roots and inflections by means of English roots and inflections.
-
-HIERO stands somewhere between a translation and a transliteration. What a transliteration does on the level of letters or sounds, and what a translation does on the level of clauses or sentences, HIERO does on the level of words or morphemes.
-
-HIERO retains mostly Hebrew syntax, so reading it requires effort, just as reading the Hebrew text would require effort even of a reader who had memorized the Hebrew lexicon and inflections.
-
-To understand HIERO best, begin with passages that you already know well, keeping the familiar passage in mind. For less familiar passages, it may be easiest to read HIERO with a normal translation on hand, or, even better, to listen to someone else read a normal translation aloud while you follow along in HIERO.
-
 # Formatting
 HIERO is formatted to indicate features of the Hebrew text. The [formatting key](read/key.html) gives examples of formatting in HIERO.
 - Verses are numbered in small type (<sub>123</sub>). Chapters are numbered in bold (**123**).
