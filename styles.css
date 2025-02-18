@@ -61,8 +61,10 @@ pre *, code {
   font-family: monospace;
   font-size: 110%;
 }
-pre {
+pre, code {
   color: var(--nearblack);
+}
+pre {
   padding: 8px 15px;
   background: var(--verylitebg);
   border-radius: 3.75pt;
