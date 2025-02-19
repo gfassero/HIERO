@@ -8,7 +8,7 @@ HIERO retains mostly Hebrew syntax, so reading it requires effort, just as readi
 To understand HIERO best, begin with passages that you already know well, keeping the familiar passage in mind. For less familiar passages, it may be easiest to read HIERO with a normal translation on hand, or, even better, to listen to someone else read a normal translation aloud while you follow along in HIERO.
 
 # On Meaning
-Translations represent meaning, and I believe that our modern English translations already represent the Hebrew text accurately. HIERO attempts to do something rather different—that is, to represent more of the author’s poetic choices than is possible in a translation. HIERO should always be read in light of the meaning given by existing translations.
+Translations represent meaning, and we already have modern English translations that represent the Hebrew text accurately. HIERO attempts to do something rather different—that is, to represent more of the author’s poetic choices than is possible in a translation. HIERO should always be read in light of the meaning given by existing translations.
 
 HIERO attempts to give studious English readers a better view of the native beauty of the Hebrew scriptures. It does not attempt to uncover hidden meanings in the text or to overthrow traditional interpretations. To do so would be fundamentalistic at best and gnostic at worst. If additional meaning is discovered in HIERO’s output, it will probably be limited to nuances that complement the traditional interpretations.
 
