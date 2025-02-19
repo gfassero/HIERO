@@ -9,12 +9,25 @@ In normal translations, different Hebrew words are translated by the same Englis
 | ------------- | ------------- | ------------- |
 |עדר|flock, drove, herds|flock|
 |צאן|flock, sheep, lamb, cattle|sheep|
+|שׂה|ewe, sheep, lamb, cattle|ovine|
 |כבשׂ|ewe, sheep, lamb|lamb|
 |רחל|ewe, sheep|ewe|
 
-In this example, we can easily see the lack of root coherence. Each Hebrew root is translated in 2-4 different ways. We have to look a little more closely to see the lack of root uniqueness. The words “flock,” “ewe,” and “lamb” each represent two different Hebrew words, and the word “sheep” represents three different Hebrew words. As a result, it is impossible for the reader of a normal translation to know which Hebrew root is being used without looking at the Hebrew text itself. This does not obscure the meaning of the translation—we can easily understand the story—but it does obscure the poetic choices made by the author. By contrast, HIERO makes it easy for the reader to identify recurrences of the same Hebrew root. I have compiled a few [sample texts to illustrate root coherence](output%20samples/short-samples.html) as it appears in HIERO.
+In this example, we can easily see the lack of root coherence. Each Hebrew root is translated in 2-4 different ways. We have to look a little more closely to see the lack of root uniqueness. The words “flock” and “cattle” each represent two different words; “ewe” and “lamb” each represent three; and “sheep” represents four different Hebrew words. As a result, it is impossible for the reader of a normal translation to know which Hebrew root is being used without looking at the Hebrew text itself. This does not obscure the meaning of the translation—we can easily understand the story—but it does obscure the poetic choices made by the author. By contrast, HIERO makes it easy for the reader to identify recurrences of the same Hebrew root. I have compiled a few [sample texts to illustrate root coherence](output%20samples/short-samples.html) as it appears in HIERO.
 
 This parameter is admittedly artificial and unnecessary for normal translation work. It often obscures the meaning of a text, which is why, if you want to understand a text, you should read one of the many excellent translations already available in English.
+
+One unusual challenge for HIERO is the fact that root uniqueness makes it impossible to offer the best translation of a root. For example, some of the Hebrew words for “sheep” have similar meanings:
+
+|Hebrew| Existing translations     | HIERO | Best translation|Frequency|
+| ---: | :------------------------ | :---- | :-------------  | ------: |
+|  עדר | flock, drove, herds       | flock | flock           |     x55 |
+|  צאן | flock, sheep, lamb, cattle| sheep | sheep           |    x276 |
+|   שׂה | ewe, sheep, lamb, cattle  | ovine | sheep           |     x47 |
+|  כבשׂ | ewe, sheep, lamb          | lamb  | lamb            |    x129 |
+|  רחל | ewe, sheep                | ewe   | lamb            |      x4 |
+
+As this example shows, there are two Hebrew roots that are best translated “sheep.” However, root uniqueness allows us to translate only one Hebrew root as “sheep.” As a result, the more common root is translated “sheep,” while the less common root is translated “ovine.” Of course, “ovine” is a poor, unfamiliar word, but I have not found a better unique option in English. In the end, HIERO’s lexicon cannot offer the best translation for many words, but only the best unique translation.
 
 ### More about Root Uniqueness
 Root uniqueness means that unrelated Hebrew words are represented by unrelated English words. Here “unrelated” means that the words do not share a common root word. For example, if there are three unrelated Hebrew words that mean “light”—*'or*, *nogah*, and *peqach*—HIERO has to represent them with unrelated English words—for example, “light,” “brightness,” and “illumination.”
@@ -23,6 +36,11 @@ This is more challenging with many English compound words. For example, the Engl
 
 Root uniqueness does not restrict word choices within the same root. So the Hebrew words *'ur*, *'ury*, and *ma'or*, all derived from *'or*, are translated “light.” Similarly, *'orah* and *ya'yr*, also derived from *'or*, are translated “light[plant]” and “enlightener.”
 
+#### The Problem of Root Uniqueness
+Root uniqueness poses a unique problem that prevents HIERO from offering the best translation for every word.
+
+שֶׂה
+
 ### More about Root Coherence
 Root coherence means that each Hebrew root and all its derivatives are always represented by derivatives of a single English root. For example, all words derived from *'or*, the Hebrew word for “light,” have to be represented in English by words derived from “light.” Some of our options include “lighting,” “enlighten,” and “lit.”
 
@@ -30,12 +48,12 @@ This gets challenging when a the Hebrew root has a derivative that seems unrelat
 
 Usually, the connection between the Hebrew words is more intuitive. For example, the word *ro'sh*, meaning “head” of the human body, also means the leader or “head” of a group of people. The related word *re'shyt*, meaning “beginning” or “first,” translates as “headmost” without much difficulty. And the related word *me**ra'ash**awot*, meaning “pillow,” translates easily as “head[rest].”
 
-### Related words
+### What Qualifies as a “Related Word”
 Both root coherence and root uniqueness focus on whether words are related—and how closely. In order to determine word relationships in Hebrew, I rely primarily on [Strong’s Hebrew Dictionary](http://openscriptures.github.io/HebrewLexicon/HomeFiles/Lexicon.html) and [Gesenius’s Hebrew and Chaldee Lexicon](http://www.blueletterbible.org/study/lexica/gesenius/index.cfm). In English, I rely on the [Online Etymology Dictionary](http://www.etymonline.com/) and [Wiktionary](http://www.wiktionary.org/). Usually, there is a good consensus about word histories, but sometimes it is a judgment call that I have to make. Doubtlessly, a Hebrew scholar could make these judgments better than I can.
 
 In addition, far more words are related than most people realize, and the number of unique roots is fairly small, so this parameter cannot be applied in an entirely objective way. But I think my application of it is helpful and fairly intuitive. I am open to input from others.
 
-### Special cases
+### Special notation
 The lexicon uses two kinds of special notation to make root-for-root translation more feasible.
 
 One special notation is brackets [brackets]. Brackets indicate a word that is not part of the Hebrew root but is helpful in clarifying the meaning of the word. In the examples above “head[rest]” contains brackets because the Hebrew word *mera'ashawot* contains the word *ro'sh*, meaning “head,” but does not contain the word *shabat*, meaning “rest.” This is especially common in names of plants and animals—for example, “algum[tree],” “'eshel[tree],” “white[tree],” and “smooth[tree]” are all trees, but none contains the word *`etz*, meaning “tree.” In HIERO’s final output, brackets are replaced by gray text ![gray](https://placehold.co/15x15/808080/808080.png).
