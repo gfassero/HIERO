@@ -5,13 +5,13 @@ This parameter works in both directions. First, each Hebrew root and all of its 
 
 In normal translations, different Hebrew words are translated by the same English word (no root uniqueness), and the same Hebrew word is translated in different places by different English words (no root coherence). For example, several Hebrew words for “sheep” are translated as follows:
 
-|Hebrew|Existing translations|HIERO|
-| ------------- | ------------- | ------------- |
-|עדר|flock, drove, herds|flock|
-|צאן|flock, sheep, lamb, cattle|sheep|
-|שׂה|ewe, sheep, lamb, cattle|ovine|
-|כבשׂ|ewe, sheep, lamb|lamb|
-|רחל|ewe, sheep|ewe|
+|Hebrew| Existing translations     | HIERO |
+| ---: | :------------------------ | :---- |
+|  עדר | flock, drove, herds       | flock |
+|  צאן | flock, sheep, lamb, cattle| sheep |
+|   שׂה | ewe, sheep, lamb, cattle  | ovine |
+|  כבשׂ | ewe, sheep, lamb          | lamb  |
+|  רחל | ewe, sheep                | ewe   |
 
 In this example, we can easily see the lack of root coherence. Each Hebrew root is translated in 2-4 different ways. We have to look a little more closely to see the lack of root uniqueness. The words “flock” and “cattle” each represent two different words; “ewe” and “lamb” each represent three; and “sheep” represents four different Hebrew words. As a result, it is impossible for the reader of a normal translation to know which Hebrew root is being used without looking at the Hebrew text itself. This does not obscure the meaning of the translation—we can easily understand the story—but it does obscure the poetic choices made by the author. By contrast, HIERO makes it easy for the reader to identify recurrences of the same Hebrew root. I have compiled a few [sample texts to illustrate root coherence](output%20samples/short-samples.html) as it appears in HIERO.
 
@@ -35,11 +35,6 @@ Root uniqueness means that unrelated Hebrew words are represented by unrelated E
 This is more challenging with many English compound words. For example, the English word “lightning” is obviously derived from the word “light.” But in Hebrew, the word *baraq*, which means “lightning,” is its own root word, unrelated to any word for “light.” Root uniqueness does not allow HIERO to use the English word “lightning,” so it is translated as “flash.”
 
 Root uniqueness does not restrict word choices within the same root. So the Hebrew words *'ur*, *'ury*, and *ma'or*, all derived from *'or*, are translated “light.” Similarly, *'orah* and *ya'yr*, also derived from *'or*, are translated “light[plant]” and “enlightener.”
-
-#### The Problem of Root Uniqueness
-Root uniqueness poses a unique problem that prevents HIERO from offering the best translation for every word.
-
-שֶׂה
 
 ### More about Root Coherence
 Root coherence means that each Hebrew root and all its derivatives are always represented by derivatives of a single English root. For example, all words derived from *'or*, the Hebrew word for “light,” have to be represented in English by words derived from “light.” Some of our options include “lighting,” “enlighten,” and “lit.”
