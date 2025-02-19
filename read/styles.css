@@ -12,7 +12,7 @@
   --darkborder:  hsl(var(--hue-main)  33% 67%); /* STEEL BLUE */
 
   --nearblack:   hsl(var(--hue-main)   0% 22%); /* DARK GRAY */
-  --boldmain:    hsl(var(--hue-main)  95% 44%); /* DARK BLUE */
+  --boldmain:    hsl(var(--hue-main)  95% 50%); /* DARK BLUE */
   --whitetext:   WHITE;
 
   --boldhilite:  hsl(var(--hue-hili) 100% 56%); /* ORANGE */
