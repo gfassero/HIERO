@@ -3,7 +3,14 @@ Imports System.Text.RegularExpressions
 
 Partial Module Main
 
+    Dim hebVowelRemoval As Regex
+
+    Function AutoProcessTextualWordToGloss(innerText As String) As String
+        Return hebVowelRemoval.Replace(innerText, "")
+    End Function
+
     Sub LoadAnnotatedHebrew()
+        hebVowelRemoval = New Regex("[" & New String(HebrewVowels) & New String(HebrewConj) & New String(HebrewDisj) & "]")
 
         Console.Write("Loading Hebrew lexicon...")
         Dim MyParsingDict As New ParsingDictReader
@@ -14,8 +21,8 @@ Partial Module Main
 
         ' Make one mega array containing the entire OT
 
-        Using MyReader As New Microsoft.VisualBasic.FileIO.TextFieldParser(ProjectPath & AnnotatedTextPath),
-            compWriter As New StreamWriter(ProjectPath & ExpansionPath)
+        Using MyReader As New Microsoft.VisualBasic.FileIO.TextFieldParser(AnnotatedTextBIN),
+            compWriter As New StreamWriter(ExpandedFromAnnotationsBIN)
             MyReader.TextFieldType = FileIO.FieldType.Delimited
             MyReader.SetDelimiters(vbTab)
             Dim currentRow() As String
@@ -68,11 +75,11 @@ Partial Module Main
             If hebrewTextList(i).Reference = Nothing Then hebrewTextList.RemoveAt(i)
         Next
 
-        HebrewText = hebrewTextList.ToArray
+        OriginalText = hebrewTextList.ToArray
         Console.WriteLine(" Done!")
 
         Console.Write("Pre-parsing Hebrew idiom...")
-        PreparseHebrewIdiom(HebrewText)
+        PreparseHebrewIdiom(OriginalText)
         Console.WriteLine(" Done!")
 
         ' MarkAlliteration()
@@ -88,7 +95,7 @@ Partial Module Main
         Sub New()
             Dim currentRow As String()
 
-            Using MyReader As New Microsoft.VisualBasic.FileIO.TextFieldParser(ProjectPath & ParsingDictionaryPath)
+            Using MyReader As New Microsoft.VisualBasic.FileIO.TextFieldParser(ParsingDictionaryBIN)
                 MyReader.TextFieldType = FileIO.FieldType.Delimited
                 MyReader.SetDelimiters(vbTab)
                 While Not MyReader.EndOfData

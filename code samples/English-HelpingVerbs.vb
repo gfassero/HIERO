@@ -8,7 +8,7 @@ Partial Module Main
     Sub CompileHelpingVerbs()
         helpingVerbs = Array.Empty(Of VerbStem)()
         Dim lexdoc As New XmlDocument
-        lexdoc.Load(ProjectPath & "\" & Helpers)
+        lexdoc.Load(HelpersXML)
 
         Dim hvtemp As New List(Of VerbStem)
 

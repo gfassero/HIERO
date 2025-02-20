@@ -13,7 +13,7 @@ Partial Module Main
 		Dim lexdoc As New XmlDocument
 		While True
 			Try
-				lexdoc.Load(ProjectPath & "\" & Lexicon)
+				lexdoc.Load(LexiconXML)
 				Exit While
 			Catch e As XmlException
 				Console.WriteLine()
