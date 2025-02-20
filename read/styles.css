@@ -22,11 +22,12 @@
   --verylitebg:    hsl(var(--hue-main)   0% 97%); /* MID-GRAY */
 }
 
-* {
+*, #table-of-sections a {
     scroll-margin-top: 0.65em;
     scroll-behavior: smooth;
     transition: color 0.15s, background-color 0.15s;
 }
+.panel a {transition: none;}
 
 body {
     display: flex;
@@ -54,7 +55,6 @@ body {
     padding: 1em;
 }
 
-.panel a {transition: none;}
 .panel a:link, .panel a:visited {color: var(--boldmain);}
 .panel a:hover {  color: var(--nearblack);}
 .panel a:active { color: var(--litebg);}
