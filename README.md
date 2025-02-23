@@ -9,6 +9,10 @@ You can browse the [full HIERO translation here](http://gfassero.github.io/HIERO
 - [Psalm 51](http://gfassero.github.io/HIERO/output%20samples/psalm051.html)
 - [The Suffering Servant](http://gfassero.github.io/HIERO/output%20samples/servant.html) (Isaiah 53)
 
+In this article:
+* Auto-generated table of contents:
+{:toc}
+
 # Rationale
 Modern English readers are blessed with more and better translations of the Bible than anyone else in history. Some translations specialize in theological precision, others swell with rhetorical beauty, and others use such everyday words that they sound like they were written yesterday. The Hebrew scriptures, however, are not written in modern, everyday language, modern technical language, or even classical rhetorical language. They are written in ancient Hebrew poetry, and HIERO tries to reflect that.
 
@@ -23,7 +27,7 @@ Two parameters guide the translation:
 
 Following these two parameters—the second one especially—makes it impossible to translate into normal English. Instead, the text is only partially translated—the morphology is mostly English, but the idiom is not. The vocabulary is based on English roots but extended in unfamiliar ways. Read more [about Hebrew idiom here](reading.md).
 
-# Credits
+# Sources
 HIERO depends on the “[Translators Amalgamated Hebrew OT](http://github.com/STEPBible/STEPBible-Data/tree/master/Translators%20Amalgamated%20OT%2BNT)” (TAHOT) by [STEP Bible](http://www.stepbible.org/), licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). TAHOT provides the Hebrew text from which HIERO works, as well as lexical and grammatical tags on which HIERO’s Hebrew parsing dictionary is primarily based.
 
 HIERO also uses code from the “[OSHB Hebrew Lexicon](http://github.com/openscriptures/HebrewLexicon/blob/master/HebrewStrong.xml)” by the [Open Scriptures Hebrew Bible Project](http://hb.openscriptures.org/), licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). The OSHB Hebrew Lexicon contains XML code, part-of-speech mappings, and Strongs number mappings that structure HIERO’s English lexicon.
