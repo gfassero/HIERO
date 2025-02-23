@@ -45,35 +45,48 @@ p.in2::before {
 }
 
 
-    /* PARASHAH BREAKS */
-
-p.section {
-    padding-left: 5.4em; /* 1.8 + 1.2 * 3 */
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-p.paragraph {
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-
     /* VERSE and CHAPTER NUMBERING */
+
+p::before,
+span.inline {
+    width: 2.33em; /* Reserves space for the number */
+    font-size: 60%;
+}
+p.chapter::before,
+span.inline.chapter {
+    font-size: 166.67%;
+    font-weight: bold;
+}
 
 p::before {
     content: attr(data-number); /* Displays the paragraph number */
     position: absolute; /* Positions the number */
     left: 0em; /* Aligns the number to the left margin */
     text-align: right; /* Aligns the number to the right within its box */
-
-    width: 2.33em; /* Reserves space for the number */
-    font-size: 60%;
 }
 p.chapter::before {
     width: 1.5em; /* Reserves space for the number */
     left: -0.5em;
-    font-size: 166.67%;
-    font-weight: bold;
 }
 
+span.inline {
+    vertical-align: bottom;
+}
+
+}
+
+
+    /* PARASHAH BREAKS */
+
+#translation p.section {
+    padding-left: 5.4em; /* 1.8 + 1.2 * 3 */
+}
+#translation p.paragraph {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.newtestament #translation p,
+#translation p.section {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
