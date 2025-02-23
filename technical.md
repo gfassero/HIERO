@@ -93,31 +93,45 @@ In this walkthrough, we will follow HIERO as it translates the first word of the
 
 First, HIERO reads the first line of the annotated Hebrew text:
 
-`Gen.1.1#01=L	בְּרֵאשִׁ֖ית	1
+```
+Gen.1.1#01=L	בְּרֵאשִׁ֖ית	1
+```
 
 HIERO selects the Hebrew word, which is found in the second column of this line:
 
-`בְּרֵאשִׁית`
+```
+בְּרֵאשִׁית
+```
 
 HIERO searches the first column of Hebrew parsing dictionary for `בְּרֵאשִׁית`. When it finds `בְּרֵאשִׁית`, it selects the rest of the row:
 
-`בְּרֵאשִׁית	H9003/{H7225G}	HR/Ncfsc	4	H9003/{H7225G}	HR/Ncfsa	1`
+```
+בְּרֵאשִׁית	H9003/{H7225G}	HR/Ncfsc	4	H9003/{H7225G}	HR/Ncfsa	1
+```
 
 This entry from the parsing dictionary offers two parsing options:
 
-`H9003/{H7225G}	HR/Ncfsc`
+```
+H9003/{H7225G}	HR/Ncfsc
+```
 
 and
 
-`H9003/{H7225G}	HR/Ncfsa`
+```
+H9003/{H7225G}	HR/Ncfsa
+```
 
 HIERO returns to the current line of the annotated Hebrew text:
 
-`Gen.1.1#01=L	בְּרֵאשִׁ֖ית	1
+```
+Gen.1.1#01=L	בְּרֵאשִׁ֖ית	1
+```
 
 and selects the parsing variant number `1`, which is found in the third column. The parsing variant number is zero-based, so variant `1` is the second parsing:
 
-`H9003/{H7225G}	HR/Ncfsa`
+```
+H9003/{H7225G}	HR/Ncfsa
+```
 
 This is the appropriate parsing for the word `בְּרֵאשִׁית` in this instance.
 
@@ -152,7 +166,9 @@ HIERO then returns to the morphological tag `HR` and discards the `H`. The remai
 
 HIERO saves `in` as the first part of the translation of `בְּרֵאשִׁית`. Since there is another part to be translated, HIERO appends a middle dot `·`, indicating that what follows is a continuation of the same Hebrew word `בְּרֵאשִׁית`:
 
-`in·`
+```
+in·
+```
 
 HIERO then moves on to the main word `רֵאשִׁית`, which is marked with the lexicon tag `{H7225G}` and the morphological tag `Ncfsa`.
 
@@ -189,21 +205,35 @@ The fifth character, indicates the state of the verb, which is either construct 
 
 So far, our translation of the main word `רֵאשִׁית` is still simple:
 
-`headmost`
+```
+headmost
+```
 
 HIERO then returns to the third character, which indicates gender. `f` indicates feminine gender, so HIERO wraps the translation in HTML tags indicating `class="f"`:
 
-`<span class="f">headmost</span>`
+```
+<span class="f">headmost</span>
+```
 
 The two parts of the word `בְּרֵאשִׁית` have now been translated:
 
-`in·` and `<span class="f">headmost</span>`
+```
+in·
+```
+
+and
+
+```
+<span class="f">headmost</span>
+```
 
 The Hebrew word `בְּרֵאשִׁית` does not contain any significant cantillation marks, so no punctuation or line breaks are added.
 
 Finally, HIERO saves the result to an HTML file on the user’s computer:
 
-`in·<span class="f">headmost</span>`
+```
+in·<span class="f">headmost</span>
+```
 
 The HTML output file references a CSS stylesheet in the same folder as the HTML output file. The CSS stylesheet includes rules for rendering the output:
 
@@ -226,11 +256,15 @@ The HTML class `class="f"` in the output references the `.f` rule in the stylesh
 
 This rule indicates that the output should be rendered with a gray dashed underline 1.25 points thick. When the HTML output file is opened by the user, the output is rendered as:
 
+<p>in·<span class="f">headmost</span></p>
+
 in·<span class="f">headmost</span>
 
 HIERO then moves on to the second line of the annotated Hebrew text:
 
-`Gen.1.1#02=L	בָּרָא	1
+```
+Gen.1.1#02=L	בָּרָא	1
+```
 
 ## Further Development
 - Improve the English lexicon.
