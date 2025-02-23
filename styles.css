@@ -14,7 +14,7 @@
     padding: 0 1em;
 }
 #key div ul {margin: 0;}
-#key div {
+#key div, #toc {
     padding: 10px;
     margin-top: 10px;
     border: 1px solid var(--darkborder);

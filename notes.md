@@ -1,6 +1,8 @@
+<div id="#toc">
 In this article:
 * Auto-generated table of contents:
 {:toc}
+</div>
 
 # Only a Partial Translation
 HIERO is a partial translation of the Hebrew text, not a full translation. As a result, HIERO is not rendered in grammatical or idiomatic English. Instead, it represents Hebrew roots and inflections by means of English roots and inflections.
