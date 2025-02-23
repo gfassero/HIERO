@@ -1,9 +1,9 @@
+# Formatting
+HIERO is formatted to indicate features of the Hebrew text. The [formatting key](read/key.html) gives examples of formatting in HIERO.
+
 In this article:
 * Auto-generated table of contents:
 {:toc}
-
-# Formatting
-HIERO is formatted to indicate features of the Hebrew text. The [formatting key](read/key.html) gives examples of formatting in HIERO.
 
 ## Header material
 - The links at the top of the translation link to the *parashah peh* “open portion” section breaks (§) found in the Hebrew text.
@@ -24,7 +24,7 @@ Words in the plural are followed by a superscript plus sign (⁺). Words in the 
 ### Tense (Aspect)
 The two Hebrew verb tenses (or aspects), are translated as the English past and present tense. However, these tenses do not mean the same thing as in English.
 
-## Lexicon:
+## Lexicon Entries
 ### The Divine Name
 Small caps represent the divine name (Yʜᴡʜ) and its abbreviations (Yʜ).
 ### Multi-Word Translations
@@ -40,20 +40,13 @@ Proper nouns denoting the descendants of an individual or the inhabitants of a p
 ### Undefined Words
 The logical “not” sign (¬) precedes a word (usually a proper noun) that has not been translated yet.
 
-## Particles and suffixes:
+## Particles and suffixes
 ### Direct Object Marker
 The degree sign (°) represents the Hebrew direct object particle את.
 ### Directional Suffix
 A rightward-pointing arrow (→) precedes words bearing the directional suffix ה.
 
-## Exclamation Marks
-There are three kinds of exclamation marks in HIERO:
-- Interjections are preceded by an inverted question mark and followed by a question mark (¡please!).
-- An exclamation mark (!) without an inverted exclamation represents the paragogic suffix ה.
-- A superscript exclamation mark (ꜝ) precedes volative verbs (commands, cohortatives, and jussives).
-- The paragogic suffix may be paired with a volative verb (ꜝarise!).
-
-## Breaks & Punctuation
+## Breaks
 Line breaks, section breaks, and punctuation are derived from the Hebrew punctuation and cantillation marks:
 - A section break (§) represents a *parashah peh* “open portion” break.
 - A paragraph break represents a *parashah setumah* “closed portion” break.
@@ -63,3 +56,10 @@ Line breaks, section breaks, and punctuation are derived from the Hebrew punctua
 Other cantillation marks are ignored.
 
 Lines long enough to wrap at the edge of the screen or column are broken by a dash (–).
+
+## Exclamation Marks
+There are three kinds of exclamation marks in HIERO:
+- Interjections are preceded by an inverted question mark and followed by a question mark (¡please!).
+- An exclamation mark (!) without an inverted exclamation represents the paragogic suffix ה.
+- A superscript exclamation mark (ꜝ) precedes volative verbs (commands, cohortatives, and jussives).
+- The paragogic suffix may be paired with a volative verb (ꜝarise!).
