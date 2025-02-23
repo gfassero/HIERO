@@ -97,7 +97,7 @@ First, HIERO reads the first line of the annotated Hebrew text:
 Gen.1.1#01=L	בְּרֵאשִׁ֖ית	1
 ```
 
-HIERO selects the Hebrew word, which is found in the second column of this line:
+HIERO selects the Hebrew word from this line:
 
 ```
 בְּרֵאשִׁית
@@ -127,7 +127,7 @@ HIERO returns to the current line of the annotated Hebrew text:
 Gen.1.1#01=L	בְּרֵאשִׁ֖ית	1
 ```
 
-and selects the parsing variant number `1`, which is found in the third column. The parsing variant number is zero-based, so variant `1` is the second parsing:
+and selects the parsing variant number `1`, which is found beside the Hebrew word. The parsing variant number is zero-based, so variant `1` is the second parsing:
 
 ```
 H9003/{H7225G}	HR/Ncfsa
@@ -189,7 +189,7 @@ HIERO selects the full lexicon entry:
 </entry>
 ```
 
-HIERO then selects the definition `headmost` from this entry:
+HIERO then selects the definition from the entry:
 
 ```xml
 	<def>headmost</def>
@@ -255,8 +255,6 @@ The HTML class `class="f"` in the output references the `.f` rule in the stylesh
 ```
 
 This rule indicates that the output should be rendered with a gray dashed underline 1.25 points thick. When the HTML output file is opened by the user, the output is rendered as:
-
-<p>in·<span class="f">headmost</span></p>
 
 in·<span class="f">headmost</span>
 
