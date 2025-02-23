@@ -1,1 +1,4 @@
 name: HIERO - Hebrew Idiom in English Roots
+  
+kramdown:
+  toc_levels: 2..2

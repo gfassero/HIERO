@@ -1,8 +1,10 @@
+# The Lexicon
+
 In this article:
 * Auto-generated table of contents:
 {:toc}
 
-# The Root-for-Root Translation Parameter
+## The Root-for-Root Translation Parameter
 The English lexicon is the most important part of HIERO—and the part that has taken the most time by far to develop. The primary goal of the English lexicon is to link each Hebrew root with a single English root and vice versa. This one-to-one linking of Hebrew and English roots does not attempt to provide a translation that will fit the meaning of the Hebrew word in all cases. Rather, the purpose is to allow the reader to recognize where the same Hebrew root occurs in different places.
 
 This parameter works in both directions. First, each Hebrew root and all of its derivatives are always represented by derivatives of a single English root—I call this “root coherence.” Second, unrelated Hebrew words are represented by unrelated English words—I call this “root uniqueness.”
@@ -59,16 +61,16 @@ One special notation is brackets [brackets]. Brackets indicate a word that is no
 
 The other special notation is the square root sign (√). The square root sign indicates a word that occurs only once and is unrelated to any other word in the Hebrew scriptures. This is helpful because Hebrew sometimes has more unrelated synonyms for the same thing than English does. For example, there are seven Hebrew words that mean something like “goat,” but I only know of four in English. One of the Hebrew words, *'aqqow*, appears only once and is not related to any other word in the Hebrew scriptures. Using the square root sign, I can translate *'aqqow* as “√goat” instead of having to find or invent another word that might be unintelligible to the reader. The square root sign indicates that the rare word “√goat” (*'aqqow*) is not related to the common word “goat” (*karar*). This satisfies the need for root uniqueness. The lexicon contains 85 definitions marked with the square root sign; since each word occurs only once, the sign appears 85 times in HIERO.
 
-# Other Lexicon Principles
+## Other Lexicon Principles
 Other guiding principles in developing the lexicon are:
 
-## Follow existing translations
+### Follow existing translations
 When possible, the lexicon represents a Hebrew root with a word similar to that used in [popular existing translations](sources.md#bible-translations). HIERO is not an attempt to innovate.
 
-## Translate proper nouns
+### Translate proper nouns
 When the meaning of a proper noun is known, HIERO translates it instead of translating it as other translations do. Proper nouns hold to the root-fot-root translation parameter just as other words do. Because there is no existing tradition of translating proper nouns, HIERO’s translations of proper nouns are a “best guess” and may be imprecise.
 
-## Transliterate familiar words
+### Transliterate familiar words
 Some Hebrew roots are transliterated. These roots are italicized, and are still required to follow the root-fot-root translation parameter. Roots may be transliterated for the following reasons:
 - The root is foreign (e.g., *Pharaoh*, *Purim*).
 - The root’s meaning has been lost (e.g., many kinds of plants and animals).
@@ -77,7 +79,7 @@ Some Hebrew roots are transliterated. These roots are italicized, and are still 
 - The root appears to be a technical word with no equivalent in English (e.g., *herem*, *goel*, *yabam*).
 - The root is somewhat familiar and covers a range of meanings that HIERO is otherwise unable to represent in English (e.g., *shalom*, *adam*, *torah*).
 
-## Make up words
+### Make up words
 When no suitable English word is available, the lexicon may use a made-up word. The new word should be simple and quickly intelligible with some explanation.
 
    For example, the Hebrew root רעה yields words related to both friendship and shepherding. Lacking an equivalent word in English, the lexicon uses the root “tend” and makes up several derivative words.
@@ -89,27 +91,27 @@ When no suitable English word is available, the lexicon may use a made-up word. 
    |רעה|friend|tendent (a friend, who attends to another)|
    |מרעה|pasture|tendage (like pasturage or herbage)|
 
-## Treat Hebrew and Aramaic vocabulary as a single lexicon
+### Treat Hebrew and Aramaic vocabulary as a single lexicon
 Hebrew and Aramaic cognates should be represented by the same English root.
 
-# Exceptions to the Root-for-Root Parameter
+## Exceptions to the Root-for-Root Parameter
 This section lists all exceptions to the root-for-root parameter. The etymologies of these words are so uncertain or interwoven that applying the root-for-root translation parameter seems impossible. I allow exceptions for them because they are function words that do not seem generally to indicate significant word choices. In the lexicon, these exceptions are marked in gray ![light silver](https://placehold.co/15x15/d8d8d8/d8d8d8.png).
 
 <!--
-## Temporary exceptions
+### Temporary exceptions
 The lexicon is still in progress, so not every root is coherent and unique yet. Roots that are not yet coherent are marked in pink ![persian pink](https://placehold.co/15x15/ff80c0/ff80c0.png), roots that are not yet unique are marked in orange ![pastel orange](https://placehold.co/15x15/ffc040/ffc040.png), and roots that are neither coherent nor unique are marked in red ![red-orange](https://placehold.co/15x15/ff4000/ff4000.png). All roots that are not marked are both coherent and unique. A [complete list of exceptions to be resolved](read/glossary-noncompliant.html) is available.
-## Permanent exceptions
+### Permanent exceptions
 In the glossary, permanent exceptions to the root-for-root translation parameter are marked in gray ![light silver](https://placehold.co/15x15/d8d8d8/d8d8d8.png). The following is a complete list of these exceptions.
 -->
 
-## Function words and particles
+### Function words and particles
 
-### Suffixes in English derivatives
+#### Suffixes in English derivatives
 The following suffixes have been used in the lexicon to derive English words from English roots in a way that represents the meaning of the corresponding Hebrew words: -*fy*, -*ly*, -*ish*, -*ous*, -*ful*, -*ize*, -*hood*, -*ward*, -*ness*, -*less*, -*dom*, -*er*, -*ster*, -*tion*, -*ive*, -*ant*/-*ent*, -*able*/-*ible*, -*y*, -*ery*, -*en*, -*est*, -*let*/-*ette*. These suffixes do not correspond to particular Hebrew suffixes. They have been added on the basis of meaning, not form.
 
 Similarly, Latin and Greek prepositional prefixes are not subject to the root-for-root parameter when they appear as part of an English word.
 
-### Function words as auxiliaries
+#### Function words as auxiliaries
 HIERO uses the following function words as auxiliaries to represent the various forms of Hebrew verbs and nouns. Those marked with an asterisk (*) also appear in the lexicon as standalone roots. As standalone roots, they are subject to the two translation parameters. As auxiliaries that represent verb and noun forms, they are joined to the root verb or noun by a middle dot (·) and are not subject to the parameters.
 - Personal pronouns*
 - Possessive adjectives*
@@ -118,7 +120,7 @@ HIERO uses the following function words as auxiliaries to represent the various 
 - Some prepositions: *of*, *to*\*, *on*, *by*, *at*, *among*, *against*
 - Other minor words: *that*\*, *over*, *off*
 
-### Independant function words
+#### Independant function words
 The following words are not compliant with the root-for-root parameter. Each line represents a unique Hebrew root and lists how the root is translated in English. In HIERO, some of these underlying roots can be distinguished only by the diacritics added to the English translation. Details can be found in the [glossary](read/glossary.html), where these words are grouped under “Function Words” and marked in gray ![light silver](https://placehold.co/15x15/d8d8d8/d8d8d8.png).
 
 - Demonstratives
@@ -148,8 +150,8 @@ The following words are not compliant with the root-for-root parameter. Each lin
   - Root *lo'*/*'al*: *not*
   - Root *'ayin*: *ńot*
 
-## Some numbers
-### “one”—not root unique
+### Some numbers
+#### “one”—not root unique
 The English root “one” is not root unique. It appears both as an auxiliary and as representing standalone roots. The underlying roots are all root coherent and can always be distinguished, because each Hebrew root uses a different form of the word, or uses it in a restricted construction.
 - Coherent root *'echad*: *one* (x974) and *unit* (x164)
 - Coherent root *`ashtey*, always in the construction “øne and ten,” meaning “eleven”: *øne* (x19)
@@ -158,10 +160,10 @@ The English root “one” is not root unique. It appears both as an auxiliary a
 - Coherent root *kipper*: *atone* (x169)
 - Function words used as auxiliaries and joined to the root by a middle dot (·): *one’s*, *one another*, *oneself*, *a*, *an*
 
-### *'aleph*—not root coherent
+#### *'aleph*—not root coherent
 The Hebrew root *'aleph* is not root coherent. It appears either as “thousand” or as “aleph”/“alpha.” These two senses are separated because they have no common meaning and no common word history. The sense of “thousand” is derived not from the word *'aleph*, but from the position of the letter Aleph in the alphabet.
 
-## Some gendered terms for people
+### Some gendered terms for people
 When Hebrew uses a single root to refer to a person, identifying the gender by a suffix, but English uses different roots to differentiate gender, the lexicon sometimes allows an exception from the requirement for root coherence. The words must still be root unique. The following is a complete list of these exceptions.
 - Root *'ach*/*'achowt*: *brother*, *sister*
 - Root *'almah*/*'elem*: *girl*, *boy*
@@ -169,7 +171,7 @@ When Hebrew uses a single root to refer to a person, identifying the gender by a
 
 These words are excused because the masculine and feminine words in each pair are so closely related in English that we think of them as related. These roots are still root unique, meaning that no other Hebrew word is translated “brother,” “sister,” etc. Details are in the lexicon.
 
-# Reviewing the Lexicon
+## Reviewing the Lexicon
 The English lexicon is the most important part of HIERO—and the part that has taken the most time by far to develop. Because of this, I am not ready to post the entire lexicon online. Instead, I offer a [complete glossary](read/glossary.html) generated by HIERO, listing each Hebrew root word, its frequency (excluding proper noun instances), its corresponding English root from the lexicon, and some information about the root.
 
 If you want to learn more about the lexicon, you can [read about the lexicon’s XML code](technical.md#english-lexicon) or review [an excerpt from the lexicon code here](resource%20samples/multilex_EXCERPT.xml).
