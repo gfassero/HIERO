@@ -1,7 +1,6 @@
 # Formatting
 HIERO is formatted to indicate features of the Hebrew text. The [formatting key](read/key.html) gives examples of formatting in HIERO.
 
-In this article:
 * Auto-generated table of contents:
 {:toc}
 

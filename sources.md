@@ -1,10 +1,12 @@
-# Data Sources
+# Sources
+
+## Data Sources
 
 “[OSHB Hebrew Lexicon](http://github.com/openscriptures/HebrewLexicon/blob/master/HebrewStrong.xml)” by the [Open Scriptures Hebrew Bible Project](http://hb.openscriptures.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). The OSHB Hebrew Lexicon contains XML code, part-of-speech mappings, and Strongs number mappings that structure HIERO’s English lexicon.
 
 “[Translators Amalgamated Hebrew OT](http://github.com/STEPBible/STEPBible-Data/tree/master/Translators%20Amalgamated%20OT%2BNT)” (TAHOT) by [STEP Bible](http://www.stepbible.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). TAHOT provides the Hebrew text from which HIERO works, as well as lexical and grammatical tags on which HIERO’s Hebrew parsing dictionary is primarily based.
 
-# Bibliography
+## Bibliography
 
 [Aramaic Skeleton Grammar](http://arshama.classics.ox.ac.uk/aramaic/index.html) by the [Arshama Project](http://arshama.classics.ox.ac.uk/index.html).
 
@@ -26,7 +28,7 @@
 
 [Wiktionary](http://www.wiktionary.org/).
 
-# Bible Translations
+## Bible Translations
 
 [King James Version](https://www.blueletterbible.org/kjv/gen/1/1/s_1001) (1769).
 
