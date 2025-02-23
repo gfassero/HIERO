@@ -1,3 +1,6 @@
+* In this article:
+{:toc}
+
 # Data Sources
 
 “[OSHB Hebrew Lexicon](http://github.com/openscriptures/HebrewLexicon/blob/master/HebrewStrong.xml)” by the [Open Scriptures Hebrew Bible Project](http://hb.openscriptures.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). The OSHB Hebrew Lexicon contains XML code, part-of-speech mappings, and Strongs number mappings that structure HIERO’s English lexicon.
@@ -27,7 +30,6 @@
 [Wiktionary](http://www.wiktionary.org/).
 
 # Bible Translations
-*All Bible translations have been referenced by means of [Blue Letter Bible](http://www.blueletterbible.org/).*
 
 [King James Version](https://www.blueletterbible.org/kjv/gen/1/1/s_1001) (1769).
 
