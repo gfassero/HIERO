@@ -1,7 +1,9 @@
 <div id="#toc">
+
 In this article:
 * Auto-generated table of contents:
 {:toc}
+
 </div>
 
 # Only a Partial Translation
