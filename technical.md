@@ -1,5 +1,5 @@
 # The Program
-HIERO consists of the following components:
+In this article:
 
 * Auto-generated table of contents:
 {:toc}
@@ -83,13 +83,156 @@ Lexical tags refer to entry numbers found in the `<xref>` tags in the English le
 - [A longer excerpt from the parsing dictionary](resource%20samples/parsingDictionary_EXCERPT.bin)
 
 ## Program Code
-HIERO is written in Visual Basic and contains 2,100 lines of executable code. Much of the code is available in HIERO’s GitHub repository under “code samples.” HIERO does not use artificial intelligence. Translating the Hebrew Old Testament takes 24 seconds on an ordinary laptop.
+HIERO is written in Visual Basic and contains 2,100 lines of executable code. Samples of the code are available in [HIERO’s GitHub repository](https://github.com/gfassero/HIERO) under “code samples.” HIERO does not use artificial intelligence. Translating the Hebrew Old Testament takes 24 seconds on an ordinary laptop.
 
-To begin translation, HIERO iterates through the annotated Hebrew text, one word at a time. For each word, HIERO looks up the corresponding parsing from the Hebrew parsing dictionary, using the annotations from the Hebrew text, if any exist. Once the parsing has been obtained, HIERO uses the word’s lexicon tag to look up its translation in the English lexicon. HIERO uses the word’s morphology tag to inflect the English translation and apply appropriate formatting via CSS. HIERO extracts cantillation marks from the Hebrew word and uses them to apply English punctuation or line breaks via XHTML. Finally, HIERO outputs the result to an HTML file. HIERO then moves to the next word and repeats.
+HIERO iterates through the annotated Hebrew text and looks up each word’s corresponding parsing from the Hebrew parsing dictionary. After finding the parsing, HIERO looks up the translation in the English lexicon and inflects and formats the English translation. Finally, HIERO saves the translation to the user’s computer.
 
-The user views the output by opening the [HTML output files](read/). Read about [HIERO’s formatting here](read/key.html).
+## Translation Walkthrough
 
-# Further Development
+In this walkthrough, we will follow HIERO as it translates the first word of the Hebrew scriptures.
+
+First, HIERO reads the first line of the annotated Hebrew text:
+
+`Gen.1.1#01=L	בְּרֵאשִׁ֖ית	1
+
+HIERO selects the Hebrew word, which is found in the second column of this line:
+
+`בְּרֵאשִׁית`
+
+HIERO searches the first column of Hebrew parsing dictionary for `בְּרֵאשִׁית`. When it finds `בְּרֵאשִׁית`, it selects the rest of the row:
+
+`בְּרֵאשִׁית	H9003/{H7225G}	HR/Ncfsc	4	H9003/{H7225G}	HR/Ncfsa	1`
+
+This entry from the parsing dictionary offers two parsing options:
+
+`H9003/{H7225G}	HR/Ncfsc`
+
+and
+
+`H9003/{H7225G}	HR/Ncfsa`
+
+HIERO returns to the current line of the annotated Hebrew text:
+
+`Gen.1.1#01=L	בְּרֵאשִׁ֖ית	1
+
+and selects the parsing variant number `1`, which is found in the third column. The parsing variant number is zero-based, so variant `1` is the second parsing:
+
+`H9003/{H7225G}	HR/Ncfsa`
+
+This is the appropriate parsing for the word `בְּרֵאשִׁית` in this instance.
+
+The first part of the parsing, `H9003/{H7225G}`, is the lexicon tag. The second part, `HR/Ncfsa`, is the morphological tag. Each of these tags is dided by a forward slash `/`, indicating that this word, `בְּרֵאשִׁית`, has two parts: the prefix `בְּ`, and the main word `רֵאשִׁית`.
+
+HIERO begins with the prefix `בְּ`, which is marked with the lexicon tag `H9003` and the morphological tag `HR`. The `H` at the beginning of each tag is not used.
+
+HIERO selects the lexicon tag `H9003`, discards the `H`, and searches the English lexicon for the entry matching `9003`:
+
+```xml
+	<xref strong="9003" />
+```
+
+HIERO selects the full lexicon entry:
+
+```xml
+<entry>
+	<w xlit="bĕ">בְּ</w>
+	<pos>R</pos>
+	<def>in</def>
+	<xref strong="9003" />
+</entry>
+```
+
+HIERO then selects the definition `in` from this entry:
+
+```xml
+	<def>in</def>
+```
+
+HIERO then returns to the morphological tag `HR` and discards the `H`. The remaining `R` indicates a preposition with no additional inflection. This means that `in` does not need to be inflected.
+
+HIERO saves `in` as the first part of the translation of `בְּרֵאשִׁית`. Since there is another part to be translated, HIERO appends a middle dot `·`, indicating that what follows is a continuation of the same Hebrew word `בְּרֵאשִׁית`:
+
+`in·`
+
+HIERO then moves on to the main word `רֵאשִׁית`, which is marked with the lexicon tag `{H7225G}` and the morphological tag `Ncfsa`.
+
+HIERO selects the lexicon tag `{H7225G}`. HIERO removes the braces `{...}`, which mark the main word, and discards the `H`. It then searches the English lexicon for the entry matching `7225G`:
+
+```xml
+	<xref strong="7225G,7225H" />
+```
+
+HIERO selects the full lexicon entry:
+
+```xml
+<entry>
+	<w xlit="rēʾšît">רֵאשִׁית</w>
+	<pos>N</pos>
+	<def>headmost</def>
+	<xref strong="7225G,7225H" />
+</entry>
+```
+
+HIERO then selects the definition `headmost` from this entry:
+
+```xml
+	<def>headmost</def>
+```
+
+HIERO then returns to the morphological tag `Ncfsa`. The first character, `N`, indicates a noun. HIERO parses the remainder of the morphological tag using parsing rules as defined for nouns.
+
+The second character, `c`, indicates a common noun. Common nouns require no capitalization, so HIERO keeps the translation in lower case.
+
+HIERO skips forward to the fourth character, which indicates number. Since `s` indicates singular number, HIERO keeps the translation singular.
+
+The fifth character, indicates the state of the verb, which is either construct or absolute. `a` indicates the absolute state, which does not require any inflection in English.
+
+So far, our translation of the main word `רֵאשִׁית` is still simple:
+
+`headmost`
+
+HIERO then returns to the third character, which indicates gender. `f` indicates feminine gender, so HIERO wraps the translation in HTML tags indicating `class="f"`:
+
+`<span class="f">headmost</span>`
+
+The two parts of the word `בְּרֵאשִׁית` have now been translated:
+
+`in·` and `<span class="f">headmost</span>`
+
+The Hebrew word `בְּרֵאשִׁית` does not contain any significant cantillation marks, so no punctuation or line breaks are added.
+
+Finally, HIERO saves the result to an HTML file on the user’s computer:
+
+`in·<span class="f">headmost</span>`
+
+The HTML output file references a CSS stylesheet in the same folder as the HTML output file. The CSS stylesheet includes rules for rendering the output:
+
+```css
+.m {
+    border-bottom: 0.75pt solid var(--textgray);
+}
+.f {
+    border-bottom: 1.25pt dashed var(--textgray);
+}
+```
+
+The HTML class `class="f"` in the output references the `.f` rule in the stylesheet:
+
+```css
+.f {
+    border-bottom: 1.25pt dashed var(--textgray);
+}
+```
+
+This rule indicates that the output should be rendered with a gray dashed underline 1.25 points thick. When the HTML output file is opened by the user, the output is rendered as:
+
+in·<span class="f">headmost</span>
+
+HIERO then moves on to the second line of the annotated Hebrew text:
+
+`Gen.1.1#02=L	בָּרָא	1
+
+## Further Development
 - Improve the English lexicon.
 - Add consistent annotation for the Hebrew ון- suffix.
 - Compare the English lexicon to a list of the most common English words, and ensure that the lexicon tends toward common English words.
