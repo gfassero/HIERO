@@ -38,7 +38,11 @@ h1, h2, h3 {
   margin: 0.65em 0;
 }
 h4, h5, h6 {
-  margin: 0 0 0.26em 0;
+  margin: 0;
+}
+h2 {
+padding: .32em 0;
+border-bottom: 1px solid var(--darkborder);
 }
 ol,
 table,
