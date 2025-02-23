@@ -1,5 +1,6 @@
 In this article:
-* {:toc}
+* Auto-generated table of contents:
+{:toc}
 
 # Only a Partial Translation
 HIERO is a partial translation of the Hebrew text, not a full translation. As a result, HIERO is not rendered in grammatical or idiomatic English. Instead, it represents Hebrew roots and inflections by means of English roots and inflections.
