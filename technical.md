@@ -1,8 +1,14 @@
 # The Program
-HIERO consists of an [English lexicon](#english-lexicon), an [annotated Hebrew text](#annotated-hebrew-text), a [Hebrew parsing dictionary](#hebrew-parsing-dictionary), and the [program code](#program-code).
+HIERO consists of the following components:
 
-# English Lexicon
-The English lexicon is the most important part of HIERO—and the part that has taken the most time by far to develop. The primary goal of the English lexicon is to link each Hebrew root with a single English root and vice versa. HIERO’s English lexicon contains about 9,500 definitions of Hebrew and Aramaic words. The lexicon is written in XML code. The XML code, part-of-speech mappings, and Strongs number mappings that structure the lexicon are based on the [OSHB Hebrew Lexicon](http://github.com/openscriptures/HebrewLexicon/blob/master/HebrewStrong.xml) by the [Open Scriptures Hebrew Bible Project](http://hb.openscriptures.org/). All of the definitions are my own. The following is a partial sample from the lexicon:
+* Auto-generated table of contents:
+{:toc}
+
+## English Lexicon
+The English lexicon is the most important part of HIERO—and the part that has taken the most time by far to develop. The primary goal of the English lexicon is to link each Hebrew root with a single English root and vice versa.
+
+### Lexicon Code
+HIERO’s English lexicon contains about 9,500 definitions of Hebrew and Aramaic words. The lexicon is written in XML code. The XML code, part-of-speech mappings, and Strongs number mappings that structure the lexicon are based on the [OSHB Hebrew Lexicon](http://github.com/openscriptures/HebrewLexicon/blob/master/HebrewStrong.xml) by the [Open Scriptures Hebrew Bible Project](http://hb.openscriptures.org/). All of the definitions are my own. The following is a partial sample from the lexicon:
 ```xml
 <entry><w xlit="bārāʾ">בָּרָא</w><pos>V</pos><qalAct>shape</qalAct>
 		<pielAct>reshape</pielAct>
@@ -13,6 +19,8 @@ The English lexicon is the most important part of HIERO—and the part that has 
 	<entry><w xlit="bĕrāʾyâ">בְּרָאיָה</w><pos>Np</pos><def>shaped-of-Yʜ</def><xref strong="1256" /></entry>
 </entry>
 ```
+
+### Format
 The lexicon tags follow the following rules:
 1. Each Hebrew root has a single root `<entry>` element. Related words derived from the root will have <entry> elements nested within the root element.
 2. A `<w>` element contains the entry’s Hebrew root.
@@ -26,12 +34,12 @@ The lexicon tags follow the following rules:
 8. The lexicon may contain words in braces. Braces indicate a transliteration from the Hebrew root, or a close English cognate of the Hebrew root. For example, the Hebrew word for “cinnamon” is “kinamon.” The translation “{cinnamon}” includes braces to indicate that this word is transliterated from Hebrew. In the final rendering, braces are replaced with italic text.
 9. An `<xref>` element contains a list of Hebrew lexical numbers that HIERO will represent using the English entry. Entry numbers are based on the Strongs numbering system but include letter suffixes to differentiate senses that were not differentiated in the original Strongs system.
 
-Further reading:
+### Further Reading
 - [More about the lexicon](lexicon.md)
 - [A longer excerpt from the lexicon](resource%20samples/multilex_EXCERPT.xml)
 - [Complete glossary](read/glossary.html)
 
-# Annotated Hebrew Text
+## Annotated Hebrew Text
 HIERO translates from the four-part [Translators Amalgamated Hebrew OT](http://github.com/STEPBible/STEPBible-Data/tree/master/Translators%20Amalgamated%20OT%2BNT) (TAHOT) by [STEP Bible](http://www.stepbible.org/). TAHOT is an edition of the Leningrad codex, following the qere of the Masoretic Text.
 
 I have extracted the relevant data from TAHOT and reformatted it for use with HIERO. The following is a sample from the reformatted text:
@@ -46,14 +54,15 @@ I have extracted the relevant data from TAHOT and reformatted it for use with HI
 |Gen.1.1#06=L|וְאֵ֥ת||
 |Gen.1.1#07=L|הָאָֽרֶץ׃||
 
+### Format
 The Hebrew text is formatted with one Hebrew word per line. Each word is numbered (two digits, preceded by #), and its source text is noted (“L” indicates the Leningrad codex). Words that could be parsed in multiple ways are annotated with a number to indicate the appropriate parsing variant. In this example, word #01 could be followed by the word “of,” but since the context makes that impossible, the annotation “1” indicates to translate it without the word “of.” Word #02 could be parsed as an Aramaic word, but since this is a Hebrew text, the annotation “1” indicates to translate it as Hebrew.
 
-Further reading:
+### Further Reading
 - [Full annotated Hebrew text](resource%20samples/annotatedHebrewText.bin)
 - [Original TAHOT data](https://github.com/STEPBible/STEPBible-Data/tree/master/Translators%20Amalgamated%20OT%2BNT) from STEP Bible
 - [A sample of my corrections to the TAHOT data](resource%20samples/Hebrew%20OT%20Overlay_EXCERPT.txt)
 
-# Hebrew Parsing Dictionary
+## Hebrew Parsing Dictionary
 HIERO includes a Hebrew parsing dictionary of 53,000 unique word forms found in the text, along with the corresponding morphological and lexical tags. This parsing dictionary includes parsing information taken from TAHOT as well as additional corrections of my own. The following is a sample from the parsing dictionary:
 
 |Hebrew|Lexicon|Morphology|Lex. variant 1|Morph. var. 1|Lex. var. 2|Morph. var. 2|
@@ -66,13 +75,14 @@ HIERO includes a Hebrew parsing dictionary of 53,000 unique word forms found in 
 |יַגְדִּיל|1431|HVhi3ms|||||
 |גָּדְלוּ|1431|HVqp3cp|||||
 
+### Format
 Lexical tags refer to entry numbers found in the `<xref>` tags in the English lexicon. Morphology codes describe the word’s part of speech, form, person, gender, number, and state. Alternative parsing variants are given in additional columns.
 
-Further reading:
-- [A full description of morphology codes](http://docs.google.com/document/d/1wQ67vPIrNxvICy5QmSeromQUJmePml1nQxv7n1gJ8qw)  from STEP Bible
+### Further Reading
+- [A full description of morphology codes](http://docs.google.com/document/d/1wQ67vPIrNxvICy5QmSeromQUJmePml1nQxv7n1gJ8qw) from STEP Bible
 - [A longer excerpt from the parsing dictionary](resource%20samples/parsingDictionary_EXCERPT.bin)
 
-# Program Code
+## Program Code
 HIERO is written in Visual Basic and contains 2,100 lines of executable code. Much of the code is available in HIERO’s GitHub repository under “code samples.” HIERO does not use artificial intelligence. Translating the Hebrew Old Testament takes 24 seconds on an ordinary laptop.
 
 To begin translation, HIERO iterates through the annotated Hebrew text, one word at a time. For each word, HIERO looks up the corresponding parsing from the Hebrew parsing dictionary, using the annotations from the Hebrew text, if any exist. Once the parsing has been obtained, HIERO uses the word’s lexicon tag to look up its translation in the English lexicon. HIERO uses the word’s morphology tag to inflect the English translation and apply appropriate formatting via CSS. HIERO extracts cantillation marks from the Hebrew word and uses them to apply English punctuation or line breaks via XHTML. Finally, HIERO outputs the result to an HTML file. HIERO then moves to the next word and repeats.
