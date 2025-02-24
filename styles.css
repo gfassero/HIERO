@@ -73,6 +73,24 @@ pre {
   padding: 8px 15px;
   border-radius: 3.75pt;
   border: 1px solid var(--darkborder);
+}
+#markdown {
+  width: 100%;
+  max-width: 55em;
+
+  box-sizing: border-box;
+
+  padding: 0 2.3em 0 0;
+}
+pre.highlight,
+div.highlight,
+table {
+  width: fit-content;
+  max-width: 100%;
+}
+pre.highlight,
+table {
+  min-width: 25em;
   overflow-x: auto;
 }
 
