@@ -1,0 +1,29 @@
+﻿.match  {
+    background-color: var(--boldhilite);
+    border-radius: 3.75pt;
+}
+
+
+html #translation {
+    p,
+    p.in1,
+    p.in2 {
+        padding-left: 3.6em; /* Aligns the text flush */
+    }
+
+    /* VERSE and CHAPTER NUMBERING */
+
+    p::before,
+    span.inline,
+    p.chapter::before,
+    span.inline.chapter {
+        font-size: 60%;
+        font-weight: normal;
+        left: 0;
+    }
+
+    p::before {
+        content: attr(data-cit); /* Displays the paragraph number */
+        text-align: left; /* Aligns the number to the right within its box */
+    }
+}

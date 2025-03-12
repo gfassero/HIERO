@@ -39,6 +39,10 @@ body {
     font-family: serif;
 }
 
+p {
+    display: block;
+}
+
 .content-container {
     display: flex;
     flex: 1; /* This makes sure the content takes up the remaining space */
@@ -54,10 +58,6 @@ body {
 #translation {
     padding: 1em;
 }
-
-.panel a:link, .panel a:visited {color: var(--boldmain);}
-.panel a:hover {  color: var(--nearblack);}
-.panel a:active { color: var(--litebg);}
 
 @media print {
     body {
