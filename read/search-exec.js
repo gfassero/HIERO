@@ -26,14 +26,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
-            let matchingParagraphs = new Set();
+            let matchingParagraphs = new Map(); // Map to store unique paragraphs by reference
+
             matchingSpans.forEach(span => {
                 let parentP = span.closest("p"); // Find closest <p> ancestor
-                if (parentP) {
+                if (parentP && !matchingParagraphs.has(parentP)) {
                     let clonedP = parentP.cloneNode(true); // Clone paragraph
-                    let clonedSpan = clonedP.querySelector(`span[data-root='${searchQuery}']`);
-                    if (clonedSpan) clonedSpan.classList.add("match"); // Apply class to cloned span
-                    matchingParagraphs.add(clonedP);
+                    let clonedSpans = clonedP.querySelectorAll(`span[data-root='${searchQuery}']`);
+
+                    clonedSpans.forEach(clonedSpan => clonedSpan.classList.add("match")); // Highlight ALL matches
+
+                    matchingParagraphs.set(parentP, clonedP); // Store unique paragraphs
                 }
             });
 
@@ -45,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
-            displayResults(searchQuery, Array.from(matchingParagraphs));
+            displayResults(searchQuery, Array.from(matchingParagraphs.values())); // Convert Map to array
         })
         .catch(error => console.error("Error loading XML:", error));
 });
@@ -58,8 +61,8 @@ function displayResults(query, paragraphs) {
 
     let summary = document.createElement("p");
     summary.className = "book";
-    summary.textContent = `Root ${query}: ${matchCount} matches`;
-    document.title = `HIERO | Root ${query}`; 
+    summary.textContent = `Root ${query}: ${matchCount} matching lines`;
+    document.title = `HIERO | Root ${query}`;
     resultsContainer.appendChild(summary);
 
     paragraphs.forEach(p => {
@@ -72,5 +75,5 @@ function displayResults(query, paragraphs) {
 function displayNoResults(query) {
     let resultsContainer = document.getElementById("translation");
     resultsContainer.innerHTML = `<p class="book">Root ${query}: 0 matches</p>`;
-    document.title = `HIERO | Root ${query}`; 
+    document.title = `HIERO | Root ${query}`;
 }
