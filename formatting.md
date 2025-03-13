@@ -36,8 +36,6 @@ Italic text (*italic*) marks a word that is transliterated from the Hebrew root,
 An inverted question mark (¿) precedes words that usually introduce a question. The question may begin with this word, but does not always. Not all questions are marked, as Hebrew does not have a question mark.
 ### Gentilic Nouns
 Proper nouns denoting the descendants of an individual or the inhabitants of a place are generally translated by appending the suffix “-ïte” to the name of the individual or place. The diaeresis is included to help the reader distinguish between the translated name and the suffix.
-### Undefined Words
-The logical “not” sign (¬) precedes a word (usually a proper noun) that has not been translated yet.
 
 ## Particles and suffixes
 ### Direct Object Marker
