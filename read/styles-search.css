@@ -1,10 +1,4 @@
-﻿.match  {
-    background-color: var(--boldhilite);
-    border-radius: 3.75pt;
-}
-
-
-html #translation {
+﻿html #translation {
     p,
     p.in1,
     p.in2 {

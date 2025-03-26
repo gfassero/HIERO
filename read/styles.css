@@ -59,6 +59,11 @@ p {
     padding: 1em;
 }
 
+.match  {
+    background-color: var(--boldhilite);
+    border-radius: 3.75pt;
+}
+
 @media print {
     body {
         font-size: 12pt;
