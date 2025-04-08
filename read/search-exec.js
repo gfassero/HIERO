@@ -85,17 +85,30 @@ function fetchAndDisplayResults(query, citations) {
             const matchingParagraphs = new Map();
 
             citations.forEach(citation => {
-                const parentP = xmlDoc.querySelector(`p[data-cit='${citation}']`);
-                if (parentP && !matchingParagraphs.has(parentP)) {
-                    const clonedP = parentP.cloneNode(true);
-                    const clonedSpans = clonedP.querySelectorAll(`span[data-root='${query}']`);
-                    clonedSpans.forEach(span => span.classList.add("match"));
+                // Find all <p> elements with the matching data-cit
+                const parentPs = xmlDoc.querySelectorAll(`p[data-cit='${citation}']`);
 
-                    let link = document.createElement("a");
-                    link.href = bookFiles[citation.substring(0, 3)] + ".html?q=" + query + "#x" + citation;
-                    link.appendChild(clonedP);
-                    matchingParagraphs.set(parentP, link);
-                }
+                parentPs.forEach(parentP => {
+                    // Check if this <p> contains a <span> with the matching data-root
+                    const matchingSpan = parentP.querySelector(`span[data-root='${query}']`);
+
+                    if (matchingSpan && !matchingParagraphs.has(parentP)) {
+                        const clonedP = parentP.cloneNode(true);
+                        const clonedSpans = clonedP.querySelectorAll(`span[data-root='${query}']`);
+                        clonedSpans.forEach(span => span.classList.add("match"));
+
+                        const dataCitValue = clonedP.getAttribute("data-cit");
+                        if (dataCitValue) {
+                            let link = document.createElement("a");
+                            link.href = bookFiles[dataCitValue.substring(0, 3)] + ".html?q=" + query + "#x" + dataCitValue;
+                            link.appendChild(clonedP);
+                            matchingParagraphs.set(parentP, link);
+                        } else {
+                            console.warn("Paragraph found with citation from index but no data-cit attribute:", clonedP);
+                            resultsContainer.appendChild(clonedP);
+                        }
+                    }
+                });
             });
 
             resultsContainer.innerHTML = "";
@@ -109,7 +122,7 @@ function fetchAndDisplayResults(query, citations) {
             matchingParagraphs.forEach(link => {
                 resultsContainer.appendChild(link);
             });
-            console.log("Results displayed using citations from index.");
+            console.log("Results displayed using citations from index (handling multiple <p> with same data-cit).");
 
         })
         .catch(error => console.error("Error loading and parsing XML:", error));
