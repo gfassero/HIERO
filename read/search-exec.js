@@ -41,7 +41,7 @@ let bookFiles = {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-    let searchQuery = new URLSearchParams(window.location.search).get("q"); // Get search term from URL
+    let searchQuery = new URLSearchParams(window.location.search).get("q");
     console.log("Search query:", searchQuery);
 
     if (!searchQuery) {
@@ -49,79 +49,70 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    fetch("full.xml") // Load XML file
+    fetch("index.json")
+        .then(response => {
+            if (!response.ok) throw new Error("Network response was not ok");
+            return response.json();
+        })
+        .then(index => {
+            console.log("Loaded index:", Object.keys(index).length, "roots indexed.");
+            const matchingCitations = index[searchQuery];
+
+            if (!matchingCitations || matchingCitations.length === 0) {
+                console.warn("No matching citations found in index.");
+                displayNoResults(searchQuery);
+                return;
+            }
+
+            console.log("Matching citations found:", matchingCitations.length);
+            fetchAndDisplayResults(searchQuery, matchingCitations);
+        })
+        .catch(error => console.error("Error loading index:", error));
+});
+
+function fetchAndDisplayResults(query, citations) {
+    let resultsContainer = document.getElementById("translation");
+    resultsContainer.innerHTML = "<p class=\"book\">Searching for matches in the text...</p>";
+
+    fetch("full.xml")
         .then(response => {
             if (!response.ok) throw new Error("Network response was not ok");
             return response.text();
         })
-        .then(text => {
-            let parser = new DOMParser();
-            let xmlDoc = parser.parseFromString(text, "application/xml"); // Parse as XML
-            console.log("Parsed XML document:", xmlDoc);
+        .then(xmlText => {
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(xmlText, "application/xml");
+            const matchingParagraphs = new Map();
 
-            let matchingSpans = xmlDoc.querySelectorAll(`span[data-root='${searchQuery}']`);
-            console.log("Matching spans found:", matchingSpans.length);
-
-            if (matchingSpans.length === 0) {
-                console.warn("No matching spans found.");
-                displayNoResults(searchQuery);
-                return;
-            }
-
-            let matchingParagraphs = new Map(); // Map to store unique paragraphs by reference
-
-            matchingSpans.forEach(span => {
-                let parentP = span.closest("p"); // Find closest <p> ancestor
+            citations.forEach(citation => {
+                const parentP = xmlDoc.querySelector(`p[data-cit='${citation}']`);
                 if (parentP && !matchingParagraphs.has(parentP)) {
-                    let clonedP = parentP.cloneNode(true); // Clone paragraph
-                    let clonedSpans = clonedP.querySelectorAll(`span[data-root='${searchQuery}']`);
+                    const clonedP = parentP.cloneNode(true);
+                    const clonedSpans = clonedP.querySelectorAll(`span[data-root='${query}']`);
+                    clonedSpans.forEach(span => span.classList.add("match"));
 
-                    clonedSpans.forEach(clonedSpan => clonedSpan.classList.add("match")); // Highlight ALL matches
-
-                    // Create the link and wrap clonedP
                     let link = document.createElement("a");
-                    let dataCit = clonedP.getAttribute("data-cit");
-
-                    link.href = bookFiles[dataCit.substring(0, 3)] + ".html?q=" + searchQuery + "#x" + dataCit;
-
-                    // Append clonedP to the link and insert the link.
-                    link.appendChild(clonedP); // Append clonedP to the link
-                    parentP.parentNode.insertBefore(link, parentP); // Insert link before parentP
-
-                    matchingParagraphs.set(parentP, link); // Store the link, not the p.
+                    link.href = bookFiles[citation.substring(0, 3)] + ".html?q=" + query + "#x" + citation;
+                    link.appendChild(clonedP);
+                    matchingParagraphs.set(parentP, link);
                 }
             });
 
-            console.log("Matching <p> elements found:", matchingParagraphs.size);
+            resultsContainer.innerHTML = "";
+            let matchCount = matchingParagraphs.size;
+            let summary = document.createElement("p");
+            summary.className = "book";
+            summary.textContent = `Root ${query}: ${matchCount} matching lines`;
+            document.title = `HIERO | Root ${query}`;
+            resultsContainer.appendChild(summary);
 
-            if (matchingParagraphs.size === 0) {
-                console.warn("No matching <p> elements found.");
-                displayNoResults(searchQuery);
-                return;
-            }
+            matchingParagraphs.forEach(link => {
+                resultsContainer.appendChild(link);
+            });
+            console.log("Results displayed using citations from index.");
 
-            displayResults(searchQuery, Array.from(matchingParagraphs.values())); // Convert Map to array
         })
-        .catch(error => console.error("Error loading XML:", error));
-});
-
-function displayResults(query, paragraphs) {
-    let resultsContainer = document.getElementById("translation");
-    resultsContainer.innerHTML = ""; // Clear previous results
-
-    let matchCount = paragraphs.length;
-
-    let summary = document.createElement("p");
-    summary.className = "book";
-    summary.textContent = `Root ${query}: ${matchCount} matching lines`;
-    document.title = `HIERO | Root ${query}`;
-    resultsContainer.appendChild(summary);
-
-    paragraphs.forEach(p => {
-        resultsContainer.appendChild(p);
-    });
-
-    console.log("Results displayed.");
+        .catch(error => console.error("Error loading and parsing XML:", error));
 }
 
 function displayNoResults(query) {
