@@ -44,8 +44,14 @@ document.addEventListener("DOMContentLoaded", () => {
     let searchQuery = new URLSearchParams(window.location.search).get("q");
     console.log("Search query:", searchQuery);
 
+    let resultsContainer = document.getElementById("translation");
+    resultsContainer.innerHTML = `<p class="book loading-message">Searching the text...</p>`;
+    document.title = `HIERO | Root ${searchQuery || 'Search'} (Loading...)`;
+
     if (!searchQuery) {
         console.warn("No search query provided.");
+        resultsContainer.innerHTML = `<p class="book">No search query provided.</p>`;
+        document.title = `HIERO | Search`;
         return;
     }
 
@@ -60,104 +66,89 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (!matchingCitations || matchingCitations.length === 0) {
                 console.warn("No matching citations found in index.");
-                displayNoResults(searchQuery);
+                resultsContainer.innerHTML = `<p class="book">Root ${searchQuery}: 0 matches</p>`;
+                document.title = `HIERO | Root ${searchQuery} (0)`;
                 return;
             }
 
             console.log("Matching citations found:", matchingCitations.length);
-            fetchAndDisplayResults(searchQuery, matchingCitations);
+            fetchAndDisplayResults(searchQuery, matchingCitations, resultsContainer);
         })
-        .catch(error => console.error("Error loading index:", error));
+        .catch(error => {
+            console.error("Error loading index:", error);
+            resultsContainer.innerHTML = `<p class="book error">Error loading search index.</p>`;
+            document.title = `HIERO | Search (Error)`;
+        });
 });
 
-function fetchAndDisplayResults(query, citations) {
-    let resultsContainer = document.getElementById("translation");
-    resultsContainer.innerHTML = `<p class="book">Searching for matches in the text...</p>`; // Initial "Searching..." message
-    document.title = `HIERO | Root ${query} (Searching...)`;
+function fetchAndDisplayResults(query, citations, resultsContainer) {
     let matchCount = 0;
-    let citationIndex = 0;
-    const batchSize = 10;
-    let currentBatch = [];
-    let summaryElement = resultsContainer.querySelector(".book"); // Get the initial summary element
+    let resultsHTML = '';
 
-    function updateSummary() {
-        if (summaryElement) {
-            summaryElement.textContent = `Root ${query}: ${matchCount} matching lines`;
-            document.title = `HIERO | Root ${query} (${matchCount})`;
-        } else {
-            const newSummary = document.createElement("p");
-            newSummary.className = "book";
-            newSummary.textContent = `Root ${query}: ${matchCount} matching lines`;
-            resultsContainer.insertBefore(newSummary, resultsContainer.firstChild);
-            document.title = `HIERO | Root ${query} (${matchCount})`;
-            summaryElement = newSummary; // Update the reference
-        }
-    }
-
-    function processCitationBatch() {
-        const batchEndTime = Math.min(citationIndex + batchSize, citations.length);
-
-        for (; citationIndex < batchEndTime; citationIndex++) {
-            const citation = citations[citationIndex];
-            const parentP = xmlDoc.querySelector(`p[data-cit='${citation}']`);
-
-            if (parentP) {
-                const clonedP = parentP.cloneNode(true);
-                const clonedSpans = clonedP.querySelectorAll(`span[data-root='${query}']`);
-
-                if (clonedSpans.length > 0) {
-                    clonedSpans.forEach(span => span.classList.add("match"));
-
-                    const dataCitValue = clonedP.getAttribute("data-cit");
-                    if (dataCitValue) {
-                        const trimmedCitationForLink = dataCitValue.split(/[_-]/)[0];
-                        let link = document.createElement("a");
-                        link.href = bookFiles[trimmedCitationForLink.substring(0, 3)] + ".html?q=" + query + "#x" + trimmedCitationForLink;
-                        link.appendChild(clonedP);
-                        currentBatch.push(link);
-                        matchCount++;
-                    } else {
-                        console.warn("Paragraph found with citation from index but no data-cit attribute:", clonedP);
-                        currentBatch.push(clonedP);
-                    }
-                }
-            } else {
-                console.warn(`Paragraph with citation '${citation}' not found in XML.`);
-            }
-        }
-
-        // Append the current batch to the results container
-        currentBatch.forEach(item => resultsContainer.appendChild(item));
-        currentBatch = []; // Clear the batch
-
-        // Update the summary
-        updateSummary();
-
-        if (citationIndex < citations.length) {
-            requestAnimationFrame(processCitationBatch);
-        } else {
-            console.log("Incremental display finished.");
-            if (matchCount === 0) {
-                resultsContainer.innerHTML = `<p class="book">Root ${query}: 0 matches</p>`;
-                document.title = `HIERO | Root ${query} (0)`;
-            }
-        }
-    }
-
-    fetch("full.xml")
+    fetch("full.json")
         .then(response => {
             if (!response.ok) throw new Error("Network response was not ok");
-            return response.text();
+            return response.json();
         })
-        .then(xmlText => {
-            const parser = new DOMParser();
-            xmlDoc = parser.parseFromString(xmlText, "application/xml");
-            console.log("full.xml parsed into DOM. Starting incremental display with batch size:", batchSize);
-            requestAnimationFrame(processCitationBatch);
-        })
-        .catch(error => console.error("Error loading and parsing XML:", error));
+        .then(fullData => {
+            resultsContainer.innerHTML = ''; // Clear loading message
+            const initialSummary = document.createElement('p');
+            initialSummary.className = 'book';
+            initialSummary.textContent = `Root ${query}: 0 matching lines`;
+            resultsContainer.appendChild(initialSummary);
+            document.title = `HIERO | Root ${query} (0)`;
+            let summaryElement = initialSummary;
 
-    let xmlDoc;
+            citations.forEach(citation => {
+                if (fullData[citation]) {
+                    let highlightedText = '';
+                    let hasMatch = false;
+                    fullData[citation].forEach(wordObj => {
+                        if (wordObj.r === query) {
+                            highlightedText += `<span class="match">${wordObj.t}</span> `;
+                            hasMatch = true;
+                        } else {
+                            highlightedText += `${wordObj.t} `;
+                        }
+                    });
+
+                    if (hasMatch) {
+                        let processedCitation = citation;
+
+                        // Remove underscore and everything after it
+                        const underscoreIndex = processedCitation.indexOf('_');
+                        if (underscoreIndex !== -1) {
+                            processedCitation = processedCitation.substring(0, underscoreIndex);
+                        }
+
+                        // Replace periods
+                        processedCitation = processedCitation.replace('.', ' ');
+                        processedCitation = processedCitation.replace('.', ':');
+
+                        const pElement = document.createElement('p');
+                        pElement.setAttribute('data-cit', processedCitation); // Use the modified citation
+                        pElement.innerHTML = highlightedText.trim();
+
+                        const trimmedCitationForLink = citation.split(/[_-]/)[0];
+                        let link = document.createElement("a");
+                        link.href = bookFiles[trimmedCitationForLink.substring(0, 3)] + ".html?q=" + query + "#x" + trimmedCitationForLink;
+                        link.appendChild(pElement);
+                        resultsHTML += link.outerHTML;
+                        matchCount++;
+                        summaryElement.textContent = `Root ${query}: ${matchCount} matching lines`;
+                        document.title = `HIERO | Root ${query} (${matchCount})`;
+                    }
+                } else {
+                    console.warn(`Citation '${citation}' not found in full data.`);
+                }
+            });
+
+            resultsContainer.innerHTML = `<p class="book">Root ${query}: ${matchCount} matching lines</p>${resultsHTML}`;
+            document.title = `HIERO | Root ${query} (${matchCount})`;
+
+            console.log("Results displayed.");
+        })
+        .catch(error => console.error("Error loading full JSON:", error));
 }
 
 function displayNoResults(query) {

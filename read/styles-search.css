@@ -14,6 +14,7 @@
         font-size: 60%;
         font-weight: normal;
         left: 0;
+        width: 6.66em;
     }
 
     p::before {
