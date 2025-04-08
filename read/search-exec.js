@@ -72,7 +72,77 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function fetchAndDisplayResults(query, citations) {
     let resultsContainer = document.getElementById("translation");
-    resultsContainer.innerHTML = "<p class=\"book\">Searching for matches in the text...</p>";
+    resultsContainer.innerHTML = `<p class="book">Searching for matches in the text...</p>`; // Initial "Searching..." message
+    document.title = `HIERO | Root ${query} (Searching...)`;
+    let matchCount = 0;
+    let citationIndex = 0;
+    const batchSize = 5;
+    let currentBatch = [];
+    let summaryElement = resultsContainer.querySelector(".book"); // Get the initial summary element
+
+    function updateSummary() {
+        if (summaryElement) {
+            summaryElement.textContent = `Root ${query}: ${matchCount} matching lines`;
+            document.title = `HIERO | Root ${query} (${matchCount})`;
+        } else {
+            const newSummary = document.createElement("p");
+            newSummary.className = "book";
+            newSummary.textContent = `Root ${query}: ${matchCount} matching lines`;
+            resultsContainer.insertBefore(newSummary, resultsContainer.firstChild);
+            document.title = `HIERO | Root ${query} (${matchCount})`;
+            summaryElement = newSummary; // Update the reference
+        }
+    }
+
+    function processCitationBatch() {
+        const batchEndTime = Math.min(citationIndex + batchSize, citations.length);
+
+        for (; citationIndex < batchEndTime; citationIndex++) {
+            const citation = citations[citationIndex];
+            const parentP = xmlDoc.querySelector(`p[data-cit='${citation}']`);
+
+            if (parentP) {
+                const clonedP = parentP.cloneNode(true);
+                const clonedSpans = clonedP.querySelectorAll(`span[data-root='${query}']`);
+
+                if (clonedSpans.length > 0) {
+                    clonedSpans.forEach(span => span.classList.add("match"));
+
+                    const dataCitValue = clonedP.getAttribute("data-cit");
+                    if (dataCitValue) {
+                        const trimmedCitationForLink = dataCitValue.split(/[_-]/)[0];
+                        let link = document.createElement("a");
+                        link.href = bookFiles[trimmedCitationForLink.substring(0, 3)] + ".html?q=" + query + "#x" + trimmedCitationForLink;
+                        link.appendChild(clonedP);
+                        currentBatch.push(link);
+                        matchCount++;
+                    } else {
+                        console.warn("Paragraph found with citation from index but no data-cit attribute:", clonedP);
+                        currentBatch.push(clonedP);
+                    }
+                }
+            } else {
+                console.warn(`Paragraph with citation '${citation}' not found in XML.`);
+            }
+        }
+
+        // Append the current batch to the results container
+        currentBatch.forEach(item => resultsContainer.appendChild(item));
+        currentBatch = []; // Clear the batch
+
+        // Update the summary
+        updateSummary();
+
+        if (citationIndex < citations.length) {
+            requestAnimationFrame(processCitationBatch);
+        } else {
+            console.log("Incremental display finished.");
+            if (matchCount === 0) {
+                resultsContainer.innerHTML = `<p class="book">Root ${query}: 0 matches</p>`;
+                document.title = `HIERO | Root ${query} (0)`;
+            }
+        }
+    }
 
     fetch("full.xml")
         .then(response => {
@@ -81,51 +151,13 @@ function fetchAndDisplayResults(query, citations) {
         })
         .then(xmlText => {
             const parser = new DOMParser();
-            const xmlDoc = parser.parseFromString(xmlText, "application/xml");
-            const matchingParagraphs = new Map();
-
-            citations.forEach(citation => {
-                // Find all <p> elements with the matching data-cit
-                const parentPs = xmlDoc.querySelectorAll(`p[data-cit='${citation}']`);
-
-                parentPs.forEach(parentP => {
-                    // Check if this <p> contains a <span> with the matching data-root
-                    const matchingSpan = parentP.querySelector(`span[data-root='${query}']`);
-
-                    if (matchingSpan && !matchingParagraphs.has(parentP)) {
-                        const clonedP = parentP.cloneNode(true);
-                        const clonedSpans = clonedP.querySelectorAll(`span[data-root='${query}']`);
-                        clonedSpans.forEach(span => span.classList.add("match"));
-
-                        const dataCitValue = clonedP.getAttribute("data-cit");
-                        if (dataCitValue) {
-                            let link = document.createElement("a");
-                            link.href = bookFiles[dataCitValue.substring(0, 3)] + ".html?q=" + query + "#x" + dataCitValue;
-                            link.appendChild(clonedP);
-                            matchingParagraphs.set(parentP, link);
-                        } else {
-                            console.warn("Paragraph found with citation from index but no data-cit attribute:", clonedP);
-                            resultsContainer.appendChild(clonedP);
-                        }
-                    }
-                });
-            });
-
-            resultsContainer.innerHTML = "";
-            let matchCount = matchingParagraphs.size;
-            let summary = document.createElement("p");
-            summary.className = "book";
-            summary.textContent = `Root ${query}: ${matchCount} matching lines`;
-            document.title = `HIERO | Root ${query}`;
-            resultsContainer.appendChild(summary);
-
-            matchingParagraphs.forEach(link => {
-                resultsContainer.appendChild(link);
-            });
-            console.log("Results displayed using citations from index (handling multiple <p> with same data-cit).");
-
+            xmlDoc = parser.parseFromString(xmlText, "application/xml");
+            console.log("full.xml parsed into DOM. Starting incremental display with batch size:", batchSize);
+            requestAnimationFrame(processCitationBatch);
         })
         .catch(error => console.error("Error loading and parsing XML:", error));
+
+    let xmlDoc;
 }
 
 function displayNoResults(query) {
