@@ -76,7 +76,7 @@ function fetchAndDisplayResults(query, citations) {
     document.title = `HIERO | Root ${query} (Searching...)`;
     let matchCount = 0;
     let citationIndex = 0;
-    const batchSize = 5;
+    const batchSize = 10;
     let currentBatch = [];
     let summaryElement = resultsContainer.querySelector(".book"); // Get the initial summary element
 
