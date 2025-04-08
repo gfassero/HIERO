@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
-            console.log("Matching citations found:", matchingCitations.length);
+            console.log("Matching citations found:", matchingCitations);
             fetchAndDisplayResults(searchQuery, matchingCitations, resultsContainer);
         })
         .catch(error => {
@@ -91,7 +91,7 @@ function fetchAndDisplayResults(query, citations, resultsContainer) {
             return response.json();
         })
         .then(fullData => {
-            resultsContainer.innerHTML = ''; // Clear loading message
+            resultsContainer.innerHTML = '';
             const initialSummary = document.createElement('p');
             initialSummary.className = 'book';
             initialSummary.textContent = `Root ${query}: 0 matching lines`;
@@ -101,35 +101,23 @@ function fetchAndDisplayResults(query, citations, resultsContainer) {
 
             citations.forEach(citation => {
                 if (fullData[citation]) {
-                    let highlightedText = '';
-                    let hasMatch = false;
+                    let lineParts = [];
+                    let hasMatchInLine = false;
                     fullData[citation].forEach(wordObj => {
                         if (wordObj.r === query) {
-                            highlightedText += `<span class="match">${wordObj.t}</span> `;
-                            hasMatch = true;
+                            lineParts.push(`<span class="match">${wordObj.t}</span>`);
+                            hasMatchInLine = true;
                         } else {
-                            highlightedText += `${wordObj.t} `;
+                            lineParts.push(wordObj.t);
                         }
                     });
 
-                    if (hasMatch) {
-                        let processedCitation = citation;
-
-                        // Remove underscore and everything after it
-                        const underscoreIndex = processedCitation.indexOf('_');
-                        if (underscoreIndex !== -1) {
-                            processedCitation = processedCitation.substring(0, underscoreIndex);
-                        }
-
-                        // Replace periods
-                        processedCitation = processedCitation.replace('.', ' ');
-                        processedCitation = processedCitation.replace('.', ':');
-
+                    if (hasMatchInLine) {
                         const pElement = document.createElement('p');
-                        pElement.setAttribute('data-cit', processedCitation); // Use the modified citation
-                        pElement.innerHTML = highlightedText.trim();
+                        pElement.setAttribute('data-cit', citation.split(/_/)[0].replace('.', ' ').replace('.', ':'));
+                        pElement.innerHTML = lineParts.join(' ');
 
-                        const trimmedCitationForLink = citation.split(/[_-]/)[0];
+                        const trimmedCitationForLink = citation.split(/_/)[0];
                         let link = document.createElement("a");
                         link.href = bookFiles[trimmedCitationForLink.substring(0, 3)] + ".html?q=" + query + "#x" + trimmedCitationForLink;
                         link.appendChild(pElement);
