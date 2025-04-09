@@ -1,4 +1,5 @@
 ﻿#translation {
+    display: table;
     column-count: 1 !important;
     -webkit-column-count: 1 !important;
     -moz-column-count: 1 !important;
