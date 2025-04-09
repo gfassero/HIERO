@@ -1,4 +1,4 @@
-let bookFiles = {
+ let bookFiles = {
     "Gen": "01 Gen",
     "Exo": "02 Exo",
     "Lev": "03 Lev",
@@ -115,7 +115,7 @@ function fetchAndDisplayResults(query, citations, resultsContainer) {
                     if (hasMatchInLine) {
                         const pElement = document.createElement('p');
                         pElement.setAttribute('data-cit', citation.split(/_/)[0].replace('.', ' ').replace('.', ':'));
-                        pElement.innerHTML = lineParts.join(' ');
+                        pElement.innerHTML = lineParts.join(' ').replace(/\s+·\s+/g, '·').replace(/\s+·/g, '·').replace(/·\s+/g, '·');
 
                         const trimmedCitationForLink = citation.split(/_/)[0];
                         let link = document.createElement("a");
