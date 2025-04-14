@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let popup = document.createElement("div");
     popup.className = "popup";
+    popup.style.opacity = "0";
     document.body.appendChild(popup);
 
     document.body.addEventListener("click", function (event) {
@@ -12,17 +13,34 @@ document.addEventListener("DOMContentLoaded", function () {
             let dataRoot = span.getAttribute("data-root");
 
             // Create popup content
-            popup.innerHTML = `Search root:
-                <a href="search.html?q=${dataRoot}" target="_blank">${dataRoot}</a>
-            `;
+            let dataRoots = dataRoot.split(',');
+            let linksHTML = 'Search roots:';
+            dataRoots.forEach(root => {
+                const trimmedRoot = root.trim();
+                linksHTML += ` <a href="search.html?q=${trimmedRoot}" target="_blank">${trimmedRoot}</a>`;
+            });
+            popup.innerHTML = linksHTML;
 
             // Position popup near clicked word
-            popup.style.left = `${event.pageX + 10}px`;
-            popup.style.top = `${event.pageY + 10}px`;
-            popup.style.display = "block";
+            if (popup.style.opacity === "0") {
+                popup.style.transition = "0s";
+            } else {
+                popup.style.transition = "0.15s";
+            }
+            popup.style.left = `${event.pageX - popup.offsetWidth / 2}px`;
+            popup.style.top = `${event.pageY - 3}px`;
+
+            // Trigger a redraw (force layout recalculation)
+            void popup.offsetWidth;
+
+            popup.style.transition = "0.15s";
+            popup.style.opacity = "1";
+            popup.style.pointerEvents = "auto";
+
         } else {
             // Hide popup if clicking elsewhere
-            popup.style.display = "none";
+            popup.style.opacity = "0";
+            popup.style.pointerEvents = "none";
         }
     });
 
@@ -38,7 +56,16 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
-    let matchingSpans = document.getElementById("translation").querySelectorAll(`span[data-root='${searchQuery}']`); // Select from the current document
+//    let matchingSpans = document.getElementById("translation").querySelectorAll(`span[data-root='${searchQuery}']`); // Select from the current document
+let allSpans = document.getElementById("translation").querySelectorAll("span[data-root]");
+    let matchingSpans = [];
+
+    allSpans.forEach(span => {
+        let dataRoots = span.getAttribute("data-root").split(',');
+        if (dataRoots.includes(searchQuery)) {
+            matchingSpans.push(span);
+        }
+    });
     console.log("Matching spans found:", matchingSpans.length);
 
     if (matchingSpans.length === 0) {

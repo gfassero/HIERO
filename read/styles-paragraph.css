@@ -82,7 +82,7 @@
     border: 1px solid var(--darkborder);
     border-radius: 3.75pt;
 
-    display: none;
+    display: block;
     z-index: 100;
     box-shadow: 2px 2px 10px var(--litebg);
 }
