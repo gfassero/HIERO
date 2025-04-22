@@ -23,6 +23,6 @@
     }
 
     a {
-        border-radius: 3.75pt;
+        border-radius: var(--cornerradius);
     }
 }

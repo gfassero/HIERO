@@ -235,26 +235,7 @@ Finally, HIERO saves the result to an HTML file on the user’s computer:
 in·<span class="f">headmost</span>
 ```
 
-The HTML output file references a CSS stylesheet in the same folder as the HTML output file. The CSS stylesheet includes rules for rendering the output:
-
-```css
-.m {
-    border-bottom: 0.75pt solid var(--textgray);
-}
-.f {
-    border-bottom: 1.25pt dashed var(--textgray);
-}
-```
-
-The HTML class `class="f"` in the output references the `.f` rule in the stylesheet:
-
-```css
-.f {
-    border-bottom: 1.25pt dashed var(--textgray);
-}
-```
-
-This rule indicates that the output should be rendered with a gray dashed underline 1.25 points thick. When the HTML output file is opened by the user, the output is rendered as:
+The HTML output file references a CSS stylesheet in the same folder as the HTML output file. The CSS stylesheet includes rules for rendering the output. The HTML class `class="f"` in the output references the `.f` rule in the stylesheet, which indicates that the output should be rendered with a red arc. When the HTML output file is opened by the user, the output is rendered as:
 
 in·<span class="f">headmost</span>
 

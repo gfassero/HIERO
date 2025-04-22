@@ -17,8 +17,8 @@
 #key div, #toc {
     padding: 10px;
     margin-top: 10px;
-    border: 1px solid var(--darkborder);
-    border-radius: 3.75pt;
+    border: var(--solidborder);
+    border-radius: var(--cornerradius);
 }
 #key > div {
     padding-top: 0;
@@ -42,7 +42,7 @@ h4, h5, h6 {
 }
 h2 {
 padding: .32em 0;
-border-bottom: 1px solid var(--darkborder);
+border-bottom: var(--solidborder);
 }
 ol,
 table,
@@ -63,16 +63,11 @@ th {
 }
 
 
-pre, code {
-  color: var(--nearblack);
-  background: var(--verylitebg);
-  font-family: monospace;
-  font-size: 110%;
-}
+
 pre {
   padding: 8px 15px;
-  border-radius: 3.75pt;
-  border: 1px solid var(--darkborder);
+  border-radius: var(--cornerradius);
+  border: var(--solidborder);
 }
 #markdown {
   width: 100%;

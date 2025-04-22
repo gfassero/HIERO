@@ -1,25 +1,27 @@
 ﻿#header {
-    border-bottom: 1px solid var(--darkborder);
+    border-bottom: var(--solidborder);
 }
 #header, #footer {
     background-color: var(--nearblack);
     overflow: hidden;
 }
 #footer {
-    border-top: 1px solid var(--darkborder);
+    border-top: var(--solidborder);
 }
 
 #table-of-sections {
     order: -1; /* Place TOC first */
     overflow: hidden;
-
     display: flex-column;
     column-width: 4em;
-    column-gap: 0;
+    column-gap: 3px;
 
-    margin: 10px;
-    border: 1px solid var(--darkborder);
-    border-radius: 3.75pt;
+    max-width: var(--readwidth);
+    margin: 10px clamp(30px, 50vw, (100vw - var(--readwidth)) / 2 + 30px);
+    border: var(--solidborder);
+    border-radius: var(--cornerradius);
+
+    column-rule: var(--dottedborder);
 }
 
 
@@ -34,7 +36,7 @@
     text-align: center;
     text-decoration: none;
     white-space: nowrap;
-    border-radius: 3.75pt;
+    border-radius: var(--cornerradius);
 }
 #header a, #footer a {
     color: var(--whitetext);
@@ -47,6 +49,7 @@
     padding: 0.4em 0;
     margin-right: 0.5em;
 }
+
 
 .headfoot a:hover,
 .headfoot a.split:hover,

@@ -1,3 +1,9 @@
+pre, code {
+  background: #f7f7f7;
+  font-family: monospace;
+  font-size: 110%;
+}
+
 .highlight .cm {
   color: #999988;
   font-style: italic;

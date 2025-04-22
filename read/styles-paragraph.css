@@ -9,6 +9,7 @@
         padding-left: 1.8em; /* Aligns the text flush */
         text-indent: 0; /* Keeps all lines flush with each other */
         hyphenate-character: "\2013";
+        word-wrap: anywhere;
     }
 
     /* HEADINGS */
@@ -79,8 +80,8 @@
 
     padding: 10px;
     margin-top: 10px;
-    border: 1px solid var(--darkborder);
-    border-radius: 3.75pt;
+    border: var(--solidborder);
+    border-radius: var(--cornerradius);
 
     display: block;
     z-index: 100;

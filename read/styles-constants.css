@@ -1,6 +1,9 @@
 :root {
-  --hue-main: 220;
-  --hue-hili:  40;
+  --hue-main: 230;
+  --hue-hili:  50;
+
+  --boldmain:    hsl(var(--hue-main)  95% 60%); /* DARK BLUE */
+  --boldhilite:  hsl(var(--hue-hili)  95% 60%); /* ORANGE */
 
   --litebg:      hsl(var(--hue-main)  67% 78%); /* LIGHT BLUE */
   --navhover:    hsl(var(--hue-hili)  67% 78%); /* LIGHT ORANGE */
@@ -8,22 +11,23 @@
   --darkborder:  hsl(var(--hue-main)  33% 67%); /* STEEL BLUE */
 
   --nearblack:   hsl(var(--hue-main)   0% 22%); /* DARK GRAY */
-  --boldmain:    hsl(var(--hue-main)  95% 50%); /* DARK BLUE */
+  --textgray:    hsl(var(--hue-main)   0% 78%); /* MID-GRAY */
   --whitetext:   WHITE;
 
-  --boldhilite:  hsl(var(--hue-hili) 100% 56%); /* ORANGE */
+  --readwidth: 60em;
 
-  --textgray:    hsl(var(--hue-main)   0% 78%); /* MID-GRAY */
-
-  --verylitebg:    hsl(var(--hue-main)   0% 97%); /* MID-GRAY */
+  --cornerradius: 3.75pt;
+  --solidborder: 1px solid var(--darkborder);
+  --dottedborder: 1px dotted var(--darkborder);
 }
 
 *, #table-of-sections a {
     scroll-margin-top: 0.65em;
     scroll-behavior: smooth;
     transition: color 0.15s, background-color 0.15s;
+    box-sizing: border-box;
 }
-.panel a {transition: none;}
+.panel a:not(#table-of-sections a) {transition: none;}
 
 body {
     display: flex;
@@ -59,11 +63,20 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    word-wrap: break-word;
+
+    max-width: var(--readwidth);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#translation, #table-of-sections {
+    max-width: 60em;
 }
 
 .match  {
     background-color: var(--boldhilite);
-    border-radius: 3.75pt;
+    border-radius: var(--cornerradius);
 }
 
 @media print {

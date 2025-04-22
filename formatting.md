@@ -17,7 +17,7 @@ Capitalization does not reflect any feature of the Hebrew text. Words that appea
 
 ## Inflections
 ### Gender
-Words with identifiable gender are underlined solid (masculine) or dashed (feminine). Where the gender has not been identified, the word is not underlined. There are only two genders: masculine and feminine.
+Words with identifiable gender are underlined with a simple blue line (masculine) or with a red arc (feminine). Where the gender has not been identified, the word is not underlined. There are only two genders: masculine and feminine.
 ### Number
 Words in the plural are followed by a superscript plus sign (⁺). Words in the dual are followed by a superscript number two (²). Words in the singular are not marked.
 ### Tense (Aspect)
