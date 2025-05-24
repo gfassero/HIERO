@@ -7,13 +7,13 @@ In this article:
 ## Introduction
 HIERO (Hebrew Idiom in English Roots) is a partial translation of the Old Testament from Hebrew into English, in which Hebrew word order and vocabulary choices are transparent to the reader. Its intended audience is studious English readers with little or no knowledge of the Hebrew language. Its purpose is to give some insight into the poetic idiom that the sacred authors chose to use.
 
-You can browse the [full HIERO translation here](http://gfassero.github.io/HIERO/read/). Or read one of the following familiar passages:
-- [The Creation](http://gfassero.github.io/HIERO/output%20samples/creation.html) (Genesis 1)
-- [The Binding of Isaac](http://gfassero.github.io/HIERO/output%20samples/akedah.html) (Genesis 22)
-- [The Shema](http://gfassero.github.io/HIERO/output%20samples/shema.html) (Deuteronomy 6)
-- [Psalm 1](http://gfassero.github.io/HIERO/output%20samples/psalm001.html)
-- [Psalm 51](http://gfassero.github.io/HIERO/output%20samples/psalm051.html)
-- [The Suffering Servant](http://gfassero.github.io/HIERO/output%20samples/servant.html) (Isaiah 53)
+You can browse the [full HIERO translation here](http://gfassero.github.io/HIERO/read/). Or skip to one of the following familiar passages:
+- [The Creation](http://gfassero.github.io/HIERO/read/01%20Gen.html#xGen.1.1) (Genesis 1)
+- [The Binding of Isaac](http://gfassero.github.io/HIERO/read/01%20Gen.html#xGen.22.1) (Genesis 22)
+- [The Shema](http://gfassero.github.io/HIERO/read/05%20Deu.html#xDeu.6.4) (Deuteronomy 6)
+- [Blessed Is the Man](http://gfassero.github.io/HIERO/read/19%20Psa.html#xPsa.1.1) (Psalm 1)
+- [Miserere](http://gfassero.github.io/HIERO/read/19%20Psa.html#xPsa.51.1) (Psalm 51)
+- [The Suffering Servant](http://gfassero.github.io/HIERO/read/23%20Isa.html#xIsa.52.13) (Isaiah 53)
 
 ## Rationale
 Modern English readers are blessed with more and better translations of the Bible than anyone else in history. Some translations specialize in theological precision, others swell with rhetorical beauty, and others use such everyday words that they sound like they were written yesterday. The Hebrew scriptures, however, are not written in modern, everyday language, modern technical language, or even classical rhetorical language. They are written in ancient Hebrew poetry, and HIERO tries to reflect that.
