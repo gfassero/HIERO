@@ -12,7 +12,7 @@ You can browse the [full HIERO translation here](http://gfassero.github.io/HIERO
 - [The Binding of Isaac](http://gfassero.github.io/HIERO/read/01%20Gen.html#xGen.22.1) (Genesis 22)
 - [The Shema](http://gfassero.github.io/HIERO/read/05%20Deu.html#xDeu.6.4) (Deuteronomy 6)
 - [Blessed Is the Man](http://gfassero.github.io/HIERO/read/19%20Psa.html#xPsa.1.1) (Psalm 1)
-- [Miserere](http://gfassero.github.io/HIERO/read/19%20Psa.html#xPsa.51.1) (Psalm 51)
+- [Miserere](http://gfassero.github.io/HIERO/read/19%20Psa.html#xPsa.51.0) (Psalm 51)
 - [The Suffering Servant](http://gfassero.github.io/HIERO/read/23%20Isa.html#xIsa.52.13) (Isaiah 53)
 
 ## Rationale
