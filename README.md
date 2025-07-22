@@ -27,7 +27,7 @@ Two parameters guide the translation:
 
 2. **Each Hebrew root and all of its derivatives are always represented by derivatives of a single English root. Unrelated Hebrew words are represented by unrelated English words.** This root-for-root translation parameter makes many word associations more apparent in English than is possible in a translation. Exceptions are made for some pronouns, simple prepositions, and other function words for which word choices are probably less significant. You can read more [about the root-for-root translation parameter here](lexicon.md).
 
-Following these two parameters—the second one especially—makes it impossible to translate into normal English. Instead, the text is only partially translated—the morphology is mostly English, but the idiom is not. The vocabulary is based on English roots but extended in unfamiliar ways. Read more [about Hebrew idiom here](reading.md).
+Following these two parameters—the second one especially—makes it impossible to translate into normal English. Instead, the text is only partially translated—the morphology is mostly English, but the idiom is not. The vocabulary is based on English roots but extended in unfamiliar ways. Read more [about how HIERO reflects Hebrew idiom](http://gfassero.github.io/HIERO/read/key.html).
 
 ## Sources
 HIERO depends on the “[Translators Amalgamated Hebrew OT](http://github.com/STEPBible/STEPBible-Data/tree/master/Translators%20Amalgamated%20OT%2BNT)” (TAHOT) by [STEP Bible](http://www.stepbible.org/), licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). TAHOT provides the Hebrew text from which HIERO works, as well as lexical and grammatical tags on which HIERO’s Hebrew parsing dictionary is primarily based.
