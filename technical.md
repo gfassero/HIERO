@@ -101,7 +101,7 @@ HIERO selects the Hebrew word `בְּרֵאשִׁית` from this line, and then 
 
 |Hebrew|Lexicon|Morphology|Lex. variant 1|Morph. var. 1|Lex. var. 2|Morph. var. 2|
 |-----|-----|-----|-----|-----|-----|-----|
-בְּרֵאשִׁית||H9003/{H7225G}|HR/Ncfsc|H9003/{H7225G}|HR/Ncfsa|||
+|בְּרֵאשִׁית|H9003/{H7225G}|HR/Ncfsc|H9003/{H7225G}|HR/Ncfsa|||
 
 This entry from the parsing dictionary offers two parsing options, so HIERO returns to the current line of the annotated Hebrew text:
 
@@ -113,7 +113,7 @@ and selects the parsing variant number `1`. It then selects parsing variant numb
 
 |Hebrew|Lex. variant 1|Morph. var. 1|
 |-----|-----|-----|
-בְּרֵאשִׁית||H9003/{H7225G}|HR/Ncfsa|
+|בְּרֵאשִׁית|H9003/{H7225G}|HR/Ncfsa|
 
 This is the appropriate parsing for the word `בְּרֵאשִׁית` in this instance.
 
