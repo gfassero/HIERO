@@ -5,7 +5,7 @@ In this article:
 {:toc}
 
 ## English Lexicon
-The English lexicon is the most important part of HIERO—and the part that has taken the most time by far to develop. The primary goal of the English lexicon is to link each Hebrew root with a single English root and vice versa.
+The English lexicon is the most important part of HIERO—and the part that has taken the most time to develop. The goal of the English lexicon is to link each Hebrew root with a single English root and vice versa.
 
 ### Lexicon Code
 HIERO’s English lexicon contains about 9,500 definitions of Hebrew and Aramaic words. The lexicon is written in XML code. The XML code, part-of-speech mappings, and Strongs number mappings that structure the lexicon are based on the [OSHB Hebrew Lexicon](http://github.com/openscriptures/HebrewLexicon/blob/master/HebrewStrong.xml) by the [Open Scriptures Hebrew Bible Project](http://hb.openscriptures.org/). All of the definitions are my own. The following is a partial sample from the lexicon:
@@ -91,47 +91,29 @@ HIERO iterates through the annotated Hebrew text and looks up each word’s corr
 
 In this walkthrough, we will follow HIERO as it translates the first word of the Hebrew scriptures.
 
-First, HIERO reads the first line of the annotated Hebrew text:
+First, HIERO reads the first word of the annotated Hebrew text:
 
-```
-Gen.1.1#01=L	בְּרֵאשִׁ֖ית	1
-```
+|Word number|Hebrew|Parsing variant|
+|-----|-----|-----|
+|Gen.1.1#01=L|בְּרֵאשִׁ֖ית|1|
 
-HIERO selects the Hebrew word from this line:
+HIERO selects the Hebrew word `בְּרֵאשִׁית` from this line, and then searches the first column of Hebrew parsing dictionary for `בְּרֵאשִׁית`. When it finds `בְּרֵאשִׁית`, it selects the rest of the row:
 
-```
-בְּרֵאשִׁית
-```
+|Hebrew|Lexicon|Morphology|Lex. variant 1|Morph. var. 1|Lex. var. 2|Morph. var. 2|
+|-----|-----|-----|-----|-----|-----|-----|
+בְּרֵאשִׁית||H9003/{H7225G}|HR/Ncfsc|H9003/{H7225G}|HR/Ncfsa|||
 
-HIERO searches the first column of Hebrew parsing dictionary for `בְּרֵאשִׁית`. When it finds `בְּרֵאשִׁית`, it selects the rest of the row:
+This entry from the parsing dictionary offers two parsing options, so HIERO returns to the current line of the annotated Hebrew text:
 
-```
-בְּרֵאשִׁית	H9003/{H7225G}	HR/Ncfsc	4	H9003/{H7225G}	HR/Ncfsa	1
-```
+|Word number|Hebrew|Parsing variant|
+|-----|-----|-----|
+|Gen.1.1#01=L|בְּרֵאשִׁ֖ית|1|
 
-This entry from the parsing dictionary offers two parsing options:
+and selects the parsing variant number `1`. It then selects parsing variant number `1` from the Hebrew parsing dictionary:
 
-```
-H9003/{H7225G}	HR/Ncfsc
-```
-
-and
-
-```
-H9003/{H7225G}	HR/Ncfsa
-```
-
-HIERO returns to the current line of the annotated Hebrew text:
-
-```
-Gen.1.1#01=L	בְּרֵאשִׁ֖ית	1
-```
-
-and selects the parsing variant number `1`, which is found beside the Hebrew word. The parsing variant number is zero-based, so variant `1` is the second parsing:
-
-```
-H9003/{H7225G}	HR/Ncfsa
-```
+|Hebrew|Lex. variant 1|Morph. var. 1|
+|-----|-----|-----|
+בְּרֵאשִׁית||H9003/{H7225G}|HR/Ncfsa|
 
 This is the appropriate parsing for the word `בְּרֵאשִׁית` in this instance.
 
@@ -239,11 +221,11 @@ The HTML output file references a CSS stylesheet in the same folder as the HTML 
 
 in·<span class="f">headmost</span>
 
-HIERO then moves on to the second line of the annotated Hebrew text:
+HIERO then moves on to the second word of the annotated Hebrew text:
 
-```
-Gen.1.1#02=L	בָּרָא	1
-```
+|Word number|Hebrew|Parsing variant|
+|-----|-----|-----|
+|Gen.1.1#02=L|בָּרָ֣א|1|
 
 ## Further Development
 - Improve the English lexicon.

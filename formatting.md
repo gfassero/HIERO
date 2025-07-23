@@ -17,11 +17,11 @@ Capitalization does not reflect any feature of the Hebrew text. Words that appea
 
 ## Inflections
 ### Gender
-Words with identifiable gender are underlined with a simple blue line (masculine) or with a red arc (feminine). Where the gender has not been identified, the word is not underlined. There are only two genders: masculine and feminine.
+Words with identifiable gender are underlined with a simple blue line (masculine) or with a red arc (feminine). Where HIERO cannot identify the gender, the word is not underlined. There are only two genders: masculine and feminine.
 ### Number
 Words in the plural are followed by a superscript plus sign (⁺). Words in the dual are followed by a superscript number two (²). Words in the singular are not marked.
 ### Tense (Aspect)
-The two Hebrew verb tenses (or aspects), are translated as the English past and present tense. However, these tenses do not mean the same thing as in English.
+The two Hebrew verb tenses (or aspects), are translated as the English past and present tense. However, these tenses do not mean the same thing in Hebrew as in English.
 
 ## Lexicon Entries
 ### The Divine Name
@@ -50,13 +50,14 @@ Line breaks, section breaks, and punctuation are derived from the Hebrew punctua
 - A colon (:) at the end of a line represents a *sof passuk* punctuation mark.
 - An indentation represents an *etnachta*, a *segol*, or an *ole we-jored* cantillation mark.
 - A double indentation represents a *zakef katan* cantillation mark.
+
 Other cantillation marks are ignored.
 
 Lines long enough to wrap at the edge of the screen or column are broken by a dash (–).
 
 ## Exclamation Marks
 There are three kinds of exclamation marks in HIERO:
-- Interjections are preceded by an inverted question mark and followed by a question mark (¡please!).
+- Interjections are preceded by an inverted exclamation mark and followed by a normal exclamation mark (¡please!).
 - An exclamation mark (!) without an inverted exclamation represents the paragogic suffix ה.
 - A superscript exclamation mark (ꜝ) precedes volative verbs (commands, cohortatives, and jussives).
 - The paragogic suffix may be paired with a volative verb (ꜝarise!).
