@@ -117,7 +117,7 @@ and selects the parsing variant number `1`. It then selects parsing variant numb
 
 This is the appropriate parsing for the word `בְּרֵאשִׁית` in this instance.
 
-The first part of the parsing, `H9003/{H7225G}`, is the lexicon tag. The second part, `HR/Ncfsa`, is the morphological tag. Each of these tags is dided by a forward slash `/`, indicating that this word, `בְּרֵאשִׁית`, has two parts: the prefix `בְּ`, and the main word `רֵאשִׁית`.
+The first part of the parsing, `H9003/{H7225G}`, is the lexicon tag. The second part, `HR/Ncfsa`, is the morphological tag. Each of these tags is divided by a forward slash, `/`, indicating that this word, `בְּרֵאשִׁית`, has two parts: the prefix `בְּ`, and the main word `רֵאשִׁית`.
 
 HIERO begins with the prefix `בְּ`, which is marked with the lexicon tag `H9003` and the morphological tag `HR`. The `H` at the beginning of each tag is not used.
 
