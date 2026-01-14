@@ -37,7 +37,7 @@ The lexicon tags follow the following rules:
 ### Further Reading
 - [More about the lexicon](lexicon.md)
 - [A longer excerpt from the lexicon](resource%20samples/multilex_EXCERPT.xml)
-- [Complete glossary](read/glossary.html)
+- [Complete glossary](https://gfassero.github.io/HIERO/read/glossary.html)
 
 ## Annotated Hebrew Text
 HIERO translates from the four-part [Translators Amalgamated Hebrew OT](http://github.com/STEPBible/STEPBible-Data/tree/master/Translators%20Amalgamated%20OT%2BNT) (TAHOT) by [STEP Bible](http://www.stepbible.org/). TAHOT is an edition of the Leningrad codex, following the qere of the Masoretic Text.

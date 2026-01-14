@@ -19,7 +19,7 @@ In normal translations, different Hebrew words are translated by the same Englis
 |  כבשׂ | ewe, sheep, lamb          | lamb  |
 |  רחל | ewe, sheep                | ewe   |
 
-In this example, we can easily see the lack of root coherence. Each Hebrew root is translated in 2-4 different ways, even within a single translation. We have to look a little more closely to see the lack of root uniqueness. The words “flock” and “cattle” each represent two different words; “ewe” and “lamb” each represent three; and “sheep” represents four different Hebrew words. As a result, it is impossible for the reader of existing translation to know which Hebrew root is being used without looking at the Hebrew text itself. This does not obscure the meaning of the translation—we can easily understand the story—but it does obscure the poetic choices made by the author. By contrast, HIERO makes it easy for the reader to identify recurrences of the same Hebrew root. I have compiled a few [sample texts to illustrate root coherence](read/samples.html) as it appears in HIERO.
+In this example, we can easily see the lack of root coherence. Each Hebrew root is translated in 2-4 different ways, even within a single translation. We have to look a little more closely to see the lack of root uniqueness. The words “flock” and “cattle” each represent two different words; “ewe” and “lamb” each represent three; and “sheep” represents four different Hebrew words. As a result, it is impossible for the reader of existing translation to know which Hebrew root is being used without looking at the Hebrew text itself. This does not obscure the meaning of the translation—we can easily understand the story—but it does obscure the poetic choices made by the author. By contrast, HIERO makes it easy for the reader to identify recurrences of the same Hebrew root. I have compiled a few [sample texts to illustrate root coherence](https://gfassero.github.io/HIERO/read/samples.html) as it appears in HIERO.
 
 This parameter is admittedly artificial and unnecessary for normal translation work. It often obscures the meaning of a text, which is why, if you want to understand a text, you should read one of the many excellent translations already available in English.
 
@@ -99,7 +99,7 @@ This section lists all exceptions to the root-for-root parameter. The etymologie
 
 <!--
 ### Temporary exceptions
-The lexicon is still in progress, so not every root is coherent and unique yet. Roots that are not yet coherent are marked in pink ![persian pink](https://placehold.co/15x15/ff80c0/ff80c0.png), roots that are not yet unique are marked in orange ![pastel orange](https://placehold.co/15x15/ffc040/ffc040.png), and roots that are neither coherent nor unique are marked in red ![red-orange](https://placehold.co/15x15/ff4000/ff4000.png). All roots that are not marked are both coherent and unique. A [complete list of exceptions to be resolved](read/glossary-noncompliant.html) is available.
+The lexicon is still in progress, so not every root is coherent and unique yet. Roots that are not yet coherent are marked in pink ![persian pink](https://placehold.co/15x15/ff80c0/ff80c0.png), roots that are not yet unique are marked in orange ![pastel orange](https://placehold.co/15x15/ffc040/ffc040.png), and roots that are neither coherent nor unique are marked in red ![red-orange](https://placehold.co/15x15/ff4000/ff4000.png). All roots that are not marked are both coherent and unique. A [complete list of exceptions to be resolved](https://gfassero.github.io/HIERO/read/glossary-noncompliant.html) is available.
 ### Permanent exceptions
 In the glossary, permanent exceptions to the root-for-root translation parameter are marked in gray ![light silver](https://placehold.co/15x15/d8d8d8/d8d8d8.png). The following is a complete list of these exceptions.
 -->
@@ -121,7 +121,7 @@ HIERO uses the following function words as auxiliaries to represent the various 
 - Other minor words: *that*\*, *over*, *off*
 
 #### Independant function words
-The following words are not compliant with the root-for-root parameter. Each line represents a unique Hebrew root and lists how the root is translated in English. In HIERO, some of these underlying roots can be distinguished only by the diacritics added to the English translation. Details can be found in the [glossary](read/glossary.html), where these words are grouped under “Function Words” and marked in gray.
+The following words are not compliant with the root-for-root parameter. Each line represents a unique Hebrew root and lists how the root is translated in English. In HIERO, some of these underlying roots can be distinguished only by the diacritics added to the English translation. Details can be found in the [glossary](https://gfassero.github.io/HIERO/read/glossary.html), where these words are grouped under “Function Words” and marked in gray.
 
 - Demonstratives
   - Root *zeh*, *hallazeh*: *this*, *ⱦhat*
@@ -172,6 +172,6 @@ When Hebrew uses a single root to refer to a person, identifying the gender by a
 These words are excused because the masculine and feminine words in each pair are so closely related in English that we think of them as related. These roots are still root unique, meaning that no other Hebrew word is translated “brother,” “sister,” etc. Details are in the lexicon.
 
 ## Reviewing the Lexicon
-The English lexicon is the most important part of HIERO—and the part that has taken the most time by far to develop. Because of this, I am not ready to post the entire lexicon online. Instead, I offer a [complete glossary](read/glossary.html) generated by HIERO, listing each Hebrew root word, its frequency (excluding proper noun instances), its corresponding English root from the lexicon, and some information about the root.
+The English lexicon is the most important part of HIERO—and the part that has taken the most time by far to develop. Because of this, I am not ready to post the entire lexicon online. Instead, I offer a [complete glossary](https://gfassero.github.io/HIERO/read/glossary.html) generated by HIERO, listing each Hebrew root word, its frequency (excluding proper noun instances), its corresponding English root from the lexicon, and some information about the root.
 
 If you want to learn more about the lexicon, you can [read about the lexicon’s XML code](technical.md#english-lexicon) or review [an excerpt from the lexicon code here](resource%20samples/multilex_EXCERPT.xml).

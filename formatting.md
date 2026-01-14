@@ -1,5 +1,5 @@
 # Formatting
-HIERO is formatted to indicate features of the Hebrew text. The [formatting key](read/key.html) gives examples of formatting in HIERO.
+HIERO is formatted to indicate features of the Hebrew text. The [formatting key](https://gfassero.github.io/HIERO/read/key.html) gives examples of formatting in HIERO.
 
 * Auto-generated table of contents:
 {:toc}
