@@ -19,6 +19,7 @@
         border-right-width: 0;
         border-radius: 0;
     }
+
     #table-of-sections > div > a,
     #table-of-sections .a-doubler {
         --horizmargin: 0.5em;
@@ -59,6 +60,13 @@
         width: fit-content;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    a.disabled, a.disabled:hover {
+        color: var(--textgray) !important;
+    }
+    a.disabled:hover {
+        background-color: initial;
     }
 
     .christian {display: none;}
@@ -105,7 +113,7 @@
         #table-of-sections {
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: auto auto auto 1fr;
-            grid-template-areas:
+            grid-template-areas: 
                 "hh hh ch ch"
                 "h1 h2 c1 c2"
                 "h3 h2 c1 c3";
@@ -225,7 +233,7 @@
         <a href="04 Num.html">Numbers</a>
         <a href="05 Deu.html">Deuteronomy</a>
 
-        <a class="sec1">Later Historical</a>
+        <a class="sec1">Histories</a>
         <a href="06 Jos.html">Joshua</a>
         <a href="07 Jdg.html">Judges</a>
         <a href="08 Rut.html">Ruth</a>
@@ -237,7 +245,11 @@
         <a href="14 2Ch.html">II Chronicles</a>
         <a href="15 Ezr.html">Ezra</a>
         <a href="16 Neh.html">Nehemiah</a>
+<!--    <a class="disabled">Judith</a>-->
+<!--    <a class="disabled">Tobit</a>-->
         <a href="17 Est.html">Esther</a>
+<!--    <a class="disabled">1 Maccabees</a>-->
+<!--    <a class="disabled">2 Maccabees</a>-->
     </div>
     <div class="item c2">
         <a class="sec1">Wisdom</a>
@@ -246,12 +258,15 @@
         <a href="20 Pro.html">Proverbs</a>
         <a href="21 Ecc.html">Ecclesiastes</a>
         <a href="22 Sng.html">Song of Solomon</a>
+<!--    <a class="disabled">Wisdom</a>-->
+<!--    <a class="disabled">Sirach</a>-->
     </div>
     <div class="item c3">
         <a class="sec1">Major Prophets</a>
         <a href="23 Isa.html">Isaiah</a>
         <a href="24 Jer.html">Jeremiah</a>
         <a href="25 Lam.html">Lamentations</a>
+<!--    <a class="disabled">Baruch</a>-->
         <a href="26 Ezk.html">Ezekiel</a>
         <a href="27 Dan.html">Daniel</a>
 
