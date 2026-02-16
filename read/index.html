@@ -19,13 +19,38 @@
         border-right-width: 0;
         border-radius: 0;
     }
-    #table-of-sections a {
+    #table-of-sections > div > a,
+    #table-of-sections .a-doubler {
         --horizmargin: 0.5em;
         float: initial;
         display: block;
         padding: 0.4em var(--horizmargin);
         margin: 0 var(--horizmargin);
         width: calc(100% - 2 * var(--horizmargin));
+    }
+    #table-of-sections .a-doubler {
+        padding: 0;
+	display: flex;
+    }
+    #table-of-sections .a-doubler a {
+        float: initial;
+        padding: 0.4em var(--horizmargin);
+	margin: 0;
+	flex: 1 1 content;
+    }
+    #table-of-sections .a-doubler span {
+        float: initial;
+        padding: 0.4em 0;
+	margin: 0;
+	flex: 0 0 content;
+    }
+    #table-of-sections .a-doubler a:first-child {
+        text-align: right;
+        padding-right: 0;
+    }
+    #table-of-sections .a-doubler a:last-child {
+        text-align: left;
+        padding-left: 0;
     }
 
     #table-of-sections {
@@ -136,10 +161,14 @@
         <a class="sec2">Former Prophets</a>
         <a href="06 Jos.html">Joshua</a>
         <a href="07 Jdg.html">Judges</a>
-        <a href="09 1Sa.html">1 Samuel</a>
-        <a href="10 2Sa.html">2 Samuel</a>
-        <a href="11 1Ki.html">1 Kings</a>
-        <a href="12 2Ki.html">2 Kings</a>
+        <div class="a-doubler">
+            <a href="09 1Sa.html">Samuel I</a><span>&ndash;</span>
+            <a href="10 2Sa.html">II</a>
+        </div>
+        <div class="a-doubler">
+            <a href="11 1Ki.html">Kings I</a><span>&ndash;</span>
+            <a href="12 2Ki.html">II</a>
+        </div>
 
         <a class="sec2">Latter Prophets</a>
         <a href="23 Isa.html">Isaiah</a>
@@ -164,22 +193,26 @@
         <a class="sec1">Ketuvim</a>
         <a class="sec2">Books of Truth</a>
         <a href="18 Job.html">Job</a>
-        <a href="20 Pro.html">Proverbs</a>
         <a href="19 Psa.html">Psalms</a>
+        <a href="20 Pro.html">Proverbs</a>
 
         <a class="sec2">Five Scrolls</a>
         <a href="08 Rut.html">Ruth</a>
-        <a href="17 Est.html">Esther</a>
         <a href="21 Ecc.html">Ecclesiastes</a>
         <a href="22 Sng.html">Song of Solomon</a>
         <a href="25 Lam.html">Lamentations</a>
+        <a href="17 Est.html">Esther</a>
 
         <a class="sec2">Other</a>
-        <a href="13 1Ch.html">1 Chronicles</a>
-        <a href="14 2Ch.html">2 Chronicles</a>
-        <a href="15 Ezr.html">Ezra</a>
-        <a href="16 Neh.html">Nehemiah</a>
         <a href="27 Dan.html">Daniel</a>
+        <div class="a-doubler">
+            <a href="15 Ezr.html">Ezra</a><span>&ndash;</span>
+            <a href="16 Neh.html">Nehemiah</a>
+        </div>
+        <div class="a-doubler">
+            <a href="13 1Ch.html">Chronicles I</a><span>&ndash;</span>
+            <a href="14 2Ch.html">II</a>
+        </div>
     </div>
     <div class="item ch">
         <a class="sec0" id="christian">Christian ordering</a>
@@ -196,12 +229,12 @@
         <a href="06 Jos.html">Joshua</a>
         <a href="07 Jdg.html">Judges</a>
         <a href="08 Rut.html">Ruth</a>
-        <a href="09 1Sa.html">1 Samuel</a>
-        <a href="10 2Sa.html">2 Samuel</a>
-        <a href="11 1Ki.html">1 Kings</a>
-        <a href="12 2Ki.html">2 Kings</a>
-        <a href="13 1Ch.html">1 Chronicles</a>
-        <a href="14 2Ch.html">2 Chronicles</a>
+        <a href="09 1Sa.html">I Samuel</a>
+        <a href="10 2Sa.html">II Samuel</a>
+        <a href="11 1Ki.html">I Kings</a>
+        <a href="12 2Ki.html">II Kings</a>
+        <a href="13 1Ch.html">I Chronicles</a>
+        <a href="14 2Ch.html">II Chronicles</a>
         <a href="15 Ezr.html">Ezra</a>
         <a href="16 Neh.html">Nehemiah</a>
         <a href="17 Est.html">Esther</a>
@@ -240,7 +273,7 @@
 </div>
 
 <div id="footer" class="headfoot">
-<a href="http://gfassero.github.io/HIERO/" class="title">HIERO</a><a href="http://github.com/gfassero/HIERO/commits/">updated 18 Apr 25</a>
+<a href="http://gfassero.github.io/HIERO/" class="title">HIERO</a><a href="http://github.com/gfassero/HIERO/commits/">updated 16 Feb 26</a>
 </div>
 </div>
 </body>
