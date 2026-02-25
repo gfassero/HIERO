@@ -15,9 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
             // Create popup content
             let dataRoots = dataRoot.split(',');
             let linksHTML = 'Search roots:';
-            dataRoots.forEach(root => {
-                const trimmedRoot = root.trim();
-                linksHTML += ` <a href="search.html?q=${trimmedRoot}" target="_blank">${trimmedRoot}</a>`;
+            dataRoots.forEach(root => {
+                const trimmedRoot = root.trim();
+                const trimmedRootEncoded = encodeURIComponent(trimmedRoot);
+                linksHTML += ` <a href="search.html?q=${trimmedRootEncoded}" target="_blank">${trimmedRoot}</a>`;
             });
             popup.innerHTML = linksHTML;
 
