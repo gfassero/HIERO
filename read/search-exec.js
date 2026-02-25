@@ -65,6 +65,7 @@ function fetchAndDisplayResults(query, citations, resultsContainer) {
             resultsContainer.appendChild(initialSummary);
             document.title = `HIERO | Root ${query} (0)`;
             let summaryElement = initialSummary;
+            const queryEncoded = encodeURIComponent(query);
 
             citations.forEach(citation => {
                 if (fullData[citation]) {
@@ -93,7 +94,7 @@ function fetchAndDisplayResults(query, citations, resultsContainer) {
 
                         const trimmedCitationForLink = citation.split(/_/)[0];
                         let link = document.createElement("a");
-                        link.href = bookFiles[trimmedCitationForLink.substring(0, 3)] + ".html?q=" + query + "#x" + trimmedCitationForLink;
+                        link.href = bookFiles[trimmedCitationForLink.substring(0, 3)] + ".html?q=" + queryEncoded + "#x" + trimmedCitationForLink;
                         link.appendChild(pElement);
                         resultsHTML += link.outerHTML;
                         matchCount++;
