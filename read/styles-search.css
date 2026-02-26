@@ -1,4 +1,6 @@
-﻿html #translation {
+﻿@import "styles-linklist.css?v=2b";
+
+html #translation {
     p,
     p.in1,
     p.in2 {
@@ -22,7 +24,4 @@
         text-align: left; /* Aligns the number to the right within its box */
     }
 
-    a {
-        border-radius: var(--cornerradius);
-    }
 }

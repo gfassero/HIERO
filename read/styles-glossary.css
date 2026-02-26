@@ -1,4 +1,6 @@
-﻿#printable #translation {
+﻿@import "styles-linklist.css?v=2b";
+
+#printable #translation {
     display: table;
     column-count: 1;
     -webkit-column-count: 1;
