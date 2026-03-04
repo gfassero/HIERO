@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    loadGlossaryJSON();
+
     // PREPARE POPUP FOR INITATING SEARCH
 
     let popup = document.createElement("div");
@@ -18,9 +20,16 @@ document.addEventListener("DOMContentLoaded", function () {
             dataRoots.forEach(root => {
                 const trimmedRoot = root.trim();
                 const trimmedRootEncoded = encodeURIComponent(trimmedRoot);
-                linksHTML += ` <a href="search.html?q=${trimmedRootEncoded}" target="_blank">${trimmedRoot}</a>`;
-            });
-            popup.innerHTML = linksHTML;
+		let gloss = trimmedRoot;
+
+		const result = findGloss(trimmedRoot);
+		if (result) {
+		    gloss = result.glossHeb + " / " + result.glossXlit;
+		}
+		
+                linksHTML += `<br /><a href="search.html?q=${trimmedRootEncoded}" target="_blank">${gloss}</a> (<a href="glossary.html#x${trimmedRootEncoded}" target="_blank">gloss</a>)`;
+            });
+            popup.innerHTML = linksHTML;
 
             // Position popup near clicked word
             if (popup.style.opacity === "0") {
@@ -81,3 +90,38 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Matches highlighted.");
 
 });
+
+let glossaryData = null;
+async function loadGlossaryJSON() {
+    console.log("Loading glossary JSON...");
+    try {
+        const response = await fetch('glossary.json');
+        if (!response.ok) {
+            throw new Error('Failed to load glossary.json');
+        }
+
+        glossaryData = await response.json();
+        console.log('Glossary loaded');
+
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+function findGloss(strongsNumber) {
+    if (!glossaryData) {
+        console.log('Glossary not loaded yet');
+        return null;
+    }
+
+    const entry = glossaryData["x" + strongsNumber];
+
+    if (!entry) {
+        return null;
+    }
+
+    return {
+        glossHeb: entry.gloss_heb,
+        glossXlit: entry.gloss_xlit
+    };
+}

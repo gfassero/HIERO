@@ -27,7 +27,8 @@
     transition: color 0.15s, background-color 0.15s;
     box-sizing: border-box;
 }
-.panel a:not(#table-of-sections a) {transition: none;}
+
+/* .panel a:not(#table-of-sections a):not(a.glossary-entry) {transition: none;} */
 
 body {
     display: flex;
@@ -74,7 +75,7 @@ p {
     max-width: 60em;
 }
 
-.match  {
+.match {
     background-color: var(--boldhilite);
     border-radius: var(--cornerradius);
 }
