@@ -22,13 +22,13 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log("Loaded index:", Object.keys(index).length, "roots indexed.");
 //            const matchingCitations = index[searchQuery];
             let matchingCitations = [];
-            for (const root in index) {
-                if (root.split(',').map(r => r.trim()).includes(searchQuery)) {
-                    matchingCitations = matchingCitations.concat(index[root]);
-                }
-            }
-            // Remove duplicate citations if any
-            matchingCitations = [...new Set(matchingCitations)];
+            for (const root in index) {
+                if (root.split(',').map(r => r.trim()).includes(searchQuery)) {
+                    matchingCitations = matchingCitations.concat(index[root]);
+                }
+            }
+            // Remove duplicate citations if any
+            matchingCitations = [...new Set(matchingCitations)];
 
 
             if (!matchingCitations || matchingCitations.length === 0) {
@@ -74,18 +74,18 @@ function fetchAndDisplayResults(query, citations, resultsContainer) {
 
 
                     fullData[citation].forEach(wordObj => {
-                        if (wordObj.r) {
-                            const roots = wordObj.r.split(',').map(r => r.trim());
-                            if (roots.includes(query)) {
-                                lineParts.push(`<span class="match">${wordObj.t}</span>`);
-                                hasMatchInLine = true;
-                            } else {
-                                lineParts.push(wordObj.t);
-                            }
-                        } else {
-                            lineParts.push(wordObj.t);
-                        }
-                    });
+                        if (wordObj.r) {
+                            const roots = wordObj.r.split(',').map(r => r.trim());
+                            if (roots.includes(query)) {
+                                lineParts.push(`<span class="match">${wordObj.t}</span>`);
+                                hasMatchInLine = true;
+                            } else {
+                                lineParts.push(wordObj.t);
+                            }
+                        } else {
+                            lineParts.push(wordObj.t);
+                        }
+                    });
 
                     if (hasMatchInLine) {
                         const pElement = document.createElement('p');

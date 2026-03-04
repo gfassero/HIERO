@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Create popup content
             let dataRoots = dataRoot.split(',');
-            let linksHTML = 'Search roots:';
+            let linksHTML = 'Search roots:';
             dataRoots.forEach(root => {
                 const trimmedRoot = root.trim();
                 const trimmedRootEncoded = encodeURIComponent(trimmedRoot);
@@ -57,8 +57,8 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
-//    let matchingSpans = document.getElementById("translation").querySelectorAll(`span[data-root='${searchQuery}']`); // Select from the current document
-let allSpans = document.getElementById("translation").querySelectorAll("span[data-root]");
+    //    let matchingSpans = document.getElementById("translation").querySelectorAll(`span[data-root='${searchQuery}']`); // Select from the current document
+    let allSpans = document.getElementById("translation").querySelectorAll("span[data-root]");
     let matchingSpans = [];
 
     allSpans.forEach(span => {
