@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    fetch("index.json.gz")
+    fetch("index.json")
         .then(response => {
             if (!response.ok) throw new Error("Network response was not ok");
             return response.json();
@@ -52,7 +52,7 @@ function fetchAndDisplayResults(query, citations, resultsContainer) {
     let matchCount = 0;
     let resultsHTML = '';
 
-    fetch("full.json.gz")
+    fetch("full.json")
         .then(response => {
             if (!response.ok) throw new Error("Network response was not ok");
             return response.json();
