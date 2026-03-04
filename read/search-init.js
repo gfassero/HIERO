@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (span) {
             let dataRoot = span.getAttribute("data-root");
 
+	    unhighlightMatches();
+
             // Create popup content
             let dataRoots = dataRoot.split(',');
             let linksHTML = 'Search roots:';
@@ -27,7 +29,10 @@ document.addEventListener("DOMContentLoaded", function () {
 		    gloss = result.glossHeb + " / " + result.glossXlit;
 		}
 		
-                linksHTML += `<br /><a href="search.html?q=${trimmedRootEncoded}" target="_blank">${gloss}</a> (<a href="glossary.html#x${trimmedRootEncoded}" target="_blank">gloss</a>)`;
+                linksHTML += `<br /><a href="search.html?q=${trimmedRootEncoded}" target="_blank">${gloss}</a>
+			(<a href="glossary.html#x${trimmedRootEncoded}" target="_blank">gloss</a>)`;
+		
+		highlightMatches(trimmedRoot)
             });
             popup.innerHTML = linksHTML;
 
@@ -66,26 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
-    //    let matchingSpans = document.getElementById("translation").querySelectorAll(`span[data-root='${searchQuery}']`); // Select from the current document
-    let allSpans = document.getElementById("translation").querySelectorAll("span[data-root]");
-    let matchingSpans = [];
-
-    allSpans.forEach(span => {
-        let dataRoots = span.getAttribute("data-root").split(',');
-        if (dataRoots.includes(searchQuery)) {
-            matchingSpans.push(span);
-        }
-    });
-    console.log("Matching spans found:", matchingSpans.length);
-
-    if (matchingSpans.length === 0) {
-        console.warn("No matching spans found.");
-        return;
-    }
-
-    matchingSpans.forEach(span => {
-        span.classList.add("match"); // Highlight the matching span
-    });
+    highlightMatches(searchQuery);
 
     console.log("Matches highlighted.");
 
@@ -124,4 +110,35 @@ function findGloss(strongsNumber) {
         glossHeb: entry.gloss_heb,
         glossXlit: entry.gloss_xlit
     };
+}
+
+function highlightMatches(searchQuery) {
+    //    let matchingSpans = document.getElementById("translation").querySelectorAll(`span[data-root='${searchQuery}']`); // Select from the current document
+    let allSpans = document.getElementById("translation").querySelectorAll("span[data-root]");
+    let matchingSpans = [];
+
+    allSpans.forEach(span => {
+        let dataRoots = span.getAttribute("data-root").split(',');
+        if (dataRoots.includes(searchQuery)) {
+            matchingSpans.push(span);
+        }
+    });
+    console.log("Matching spans found:", matchingSpans.length);
+
+    if (matchingSpans.length === 0) {
+        console.warn(`No spans matching ${searchQuery} found.`);
+        return;
+    }
+
+    matchingSpans.forEach(span => {
+        span.classList.add("match"); // Highlight the matching span
+    });
+}
+
+function unhighlightMatches(searchQuery) {
+    let allSpans = document.getElementById("translation").querySelectorAll("span[data-root]");
+
+    allSpans.forEach(span => {
+	span.classList.remove("match"); // Remove all highlights
+    });
 }
