@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
             resultsContainer.innerHTML = `<p class="book error">Error loading search index.</p>`;
             document.title = `HIERO | Search (Error)`;
         });
+
 });
 
 function fetchAndDisplayResults(query, citations, resultsContainer) {
