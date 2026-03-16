@@ -37,8 +37,8 @@ html #translation {
     transition-timing-function: linear;
 }
 @keyframes l2 {
-       0% { background-size: 0% 1px;   background-position: 0% 100%; }
-   49.99% { background-size: 100% 1px; background-position: 0% 100%; }
-      50% { background-size: 100% 1px; background-position: 100% 100%; }
-     100% { background-size: 0% 1px;   background-position: 100% 100%; }
+       0% { background-size: 0% 1.5pt;   background-position: 0% 100%; }
+   49.99% { background-size: 100% 1.5pt; background-position: 0% 100%; }
+      50% { background-size: 100% 1.5pt; background-position: 100% 100%; }
+     100% { background-size: 0% 1.5pt;   background-position: 100% 100%; }
 }

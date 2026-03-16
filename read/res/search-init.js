@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
     popup.className = "popup";
     popup.style.opacity = "0";
     document.body.appendChild(popup);
+    
+    const searchicon = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: text-bottom;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>`;
 
     document.body.addEventListener("click", function (event) {
         let span = event.target.closest("span[data-root]");
@@ -18,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Create popup content
             let dataRoots = dataRoot.split(',');
-            let linksHTML = 'Search roots:';
+            let linksHTML = 'Roots:';
             dataRoots.forEach(root => {
                 const trimmedRoot = root.trim();
                 const trimmedRootEncoded = encodeURIComponent(trimmedRoot);
@@ -29,8 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
 		    gloss = result.glossHeb + " / " + result.glossXlit;
 		}
 		
-                linksHTML += `<br /><a href="search.html?q=${trimmedRootEncoded}" target="_blank">${gloss}</a>
-			(<a href="glossary.html#x${trimmedRootEncoded}" target="_blank">gloss</a>)`;
+                linksHTML += `<br /><a href="glossary.html#x${trimmedRootEncoded}" target="_blank" title="Glossary for ${result.glossHeb}">${gloss}</a>
+			<a href="search.html?q=${trimmedRootEncoded}" target="_blank" title="Search ${result.glossHeb}">${searchicon}</a>`;
 		
 		highlightMatches(trimmedRoot)
             });
