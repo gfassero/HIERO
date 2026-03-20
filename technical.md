@@ -166,7 +166,7 @@ HIERO selects the full lexicon entry:
 <entry>
 	<w xlit="rēʾšît">רֵאשִׁית</w>
 	<pos>N</pos>
-	<def>headmost</def>
+	<def>head[most]</def>
 	<xref strong="7225G,7225H" />
 </entry>
 ```
@@ -174,7 +174,7 @@ HIERO selects the full lexicon entry:
 HIERO then selects the definition from the entry:
 
 ```xml
-	<def>headmost</def>
+	<def>head[most]</def>
 ```
 
 HIERO then returns to the morphological tag `Ncfsa`. The first character, `N`, indicates a noun. HIERO parses the remainder of the morphological tag using parsing rules as defined for nouns.
@@ -188,13 +188,13 @@ The fifth character, indicates the state of the verb, which is either construct 
 So far, our translation of the main word `רֵאשִׁית` is still simple:
 
 ```
-headmost
+head[most]
 ```
 
 HIERO then returns to the third character, which indicates gender. `f` indicates feminine gender, so HIERO wraps the translation in HTML tags indicating `class="f"`:
 
 ```
-<span class="f">headmost</span>
+<span class="f">head[most]</span>
 ```
 
 The two parts of the word `בְּרֵאשִׁית` have now been translated:
@@ -206,7 +206,7 @@ in·
 and
 
 ```
-<span class="f">headmost</span>
+<span class="f">head[most]</span>
 ```
 
 The Hebrew word `בְּרֵאשִׁית` does not contain any significant cantillation marks, so no punctuation or line breaks are added.
@@ -214,12 +214,12 @@ The Hebrew word `בְּרֵאשִׁית` does not contain any significant cantil
 Finally, HIERO saves the result to an HTML file on the user’s computer:
 
 ```
-in·<span class="f">headmost</span>
+in·<span class="f">head[most]</span>
 ```
 
 The HTML output file references a CSS stylesheet in the same folder as the HTML output file. The CSS stylesheet includes rules for rendering the output. The HTML class `class="f"` in the output references the `.f` rule in the stylesheet, which indicates that the output should be rendered with a red arc. When the HTML output file is opened by the user, the output is rendered as:
 
-in·<span class="f">headmost</span>
+in·<span class="f">head[most]</span>
 
 HIERO then moves on to the second word of the annotated Hebrew text:
 
