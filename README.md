@@ -37,4 +37,4 @@ HIERO also uses code derived from the “[OSHB Hebrew Lexicon](http://github.com
 The rest of my sources are [listed here](sources.md).
 
 ## No License
-HIERO is still in progress and updated often. I have posted it online only so that I can receive feedback on it. As a result, I am not offering any license to use my work. Nothing on this website may be copied, shared, distributed, modified, or used for any purpose, commercial or non-commercial, without my prior written permission. Feel free to read and to provide suggestions for improvement.
+HIERO is still in progress and updated often. I am not offering any license to use my work. Nothing on this website may be copied, shared, distributed, modified, or used for any purpose, commercial or non-commercial, without my prior written permission. Feel free to read and to provide suggestions.
