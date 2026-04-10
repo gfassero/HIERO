@@ -6,7 +6,7 @@
 
 “[Translators Amalgamated Hebrew OT](http://github.com/STEPBible/STEPBible-Data/tree/master/Translators%20Amalgamated%20OT%2BNT)” (TAHOT) by [STEP Bible](http://www.stepbible.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). TAHOT provides the Hebrew text from which HIERO works, as well as lexical and grammatical tags on which HIERO’s Hebrew parsing dictionary is primarily based.
 
-## Bibliography
+## Reference Works
 
 [Aramaic Skeleton Grammar](http://arshama.classics.ox.ac.uk/aramaic/index.html) by the [Arshama Project](http://arshama.classics.ox.ac.uk/index.html).
 
@@ -16,7 +16,7 @@
 
 [Gesenius’s Hebrew and Chaldee Lexicon](http://www.blueletterbible.org/study/lexica/gesenius/index.cfm), provided by [Blue Letter Bible](http://www.blueletterbible.org/).
 
-[Online Etymology Dictionary](http://www.etymonline.com/) by [Etymonline](http://www.etymonline.com/).
+[Online Etymology Dictionary](http://www.etymonline.com/) by Douglas Harper.
 
 [QDF data files of the Hebrew Bible](http://github.com/ETCBC/QDF) by the [Eep Talstra Centre for Bible and Computer](http://etcbc.nl/).
 

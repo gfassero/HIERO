@@ -70,8 +70,8 @@ When possible, the lexicon represents a Hebrew root with a word similar to that 
 ### Translate proper nouns
 When the meaning of a proper noun is known, HIERO translates it instead of transliterating it as other translations do. Proper nouns hold to the root-fot-root translation parameter just as other words do. Because there is no existing tradition of translating most proper nouns, HIERO’s translations of proper nouns are a “best guess” and may be imprecise.
 
-### Transliterate familiar words
-Some Hebrew roots are transliterated. These roots are italicized, and are still required to follow the root-fot-root translation parameter. Roots may be transliterated for the following reasons:
+### Transliterate familiar words, or use a cognate
+Some Hebrew roots are transliterated, or a close English cognate is used. These roots are italicized, and are still required to follow the root-fot-root translation parameter. Roots may be transliterated, or a close English cognate may be used, for the following reasons:
 - The root is foreign (e.g., *Pharaoh*, *Purim*).
 - The root’s meaning has been lost (e.g., many kinds of plants and animals).
 - The root has a close English cognate with the same meaning (e.g., *matzah*, *camel*, *horn*, *peg*).
