@@ -14,7 +14,11 @@
 
 [Brown-Driver-Briggs Hebrew and English Lexicon of the Old Testament](http://openscriptures.github.io/HebrewLexicon/HomeFiles/Lexicon.html), provided by the [Open Scriptures Hebrew Bible Project](http://hb.openscriptures.org/).
 
+Crotty, Terence. ‘“Why is it that you ask my name?”: Issues concerning the transliteration and translation of names in Septuagint Genesis.’ STD diss. University of Fribourg, 2011.
+
 [Gesenius’s Hebrew and Chaldee Lexicon](http://www.blueletterbible.org/study/lexica/gesenius/index.cfm), provided by [Blue Letter Bible](http://www.blueletterbible.org/).
+
+[Google Books Ngram Viewer](http://books.google.com/ngrams), English 2024 Corpus.
 
 [Online Etymology Dictionary](http://www.etymonline.com/) by Douglas Harper.
 

@@ -34,7 +34,7 @@ HIERO depends on the “[Translators Amalgamated Hebrew OT](http://github.com/ST
 
 HIERO also uses code derived from the “[OSHB Hebrew Lexicon](http://github.com/openscriptures/HebrewLexicon/blob/master/HebrewStrong.xml)” by the [Open Scriptures Hebrew Bible Project](http://hb.openscriptures.org/), licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). The OSHB Hebrew Lexicon contains XML code, part-of-speech mappings, and Strongs number mappings that structure HIERO’s English lexicon.
 
-The rest of my sources are [listed here](sources.md).
+[The rest of my sources are listed here](sources.md).
 
 ## No License
 HIERO is still in progress and updated often. I am not offering any license to use my work. Nothing on this website may be copied, shared, distributed, modified, or used for any purpose, commercial or non-commercial, without my prior written permission. Feel free to read and to provide suggestions.
